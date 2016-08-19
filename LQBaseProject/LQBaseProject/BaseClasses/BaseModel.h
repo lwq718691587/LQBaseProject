@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "LQMacro.h"
 @interface BaseModel : NSObject
 
 @end

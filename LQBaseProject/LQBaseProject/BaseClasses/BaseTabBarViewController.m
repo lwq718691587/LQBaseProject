@@ -9,6 +9,7 @@
 #import "BaseTabBarViewController.h"
 #import "BaseNavigationViewController.h"
 #import "LQMacro.h"
+#import "LQSexyWomanListViewController.h"
 
 @interface BaseTabBarViewController ()
 @property(nonatomic,strong)NSMutableArray * btnArr;
@@ -31,12 +32,14 @@
 -(void)addViewController
 {
     UIViewController * vc1 = [[UIViewController alloc]init];
+    vc1.view.backgroundColor = FlatPink;
     BaseNavigationViewController * nvc1 = [[BaseNavigationViewController alloc]initWithRootViewController:vc1];
     
-    UIViewController * vc2 = [[UIViewController alloc]init];
+    LQSexyWomanListViewController * vc2 = [[LQSexyWomanListViewController alloc]init];
     BaseNavigationViewController * nvc2 = [[BaseNavigationViewController alloc]initWithRootViewController:vc2];
     
     UIViewController * vc3 = [[UIViewController alloc]init];
+    vc3.view.backgroundColor = FlatRedDark;
     BaseNavigationViewController * nvc3 = [[BaseNavigationViewController alloc]initWithRootViewController:vc3];
     
     self.viewControllers = @[nvc1,nvc2,nvc3];

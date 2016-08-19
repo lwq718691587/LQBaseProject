@@ -25,5 +25,5 @@
 #import "UIImage+MultiFormat.h"
 #import "UIImageView+HighlightedWebCache.h"
 #import "UIView+WebCacheOperation.h"
-
+#import "SDWebImageDownloader.h"
 #endif /* SDWebImage_h */

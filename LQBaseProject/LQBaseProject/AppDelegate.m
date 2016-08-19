@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LQNetworkingRequest.h"
+#import "BaseTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     [LQNetworkingRequest openNSURLCache];
     [self checkNetworkStatus];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = [[BaseTabBarViewController alloc]init];
+    
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }

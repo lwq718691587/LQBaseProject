@@ -11,7 +11,6 @@
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
 		FC51A8F41D659C8F0004FEAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F31D659C8F0004FEAE /* main.m */; };
 		FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F61D659C8F0004FEAE /* AppDelegate.m */; };
-		FC51A8FD1D659C8F0004FEAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC51A8FB1D659C8F0004FEAE /* Main.storyboard */; };
 		FC51A8FF1D659C8F0004FEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC51A8FE1D659C8F0004FEAE /* Assets.xcassets */; };
 		FC51A9021D659C8F0004FEAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC51A9001D659C8F0004FEAE /* LaunchScreen.storyboard */; };
 		FC51A90D1D659C8F0004FEAE /* LQBaseProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A90C1D659C8F0004FEAE /* LQBaseProjectTests.m */; };
@@ -28,8 +27,10 @@
 		FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362AE1D66EDBC00FFFC13 /* NSDate+LQAddition.m */; };
 		FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362B41D66F17500FFFC13 /* KSKRoundCornerCell.m */; };
 		FCE362B91D66F24600FFFC13 /* LQFullscreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362B81D66F24600FFFC13 /* LQFullscreenImageViewController.m */; };
-		FCE362BC1D66F74C00FFFC13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362BA1D66F74C00FFFC13 /* ViewController.m */; };
 		FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362BF1D66F80B00FFFC13 /* UserCenter.m */; };
+		FCE362C91D6702D800FFFC13 /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */; };
+		FCE362CC1D6702ED00FFFC13 /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */; };
+		FCE362CF1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CE1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,6 @@
 		FC51A8F31D659C8F0004FEAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC51A8F51D659C8F0004FEAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC51A8F61D659C8F0004FEAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC51A8FC1D659C8F0004FEAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC51A8FE1D659C8F0004FEAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC51A9011D659C8F0004FEAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC51A9031D659C8F0004FEAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,10 +100,14 @@
 		FCE362B41D66F17500FFFC13 /* KSKRoundCornerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSKRoundCornerCell.m; sourceTree = "<group>"; };
 		FCE362B71D66F24600FFFC13 /* LQFullscreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFullscreenImageViewController.h; sourceTree = "<group>"; };
 		FCE362B81D66F24600FFFC13 /* LQFullscreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullscreenImageViewController.m; sourceTree = "<group>"; };
-		FCE362BA1D66F74C00FFFC13 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FCE362BB1D66F74C00FFFC13 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FCE362BE1D66F80B00FFFC13 /* UserCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCenter.h; path = LQBaseProject/SingleInstance/UserCenter.h; sourceTree = SOURCE_ROOT; };
 		FCE362BF1D66F80B00FFFC13 /* UserCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserCenter.m; path = LQBaseProject/SingleInstance/UserCenter.m; sourceTree = SOURCE_ROOT; };
+		FCE362C71D6702D800FFFC13 /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
+		FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListViewController.m; sourceTree = "<group>"; };
+		FCE362CA1D6702ED00FFFC13 /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
+		FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
+		FCE362CD1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageLIstCollectionViewCell.h; sourceTree = "<group>"; };
+		FCE362CE1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageLIstCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +214,6 @@
 		FC51A8F21D659C8F0004FEAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC51A8FB1D659C8F0004FEAE /* Main.storyboard */,
 				FC51A9001D659C8F0004FEAE /* LaunchScreen.storyboard */,
 				FC51A9031D659C8F0004FEAE /* Info.plist */,
 				FC51A8F31D659C8F0004FEAE /* main.m */,
@@ -239,12 +242,12 @@
 		FC51A9251D659CA10004FEAE /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				FC51A92A1D659CA10004FEAE /* BaseTabBarViewController.h */,
+				FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */,
 				FC51A9261D659CA10004FEAE /* BaseModel.h */,
 				FC51A9271D659CA10004FEAE /* BaseModel.m */,
 				FC51A9281D659CA10004FEAE /* BaseNavigationViewController.h */,
 				FC51A9291D659CA10004FEAE /* BaseNavigationViewController.m */,
-				FC51A92A1D659CA10004FEAE /* BaseTabBarViewController.h */,
-				FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */,
 				FC51A92C1D659CA10004FEAE /* BaseView.h */,
 				FC51A92D1D659CA10004FEAE /* BaseView.m */,
 				FC51A92E1D659CA10004FEAE /* BaseViewController.h */,
@@ -269,8 +272,9 @@
 		FCE3629D1D66E19300FFFC13 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				FCE362BA1D66F74C00FFFC13 /* ViewController.m */,
-				FCE362BB1D66F74C00FFFC13 /* ViewController.h */,
+				FCE362C31D67025800FFFC13 /* Controller */,
+				FCE362C21D67025000FFFC13 /* View */,
+				FCE362C11D67024700FFFC13 /* Model */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -335,6 +339,33 @@
 			);
 			name = SingleInstance;
 			path = SingleINstance;
+			sourceTree = "<group>";
+		};
+		FCE362C11D67024700FFFC13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCE362CA1D6702ED00FFFC13 /* LQSexyWomanListModel.h */,
+				FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCE362C21D67025000FFFC13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCE362CD1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.h */,
+				FCE362CE1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE362C31D67025800FFFC13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCE362C71D6702D800FFFC13 /* LQSexyWomanListViewController.h */,
+				FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,7 +476,6 @@
 			files = (
 				FC51A9021D659C8F0004FEAE /* LaunchScreen.storyboard in Resources */,
 				FC51A8FF1D659C8F0004FEAE /* Assets.xcassets in Resources */,
-				FC51A8FD1D659C8F0004FEAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,13 +553,15 @@
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
+				FCE362C91D6702D800FFFC13 /* LQSexyWomanListViewController.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
+				FCE362CF1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
+				FCE362CC1D6702ED00FFFC13 /* LQSexyWomanListModel.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
-				FCE362BC1D66F74C00FFFC13 /* ViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
 				FCE362B91D66F24600FFFC13 /* LQFullscreenImageViewController.m in Sources */,
@@ -570,14 +602,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FC51A8FB1D659C8F0004FEAE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC51A8FC1D659C8F0004FEAE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC51A9001D659C8F0004FEAE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

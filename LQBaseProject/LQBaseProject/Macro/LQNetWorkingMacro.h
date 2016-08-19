@@ -13,7 +13,7 @@
 #ifdef TestServerOpen
     #define MainServerUrl           @"https://www.baidu.com"
 #else
-    #define MainServerUrl          @"https://www.baidu.com"
+    #define MainServerUrl          @"http://www.tngou.net"
 #endif
 
 //网络请求超时 时间
@@ -25,6 +25,6 @@
 //注册url
 #define  RegisterUrl(account,passWord)    [NSString stringWithFormat:@"%@/%@%@",MainServerUrl,account,passWord]
 
-
+#define  imageListUrl                     [NSString stringWithFormat:@"%@/tnfs/api/list",MainServerUrl]
 
 #endif /* LQNetWorkingMacro_h */

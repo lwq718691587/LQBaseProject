@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LQMacro.h"
 @interface BaseView : UIView
 
 @end
