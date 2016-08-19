@@ -9,9 +9,17 @@
 #ifndef LQMacro_h
 #define LQMacro_h
 
+#import <AFNetworking.h>
+#import <Chameleon.h>
+#import <DateTools.h>
+#import <MJRefresh.h>
+#import "SDWebImage.h"
+
+#import "AppDelegate.h"
 #import "LQAppInfoMacro.h"
 #import "LQCommomFunMacro.h"
 #import "LQNetWorkingMacro.h"
+#import "LQCategory.h"
 
 #warning read before AppStore 发布时要注释掉
 

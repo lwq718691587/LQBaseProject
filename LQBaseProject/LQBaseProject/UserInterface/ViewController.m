@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@",LoginUrl(@"1", @"2"));
+    self.view.backgroundColor = FlatLime;
+    ColorWithAlpha([UIColor redColor], 0.5);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

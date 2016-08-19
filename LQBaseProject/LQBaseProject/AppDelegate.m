@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LQNetworkingRequest.h"
 @interface AppDelegate ()
 
 @end
@@ -16,9 +16,40 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [LQNetworkingRequest openNSURLCache];
+    [self checkNetworkStatus];
     // Override point for customization after application launch.
     return YES;
 }
+
+#pragma mark - customFun
+//检测网络状态
+-(void)checkNetworkStatus
+{
+    self.networkStatus = AFNetworkReachabilityStatusUnknown;
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        self.networkStatus = status;
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+                NSLog(@"未知网络");
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"网络不可用");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"移动网络");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"WiFi网络");
+                break;
+            default:
+                break;
+        }
+    }];
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -41,5 +72,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 @end

@@ -16,6 +16,9 @@
     #define MainServerUrl          @"https://www.baidu.com"
 #endif
 
+//网络请求超时 时间
+#define NetworkTimeoutInterval  10
+
 
 //登录url
 #define  LoginUrl(account,passWord)       [NSString stringWithFormat:@"%@/%@%@",MainServerUrl,account,passWord]
