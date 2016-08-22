@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface LQSexyWomanListViewController : BaseViewController
-
+@property (strong, nonatomic) NSMutableArray *dataArr;
 @end

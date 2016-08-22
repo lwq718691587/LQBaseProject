@@ -56,6 +56,7 @@ static const double kAnimationDuration = 0.3;
     self.imageView = [[UIImageView alloc] initWithFrame:self.containerView.bounds];
     self.imageView.autoresizingMask = self.view.autoresizingMask;
     self.imageView.userInteractionEnabled = YES;
+    self.imageView.clipsToBounds = YES;
     [self.containerView addSubview:self.imageView];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onDismiss)];
@@ -68,7 +69,7 @@ static const double kAnimationDuration = 0.3;
     UIApplication *app = [UIApplication sharedApplication];
     UIView *window = [app keyWindow];
   
-
+    
     self.imageView.image = self.liftedImageView.image;
     self.imageView.contentMode = self.liftedImageView.contentMode;
     
@@ -91,7 +92,7 @@ static const double kAnimationDuration = 0.3;
 }
 
 
-- (void) viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     UIApplication *app = [UIApplication sharedApplication];
     UIWindow *window = [app keyWindow];

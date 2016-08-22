@@ -20,6 +20,8 @@
 		FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */; };
 		FC51A9331D659CA10004FEAE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92D1D659CA10004FEAE /* BaseView.m */; };
 		FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92F1D659CA10004FEAE /* BaseViewController.m */; };
+		FC9403FF1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9403FE1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m */; };
+		FC9404021D6B045E00D11448 /* LQwaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9404011D6B045E00D11448 /* LQwaterFlowLayout.m */; };
 		FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A01D66E58E00FFFC13 /* UIView+LwqCGRect.m */; };
 		FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A41D66E87500FFFC13 /* NSString+LQAddition.m */; };
 		FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A71D66E9E600FFFC13 /* UIButton+LQAddition.m */; };
@@ -30,7 +32,7 @@
 		FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362BF1D66F80B00FFFC13 /* UserCenter.m */; };
 		FCE362C91D6702D800FFFC13 /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */; };
 		FCE362CC1D6702ED00FFFC13 /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */; };
-		FCE362CF1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CE1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m */; };
+		FCE362CF1D6708C900FFFC13 /* LQImageListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CE1D6708C900FFFC13 /* LQImageListCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		FC51A9381D659D490004FEAE /* LQCommomFunMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQCommomFunMacro.h; sourceTree = "<group>"; };
 		FC51A9391D659DA10004FEAE /* LQNetWorkingMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQNetWorkingMacro.h; sourceTree = "<group>"; };
 		FC51A93A1D65A0C50004FEAE /* LQAppCustomerMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQAppCustomerMacro.h; sourceTree = "<group>"; };
+		FC9403FD1D6AF43E00D11448 /* LQCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		FC9403FE1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		FC9404001D6B045E00D11448 /* LQwaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQwaterFlowLayout.h; sourceTree = "<group>"; };
+		FC9404011D6B045E00D11448 /* LQwaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQwaterFlowLayout.m; sourceTree = "<group>"; };
 		FCE3629F1D66E58E00FFFC13 /* UIView+LwqCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LwqCGRect.h"; sourceTree = "<group>"; };
 		FCE362A01D66E58E00FFFC13 /* UIView+LwqCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LwqCGRect.m"; sourceTree = "<group>"; };
 		FCE362A31D66E87500FFFC13 /* NSString+LQAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQAddition.h"; sourceTree = "<group>"; };
@@ -106,8 +112,8 @@
 		FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListViewController.m; sourceTree = "<group>"; };
 		FCE362CA1D6702ED00FFFC13 /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
 		FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
-		FCE362CD1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageLIstCollectionViewCell.h; sourceTree = "<group>"; };
-		FCE362CE1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageLIstCollectionViewCell.m; sourceTree = "<group>"; };
+		FCE362CD1D6708C900FFFC13 /* LQImageListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageListCollectionViewCell.h; sourceTree = "<group>"; };
+		FCE362CE1D6708C900FFFC13 /* LQImageListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageListCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,8 +359,12 @@
 		FCE362C21D67025000FFFC13 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FCE362CD1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.h */,
-				FCE362CE1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m */,
+				FCE362CD1D6708C900FFFC13 /* LQImageListCollectionViewCell.h */,
+				FCE362CE1D6708C900FFFC13 /* LQImageListCollectionViewCell.m */,
+				FC9403FD1D6AF43E00D11448 /* LQCustomCollectionViewLayout.h */,
+				FC9403FE1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m */,
+				FC9404001D6B045E00D11448 /* LQwaterFlowLayout.h */,
+				FC9404011D6B045E00D11448 /* LQwaterFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,17 +565,19 @@
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
 				FCE362C91D6702D800FFFC13 /* LQSexyWomanListViewController.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
-				FCE362CF1D6708C900FFFC13 /* LQImageLIstCollectionViewCell.m in Sources */,
+				FCE362CF1D6708C900FFFC13 /* LQImageListCollectionViewCell.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
 				FCE362CC1D6702ED00FFFC13 /* LQSexyWomanListModel.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
+				FC9404021D6B045E00D11448 /* LQwaterFlowLayout.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
 				FCE362B91D66F24600FFFC13 /* LQFullscreenImageViewController.m in Sources */,
 				FC51A8F41D659C8F0004FEAE /* main.m in Sources */,
+				FC9403FF1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m in Sources */,
 				FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,17 +6,18 @@
 //  Copyright © 2016年 刘伟强. All rights reserved.
 //
 
-#import "LQImageLIstCollectionViewCell.h"
+#import "LQImageListCollectionViewCell.h"
 
-@interface LQImageLIstCollectionViewCell ()
-@property (strong, nonatomic) UIImageView *sexyWomenImageView;
+@interface LQImageListCollectionViewCell ()
+
 @end
-@implementation LQImageLIstCollectionViewCell
+@implementation LQImageListCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.clipsToBounds = YES;
         [self createView];
     }
     return self;
@@ -24,7 +25,7 @@
 -(void)createView{
     self.sexyWomenImageView = [[UIImageView alloc]initWithFrame:self.bounds];
     self.sexyWomenImageView.clipsToBounds = YES;
-    [self.sexyWomenImageView setContentMode:UIViewContentModeScaleAspectFit];
+    [self.sexyWomenImageView setContentMode:UIViewContentModeScaleAspectFill];
     [self addSubview:self.sexyWomenImageView];
     
 }
@@ -34,16 +35,8 @@
     
     [self.sexyWomenImageView setShowActivityIndicatorView:YES];
     [self.sexyWomenImageView sd_setImageWithURL:[NSURL URLWithString:url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        NSLog(@"%f",image.size.width);
         [self.sexyWomenImageView setShowActivityIndicatorView:NO];
     }];
-    
-//    [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:[NSURL URLWithString:url] options:SDWebImageDownloaderProgressiveDownload progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-//        NSLog(@"%ld---%ld",receivedSize,expectedSize);
-//    } completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
-//        self.sexyWomenImageView.image = image;
-//    }];
-
 }
 
 @end

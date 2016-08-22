@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "LQSexyWomanListModel.h"
 
-@interface LQImageLIstCollectionViewCell : UICollectionViewCell
+@interface LQImageListCollectionViewCell : UICollectionViewCell
 
+@property (strong, nonatomic) UIImageView *sexyWomenImageView;
 @property (strong, nonatomic) LQSexyWomanListModel *model;
 
 @end
