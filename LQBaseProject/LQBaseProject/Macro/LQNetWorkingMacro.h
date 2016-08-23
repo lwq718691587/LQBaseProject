@@ -24,7 +24,9 @@
 #define  LoginUrl(account,passWord)       [NSString stringWithFormat:@"%@/%@%@",MainServerUrl,account,passWord]
 //注册url
 #define  RegisterUrl(account,passWord)    [NSString stringWithFormat:@"%@/%@%@",MainServerUrl,account,passWord]
+//图片地址 诱惑
+#define  imageListUrl(pn)                 [NSString stringWithFormat:@"http://image.baidu.com/channel/listjson?pn=%ld&rn=30&tag1=美女&tag2=小清新&ie=utf88",pn*30]
 
-#define  imageListUrl                     [NSString stringWithFormat:@"%@/tnfs/api/list",MainServerUrl]
+#define  imageListUrlNoPageNumber                 [NSString stringWithFormat:@"http://image.baidu.com/channel/listjson?pn=1&rn=100&tag1=美女&tag2=诱惑&ie=utf88"]
 
 #endif /* LQNetWorkingMacro_h */

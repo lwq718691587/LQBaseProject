@@ -10,6 +10,8 @@
 #import "BaseNavigationViewController.h"
 #import "LQMacro.h"
 #import "LQSexyWomanListViewController.h"
+#import "LQSearchingViewController.h"
+#import "LQPersonInfoViewController.h"
 
 @interface BaseTabBarViewController ()
 @property(nonatomic,strong)NSMutableArray * btnArr;
@@ -22,30 +24,41 @@
     [super viewDidLoad];
     self.btnArr = [[NSMutableArray alloc]init];
     [self addViewController];
-    [self customTab1];
-    self.selectedIndex = 1;
-    [self.btnArr[1] setSelected:YES];
+    [self systemTabbar];
+//    [self customTab1];
+    
+   
     // Do any additional setup after loading the view.
 }
 
 //装载视图 -
 -(void)addViewController
 {
-    UIViewController * vc1 = [[UIViewController alloc]init];
+    LQSearchingViewController * vc1 = [[LQSearchingViewController alloc]init];
     vc1.view.backgroundColor = FlatPink;
     BaseNavigationViewController * nvc1 = [[BaseNavigationViewController alloc]initWithRootViewController:vc1];
     
     LQSexyWomanListViewController * vc2 = [[LQSexyWomanListViewController alloc]init];
     BaseNavigationViewController * nvc2 = [[BaseNavigationViewController alloc]initWithRootViewController:vc2];
     
-    UIViewController * vc3 = [[UIViewController alloc]init];
+    LQPersonInfoViewController * vc3 = [[LQPersonInfoViewController alloc]init];
     vc3.view.backgroundColor = FlatRedDark;
     BaseNavigationViewController * nvc3 = [[BaseNavigationViewController alloc]initWithRootViewController:vc3];
-    
     self.viewControllers = @[nvc1,nvc2,nvc3];
     
 }
 
+-(void)systemTabbar{
+    
+    NSArray * itemImageArr = @[@"leftPage",@"homePage",@"rightPage"];
+    
+    for (int i = 0; i < 3; i++) {
+        UITabBarItem * item = self.tabBar.items[i];
+        item.image = [UIImage imageNamed:itemImageArr[i]];
+        item.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
+    }
+    self.selectedIndex = 1;
+}
 
 //自定义tab -
 -(void)customTab1
@@ -75,7 +88,8 @@
         [self.bearbarImageView addSubview:btn];
         [self.btnArr addObject:btn];
     }
-    
+    self.selectedIndex = 1;
+    [self.btnArr[1] setSelected:YES];
 }
 
 -(void)toudown:(UIButton *)btn

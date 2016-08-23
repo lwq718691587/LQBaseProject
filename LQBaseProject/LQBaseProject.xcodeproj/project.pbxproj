@@ -20,19 +20,21 @@
 		FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */; };
 		FC51A9331D659CA10004FEAE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92D1D659CA10004FEAE /* BaseView.m */; };
 		FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92F1D659CA10004FEAE /* BaseViewController.m */; };
-		FC9403FF1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9403FE1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m */; };
-		FC9404021D6B045E00D11448 /* LQwaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9404011D6B045E00D11448 /* LQwaterFlowLayout.m */; };
+		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
+		FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */; };
+		FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */; };
+		FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CE1D6C36DE007B838B /* LQImageListCollectionViewCell.m */; };
+		FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73D71D6C3E8D007B838B /* LQFullscreenImageViewController.m */; };
+		FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73E91D6C44A8007B838B /* LQSearchingViewController.m */; };
+		FCDF73F61D6C44FB007B838B /* LQPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73F51D6C44FB007B838B /* LQPersonInfoViewController.m */; };
+		FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73F91D6C4862007B838B /* UmengUtility.m */; };
 		FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A01D66E58E00FFFC13 /* UIView+LwqCGRect.m */; };
 		FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A41D66E87500FFFC13 /* NSString+LQAddition.m */; };
 		FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A71D66E9E600FFFC13 /* UIButton+LQAddition.m */; };
 		FCE362AB1D66EB3500FFFC13 /* UILabel+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362AA1D66EB3500FFFC13 /* UILabel+LQAddition.m */; };
 		FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362AE1D66EDBC00FFFC13 /* NSDate+LQAddition.m */; };
 		FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362B41D66F17500FFFC13 /* KSKRoundCornerCell.m */; };
-		FCE362B91D66F24600FFFC13 /* LQFullscreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362B81D66F24600FFFC13 /* LQFullscreenImageViewController.m */; };
 		FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362BF1D66F80B00FFFC13 /* UserCenter.m */; };
-		FCE362C91D6702D800FFFC13 /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */; };
-		FCE362CC1D6702ED00FFFC13 /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */; };
-		FCE362CF1D6708C900FFFC13 /* LQImageListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362CE1D6708C900FFFC13 /* LQImageListCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,10 +88,22 @@
 		FC51A9381D659D490004FEAE /* LQCommomFunMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQCommomFunMacro.h; sourceTree = "<group>"; };
 		FC51A9391D659DA10004FEAE /* LQNetWorkingMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQNetWorkingMacro.h; sourceTree = "<group>"; };
 		FC51A93A1D65A0C50004FEAE /* LQAppCustomerMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQAppCustomerMacro.h; sourceTree = "<group>"; };
-		FC9403FD1D6AF43E00D11448 /* LQCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomCollectionViewLayout.h; sourceTree = "<group>"; };
-		FC9403FE1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCustomCollectionViewLayout.m; sourceTree = "<group>"; };
-		FC9404001D6B045E00D11448 /* LQwaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQwaterFlowLayout.h; sourceTree = "<group>"; };
-		FC9404011D6B045E00D11448 /* LQwaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQwaterFlowLayout.m; sourceTree = "<group>"; };
+		FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
+		FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
+		FCDF73C81D6C36DE007B838B /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
+		FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListViewController.m; sourceTree = "<group>"; };
+		FCDF73CB1D6C36DE007B838B /* LQCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		FCDF73CD1D6C36DE007B838B /* LQImageListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageListCollectionViewCell.h; sourceTree = "<group>"; };
+		FCDF73CE1D6C36DE007B838B /* LQImageListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageListCollectionViewCell.m; sourceTree = "<group>"; };
+		FCDF73D61D6C3E8D007B838B /* LQFullscreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFullscreenImageViewController.h; sourceTree = "<group>"; };
+		FCDF73D71D6C3E8D007B838B /* LQFullscreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullscreenImageViewController.m; sourceTree = "<group>"; };
+		FCDF73E81D6C44A8007B838B /* LQSearchingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSearchingViewController.h; sourceTree = "<group>"; };
+		FCDF73E91D6C44A8007B838B /* LQSearchingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSearchingViewController.m; sourceTree = "<group>"; };
+		FCDF73F41D6C44FB007B838B /* LQPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPersonInfoViewController.h; sourceTree = "<group>"; };
+		FCDF73F51D6C44FB007B838B /* LQPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPersonInfoViewController.m; sourceTree = "<group>"; };
+		FCDF73F81D6C4862007B838B /* UmengUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmengUtility.h; sourceTree = "<group>"; };
+		FCDF73F91D6C4862007B838B /* UmengUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UmengUtility.m; sourceTree = "<group>"; };
 		FCE3629F1D66E58E00FFFC13 /* UIView+LwqCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LwqCGRect.h"; sourceTree = "<group>"; };
 		FCE362A01D66E58E00FFFC13 /* UIView+LwqCGRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LwqCGRect.m"; sourceTree = "<group>"; };
 		FCE362A31D66E87500FFFC13 /* NSString+LQAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LQAddition.h"; sourceTree = "<group>"; };
@@ -104,16 +118,8 @@
 		FCE362B01D66EF0A00FFFC13 /* SDWebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImage.h; sourceTree = "<group>"; };
 		FCE362B31D66F17500FFFC13 /* KSKRoundCornerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSKRoundCornerCell.h; sourceTree = "<group>"; };
 		FCE362B41D66F17500FFFC13 /* KSKRoundCornerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSKRoundCornerCell.m; sourceTree = "<group>"; };
-		FCE362B71D66F24600FFFC13 /* LQFullscreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFullscreenImageViewController.h; sourceTree = "<group>"; };
-		FCE362B81D66F24600FFFC13 /* LQFullscreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullscreenImageViewController.m; sourceTree = "<group>"; };
 		FCE362BE1D66F80B00FFFC13 /* UserCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserCenter.h; path = LQBaseProject/SingleInstance/UserCenter.h; sourceTree = SOURCE_ROOT; };
 		FCE362BF1D66F80B00FFFC13 /* UserCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserCenter.m; path = LQBaseProject/SingleInstance/UserCenter.m; sourceTree = SOURCE_ROOT; };
-		FCE362C71D6702D800FFFC13 /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
-		FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListViewController.m; sourceTree = "<group>"; };
-		FCE362CA1D6702ED00FFFC13 /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
-		FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
-		FCE362CD1D6708C900FFFC13 /* LQImageListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageListCollectionViewCell.h; sourceTree = "<group>"; };
-		FCE362CE1D6708C900FFFC13 /* LQImageListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageListCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,8 @@
 		FC2343B01D66D8F800ADB748 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FCDF73F71D6C484A007B838B /* Umeng */,
+				FCDF73D41D6C3E7F007B838B /* LQControl */,
 				FCE362B11D66F13800FFFC13 /* ThirdParyLibrary */,
 				FCE362A21D66E81B00FFFC13 /* LQCategory */,
 				FCE3629E1D66E57D00FFFC13 /* AdapterScreen */,
@@ -275,12 +283,143 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		FCDF73C21D6C36AE007B838B /* SearchingModule */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73D91D6C4484007B838B /* Model */,
+				FCDF73DC1D6C4484007B838B /* Controller */,
+				FCDF73DF1D6C4484007B838B /* View */,
+			);
+			path = SearchingModule;
+			sourceTree = "<group>";
+		};
+		FCDF73C31D6C36CB007B838B /* HomePageModule */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73C41D6C36DE007B838B /* Model */,
+				FCDF73C71D6C36DE007B838B /* Controller */,
+				FCDF73CA1D6C36DE007B838B /* View */,
+			);
+			path = HomePageModule;
+			sourceTree = "<group>";
+		};
+		FCDF73C41D6C36DE007B838B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */,
+				FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCDF73C71D6C36DE007B838B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73C81D6C36DE007B838B /* LQSexyWomanListViewController.h */,
+				FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCDF73CA1D6C36DE007B838B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73CB1D6C36DE007B838B /* LQCustomCollectionViewLayout.h */,
+				FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */,
+				FCDF73CD1D6C36DE007B838B /* LQImageListCollectionViewCell.h */,
+				FCDF73CE1D6C36DE007B838B /* LQImageListCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCDF73D31D6C3710007B838B /* PersonInfoModule */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73EB1D6C44DC007B838B /* View */,
+				FCDF73F01D6C44DC007B838B /* Model */,
+				FCDF73F11D6C44DC007B838B /* Controller */,
+			);
+			path = PersonInfoModule;
+			sourceTree = "<group>";
+		};
+		FCDF73D41D6C3E7F007B838B /* LQControl */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73D51D6C3E8D007B838B /* tapImageFullScreen */,
+			);
+			path = LQControl;
+			sourceTree = "<group>";
+		};
+		FCDF73D51D6C3E8D007B838B /* tapImageFullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73D61D6C3E8D007B838B /* LQFullscreenImageViewController.h */,
+				FCDF73D71D6C3E8D007B838B /* LQFullscreenImageViewController.m */,
+			);
+			path = tapImageFullScreen;
+			sourceTree = "<group>";
+		};
+		FCDF73D91D6C4484007B838B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCDF73DC1D6C4484007B838B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73E81D6C44A8007B838B /* LQSearchingViewController.h */,
+				FCDF73E91D6C44A8007B838B /* LQSearchingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCDF73DF1D6C4484007B838B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCDF73EB1D6C44DC007B838B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCDF73F01D6C44DC007B838B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCDF73F11D6C44DC007B838B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73F41D6C44FB007B838B /* LQPersonInfoViewController.h */,
+				FCDF73F51D6C44FB007B838B /* LQPersonInfoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCDF73F71D6C484A007B838B /* Umeng */ = {
+			isa = PBXGroup;
+			children = (
+				FCDF73F81D6C4862007B838B /* UmengUtility.h */,
+				FCDF73F91D6C4862007B838B /* UmengUtility.m */,
+			);
+			path = Umeng;
+			sourceTree = "<group>";
+		};
 		FCE3629D1D66E19300FFFC13 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				FCE362C31D67025800FFFC13 /* Controller */,
-				FCE362C21D67025000FFFC13 /* View */,
-				FCE362C11D67024700FFFC13 /* Model */,
+				FCDF73C21D6C36AE007B838B /* SearchingModule */,
+				FCDF73D31D6C3710007B838B /* PersonInfoModule */,
+				FCDF73C31D6C36CB007B838B /* HomePageModule */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -313,7 +452,6 @@
 		FCE362B11D66F13800FFFC13 /* ThirdParyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				FCE362B61D66F24600FFFC13 /* tapImageFullScreen */,
 				FCE362B21D66F17500FFFC13 /* KSRoundCornerCell */,
 			);
 			path = ThirdParyLibrary;
@@ -328,15 +466,6 @@
 			path = KSRoundCornerCell;
 			sourceTree = "<group>";
 		};
-		FCE362B61D66F24600FFFC13 /* tapImageFullScreen */ = {
-			isa = PBXGroup;
-			children = (
-				FCE362B71D66F24600FFFC13 /* LQFullscreenImageViewController.h */,
-				FCE362B81D66F24600FFFC13 /* LQFullscreenImageViewController.m */,
-			);
-			path = tapImageFullScreen;
-			sourceTree = "<group>";
-		};
 		FCE362BD1D66F7D400FFFC13 /* SingleInstance */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,37 +474,6 @@
 			);
 			name = SingleInstance;
 			path = SingleINstance;
-			sourceTree = "<group>";
-		};
-		FCE362C11D67024700FFFC13 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FCE362CA1D6702ED00FFFC13 /* LQSexyWomanListModel.h */,
-				FCE362CB1D6702ED00FFFC13 /* LQSexyWomanListModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FCE362C21D67025000FFFC13 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FCE362CD1D6708C900FFFC13 /* LQImageListCollectionViewCell.h */,
-				FCE362CE1D6708C900FFFC13 /* LQImageListCollectionViewCell.m */,
-				FC9403FD1D6AF43E00D11448 /* LQCustomCollectionViewLayout.h */,
-				FC9403FE1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m */,
-				FC9404001D6B045E00D11448 /* LQwaterFlowLayout.h */,
-				FC9404011D6B045E00D11448 /* LQwaterFlowLayout.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FCE362C31D67025800FFFC13 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FCE362C71D6702D800FFFC13 /* LQSexyWomanListViewController.h */,
-				FCE362C81D6702D800FFFC13 /* LQSexyWomanListViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,25 +657,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */,
+				FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */,
+				FCDF73F61D6C44FB007B838B /* LQPersonInfoViewController.m in Sources */,
 				FCE362AB1D66EB3500FFFC13 /* UILabel+LQAddition.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
+				FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
-				FCE362C91D6702D800FFFC13 /* LQSexyWomanListViewController.m in Sources */,
+				FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
-				FCE362CF1D6708C900FFFC13 /* LQImageListCollectionViewCell.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
+				FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
-				FCE362CC1D6702ED00FFFC13 /* LQSexyWomanListModel.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
-				FC9404021D6B045E00D11448 /* LQwaterFlowLayout.m in Sources */,
+				FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
-				FCE362B91D66F24600FFFC13 /* LQFullscreenImageViewController.m in Sources */,
+				FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */,
+				FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */,
 				FC51A8F41D659C8F0004FEAE /* main.m in Sources */,
-				FC9403FF1D6AF43E00D11448 /* LQCustomCollectionViewLayout.m in Sources */,
 				FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
