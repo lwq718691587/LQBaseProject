@@ -25,6 +25,15 @@
     [self update];
     // Do any additional setup after loading the view.
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 #pragma mark - iCarouselDelegate
 - (CGFloat)carousel:(__unused iCarousel *)carousel valueForOption:(iCarouselOption)option withDefault:(CGFloat)value
 {
@@ -63,7 +72,7 @@
     UIImageView * iv = (UIImageView *)view;
     
     if (!iv) {
-        iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 300, 500)];
+        iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 300, 400)];
         iv.clipsToBounds = YES;
         [iv setContentMode:UIViewContentModeScaleAspectFill];
     }

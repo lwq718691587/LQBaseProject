@@ -18,6 +18,7 @@
 #pragma mark - view lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]){
         [self setEdgesForExtendedLayout:UIRectEdgeNone];
     }
@@ -30,11 +31,18 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [MobClick endLogPageView:NSStringFromClass([self class])];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)initData{}
+-(void)update{}
+-(void)initUI{}
+-(void)initNavigation{}
+
+-(BOOL)shouldAutorotate{
+    return NO;
 }
-
-
+//支持的方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 @end

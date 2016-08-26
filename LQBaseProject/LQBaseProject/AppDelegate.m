@@ -21,6 +21,9 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    
     self.window.rootViewController = [[BaseTabBarViewController alloc]init];
     [self.window makeKeyAndVisible];
     [LQNetworkingRequest openNSURLCache];

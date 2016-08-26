@@ -12,6 +12,7 @@
 #import "LQSexyWomanListViewController.h"
 #import "LQSearchingViewController.h"
 #import "LQPersonInfoViewController.h"
+#import "LQFunctionViewController.h"
 
 @interface BaseTabBarViewController ()
 @property(nonatomic,strong)NSMutableArray * btnArr;
@@ -34,16 +35,17 @@
 //装载视图 -
 -(void)addViewController
 {
+    
     LQSearchingViewController * vc1 = [[LQSearchingViewController alloc]init];
-    vc1.view.backgroundColor = FlatPink;
     BaseNavigationViewController * nvc1 = [[BaseNavigationViewController alloc]initWithRootViewController:vc1];
     
     LQSexyWomanListViewController * vc2 = [[LQSexyWomanListViewController alloc]init];
     BaseNavigationViewController * nvc2 = [[BaseNavigationViewController alloc]initWithRootViewController:vc2];
     
-    LQPersonInfoViewController * vc3 = [[LQPersonInfoViewController alloc]init];
-    vc3.view.backgroundColor = FlatRedDark;
+    LQFunctionViewController * vc3 = [[LQFunctionViewController alloc]init];
+    vc3.title = @"功能";
     BaseNavigationViewController * nvc3 = [[BaseNavigationViewController alloc]initWithRootViewController:vc3];
+    nvc3.title = @"";
     self.viewControllers = @[nvc1,nvc2,nvc3];
     
 }
@@ -57,7 +59,7 @@
         item.image = [UIImage imageNamed:itemImageArr[i]];
         item.imageInsets = UIEdgeInsetsMake(7, 0, -7, 0);
     }
-    self.selectedIndex = 1;
+    self.selectedIndex = 2;
 }
 
 //自定义tab -
@@ -100,5 +102,21 @@
     btn.selected = !btn.selected;
     self.selectedIndex = btn.tag;
 }
+
+#pragma mark 转屏方法重写
+
+-(BOOL)shouldAutorotate{
+    return self.selectedViewController.shouldAutorotate;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return [self.selectedViewController supportedInterfaceOrientations];
+}
+
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return [self.selectedViewController preferredInterfaceOrientationForPresentation];
+}
+
+
 
 @end

@@ -117,4 +117,12 @@ static const double kAnimationDuration = 0.3;
     return self.containerView;
 }
 
+-(BOOL)shouldAutorotate{
+    return NO;
+}
+//支持的方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 @end

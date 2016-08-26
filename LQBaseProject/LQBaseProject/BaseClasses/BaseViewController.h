@@ -10,4 +10,9 @@
 #import "LQMacro.h"
 @interface BaseViewController : UIViewController
 
+//方便提示
+-(void)initData;
+-(void)initNavigation;
+-(void)initUI;
+-(void)update;
 @end

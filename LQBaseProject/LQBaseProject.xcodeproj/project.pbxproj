@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */; };
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
+		FC4D26CB1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D26CA1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m */; };
+		FC4D26CE1D6FE01A00306F63 /* LQImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D26CD1D6FE01A00306F63 /* LQImageData.m */; };
+		FC4D26D11D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D26D01D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m */; };
 		FC51A8F41D659C8F0004FEAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F31D659C8F0004FEAE /* main.m */; };
 		FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F61D659C8F0004FEAE /* AppDelegate.m */; };
 		FC51A8FF1D659C8F0004FEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC51A8FE1D659C8F0004FEAE /* Assets.xcassets */; };
@@ -20,13 +23,16 @@
 		FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */; };
 		FC51A9331D659CA10004FEAE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92D1D659CA10004FEAE /* BaseView.m */; };
 		FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92F1D659CA10004FEAE /* BaseViewController.m */; };
+		FC9A5B951D6EF22200F670D7 /* LQFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9A5B941D6EF22200F670D7 /* LQFunctionViewController.m */; };
+		FC9A5B9B1D6EF30E00F670D7 /* LQFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9A5B971D6EF30E00F670D7 /* LQFullViewController.m */; };
+		FC9A5B9C1D6EF30E00F670D7 /* LQPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9A5B981D6EF30E00F670D7 /* LQPersonInfoViewController.m */; };
+		FCC042D01D7011EF00F33B11 /* LQMultithreading_GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC042CF1D7011EF00F33B11 /* LQMultithreading_GCDViewController.m */; };
 		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
 		FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */; };
 		FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */; };
 		FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CE1D6C36DE007B838B /* LQImageListCollectionViewCell.m */; };
 		FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73D71D6C3E8D007B838B /* LQFullscreenImageViewController.m */; };
 		FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73E91D6C44A8007B838B /* LQSearchingViewController.m */; };
-		FCDF73F61D6C44FB007B838B /* LQPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73F51D6C44FB007B838B /* LQPersonInfoViewController.m */; };
 		FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73F91D6C4862007B838B /* UmengUtility.m */; };
 		FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A01D66E58E00FFFC13 /* UIView+LwqCGRect.m */; };
 		FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE362A41D66E87500FFFC13 /* NSString+LQAddition.m */; };
@@ -60,6 +66,12 @@
 		99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2343B21D66D91000ADB748 /* LQNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNetworkingRequest.h; sourceTree = "<group>"; };
 		FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNetworkingRequest.m; sourceTree = "<group>"; };
+		FC4D26C91D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSThreadViewController.h; sourceTree = "<group>"; };
+		FC4D26CA1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_NSThreadViewController.m; sourceTree = "<group>"; };
+		FC4D26CC1D6FE01A00306F63 /* LQImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageData.h; sourceTree = "<group>"; };
+		FC4D26CD1D6FE01A00306F63 /* LQImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageData.m; sourceTree = "<group>"; };
+		FC4D26CF1D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSOperationViewController.h; sourceTree = "<group>"; };
+		FC4D26D01D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_NSOperationViewController.m; sourceTree = "<group>"; };
 		FC51A8EF1D659C8F0004FEAE /* LQBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC51A8F31D659C8F0004FEAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC51A8F51D659C8F0004FEAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +100,14 @@
 		FC51A9381D659D490004FEAE /* LQCommomFunMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQCommomFunMacro.h; sourceTree = "<group>"; };
 		FC51A9391D659DA10004FEAE /* LQNetWorkingMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQNetWorkingMacro.h; sourceTree = "<group>"; };
 		FC51A93A1D65A0C50004FEAE /* LQAppCustomerMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQAppCustomerMacro.h; sourceTree = "<group>"; };
+		FC9A5B931D6EF22200F670D7 /* LQFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFunctionViewController.h; sourceTree = "<group>"; };
+		FC9A5B941D6EF22200F670D7 /* LQFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFunctionViewController.m; sourceTree = "<group>"; };
+		FC9A5B971D6EF30E00F670D7 /* LQFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullViewController.m; sourceTree = "<group>"; };
+		FC9A5B981D6EF30E00F670D7 /* LQPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPersonInfoViewController.m; sourceTree = "<group>"; };
+		FC9A5B991D6EF30E00F670D7 /* LQFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFullViewController.h; sourceTree = "<group>"; };
+		FC9A5B9A1D6EF30E00F670D7 /* LQPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPersonInfoViewController.h; sourceTree = "<group>"; };
+		FCC042CE1D7011EF00F33B11 /* LQMultithreading_GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_GCDViewController.h; sourceTree = "<group>"; };
+		FCC042CF1D7011EF00F33B11 /* LQMultithreading_GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_GCDViewController.m; sourceTree = "<group>"; };
 		FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
 		FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
 		FCDF73C81D6C36DE007B838B /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
@@ -100,8 +120,6 @@
 		FCDF73D71D6C3E8D007B838B /* LQFullscreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullscreenImageViewController.m; sourceTree = "<group>"; };
 		FCDF73E81D6C44A8007B838B /* LQSearchingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSearchingViewController.h; sourceTree = "<group>"; };
 		FCDF73E91D6C44A8007B838B /* LQSearchingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSearchingViewController.m; sourceTree = "<group>"; };
-		FCDF73F41D6C44FB007B838B /* LQPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPersonInfoViewController.h; sourceTree = "<group>"; };
-		FCDF73F51D6C44FB007B838B /* LQPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPersonInfoViewController.m; sourceTree = "<group>"; };
 		FCDF73F81D6C4862007B838B /* UmengUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmengUtility.h; sourceTree = "<group>"; };
 		FCDF73F91D6C4862007B838B /* UmengUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UmengUtility.m; sourceTree = "<group>"; };
 		FCE3629F1D66E58E00FFFC13 /* UIView+LwqCGRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LwqCGRect.h"; sourceTree = "<group>"; };
@@ -185,6 +203,19 @@
 				FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FC4D26C81D6FD13C00306F63 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4D26C91D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.h */,
+				FC4D26CA1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m */,
+				FC4D26CF1D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.h */,
+				FC4D26D01D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m */,
+				FCC042CE1D7011EF00F33B11 /* LQMultithreading_GCDViewController.h */,
+				FCC042CF1D7011EF00F33B11 /* LQMultithreading_GCDViewController.m */,
+			);
+			path = "多线程";
 			sourceTree = "<group>";
 		};
 		FC51A8E61D659C8F0004FEAE = {
@@ -281,6 +312,17 @@
 				FCE362B01D66EF0A00FFFC13 /* SDWebImage.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		FC9A5B961D6EF2F000F670D7 /* 屏幕旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				FC9A5B971D6EF30E00F670D7 /* LQFullViewController.m */,
+				FC9A5B981D6EF30E00F670D7 /* LQPersonInfoViewController.m */,
+				FC9A5B991D6EF30E00F670D7 /* LQFullViewController.h */,
+				FC9A5B9A1D6EF30E00F670D7 /* LQPersonInfoViewController.h */,
+			);
+			path = "屏幕旋转";
 			sourceTree = "<group>";
 		};
 		FCDF73C21D6C36AE007B838B /* SearchingModule */ = {
@@ -392,6 +434,8 @@
 		FCDF73F01D6C44DC007B838B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FC4D26CC1D6FE01A00306F63 /* LQImageData.h */,
+				FC4D26CD1D6FE01A00306F63 /* LQImageData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -399,8 +443,10 @@
 		FCDF73F11D6C44DC007B838B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FCDF73F41D6C44FB007B838B /* LQPersonInfoViewController.h */,
-				FCDF73F51D6C44FB007B838B /* LQPersonInfoViewController.m */,
+				FC4D26C81D6FD13C00306F63 /* 多线程 */,
+				FC9A5B961D6EF2F000F670D7 /* 屏幕旋转 */,
+				FC9A5B931D6EF22200F670D7 /* LQFunctionViewController.h */,
+				FC9A5B941D6EF22200F670D7 /* LQFunctionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -418,8 +464,8 @@
 			isa = PBXGroup;
 			children = (
 				FCDF73C21D6C36AE007B838B /* SearchingModule */,
-				FCDF73D31D6C3710007B838B /* PersonInfoModule */,
 				FCDF73C31D6C36CB007B838B /* HomePageModule */,
+				FCDF73D31D6C3710007B838B /* PersonInfoModule */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -658,20 +704,26 @@
 			files = (
 				FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */,
 				FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */,
-				FCDF73F61D6C44FB007B838B /* LQPersonInfoViewController.m in Sources */,
+				FC4D26CE1D6FE01A00306F63 /* LQImageData.m in Sources */,
 				FCE362AB1D66EB3500FFFC13 /* UILabel+LQAddition.m in Sources */,
+				FC4D26CB1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
+				FC4D26D11D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m in Sources */,
 				FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */,
+				FCC042D01D7011EF00F33B11 /* LQMultithreading_GCDViewController.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
+				FC9A5B951D6EF22200F670D7 /* LQFunctionViewController.m in Sources */,
 				FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
+				FC9A5B9C1D6EF30E00F670D7 /* LQPersonInfoViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
 				FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
 				FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */,
+				FC9A5B9B1D6EF30E00F670D7 /* LQFullViewController.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
@@ -746,6 +798,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -762,7 +815,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -791,6 +844,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -801,7 +855,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -814,10 +868,97 @@
 			baseConfigurationReference = 99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_OTHER_FLAGS = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LQBaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**\"",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/AlipayShare/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Line/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Whatsapp/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Instagram/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Tumblr/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/LaiWang/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Twitter/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Facebook/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"APOpenSdk\"",
+					"-l\"ChameleonFramework\"",
+					"-l\"DateTools\"",
+					"-l\"LWApiSDK\"",
+					"-l\"MJRefresh\"",
+					"-l\"SDWebImage\"",
+					"-l\"SocialAlipayShare\"",
+					"-l\"SocialFacebook\"",
+					"-l\"SocialInstagram\"",
+					"-l\"SocialLaiWang\"",
+					"-l\"SocialLine\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSinaSSO\"",
+					"-l\"SocialTumblr\"",
+					"-l\"SocialTwitter\"",
+					"-l\"SocialWechat\"",
+					"-l\"SocialWhatsapp\"",
+					"-l\"UMSocial_Sdk_5.2.1\"",
+					"-l\"UMSocial_Sdk_Comment_5.2.1\"",
+					"-l\"WeChatSDK\"",
+					"-l\"WeiboSDK\"",
+					"-l\"iCarousel\"",
+					"-l\"iconv\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TencentOpenAPI\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMMobClick\"",
+					"-w",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oarcleen.LQBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -829,10 +970,97 @@
 			baseConfigurationReference = 2D6770FB7C6140271D6EBA97 /* Pods-LQBaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_OTHER_FLAGS = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LQBaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(PODS_ROOT)/UMengAnalytics-NO-IDFA/**\"",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/AlipayShare/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Line/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Whatsapp/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Instagram/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Tumblr/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/LaiWang/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Twitter/**",
+					"$(PODS_ROOT)/UmengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Facebook/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"APOpenSdk\"",
+					"-l\"ChameleonFramework\"",
+					"-l\"DateTools\"",
+					"-l\"LWApiSDK\"",
+					"-l\"MJRefresh\"",
+					"-l\"SDWebImage\"",
+					"-l\"SocialAlipayShare\"",
+					"-l\"SocialFacebook\"",
+					"-l\"SocialInstagram\"",
+					"-l\"SocialLaiWang\"",
+					"-l\"SocialLine\"",
+					"-l\"SocialQQ\"",
+					"-l\"SocialSinaSSO\"",
+					"-l\"SocialTumblr\"",
+					"-l\"SocialTwitter\"",
+					"-l\"SocialWechat\"",
+					"-l\"SocialWhatsapp\"",
+					"-l\"UMSocial_Sdk_5.2.1\"",
+					"-l\"UMSocial_Sdk_Comment_5.2.1\"",
+					"-l\"WeChatSDK\"",
+					"-l\"WeiboSDK\"",
+					"-l\"iCarousel\"",
+					"-l\"iconv\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"FBSDKShareKit\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"TencentOpenAPI\"",
+					"-framework",
+					"\"TwitterCore\"",
+					"-framework",
+					"\"TwitterKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UMMobClick\"",
+					"-w",
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oarcleen.LQBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
