@@ -7,6 +7,7 @@
 //
 
 #import "LQSexyWomanListModel.h"
+#import "LQNetworkingRequest.h"
 
 
 @implementation LQSexyWomanListModel
@@ -23,11 +24,10 @@
             if (model.imageHeight < 1000 && model.imageHeight > 600) {
                 [dataArr addObject:model];
             }
-           
         }
         success(dataArr);
     } failure:^(id operation, NSError *error) {
-        
+        NSLog(@"%@",error);
     }];
 }
 

@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface LQPersonInfoViewController : BaseViewController
+@interface LQScreenViewController : BaseViewController
 
 @end

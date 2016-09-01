@@ -11,7 +11,7 @@
 #import "LQMacro.h"
 #import "LQSexyWomanListViewController.h"
 #import "LQSearchingViewController.h"
-#import "LQPersonInfoViewController.h"
+#import "LQScreenViewController.h"
 #import "LQFunctionViewController.h"
 
 @interface BaseTabBarViewController ()

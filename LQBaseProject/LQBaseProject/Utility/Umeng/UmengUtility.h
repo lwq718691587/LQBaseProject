@@ -14,17 +14,16 @@
 #define UmengAppkey              @"57bc08a5e0f55abc55000861"
 #define ChannelId                @"TEST" //渠道ID
 
+#define LQQQAppID          @"11046452"
+#define LQQQAppKey         @"HCVNo05vBnwjm"
 
-#define OracleenQQAppID          @"1104645213"
-#define OracleenQQAppKey         @"HCVNo05vBnwjmWgP"
+#define LQWeChatAppID      @"wx5d5c508a4fb375"
+#define OracleenWeChatAppSecret  @"bac18a7b8c02e70b774eeff711010"
 
-#define OracleenWeChatAppID      @"wx5d5c508a4fb371c5"
-#define OracleenWeChatAppSecret  @"bac18a7b8c02e70b77d964eeff711010"
-
-#define OracleenFacebookAppID    @"828735947175367"
+#define LQFacebookAppID    @"8287359471767"
 
 //回调地址
-#define OracleenRedirectURL      @"http://www.oracleen.com"
+#define LQRedirectURL      @"http://www.oracleen.com"
 
 @interface UmengUtility : NSObject
 

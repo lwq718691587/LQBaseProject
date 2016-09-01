@@ -6,16 +6,16 @@
 //  Copyright © 2016年 刘伟强. All rights reserved.
 //
 
-#import "LQPersonInfoViewController.h"
+#import "LQScreenViewController.h"
 #import "LQFullscreenImageViewController.h"
 #import "LQFullViewController.h"
 #import "BaseNavigationViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
-@interface LQPersonInfoViewController ()
+@interface LQScreenViewController ()
 @property (strong, nonatomic)  MPMoviePlayerController * mp;
 @end
 
-@implementation LQPersonInfoViewController
+@implementation LQScreenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

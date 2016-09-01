@@ -26,21 +26,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"美女呦";
     self.pageNumber = 1;
+
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除缓存" style:UIBarButtonItemStylePlain target:self action:@selector(clearImageCache)];
+    
     [self.view addSubview:self.imageListCollectionView];
     [self update];
 
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-}
--(void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    self.navigationController.navigationBarHidden = NO;
-}
+
 
 #pragma mark - UICollectionView DataSource and Delegate
 
@@ -63,8 +60,14 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+#pragma mark - 点击事件
 
-
+-(void)clearImageCache{
+    [SVProgressHUD show];
+    [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+        [SVProgressHUD dismiss];
+    }];
+}
 #pragma mark - 获取数据
 -(void)update{
     [LQSexyWomanListModel getSexyWomanListArrWithPageNumber:self.pageNumber Success:^(NSMutableArray *dataArr) {
@@ -89,7 +92,7 @@ static NSString *const identify = @"collectionViewCell";
     if (!_imageListCollectionView) {
         LQCustomCollectionViewLayout* flowLayout = [[LQCustomCollectionViewLayout alloc]init];
       
-        self.imageListCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(10, 20, ScreenWidth-20, ScreenHeight-20-TabBarHeight) collectionViewLayout:flowLayout];
+        self.imageListCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(10,0, ScreenWidth-20, ScreenHeight-TabBarHeight-NavigationBarHeight) collectionViewLayout:flowLayout];
         self.imageListCollectionView.backgroundColor = [UIColor whiteColor];
         [self.imageListCollectionView registerClass:[LQImageListCollectionViewCell class] forCellWithReuseIdentifier:identify];
         self.imageListCollectionView.dataSource = self;
@@ -115,7 +118,6 @@ static NSString *const identify = @"collectionViewCell";
     }
     return _imageListCollectionView;
 }
-
 
 
 

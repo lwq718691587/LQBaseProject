@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */; };
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
-		FC4D26CB1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D26CA1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m */; };
-		FC4D26CE1D6FE01A00306F63 /* LQImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D26CD1D6FE01A00306F63 /* LQImageData.m */; };
-		FC4D26D11D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4D26D01D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m */; };
 		FC51A8F41D659C8F0004FEAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F31D659C8F0004FEAE /* main.m */; };
 		FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F61D659C8F0004FEAE /* AppDelegate.m */; };
 		FC51A8FF1D659C8F0004FEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC51A8FE1D659C8F0004FEAE /* Assets.xcassets */; };
@@ -23,10 +20,16 @@
 		FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */; };
 		FC51A9331D659CA10004FEAE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92D1D659CA10004FEAE /* BaseView.m */; };
 		FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92F1D659CA10004FEAE /* BaseViewController.m */; };
-		FC9A5B951D6EF22200F670D7 /* LQFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9A5B941D6EF22200F670D7 /* LQFunctionViewController.m */; };
-		FC9A5B9B1D6EF30E00F670D7 /* LQFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9A5B971D6EF30E00F670D7 /* LQFullViewController.m */; };
-		FC9A5B9C1D6EF30E00F670D7 /* LQPersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9A5B981D6EF30E00F670D7 /* LQPersonInfoViewController.m */; };
-		FCC042D01D7011EF00F33B11 /* LQMultithreading_GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC042CF1D7011EF00F33B11 /* LQMultithreading_GCDViewController.m */; };
+		FC5BA1201D768B4000284C2E /* LQMultithreading_GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA10A1D768B4000284C2E /* LQMultithreading_GCDViewController.m */; };
+		FC5BA1211D768B4000284C2E /* LQMultithreading_NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA10C1D768B4000284C2E /* LQMultithreading_NSOperationViewController.m */; };
+		FC5BA1221D768B4000284C2E /* LQMultithreading_NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA10E1D768B4000284C2E /* LQMultithreading_NSThreadViewController.m */; };
+		FC5BA1231D768B4000284C2E /* LQImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA1111D768B4000284C2E /* LQImageData.m */; };
+		FC5BA1241D768B4000284C2E /* LQFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA1141D768B4000284C2E /* LQFunctionViewController.m */; };
+		FC5BA1261D768B4000284C2E /* LQCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11A1D768B4000284C2E /* LQCountViewController.m */; };
+		FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11D1D768B4000284C2E /* LQFullViewController.m */; };
+		FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */; };
+		FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */; };
+		FC5BA1311D768C2D00284C2E /* LQRunTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */; };
 		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
 		FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */; };
 		FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */; };
@@ -66,12 +69,6 @@
 		99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2343B21D66D91000ADB748 /* LQNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNetworkingRequest.h; sourceTree = "<group>"; };
 		FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNetworkingRequest.m; sourceTree = "<group>"; };
-		FC4D26C91D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSThreadViewController.h; sourceTree = "<group>"; };
-		FC4D26CA1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_NSThreadViewController.m; sourceTree = "<group>"; };
-		FC4D26CC1D6FE01A00306F63 /* LQImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageData.h; sourceTree = "<group>"; };
-		FC4D26CD1D6FE01A00306F63 /* LQImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageData.m; sourceTree = "<group>"; };
-		FC4D26CF1D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSOperationViewController.h; sourceTree = "<group>"; };
-		FC4D26D01D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_NSOperationViewController.m; sourceTree = "<group>"; };
 		FC51A8EF1D659C8F0004FEAE /* LQBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC51A8F31D659C8F0004FEAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC51A8F51D659C8F0004FEAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,14 +97,26 @@
 		FC51A9381D659D490004FEAE /* LQCommomFunMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQCommomFunMacro.h; sourceTree = "<group>"; };
 		FC51A9391D659DA10004FEAE /* LQNetWorkingMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQNetWorkingMacro.h; sourceTree = "<group>"; };
 		FC51A93A1D65A0C50004FEAE /* LQAppCustomerMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQAppCustomerMacro.h; sourceTree = "<group>"; };
-		FC9A5B931D6EF22200F670D7 /* LQFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFunctionViewController.h; sourceTree = "<group>"; };
-		FC9A5B941D6EF22200F670D7 /* LQFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFunctionViewController.m; sourceTree = "<group>"; };
-		FC9A5B971D6EF30E00F670D7 /* LQFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullViewController.m; sourceTree = "<group>"; };
-		FC9A5B981D6EF30E00F670D7 /* LQPersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPersonInfoViewController.m; sourceTree = "<group>"; };
-		FC9A5B991D6EF30E00F670D7 /* LQFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFullViewController.h; sourceTree = "<group>"; };
-		FC9A5B9A1D6EF30E00F670D7 /* LQPersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPersonInfoViewController.h; sourceTree = "<group>"; };
-		FCC042CE1D7011EF00F33B11 /* LQMultithreading_GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_GCDViewController.h; sourceTree = "<group>"; };
-		FCC042CF1D7011EF00F33B11 /* LQMultithreading_GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_GCDViewController.m; sourceTree = "<group>"; };
+		FC5BA1091D768B4000284C2E /* LQMultithreading_GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_GCDViewController.h; sourceTree = "<group>"; };
+		FC5BA10A1D768B4000284C2E /* LQMultithreading_GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_GCDViewController.m; sourceTree = "<group>"; };
+		FC5BA10B1D768B4000284C2E /* LQMultithreading_NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSOperationViewController.h; sourceTree = "<group>"; };
+		FC5BA10C1D768B4000284C2E /* LQMultithreading_NSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_NSOperationViewController.m; sourceTree = "<group>"; };
+		FC5BA10D1D768B4000284C2E /* LQMultithreading_NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSThreadViewController.h; sourceTree = "<group>"; };
+		FC5BA10E1D768B4000284C2E /* LQMultithreading_NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_NSThreadViewController.m; sourceTree = "<group>"; };
+		FC5BA1101D768B4000284C2E /* LQImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQImageData.h; sourceTree = "<group>"; };
+		FC5BA1111D768B4000284C2E /* LQImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQImageData.m; sourceTree = "<group>"; };
+		FC5BA1131D768B4000284C2E /* LQFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFunctionViewController.h; sourceTree = "<group>"; };
+		FC5BA1141D768B4000284C2E /* LQFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFunctionViewController.m; sourceTree = "<group>"; };
+		FC5BA1191D768B4000284C2E /* LQCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCountViewController.h; sourceTree = "<group>"; };
+		FC5BA11A1D768B4000284C2E /* LQCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCountViewController.m; sourceTree = "<group>"; };
+		FC5BA11C1D768B4000284C2E /* LQFullViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFullViewController.h; sourceTree = "<group>"; };
+		FC5BA11D1D768B4000284C2E /* LQFullViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFullViewController.m; sourceTree = "<group>"; };
+		FC5BA11E1D768B4000284C2E /* LQScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQScreenViewController.h; sourceTree = "<group>"; };
+		FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQScreenViewController.m; sourceTree = "<group>"; };
+		FC5BA12C1D768BAC00284C2E /* LQRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeViewController.h; sourceTree = "<group>"; };
+		FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeViewController.m; sourceTree = "<group>"; };
+		FC5BA12F1D768C2D00284C2E /* LQRunTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeModel.h; sourceTree = "<group>"; };
+		FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeModel.m; sourceTree = "<group>"; };
 		FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
 		FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
 		FCDF73C81D6C36DE007B838B /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
@@ -203,19 +212,6 @@
 				FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		FC4D26C81D6FD13C00306F63 /* 多线程 */ = {
-			isa = PBXGroup;
-			children = (
-				FC4D26C91D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.h */,
-				FC4D26CA1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m */,
-				FC4D26CF1D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.h */,
-				FC4D26D01D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m */,
-				FCC042CE1D7011EF00F33B11 /* LQMultithreading_GCDViewController.h */,
-				FCC042CF1D7011EF00F33B11 /* LQMultithreading_GCDViewController.m */,
-			);
-			path = "多线程";
 			sourceTree = "<group>";
 		};
 		FC51A8E61D659C8F0004FEAE = {
@@ -314,15 +310,111 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
-		FC9A5B961D6EF2F000F670D7 /* 屏幕旋转 */ = {
+		FC5BA0E31D768A3200284C2E /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
-				FC9A5B971D6EF30E00F670D7 /* LQFullViewController.m */,
-				FC9A5B981D6EF30E00F670D7 /* LQPersonInfoViewController.m */,
-				FC9A5B991D6EF30E00F670D7 /* LQFullViewController.h */,
-				FC9A5B9A1D6EF30E00F670D7 /* LQPersonInfoViewController.h */,
+				FC5BA1121D768B4000284C2E /* Main */,
+				FC5BA1071D768B4000284C2E /* 多线程 */,
+				FC5BA1151D768B4000284C2E /* RunTime相关 */,
+				FC5BA1181D768B4000284C2E /* 引用计数 */,
+				FC5BA11B1D768B4000284C2E /* 屏幕旋转 */,
+			);
+			path = FunctionModule;
+			sourceTree = "<group>";
+		};
+		FC5BA1071D768B4000284C2E /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA1081D768B4000284C2E /* Controller */,
+				FC5BA10F1D768B4000284C2E /* Model */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		FC5BA1081D768B4000284C2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA1091D768B4000284C2E /* LQMultithreading_GCDViewController.h */,
+				FC5BA10A1D768B4000284C2E /* LQMultithreading_GCDViewController.m */,
+				FC5BA10B1D768B4000284C2E /* LQMultithreading_NSOperationViewController.h */,
+				FC5BA10C1D768B4000284C2E /* LQMultithreading_NSOperationViewController.m */,
+				FC5BA10D1D768B4000284C2E /* LQMultithreading_NSThreadViewController.h */,
+				FC5BA10E1D768B4000284C2E /* LQMultithreading_NSThreadViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC5BA10F1D768B4000284C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA1101D768B4000284C2E /* LQImageData.h */,
+				FC5BA1111D768B4000284C2E /* LQImageData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC5BA1121D768B4000284C2E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA1131D768B4000284C2E /* LQFunctionViewController.h */,
+				FC5BA1141D768B4000284C2E /* LQFunctionViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FC5BA1151D768B4000284C2E /* RunTime相关 */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA12B1D768B7800284C2E /* Model */,
+				FC5BA12A1D768B6D00284C2E /* VIew */,
+				FC5BA1291D768B6300284C2E /* Controller */,
+			);
+			path = "RunTime相关";
+			sourceTree = "<group>";
+		};
+		FC5BA1181D768B4000284C2E /* 引用计数 */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA1191D768B4000284C2E /* LQCountViewController.h */,
+				FC5BA11A1D768B4000284C2E /* LQCountViewController.m */,
+			);
+			path = "引用计数";
+			sourceTree = "<group>";
+		};
+		FC5BA11B1D768B4000284C2E /* 屏幕旋转 */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA11C1D768B4000284C2E /* LQFullViewController.h */,
+				FC5BA11D1D768B4000284C2E /* LQFullViewController.m */,
+				FC5BA11E1D768B4000284C2E /* LQScreenViewController.h */,
+				FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */,
 			);
 			path = "屏幕旋转";
+			sourceTree = "<group>";
+		};
+		FC5BA1291D768B6300284C2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA12C1D768BAC00284C2E /* LQRunTimeViewController.h */,
+				FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC5BA12A1D768B6D00284C2E /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		FC5BA12B1D768B7800284C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BA12F1D768C2D00284C2E /* LQRunTimeModel.h */,
+				FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FCDF73C21D6C36AE007B838B /* SearchingModule */ = {
@@ -374,16 +466,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FCDF73D31D6C3710007B838B /* PersonInfoModule */ = {
-			isa = PBXGroup;
-			children = (
-				FCDF73EB1D6C44DC007B838B /* View */,
-				FCDF73F01D6C44DC007B838B /* Model */,
-				FCDF73F11D6C44DC007B838B /* Controller */,
-			);
-			path = PersonInfoModule;
-			sourceTree = "<group>";
-		};
 		FCDF73D41D6C3E7F007B838B /* LQControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,33 +506,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		FCDF73EB1D6C44DC007B838B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FCDF73F01D6C44DC007B838B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FC4D26CC1D6FE01A00306F63 /* LQImageData.h */,
-				FC4D26CD1D6FE01A00306F63 /* LQImageData.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FCDF73F11D6C44DC007B838B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FC4D26C81D6FD13C00306F63 /* 多线程 */,
-				FC9A5B961D6EF2F000F670D7 /* 屏幕旋转 */,
-				FC9A5B931D6EF22200F670D7 /* LQFunctionViewController.h */,
-				FC9A5B941D6EF22200F670D7 /* LQFunctionViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		FCDF73F71D6C484A007B838B /* Umeng */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,9 +518,9 @@
 		FCE3629D1D66E19300FFFC13 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				FCDF73C21D6C36AE007B838B /* SearchingModule */,
 				FCDF73C31D6C36CB007B838B /* HomePageModule */,
-				FCDF73D31D6C3710007B838B /* PersonInfoModule */,
+				FCDF73C21D6C36AE007B838B /* SearchingModule */,
+				FC5BA0E31D768A3200284C2E /* FunctionModule */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -703,33 +758,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */,
+				FC5BA1261D768B4000284C2E /* LQCountViewController.m in Sources */,
 				FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */,
-				FC4D26CE1D6FE01A00306F63 /* LQImageData.m in Sources */,
+				FC5BA1231D768B4000284C2E /* LQImageData.m in Sources */,
 				FCE362AB1D66EB3500FFFC13 /* UILabel+LQAddition.m in Sources */,
-				FC4D26CB1D6FD16F00306F63 /* LQMultithreading_NSThreadViewController.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
-				FC4D26D11D6FF35C00306F63 /* LQMultithreading_NSOperationViewController.m in Sources */,
 				FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */,
-				FCC042D01D7011EF00F33B11 /* LQMultithreading_GCDViewController.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
-				FC9A5B951D6EF22200F670D7 /* LQFunctionViewController.m in Sources */,
 				FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
+				FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
-				FC9A5B9C1D6EF30E00F670D7 /* LQPersonInfoViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
 				FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
+				FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */,
+				FC5BA1211D768B4000284C2E /* LQMultithreading_NSOperationViewController.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
+				FC5BA1221D768B4000284C2E /* LQMultithreading_NSThreadViewController.m in Sources */,
 				FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */,
-				FC9A5B9B1D6EF30E00F670D7 /* LQFullViewController.m in Sources */,
+				FC5BA1201D768B4000284C2E /* LQMultithreading_GCDViewController.m in Sources */,
+				FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
 				FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */,
 				FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */,
 				FC51A8F41D659C8F0004FEAE /* main.m in Sources */,
+				FC5BA1311D768C2D00284C2E /* LQRunTimeModel.m in Sources */,
+				FC5BA1241D768B4000284C2E /* LQFunctionViewController.m in Sources */,
 				FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

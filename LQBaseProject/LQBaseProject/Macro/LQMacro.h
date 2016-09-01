@@ -14,6 +14,7 @@
 #import <DateTools.h>
 #import <MJRefresh.h>
 #import "SDWebImage.h"
+#import <SVProgressHUD.h>
 
 #import "AppDelegate.h"
 #import "LQAppInfoMacro.h"
@@ -22,6 +23,7 @@
 #import "LQCategory.h"
 #import "LQNetworkingRequest.h"
 #import "UIView+LwqCGRect.h"
+
 #warning read before AppStore 发布时要注释掉
 
 #define AppDebugMode

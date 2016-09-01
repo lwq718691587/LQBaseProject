@@ -32,16 +32,16 @@
 }
 +(void)collocateUmengShare{
     //umeng分享
-    [UMSocialData setAppKey:UmengAppkey];
-  
-    [UMSocialWechatHandler setWXAppId:OracleenWeChatAppID
-                            appSecret:OracleenWeChatAppSecret
-                                  url:OracleenRedirectURL];
-    
-    [UMSocialQQHandler setQQWithAppId:OracleenQQAppID
-                               appKey:OracleenQQAppKey
-                                  url:@"OracleenRedirectURL"];
-    [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:OracleenRedirectURL];
+//    [UMSocialData setAppKey:UmengAppkey];
+//  
+//    [UMSocialWechatHandler setWXAppId:OracleenWeChatAppID
+//                            appSecret:OracleenWeChatAppSecret
+//                                  url:OracleenRedirectURL];
+//    
+//    [UMSocialQQHandler setQQWithAppId:OracleenQQAppID
+//                               appKey:OracleenQQAppKey
+//                                  url:@"OracleenRedirectURL"];
+//    [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:OracleenRedirectURL];
 //    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"3921700954"
 //                                              secret:@"04b48b094faeb16683c32669824ebdad"
 //                                         RedirectURL:@"http://sns.whalecloud.com/sina2/callback"];

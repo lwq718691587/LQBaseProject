@@ -11,7 +11,7 @@
 #define LQAppInfoMacro_h
 
 //appID
-#define AppStoreID                      @"1007090157"
+#define AppStoreID                      @"100709015711" //线上的appID
 //app字体
 #define AppFontName                     [NSString stringWithFormat:@"%@",[[UIFont systemFontOfSize:1] fontName]]
 //app一级标题字体大小

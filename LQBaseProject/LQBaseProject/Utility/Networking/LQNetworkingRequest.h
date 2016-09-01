@@ -12,7 +12,8 @@
 
 @interface LQNetworkingRequest : NSObject
 
-
+//afn 请求单例
++(id)shareInstance_manager;
 
 +(void)openNSURLCache;
 
@@ -29,7 +30,6 @@ parameters:(id)parameters
  */
 +(void)POST:(NSString *)URLPath
  parameters:(id)parameters
-  needCache:(BOOL)needCache
     success:(void (^)(id operation, id responseObject))success
     failure:(void (^)(id operation, NSError *error))failure;
 /**
@@ -37,7 +37,6 @@ parameters:(id)parameters
  */
 +(void)PUT:(NSString *)URLPath
 parameters:(id)parameters
- needCache:(BOOL)needCache
    success:(void (^)(id operation, id responseObject))success
    failure:(void (^)(id operation, NSError *error))failure;
 /**
@@ -45,7 +44,6 @@ parameters:(id)parameters
  */
 +(void)DELETE:(NSString *)URLPath
    parameters:(id)parameters
-    needCache:(BOOL)needCache
       success:(void (^)(id operation, id responseObject))success
       failure:(void (^)(id operation, NSError *error))failure;
 

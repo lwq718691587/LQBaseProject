@@ -23,6 +23,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
   - UMengAnalytics-NO-IDFA (4.1.1)
   - UMengSocialCOM (5.2.1)
 
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - iCarousel (~> 1.8.2)
   - MJRefresh (~> 3.1.12)
   - SDWebImage (~> 3.8.1)
+  - SVProgressHUD (~> 2.0.3)
   - UMengAnalytics-NO-IDFA
   - UMengSocialCOM (~> 5.2.1)
 
@@ -43,6 +45,7 @@ SPEC CHECKSUMS:
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
 

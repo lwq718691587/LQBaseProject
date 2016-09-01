@@ -10,15 +10,12 @@
 #import "LQMultithreading_NSThreadViewController.h"
 #import "LQMultithreading_NSOperationViewController.h"
 #import "LQMultithreading_GCDViewController.h"
+#import "LQCountViewController.h"
+#import "LQScreenViewController.h"
+#import "LQRunTimeModel.h"
+#import "LQRunTimeViewController.h"
 
-/*
- 对比之前NSThread加载张图片很发现核心代码简化了不少，这里着重强调两点：
- 
- 使用NSBlockOperation方法，所有的操作不必单独定义方法，同时解决了只能传递一个参数的问题。
- 调用主线程队列的addOperationWithBlock:方法进行UI更新，不用再定义一个参数实体（之前必须定义一个KCImageData解决只能传递一个参数的问题）。
- 使用NSOperation进行多线程开发可以设置最大并发线程，有效的对线程进行了控制（上面的代码运行起来你会发现打印当前进程时只有有限的线程被创建，如上面的代码设置最大线程数为5，则图片基本上是五个一次加载的）。
- 
- */
+
 
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -72,17 +69,24 @@
             vc = [[LQMultithreading_GCDViewController alloc]init];
             break;
         case 3:
-            
+            vc = [[LQScreenViewController alloc]init];
+            break;
+        case 4:
+            vc = [[LQCountViewController alloc]init];
+            break;
+        case 5:
+            vc = [[LQRunTimeViewController alloc]init];
             break;
         default:
             break;
     }
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime"];
     [self.functionTableView reloadData];
 }
 
