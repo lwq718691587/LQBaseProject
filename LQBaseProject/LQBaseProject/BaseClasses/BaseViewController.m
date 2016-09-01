@@ -22,6 +22,9 @@
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]){
         [self setEdgesForExtendedLayout:UIRectEdgeNone];
     }
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{

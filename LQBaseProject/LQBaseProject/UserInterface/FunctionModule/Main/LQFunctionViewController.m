@@ -14,6 +14,7 @@
 #import "LQScreenViewController.h"
 #import "LQRunTimeModel.h"
 #import "LQRunTimeViewController.h"
+#import "LQKVOViewController.h"
 
 
 
@@ -77,6 +78,8 @@
         case 5:
             vc = [[LQRunTimeViewController alloc]init];
             break;
+        case 6:
+            vc = [[LQKVOViewController alloc]init];
         default:
             break;
     }
@@ -86,7 +89,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO"];
     [self.functionTableView reloadData];
 }
 

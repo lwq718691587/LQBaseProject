@@ -16,6 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    self.navigationBar.barTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"导航栏渐变_02"]];
+//    self.navigationBar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"导航栏渐变_02"]];
+//    self.navigationBar.tintColor = AppColor;
+//    self.navigationBar.titleTextAttributes =@{NSForegroundColorAttributeName:HexColor(@"303a48"),NSFontAttributeName:[UIFont fontWithName:AppFontName size:NavigationTitleFontSize]};
+//    //去掉导航栏下的黑线
+//    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    self.navigationBar.shadowImage = [[UIImage alloc] init];
+//    self.navigationBar.translucent  = NO;
+//    
+//    __weak typeof (self) weakSelf = self;
+//    if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+//        self.interactivePopGestureRecognizer.delegate = weakSelf;
+//    }
+
+    
     // Do any additional setup after loading the view.
 }
 
