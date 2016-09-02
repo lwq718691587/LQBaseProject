@@ -40,7 +40,9 @@
     BaseNavigationViewController * nvc1 = [[BaseNavigationViewController alloc]initWithRootViewController:vc1];
     
     LQSexyWomanListViewController * vc2 = [[LQSexyWomanListViewController alloc]init];
+    vc2.title = @"美女呦";
     BaseNavigationViewController * nvc2 = [[BaseNavigationViewController alloc]initWithRootViewController:vc2];
+    nvc2.title = @"";
     
     LQFunctionViewController * vc3 = [[LQFunctionViewController alloc]init];
     vc3.title = @"功能";

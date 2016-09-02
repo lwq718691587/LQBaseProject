@@ -13,10 +13,10 @@
 #import "LQCustomCollectionViewLayout.h"
 
 
-@interface LQSexyWomanListViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface LQSexyWomanListViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UIActionSheetDelegate>
 
 @property (strong, nonatomic) UICollectionView  *imageListCollectionView;
-
+@property (copy, nonatomic) NSString *type;
 @property (nonatomic) NSInteger pageNumber;
 
 
@@ -26,11 +26,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"美女呦";
     self.pageNumber = 1;
-
+    self.type = @"cosplay";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除缓存" style:UIBarButtonItemStylePlain target:self action:@selector(clearImageCache)];
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"设置类型" style:UIBarButtonItemStylePlain target:self action:@selector(selectType)];
     [self.view addSubview:self.imageListCollectionView];
     [self update];
 
@@ -68,9 +67,26 @@
         [SVProgressHUD dismiss];
     }];
 }
+-(void)selectType{
+    UIActionSheet * actionSheet = [[UIActionSheet alloc]initWithTitle:@"类别" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"诱惑",@"小清新",@"西洋美人",@"网络美女",@"宅男女神",@"古典美女",@"嫩萝莉",@"气质",@"写真",@"长腿",@"cosplay", nil];
+    [actionSheet showInView:self.view];
+    
+}
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    self.type = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([self.type isEqualToString:@"取消"]) {
+        return;
+    }
+    self.title = self.type;
+    self.navigationController.title = @"";
+    self.pageNumber = 1;
+    [self update];
+}
+
 #pragma mark - 获取数据
 -(void)update{
-    [LQSexyWomanListModel getSexyWomanListArrWithPageNumber:self.pageNumber Success:^(NSMutableArray *dataArr) {
+    [LQSexyWomanListModel getSexyWomanListArrWithPageNumber:self.pageNumber andType:self.type Success:^(NSMutableArray *dataArr) {
         if (self.pageNumber > 1) {
             [self.dataArr addObjectsFromArray:dataArr];
         }else{

@@ -28,7 +28,7 @@
     [self.window makeKeyAndVisible];
     [LQNetworkingRequest openNSURLCache];
     [self checkNetworkStatus];
-    [UmengUtility collocateUmengStatistics];
+//    [UmengUtility collocateUmengStatistics];
 
     
     // Override point for customization after application launch.

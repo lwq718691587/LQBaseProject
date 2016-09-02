@@ -15,6 +15,7 @@
 #import "LQRunTimeModel.h"
 #import "LQRunTimeViewController.h"
 #import "LQKVOViewController.h"
+#import "ALQlgorithmViewController.h"
 
 
 
@@ -80,6 +81,9 @@
             break;
         case 6:
             vc = [[LQKVOViewController alloc]init];
+            break;
+        case 7:
+            vc = [[ALQlgorithmViewController alloc]init];
         default:
             break;
     }
@@ -89,7 +93,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法"];
     [self.functionTableView reloadData];
 }
 

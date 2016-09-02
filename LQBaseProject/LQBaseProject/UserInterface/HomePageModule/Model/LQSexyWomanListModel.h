@@ -13,7 +13,7 @@
 @property (copy, nonatomic) NSString *imageUrl;
 @property (nonatomic) NSInteger imageHeight;
 @property (nonatomic) NSInteger imageWidth;
-+(void)getSexyWomanListArrWithPageNumber:(NSInteger )pageNumber Success:(void(^)(NSMutableArray * dataArr))success failure:(void(^)())failure;
++(void)getSexyWomanListArrWithPageNumber:(NSInteger )pageNumber andType:(NSString *)type Success:(void(^)(NSMutableArray * dataArr))success failure:(void(^)())failure;
 
 
 +(void)getSexyWomanListArrSuccess:(void(^)(NSMutableArray * dataArr))success failure:(void(^)())failure;

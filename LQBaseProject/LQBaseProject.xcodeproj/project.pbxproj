@@ -32,6 +32,7 @@
 		FC5BA1311D768C2D00284C2E /* LQRunTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */; };
 		FC78DBF61D78175A008C1EF6 /* LQKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78DBF51D78175A008C1EF6 /* LQKVOModel.m */; };
 		FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78DBF81D7817B3008C1EF6 /* LQKVOViewController.m */; };
+		FCAE48F71D79597000A308C5 /* ALQlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */; };
 		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
 		FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */; };
 		FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */; };
@@ -123,6 +124,8 @@
 		FC78DBF51D78175A008C1EF6 /* LQKVOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVOModel.m; sourceTree = "<group>"; };
 		FC78DBF81D7817B3008C1EF6 /* LQKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVOViewController.m; sourceTree = "<group>"; };
 		FC78DBF91D7817B3008C1EF6 /* LQKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKVOViewController.h; sourceTree = "<group>"; };
+		FCAE48F51D79597000A308C5 /* ALQlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALQlgorithmViewController.h; sourceTree = "<group>"; };
+		FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALQlgorithmViewController.m; sourceTree = "<group>"; };
 		FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
 		FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
 		FCDF73C81D6C36DE007B838B /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
@@ -320,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5BA1121D768B4000284C2E /* Main */,
+				FCAE48F31D79591900A308C5 /* 简单的算法 */,
 				FC78DBEF1D78122C008C1EF6 /* 观察者 */,
 				FC5BA1071D768B4000284C2E /* 多线程 */,
 				FC5BA1151D768B4000284C2E /* RunTime相关 */,
@@ -447,6 +451,23 @@
 			children = (
 				FC78DBF91D7817B3008C1EF6 /* LQKVOViewController.h */,
 				FC78DBF81D7817B3008C1EF6 /* LQKVOViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCAE48F31D79591900A308C5 /* 简单的算法 */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE48F41D79593400A308C5 /* Controller */,
+			);
+			path = "简单的算法";
+			sourceTree = "<group>";
+		};
+		FCAE48F41D79593400A308C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE48F51D79597000A308C5 /* ALQlgorithmViewController.h */,
+				FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -810,6 +831,7 @@
 				FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
 				FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */,
+				FCAE48F71D79597000A308C5 /* ALQlgorithmViewController.m in Sources */,
 				FC5BA1211D768B4000284C2E /* LQMultithreading_NSOperationViewController.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
 				FC5BA1221D768B4000284C2E /* LQMultithreading_NSThreadViewController.m in Sources */,
