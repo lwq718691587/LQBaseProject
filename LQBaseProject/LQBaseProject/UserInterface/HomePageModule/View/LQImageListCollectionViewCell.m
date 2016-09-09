@@ -32,6 +32,7 @@
 -(void)setModel:(LQSexyWomanListModel *)model{
     _model = model;
     self.sexyWomenImageView.frame = self.bounds;
+    
     [self.sexyWomenImageView sd_setImageWithURL:[NSURL URLWithString:model.imageUrl] placeholderImage:[UIImage imageNamed:@"zhanweitu.jpg"] options:SDWebImageProgressiveDownload];
     
 }

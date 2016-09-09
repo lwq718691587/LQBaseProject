@@ -8,11 +8,15 @@
 
 #import "BaseModel.h"
 
+
+
 @interface LQSexyWomanListModel : BaseModel
 
 @property (copy, nonatomic) NSString *imageUrl;
 @property (nonatomic) NSInteger imageHeight;
 @property (nonatomic) NSInteger imageWidth;
+
+
 +(void)getSexyWomanListArrWithPageNumber:(NSInteger )pageNumber andType:(NSString *)type Success:(void(^)(NSMutableArray * dataArr))success failure:(void(^)())failure;
 
 

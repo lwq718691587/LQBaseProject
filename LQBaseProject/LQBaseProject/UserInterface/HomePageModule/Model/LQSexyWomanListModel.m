@@ -8,20 +8,23 @@
 
 #import "LQSexyWomanListModel.h"
 #import "LQNetworkingRequest.h"
-
+#import "NSObject+model.h"
 
 @implementation LQSexyWomanListModel
 
 +(void)getSexyWomanListArrWithPageNumber:(NSInteger )pageNumber andType:(NSString *)type Success:(void(^)(NSMutableArray * dataArr))success failure:(void(^)())failure{
     
     [LQNetworkingRequest GET:imageListUrl(pageNumber,type) parameters:nil needCache:YES success:^(id operation, id responseObject) {
+        
+      
+        
         NSMutableArray * dataArr = [NSMutableArray array];
         for (NSDictionary *perDic in responseObject[@"data"]) {
             LQSexyWomanListModel * model = [[LQSexyWomanListModel alloc]init];
             model.imageUrl = perDic[@"image_url"];
             model.imageWidth = [perDic[@"image_width"] integerValue];
             model.imageHeight = [perDic[@"image_height"] integerValue];
-            if (model.imageHeight < 1000 && model.imageHeight > 800) {
+            if (model.imageHeight < 1000 && model.imageHeight > 600) {
                 [dataArr addObject:model];
             }
         }

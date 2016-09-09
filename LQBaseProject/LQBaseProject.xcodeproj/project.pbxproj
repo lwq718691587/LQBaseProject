@@ -29,9 +29,18 @@
 		FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11D1D768B4000284C2E /* LQFullViewController.m */; };
 		FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */; };
 		FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */; };
-		FC5BA1311D768C2D00284C2E /* LQRunTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */; };
+		FC7541411D81534C00AC12F5 /* LQObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541401D81534C00AC12F5 /* LQObjectViewController.m */; };
+		FC7541441D81553D00AC12F5 /* LQCatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541431D81553D00AC12F5 /* LQCatModel.m */; };
+		FC7541471D8157C200AC12F5 /* LQDogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541461D8157C200AC12F5 /* LQDogModel.m */; };
+		FC75414A1D8158F800AC12F5 /* LQAnimalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541491D8158F800AC12F5 /* LQAnimalModel.m */; };
+		FC75414D1D815FBC00AC12F5 /* LQSheepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC75414C1D815FBC00AC12F5 /* LQSheepModel.m */; };
+		FC7541511D816E3500AC12F5 /* LQChangeDogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541501D816E3500AC12F5 /* LQChangeDogModel.m */; };
 		FC78DBF61D78175A008C1EF6 /* LQKVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78DBF51D78175A008C1EF6 /* LQKVOModel.m */; };
 		FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78DBF81D7817B3008C1EF6 /* LQKVOViewController.m */; };
+		FC79E58E1D7EACF700FE9F66 /* UIImage+LogImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E58D1D7EACF700FE9F66 /* UIImage+LogImageName.m */; };
+		FC79E5911D7EB0BA00FE9F66 /* LQPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5901D7EB0BA00FE9F66 /* LQPerson.m */; };
+		FC79E5941D7EB4E600FE9F66 /* LQPerson+nameProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5931D7EB4E600FE9F66 /* LQPerson+nameProperty.m */; };
+		FC79E5971D7EB77A00FE9F66 /* NSObject+model.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */; };
 		FCAE48F71D79597000A308C5 /* ALQlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */; };
 		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
 		FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */; };
@@ -118,12 +127,31 @@
 		FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQScreenViewController.m; sourceTree = "<group>"; };
 		FC5BA12C1D768BAC00284C2E /* LQRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeViewController.h; sourceTree = "<group>"; };
 		FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeViewController.m; sourceTree = "<group>"; };
-		FC5BA12F1D768C2D00284C2E /* LQRunTimeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeModel.h; sourceTree = "<group>"; };
-		FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeModel.m; sourceTree = "<group>"; };
+		FC75413F1D81534C00AC12F5 /* LQObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQObjectViewController.h; sourceTree = "<group>"; };
+		FC7541401D81534C00AC12F5 /* LQObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQObjectViewController.m; sourceTree = "<group>"; };
+		FC7541421D81553D00AC12F5 /* LQCatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCatModel.h; sourceTree = "<group>"; };
+		FC7541431D81553D00AC12F5 /* LQCatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCatModel.m; sourceTree = "<group>"; };
+		FC7541451D8157C200AC12F5 /* LQDogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQDogModel.h; sourceTree = "<group>"; };
+		FC7541461D8157C200AC12F5 /* LQDogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQDogModel.m; sourceTree = "<group>"; };
+		FC7541481D8158F800AC12F5 /* LQAnimalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQAnimalModel.h; sourceTree = "<group>"; };
+		FC7541491D8158F800AC12F5 /* LQAnimalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQAnimalModel.m; sourceTree = "<group>"; };
+		FC75414B1D815FBC00AC12F5 /* LQSheepModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSheepModel.h; sourceTree = "<group>"; };
+		FC75414C1D815FBC00AC12F5 /* LQSheepModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSheepModel.m; sourceTree = "<group>"; };
+		FC75414E1D816DDF00AC12F5 /* LQchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQchange.h; sourceTree = "<group>"; };
+		FC75414F1D816E3500AC12F5 /* LQChangeDogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQChangeDogModel.h; sourceTree = "<group>"; };
+		FC7541501D816E3500AC12F5 /* LQChangeDogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQChangeDogModel.m; sourceTree = "<group>"; };
 		FC78DBF41D78175A008C1EF6 /* LQKVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKVOModel.h; sourceTree = "<group>"; };
 		FC78DBF51D78175A008C1EF6 /* LQKVOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVOModel.m; sourceTree = "<group>"; };
 		FC78DBF81D7817B3008C1EF6 /* LQKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVOViewController.m; sourceTree = "<group>"; };
 		FC78DBF91D7817B3008C1EF6 /* LQKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKVOViewController.h; sourceTree = "<group>"; };
+		FC79E58C1D7EACF700FE9F66 /* UIImage+LogImageName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LogImageName.h"; sourceTree = "<group>"; };
+		FC79E58D1D7EACF700FE9F66 /* UIImage+LogImageName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LogImageName.m"; sourceTree = "<group>"; };
+		FC79E58F1D7EB0BA00FE9F66 /* LQPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPerson.h; sourceTree = "<group>"; };
+		FC79E5901D7EB0BA00FE9F66 /* LQPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPerson.m; sourceTree = "<group>"; };
+		FC79E5921D7EB4E600FE9F66 /* LQPerson+nameProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LQPerson+nameProperty.h"; sourceTree = "<group>"; };
+		FC79E5931D7EB4E600FE9F66 /* LQPerson+nameProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LQPerson+nameProperty.m"; sourceTree = "<group>"; };
+		FC79E5951D7EB77A00FE9F66 /* NSObject+model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+model.h"; sourceTree = "<group>"; };
+		FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+model.m"; sourceTree = "<group>"; };
 		FCAE48F51D79597000A308C5 /* ALQlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALQlgorithmViewController.h; sourceTree = "<group>"; };
 		FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALQlgorithmViewController.m; sourceTree = "<group>"; };
 		FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
@@ -323,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5BA1121D768B4000284C2E /* Main */,
+				FC7541351D81524E00AC12F5 /* 面向对象 */,
 				FCAE48F31D79591900A308C5 /* 简单的算法 */,
 				FC78DBEF1D78122C008C1EF6 /* 观察者 */,
 				FC5BA1071D768B4000284C2E /* 多线程 */,
@@ -376,6 +405,8 @@
 		FC5BA1151D768B4000284C2E /* RunTime相关 */ = {
 			isa = PBXGroup;
 			children = (
+				FC79E58C1D7EACF700FE9F66 /* UIImage+LogImageName.h */,
+				FC79E58D1D7EACF700FE9F66 /* UIImage+LogImageName.m */,
 				FC5BA12B1D768B7800284C2E /* Model */,
 				FC5BA12A1D768B6D00284C2E /* VIew */,
 				FC5BA1291D768B6300284C2E /* Controller */,
@@ -422,10 +453,58 @@
 		FC5BA12B1D768B7800284C2E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC5BA12F1D768C2D00284C2E /* LQRunTimeModel.h */,
-				FC5BA1301D768C2D00284C2E /* LQRunTimeModel.m */,
+				FC79E58F1D7EB0BA00FE9F66 /* LQPerson.h */,
+				FC79E5901D7EB0BA00FE9F66 /* LQPerson.m */,
+				FC79E5921D7EB4E600FE9F66 /* LQPerson+nameProperty.h */,
+				FC79E5931D7EB4E600FE9F66 /* LQPerson+nameProperty.m */,
+				FC79E5951D7EB77A00FE9F66 /* NSObject+model.h */,
+				FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FC7541351D81524E00AC12F5 /* 面向对象 */ = {
+			isa = PBXGroup;
+			children = (
+				FC7541381D81527700AC12F5 /* View */,
+				FC7541371D81526F00AC12F5 /* Model */,
+				FC7541361D81526700AC12F5 /* Cotroller */,
+			);
+			path = "面向对象";
+			sourceTree = "<group>";
+		};
+		FC7541361D81526700AC12F5 /* Cotroller */ = {
+			isa = PBXGroup;
+			children = (
+				FC75413F1D81534C00AC12F5 /* LQObjectViewController.h */,
+				FC7541401D81534C00AC12F5 /* LQObjectViewController.m */,
+			);
+			path = Cotroller;
+			sourceTree = "<group>";
+		};
+		FC7541371D81526F00AC12F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC7541481D8158F800AC12F5 /* LQAnimalModel.h */,
+				FC7541491D8158F800AC12F5 /* LQAnimalModel.m */,
+				FC7541421D81553D00AC12F5 /* LQCatModel.h */,
+				FC7541431D81553D00AC12F5 /* LQCatModel.m */,
+				FC7541451D8157C200AC12F5 /* LQDogModel.h */,
+				FC7541461D8157C200AC12F5 /* LQDogModel.m */,
+				FC75414B1D815FBC00AC12F5 /* LQSheepModel.h */,
+				FC75414C1D815FBC00AC12F5 /* LQSheepModel.m */,
+				FC75414F1D816E3500AC12F5 /* LQChangeDogModel.h */,
+				FC7541501D816E3500AC12F5 /* LQChangeDogModel.m */,
+				FC75414E1D816DDF00AC12F5 /* LQchange.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC7541381D81527700AC12F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FC78DBEF1D78122C008C1EF6 /* 观察者 */ = {
@@ -815,14 +894,19 @@
 				FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */,
 				FC5BA1261D768B4000284C2E /* LQCountViewController.m in Sources */,
 				FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */,
+				FC79E5971D7EB77A00FE9F66 /* NSObject+model.m in Sources */,
 				FC5BA1231D768B4000284C2E /* LQImageData.m in Sources */,
 				FCE362AB1D66EB3500FFFC13 /* UILabel+LQAddition.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
+				FC7541511D816E3500AC12F5 /* LQChangeDogModel.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
+				FC7541471D8157C200AC12F5 /* LQDogModel.m in Sources */,
 				FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */,
+				FC79E5941D7EB4E600FE9F66 /* LQPerson+nameProperty.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
 				FC78DBF61D78175A008C1EF6 /* LQKVOModel.m in Sources */,
 				FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */,
+				FC75414A1D8158F800AC12F5 /* LQAnimalModel.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
 				FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
@@ -831,21 +915,25 @@
 				FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
 				FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */,
+				FC79E58E1D7EACF700FE9F66 /* UIImage+LogImageName.m in Sources */,
 				FCAE48F71D79597000A308C5 /* ALQlgorithmViewController.m in Sources */,
 				FC5BA1211D768B4000284C2E /* LQMultithreading_NSOperationViewController.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
+				FC79E5911D7EB0BA00FE9F66 /* LQPerson.m in Sources */,
 				FC5BA1221D768B4000284C2E /* LQMultithreading_NSThreadViewController.m in Sources */,
 				FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */,
 				FC5BA1201D768B4000284C2E /* LQMultithreading_GCDViewController.m in Sources */,
 				FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */,
+				FC7541411D81534C00AC12F5 /* LQObjectViewController.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
 				FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */,
 				FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */,
 				FC51A8F41D659C8F0004FEAE /* main.m in Sources */,
-				FC5BA1311D768C2D00284C2E /* LQRunTimeModel.m in Sources */,
+				FC7541441D81553D00AC12F5 /* LQCatModel.m in Sources */,
 				FC5BA1241D768B4000284C2E /* LQFunctionViewController.m in Sources */,
+				FC75414D1D815FBC00AC12F5 /* LQSheepModel.m in Sources */,
 				FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

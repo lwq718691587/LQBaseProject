@@ -7,8 +7,9 @@
 //
 
 #import "LQRunTimeViewController.h"
-#import "LQRunTimeModel.h"
-
+#import "LQPerson.h"
+#import "LQPerson+nameProperty.h"
+#import "NSObject+model.h"
 @interface LQRunTimeViewController ()
 
 @end
@@ -20,7 +21,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    LQRunTimeModel * model = [[LQRunTimeModel alloc]init];
+    //
+    UIImage * image = [UIImage imageNamed:@"asd"];
+    
+    
+    NSObject * objc = [[NSObject alloc]init];
+
+    
+    NSDictionary * personDic = @{@"name":@"刘伟强",@"height":@"170",@"sex":@"男"};
+    
+    LQPerson * bob = [LQPerson modelWithDict:personDic];
+   
+    NSLog(@"%@ - %@ - %@",bob.name, bob.height ,bob.sex);
+    
+    
+    [bob performSelector:@selector(eat)];
+    
     // Do any additional setup after loading the view.
 }
 
