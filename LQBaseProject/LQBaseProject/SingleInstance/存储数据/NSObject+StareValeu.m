@@ -12,8 +12,9 @@
 
 
 -(void)storeValueWithKey:(NSString *)key{
-    [[LQStoreValue sharedInstace] setValue:self forKey:key];
+    [[LQStoreValue sharedInstace] storeValue:self withKey:key];
 }
+
 +(id)valueByKey:(NSString *)key{
     return [[LQStoreValue sharedInstace] valueForKey:key];
 }

@@ -49,6 +49,7 @@
 		FC79E5971D7EB77A00FE9F66 /* NSObject+model.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */; };
 		FC91CDFB1D912D600059581B /* LQKVC_KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91CDFA1D912D600059581B /* LQKVC_KVOViewController.m */; };
 		FC91CDFE1D912D830059581B /* LQPeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91CDFD1D912D830059581B /* LQPeopleModel.m */; };
+		FCA53CCF1DA91FA600536B8D /* LQBuytests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA53CCE1DA91FA600536B8D /* LQBuytests.m */; };
 		FCAE48F71D79597000A308C5 /* LQlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE48F61D79597000A308C5 /* LQlgorithmViewController.m */; };
 		FCBB0B2B1D9E04D400B4ABAE /* LQRACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B2A1D9E04D400B4ABAE /* LQRACMainViewController.m */; };
 		FCBB0B2E1D9E0CE500B4ABAE /* LQRACNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B2D1D9E0CE500B4ABAE /* LQRACNotificationViewController.m */; };
@@ -185,6 +186,7 @@
 		FC91CDFA1D912D600059581B /* LQKVC_KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVC_KVOViewController.m; sourceTree = "<group>"; };
 		FC91CDFC1D912D830059581B /* LQPeopleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPeopleModel.h; sourceTree = "<group>"; };
 		FC91CDFD1D912D830059581B /* LQPeopleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPeopleModel.m; sourceTree = "<group>"; };
+		FCA53CCE1DA91FA600536B8D /* LQBuytests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBuytests.m; sourceTree = "<group>"; };
 		FCAE48F51D79597000A308C5 /* LQlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQlgorithmViewController.h; sourceTree = "<group>"; };
 		FCAE48F61D79597000A308C5 /* LQlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQlgorithmViewController.m; sourceTree = "<group>"; };
 		FCBB0B291D9E04D400B4ABAE /* LQRACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRACMainViewController.h; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				FC51A8F11D659C8F0004FEAE /* LQBaseProject */,
+				FC51A90B1D659C8F0004FEAE /* LQBaseProjectTests */,
 				FC51A9161D659C8F0004FEAE /* LQBaseProjectUITests */,
 				FC51A8F01D659C8F0004FEAE /* Products */,
 				F3F22B0B35F843F7BF98CF84 /* Pods */,
@@ -367,10 +370,10 @@
 			isa = PBXGroup;
 			children = (
 				FC51A90C1D659C8F0004FEAE /* LQBaseProjectTests.m */,
+				FCA53CCE1DA91FA600536B8D /* LQBuytests.m */,
 				FC51A90E1D659C8F0004FEAE /* Info.plist */,
 			);
-			name = LQBaseProjectTests;
-			path = ../../../LQBaseProjectTests;
+			path = LQBaseProjectTests;
 			sourceTree = "<group>";
 		};
 		FC51A9161D659C8F0004FEAE /* LQBaseProjectUITests */ = {
@@ -454,7 +457,6 @@
 				FCBB0B341D9E131B00B4ABAE /* MVVM_RAC */,
 				FCBB0B271D9E047300B4ABAE /* RAC */,
 				FC66EB981D9CB8B4007BDE3A /* 工厂方法 */,
-				FC51A90B1D659C8F0004FEAE /* LQBaseProjectTests */,
 				FCBEF3971D9BA76F005BD7D0 /* 计算label的高度 */,
 				FC59C15F1D9A361500762D78 /* CGContextRef */,
 				FC91CDF31D912CF80059581B /* KVC&KVO */,
@@ -1202,6 +1204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC51A90D1D659C8F0004FEAE /* LQBaseProjectTests.m in Sources */,
+				FCA53CCF1DA91FA600536B8D /* LQBuytests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1549,8 +1552,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ChameleonFramework\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengSocialCOM\"",
+					"\"${PODS_ROOT}/Headers/Public/iCarousel\"",
+				);
 				INFOPLIST_FILE = LQBaseProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oarcleen.LQBaseProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LQBaseProject.app/LQBaseProject";
@@ -1561,8 +1579,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/ChameleonFramework\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengSocialCOM\"",
+					"\"${PODS_ROOT}/Headers/Public/iCarousel\"",
+				);
 				INFOPLIST_FILE = LQBaseProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oarcleen.LQBaseProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LQBaseProject.app/LQBaseProject";

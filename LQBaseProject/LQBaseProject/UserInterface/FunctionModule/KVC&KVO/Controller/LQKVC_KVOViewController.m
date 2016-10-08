@@ -24,7 +24,7 @@
         [self.peopleArr addObject:people];
     }
     
-    self.peopleArr = [self.peopleArr valueForKeyPath:@"name.capitalizedString"];
+//    self.peopleArr = [self.peopleArr valueForKeyPath:@"name.capitalizedString"];
     
     for (LQPeopleModel * model in self.peopleArr) {
         NSLog(@"%@",[model valueForKey:@"name"]);

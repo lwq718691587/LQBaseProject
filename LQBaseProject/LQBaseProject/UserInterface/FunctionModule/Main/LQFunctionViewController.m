@@ -38,7 +38,7 @@
     [self initUI];
     [self update];
     
-    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
+//    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
     
     
 }
@@ -95,17 +95,22 @@
             break;
         case 8:
             vc = [[LQObjectViewController alloc]init];
+            break;
         case 9:
             vc = [[LQKVC_KVOViewController alloc]init];
+            break;
         case 10:
             vc = [[LQCGContextRefViewController alloc]init];
+            break;
         case 11:
             vc = [[LQGetLableHeightViewController alloc]init];
+            break;
         case 12:
             vc = [[LQRACMainViewController alloc]init];
+            break;
         case 13:
-            
             vc = [[LQGoodsViewController alloc]init];
+            break;
         default:
             break;
     }

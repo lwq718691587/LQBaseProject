@@ -56,7 +56,6 @@
  */
 -(NSString *)getNOSpaceStr;
 
-/** 指定文本的最大宽度 获取文本的高度 */
--(void)getTextHeightWithWidth:(CGFloat)width;
+
 
 @end
