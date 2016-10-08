@@ -6,26 +6,28 @@
 //  Copyright © 2016年 刘伟强. All rights reserved.
 //
 
-#import "ALQlgorithmViewController.h"
+#import "LQlgorithmViewController.h"
 
-@interface ALQlgorithmViewController ()
+@interface LQlgorithmViewController ()
 
 @end
 
-@implementation ALQlgorithmViewController
+@implementation LQlgorithmViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"%d",[self funSumOne:100]);
-    NSLog(@"%d",[self funSumTwo:100]);
-    NSLog(@"%d",[self funMult:4]);
-   
-    
-    NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
-    NSLog(@"%@",[self insertion_sort:numberArr]);
+//    
+//    NSLog(@"%d",[self funSumOne:100]);
+//    NSLog(@"%d",[self funSumTwo:100]);
+//    NSLog(@"%d",[self funMult:4]);
+//   
+//    
+//    NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
+//    NSLog(@"%@",[self insertion_sort:numberArr]);
     
 
+
+    NSLog(@"%d",[self funMult_2:4]);
     
     // Do any additional setup after loading the view.
 }
@@ -47,6 +49,14 @@
     int sum = 1 ;
     for (int i = n ; i > 0; i--) {
         sum = sum * i;
+    }
+    return sum;
+}
+
+-(int)funMult_2:(int)n{
+    int sum = 1;
+    if (n > 2) {
+        sum = n * (n-1) * [self funMult_2:n-2];
     }
     return sum;
 }

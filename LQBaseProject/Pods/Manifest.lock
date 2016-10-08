@@ -20,9 +20,16 @@ PODS:
   - DateTools (1.7.0)
   - iCarousel (1.8.2)
   - MJRefresh (3.1.12)
-  - SDWebImage (3.8.1):
-    - SDWebImage/Core (= 3.8.1)
-  - SDWebImage/Core (3.8.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
   - SVProgressHUD (2.0.3)
   - UMengAnalytics-NO-IDFA (4.1.1)
   - UMengSocialCOM (5.2.1)
@@ -33,6 +40,7 @@ DEPENDENCIES:
   - DateTools
   - iCarousel (~> 1.8.2)
   - MJRefresh (~> 3.1.12)
+  - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.8.1)
   - SVProgressHUD (~> 2.0.3)
   - UMengAnalytics-NO-IDFA
@@ -44,7 +52,8 @@ SPEC CHECKSUMS:
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67

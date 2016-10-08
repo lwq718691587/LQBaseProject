@@ -14,7 +14,7 @@
 
 //afn 请求单例
 +(id)shareInstance_manager;
-
+//打开系统缓存
 +(void)openNSURLCache;
 
 /**

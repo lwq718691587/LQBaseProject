@@ -33,7 +33,7 @@
     
     self.myLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 30 )];
     self.myLabel.textColor = [UIColor redColor];
-    self.myLabel.text = [NSString stringWithFormat:@"%@",[self.kvoModel valueForKey:@"price"]];
+    self.myLabel.text = [NSString stringWithFormat:@"%f",self.kvoModel.price];
     [self.view addSubview:self.myLabel];
     
 
@@ -46,12 +46,13 @@
 }
 -(void)btnFun:(UIButton *)btn{
     btn.selected = !btn.selected;
-    [self.kvoModel setValue:@"12.0" forKey:@"price"];
+    self.kvoModel.price = 12;
+    
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"price"]) {
-        self.myLabel.text = [NSString stringWithFormat:@"%@",[self.kvoModel valueForKey:@"price"]];
+        self.myLabel.text = [NSString stringWithFormat:@"%f",self.kvoModel.price];
     }
 }
 

@@ -10,7 +10,7 @@
 
 @interface LQPerson : NSObject
 
-@property (copy, nonatomic) NSString *name;
+//@property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSArray *height;
 @property (copy, nonatomic) NSString *sex;
 

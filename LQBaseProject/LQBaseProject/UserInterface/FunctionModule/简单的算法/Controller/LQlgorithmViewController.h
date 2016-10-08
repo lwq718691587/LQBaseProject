@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ALQlgorithmViewController : BaseViewController
+@interface LQlgorithmViewController : BaseViewController
 
 @end

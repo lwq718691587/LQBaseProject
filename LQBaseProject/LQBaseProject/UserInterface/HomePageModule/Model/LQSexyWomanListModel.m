@@ -16,8 +16,6 @@
     
     [LQNetworkingRequest GET:imageListUrl(pageNumber,type) parameters:nil needCache:YES success:^(id operation, id responseObject) {
         
-      
-        
         NSMutableArray * dataArr = [NSMutableArray array];
         for (NSDictionary *perDic in responseObject[@"data"]) {
             LQSexyWomanListModel * model = [[LQSexyWomanListModel alloc]init];

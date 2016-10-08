@@ -10,6 +10,7 @@
 #import "LQPerson.h"
 #import "LQPerson+nameProperty.h"
 #import "NSObject+model.h"
+#import "LQInitLlizeViewModel.h"
 @interface LQRunTimeViewController ()
 
 @end
@@ -23,20 +24,24 @@
     [super viewDidLoad];
     //
     UIImage * image = [UIImage imageNamed:@"asd"];
-    
+    NSLog(@"%@",NSStringFromCGSize(image.size));
+    [LQInitLlizeViewModel getClassName];
     
     NSObject * objc = [[NSObject alloc]init];
-
+    NSLog(@"%@",objc);
     
     NSDictionary * personDic = @{@"name":@"刘伟强",@"height":@"170",@"sex":@"男"};
     
     LQPerson * bob = [LQPerson modelWithDict:personDic];
-   
+    
+    [bob performSelector:@selector(peopleJump)];
     NSLog(@"%@ - %@ - %@",bob.name, bob.height ,bob.sex);
     
+    int i = [bob performSelector:@selector(myEat:) withObject:@"1"];
     
-    [bob performSelector:@selector(eat)];
     
+    
+    NSLog(@"%d",i);
     // Do any additional setup after loading the view.
 }
 

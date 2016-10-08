@@ -10,6 +10,7 @@
 #import <iCarousel.h>
 #import "LQSexyWomanListModel.h"
 #import "LQFullscreenImageViewController.h"
+#import "NSObject+StareValeu.h"
 @interface LQSearchingViewController ()<iCarouselDelegate,iCarouselDataSource>
 
 @property (strong, nonatomic) iCarousel * iCarouselView;
@@ -23,6 +24,10 @@
     [super viewDidLoad];
     [self.view addSubview:self.iCarouselView];
     [self update];
+    
+    NSString * str = @"fasd";
+    [str storeValueWithKey:@"sdf"];
+    
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{

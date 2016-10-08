@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */; };
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
+		FC4E0A501D938DF700E9FE2B /* LQStoreValue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */; };
+		FC4E0A511D938DF700E9FE2B /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */; };
+		FC4E0A541D938F2C00E9FE2B /* NSObject+StareValeu.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A531D938F2C00E9FE2B /* NSObject+StareValeu.m */; };
 		FC51A8F41D659C8F0004FEAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F31D659C8F0004FEAE /* main.m */; };
 		FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A8F61D659C8F0004FEAE /* AppDelegate.m */; };
 		FC51A8FF1D659C8F0004FEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC51A8FE1D659C8F0004FEAE /* Assets.xcassets */; };
@@ -20,6 +23,8 @@
 		FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92B1D659CA10004FEAE /* BaseTabBarViewController.m */; };
 		FC51A9331D659CA10004FEAE /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92D1D659CA10004FEAE /* BaseView.m */; };
 		FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC51A92F1D659CA10004FEAE /* BaseViewController.m */; };
+		FC59C1691D9A367300762D78 /* LQCGContextRefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC59C1681D9A367300762D78 /* LQCGContextRefViewController.m */; };
+		FC59C16C1D9A36CA00762D78 /* LQCGContextReftVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = FC59C16B1D9A36CA00762D78 /* LQCGContextReftVIew.m */; };
 		FC5BA1201D768B4000284C2E /* LQMultithreading_GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA10A1D768B4000284C2E /* LQMultithreading_GCDViewController.m */; };
 		FC5BA1211D768B4000284C2E /* LQMultithreading_NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA10C1D768B4000284C2E /* LQMultithreading_NSOperationViewController.m */; };
 		FC5BA1221D768B4000284C2E /* LQMultithreading_NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA10E1D768B4000284C2E /* LQMultithreading_NSThreadViewController.m */; };
@@ -29,6 +34,7 @@
 		FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11D1D768B4000284C2E /* LQFullViewController.m */; };
 		FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */; };
 		FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */; };
+		FC66EB9D1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC66EB9C1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m */; };
 		FC7541411D81534C00AC12F5 /* LQObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541401D81534C00AC12F5 /* LQObjectViewController.m */; };
 		FC7541441D81553D00AC12F5 /* LQCatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541431D81553D00AC12F5 /* LQCatModel.m */; };
 		FC7541471D8157C200AC12F5 /* LQDogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541461D8157C200AC12F5 /* LQDogModel.m */; };
@@ -41,7 +47,18 @@
 		FC79E5911D7EB0BA00FE9F66 /* LQPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5901D7EB0BA00FE9F66 /* LQPerson.m */; };
 		FC79E5941D7EB4E600FE9F66 /* LQPerson+nameProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5931D7EB4E600FE9F66 /* LQPerson+nameProperty.m */; };
 		FC79E5971D7EB77A00FE9F66 /* NSObject+model.m in Sources */ = {isa = PBXBuildFile; fileRef = FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */; };
-		FCAE48F71D79597000A308C5 /* ALQlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */; };
+		FC91CDFB1D912D600059581B /* LQKVC_KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91CDFA1D912D600059581B /* LQKVC_KVOViewController.m */; };
+		FC91CDFE1D912D830059581B /* LQPeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC91CDFD1D912D830059581B /* LQPeopleModel.m */; };
+		FCAE48F71D79597000A308C5 /* LQlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE48F61D79597000A308C5 /* LQlgorithmViewController.m */; };
+		FCBB0B2B1D9E04D400B4ABAE /* LQRACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B2A1D9E04D400B4ABAE /* LQRACMainViewController.m */; };
+		FCBB0B2E1D9E0CE500B4ABAE /* LQRACNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B2D1D9E0CE500B4ABAE /* LQRACNotificationViewController.m */; };
+		FCBB0B331D9E0F4F00B4ABAE /* LQRACModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B321D9E0F4F00B4ABAE /* LQRACModel.m */; };
+		FCBB0B3A1D9E137800B4ABAE /* LQGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B391D9E137800B4ABAE /* LQGoodsModel.m */; };
+		FCBB0B3D1D9E13B300B4ABAE /* LQGoodsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B3C1D9E13B300B4ABAE /* LQGoodsViewModel.m */; };
+		FCBB0B401D9E13D700B4ABAE /* LQGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B3F1D9E13D700B4ABAE /* LQGoodsViewController.m */; };
+		FCBEF39A1D9BA78C005BD7D0 /* LQGetLableHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBEF3991D9BA78C005BD7D0 /* LQGetLableHeightViewController.m */; };
+		FCD1BDE91D99024500B49103 /* LQInitLlizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1BDE81D99024500B49103 /* LQInitLlizeViewModel.m */; };
+		FCD1BDEC1D9920F500B49103 /* LQCanJumpPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1BDEB1D9920F500B49103 /* LQCanJumpPeople.m */; };
 		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
 		FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C91D6C36DE007B838B /* LQSexyWomanListViewController.m */; };
 		FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73CC1D6C36DE007B838B /* LQCustomCollectionViewLayout.m */; };
@@ -81,6 +98,12 @@
 		99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2343B21D66D91000ADB748 /* LQNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNetworkingRequest.h; sourceTree = "<group>"; };
 		FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNetworkingRequest.m; sourceTree = "<group>"; };
+		FC4E0A4C1D938DF700E9FE2B /* LQStoreValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQStoreValue.h; sourceTree = "<group>"; };
+		FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQStoreValue.m; sourceTree = "<group>"; };
+		FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
+		FC4E0A4F1D938DF700E9FE2B /* FastCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastCoder.h; sourceTree = "<group>"; };
+		FC4E0A521D938F2C00E9FE2B /* NSObject+StareValeu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+StareValeu.h"; sourceTree = "<group>"; };
+		FC4E0A531D938F2C00E9FE2B /* NSObject+StareValeu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+StareValeu.m"; sourceTree = "<group>"; };
 		FC51A8EF1D659C8F0004FEAE /* LQBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LQBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC51A8F31D659C8F0004FEAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC51A8F51D659C8F0004FEAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +132,10 @@
 		FC51A9381D659D490004FEAE /* LQCommomFunMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQCommomFunMacro.h; sourceTree = "<group>"; };
 		FC51A9391D659DA10004FEAE /* LQNetWorkingMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQNetWorkingMacro.h; sourceTree = "<group>"; };
 		FC51A93A1D65A0C50004FEAE /* LQAppCustomerMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQAppCustomerMacro.h; sourceTree = "<group>"; };
+		FC59C1671D9A367300762D78 /* LQCGContextRefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCGContextRefViewController.h; sourceTree = "<group>"; };
+		FC59C1681D9A367300762D78 /* LQCGContextRefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCGContextRefViewController.m; sourceTree = "<group>"; };
+		FC59C16A1D9A36CA00762D78 /* LQCGContextReftVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCGContextReftVIew.h; sourceTree = "<group>"; };
+		FC59C16B1D9A36CA00762D78 /* LQCGContextReftVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCGContextReftVIew.m; sourceTree = "<group>"; };
 		FC5BA1091D768B4000284C2E /* LQMultithreading_GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_GCDViewController.h; sourceTree = "<group>"; };
 		FC5BA10A1D768B4000284C2E /* LQMultithreading_GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMultithreading_GCDViewController.m; sourceTree = "<group>"; };
 		FC5BA10B1D768B4000284C2E /* LQMultithreading_NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMultithreading_NSOperationViewController.h; sourceTree = "<group>"; };
@@ -127,6 +154,8 @@
 		FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQScreenViewController.m; sourceTree = "<group>"; };
 		FC5BA12C1D768BAC00284C2E /* LQRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeViewController.h; sourceTree = "<group>"; };
 		FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeViewController.m; sourceTree = "<group>"; };
+		FC66EB9B1D9CB8F1007BDE3A /* LQFactoryMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFactoryMethodViewController.h; sourceTree = "<group>"; };
+		FC66EB9C1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFactoryMethodViewController.m; sourceTree = "<group>"; };
 		FC75413F1D81534C00AC12F5 /* LQObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQObjectViewController.h; sourceTree = "<group>"; };
 		FC7541401D81534C00AC12F5 /* LQObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQObjectViewController.m; sourceTree = "<group>"; };
 		FC7541421D81553D00AC12F5 /* LQCatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCatModel.h; sourceTree = "<group>"; };
@@ -152,8 +181,30 @@
 		FC79E5931D7EB4E600FE9F66 /* LQPerson+nameProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LQPerson+nameProperty.m"; sourceTree = "<group>"; };
 		FC79E5951D7EB77A00FE9F66 /* NSObject+model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+model.h"; sourceTree = "<group>"; };
 		FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+model.m"; sourceTree = "<group>"; };
-		FCAE48F51D79597000A308C5 /* ALQlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALQlgorithmViewController.h; sourceTree = "<group>"; };
-		FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALQlgorithmViewController.m; sourceTree = "<group>"; };
+		FC91CDF91D912D600059581B /* LQKVC_KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKVC_KVOViewController.h; sourceTree = "<group>"; };
+		FC91CDFA1D912D600059581B /* LQKVC_KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVC_KVOViewController.m; sourceTree = "<group>"; };
+		FC91CDFC1D912D830059581B /* LQPeopleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPeopleModel.h; sourceTree = "<group>"; };
+		FC91CDFD1D912D830059581B /* LQPeopleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPeopleModel.m; sourceTree = "<group>"; };
+		FCAE48F51D79597000A308C5 /* LQlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQlgorithmViewController.h; sourceTree = "<group>"; };
+		FCAE48F61D79597000A308C5 /* LQlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQlgorithmViewController.m; sourceTree = "<group>"; };
+		FCBB0B291D9E04D400B4ABAE /* LQRACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRACMainViewController.h; sourceTree = "<group>"; };
+		FCBB0B2A1D9E04D400B4ABAE /* LQRACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRACMainViewController.m; sourceTree = "<group>"; };
+		FCBB0B2C1D9E0CE500B4ABAE /* LQRACNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRACNotificationViewController.h; sourceTree = "<group>"; };
+		FCBB0B2D1D9E0CE500B4ABAE /* LQRACNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRACNotificationViewController.m; sourceTree = "<group>"; };
+		FCBB0B311D9E0F4F00B4ABAE /* LQRACModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRACModel.h; sourceTree = "<group>"; };
+		FCBB0B321D9E0F4F00B4ABAE /* LQRACModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRACModel.m; sourceTree = "<group>"; };
+		FCBB0B381D9E137800B4ABAE /* LQGoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQGoodsModel.h; sourceTree = "<group>"; };
+		FCBB0B391D9E137800B4ABAE /* LQGoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGoodsModel.m; sourceTree = "<group>"; };
+		FCBB0B3B1D9E13B300B4ABAE /* LQGoodsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQGoodsViewModel.h; sourceTree = "<group>"; };
+		FCBB0B3C1D9E13B300B4ABAE /* LQGoodsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGoodsViewModel.m; sourceTree = "<group>"; };
+		FCBB0B3E1D9E13D700B4ABAE /* LQGoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQGoodsViewController.h; sourceTree = "<group>"; };
+		FCBB0B3F1D9E13D700B4ABAE /* LQGoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGoodsViewController.m; sourceTree = "<group>"; };
+		FCBEF3981D9BA78C005BD7D0 /* LQGetLableHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQGetLableHeightViewController.h; sourceTree = "<group>"; };
+		FCBEF3991D9BA78C005BD7D0 /* LQGetLableHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGetLableHeightViewController.m; sourceTree = "<group>"; };
+		FCD1BDE71D99024500B49103 /* LQInitLlizeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQInitLlizeViewModel.h; sourceTree = "<group>"; };
+		FCD1BDE81D99024500B49103 /* LQInitLlizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQInitLlizeViewModel.m; sourceTree = "<group>"; };
+		FCD1BDEA1D9920F500B49103 /* LQCanJumpPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCanJumpPeople.h; sourceTree = "<group>"; };
+		FCD1BDEB1D9920F500B49103 /* LQCanJumpPeople.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCanJumpPeople.m; sourceTree = "<group>"; };
 		FCDF73C51D6C36DE007B838B /* LQSexyWomanListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListModel.h; sourceTree = "<group>"; };
 		FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSexyWomanListModel.m; sourceTree = "<group>"; };
 		FCDF73C81D6C36DE007B838B /* LQSexyWomanListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSexyWomanListViewController.h; sourceTree = "<group>"; };
@@ -251,11 +302,24 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		FC4E0A4B1D938DDD00E9FE2B /* 存储数据 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4E0A4C1D938DF700E9FE2B /* LQStoreValue.h */,
+				FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */,
+				FC4E0A521D938F2C00E9FE2B /* NSObject+StareValeu.h */,
+				FC4E0A531D938F2C00E9FE2B /* NSObject+StareValeu.m */,
+				FC4E0A4F1D938DF700E9FE2B /* FastCoder.h */,
+				FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */,
+			);
+			name = "存储数据";
+			path = "LQBaseProject/SingleInstance/存储数据";
+			sourceTree = SOURCE_ROOT;
+		};
 		FC51A8E61D659C8F0004FEAE = {
 			isa = PBXGroup;
 			children = (
 				FC51A8F11D659C8F0004FEAE /* LQBaseProject */,
-				FC51A90B1D659C8F0004FEAE /* LQBaseProjectTests */,
 				FC51A9161D659C8F0004FEAE /* LQBaseProjectUITests */,
 				FC51A8F01D659C8F0004FEAE /* Products */,
 				F3F22B0B35F843F7BF98CF84 /* Pods */,
@@ -305,7 +369,8 @@
 				FC51A90C1D659C8F0004FEAE /* LQBaseProjectTests.m */,
 				FC51A90E1D659C8F0004FEAE /* Info.plist */,
 			);
-			path = LQBaseProjectTests;
+			name = LQBaseProjectTests;
+			path = ../../../LQBaseProjectTests;
 			sourceTree = "<group>";
 		};
 		FC51A9161D659C8F0004FEAE /* LQBaseProjectUITests */ = {
@@ -347,10 +412,52 @@
 			path = Macro;
 			sourceTree = "<group>";
 		};
+		FC59C15F1D9A361500762D78 /* CGContextRef */ = {
+			isa = PBXGroup;
+			children = (
+				FC59C1661D9A367300762D78 /* Controller */,
+				FC59C1641D9A365400762D78 /* Model */,
+				FC59C1631D9A364800762D78 /* View */,
+			);
+			path = CGContextRef;
+			sourceTree = "<group>";
+		};
+		FC59C1631D9A364800762D78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC59C16A1D9A36CA00762D78 /* LQCGContextReftVIew.h */,
+				FC59C16B1D9A36CA00762D78 /* LQCGContextReftVIew.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC59C1641D9A365400762D78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC59C1661D9A367300762D78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC59C1671D9A367300762D78 /* LQCGContextRefViewController.h */,
+				FC59C1681D9A367300762D78 /* LQCGContextRefViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FC5BA0E31D768A3200284C2E /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
 				FC5BA1121D768B4000284C2E /* Main */,
+				FCBB0B341D9E131B00B4ABAE /* MVVM_RAC */,
+				FCBB0B271D9E047300B4ABAE /* RAC */,
+				FC66EB981D9CB8B4007BDE3A /* 工厂方法 */,
+				FC51A90B1D659C8F0004FEAE /* LQBaseProjectTests */,
+				FCBEF3971D9BA76F005BD7D0 /* 计算label的高度 */,
+				FC59C15F1D9A361500762D78 /* CGContextRef */,
+				FC91CDF31D912CF80059581B /* KVC&KVO */,
 				FC7541351D81524E00AC12F5 /* 面向对象 */,
 				FCAE48F31D79591900A308C5 /* 简单的算法 */,
 				FC78DBEF1D78122C008C1EF6 /* 观察者 */,
@@ -455,10 +562,39 @@
 			children = (
 				FC79E58F1D7EB0BA00FE9F66 /* LQPerson.h */,
 				FC79E5901D7EB0BA00FE9F66 /* LQPerson.m */,
+				FCD1BDEA1D9920F500B49103 /* LQCanJumpPeople.h */,
+				FCD1BDEB1D9920F500B49103 /* LQCanJumpPeople.m */,
 				FC79E5921D7EB4E600FE9F66 /* LQPerson+nameProperty.h */,
 				FC79E5931D7EB4E600FE9F66 /* LQPerson+nameProperty.m */,
 				FC79E5951D7EB77A00FE9F66 /* NSObject+model.h */,
 				FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */,
+				FCD1BDE71D99024500B49103 /* LQInitLlizeViewModel.h */,
+				FCD1BDE81D99024500B49103 /* LQInitLlizeViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC66EB981D9CB8B4007BDE3A /* 工厂方法 */ = {
+			isa = PBXGroup;
+			children = (
+				FC66EB9A1D9CB8D6007BDE3A /* Model */,
+				FC66EB991D9CB8C8007BDE3A /* Controller */,
+			);
+			path = "工厂方法";
+			sourceTree = "<group>";
+		};
+		FC66EB991D9CB8C8007BDE3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC66EB9B1D9CB8F1007BDE3A /* LQFactoryMethodViewController.h */,
+				FC66EB9C1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC66EB9A1D9CB8D6007BDE3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -534,6 +670,33 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		FC91CDF31D912CF80059581B /* KVC&KVO */ = {
+			isa = PBXGroup;
+			children = (
+				FC91CDF81D912D470059581B /* Controller */,
+				FC91CDF71D912D3F0059581B /* Model */,
+			);
+			path = "KVC&KVO";
+			sourceTree = "<group>";
+		};
+		FC91CDF71D912D3F0059581B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC91CDFC1D912D830059581B /* LQPeopleModel.h */,
+				FC91CDFD1D912D830059581B /* LQPeopleModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC91CDF81D912D470059581B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC91CDF91D912D600059581B /* LQKVC_KVOViewController.h */,
+				FC91CDFA1D912D600059581B /* LQKVC_KVOViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FCAE48F31D79591900A308C5 /* 简单的算法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,10 +708,85 @@
 		FCAE48F41D79593400A308C5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FCAE48F51D79597000A308C5 /* ALQlgorithmViewController.h */,
-				FCAE48F61D79597000A308C5 /* ALQlgorithmViewController.m */,
+				FCAE48F51D79597000A308C5 /* LQlgorithmViewController.h */,
+				FCAE48F61D79597000A308C5 /* LQlgorithmViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCBB0B271D9E047300B4ABAE /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B301D9E0F2400B4ABAE /* Model */,
+				FCBB0B281D9E04A500B4ABAE /* Controller */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		FCBB0B281D9E04A500B4ABAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B291D9E04D400B4ABAE /* LQRACMainViewController.h */,
+				FCBB0B2A1D9E04D400B4ABAE /* LQRACMainViewController.m */,
+				FCBB0B2C1D9E0CE500B4ABAE /* LQRACNotificationViewController.h */,
+				FCBB0B2D1D9E0CE500B4ABAE /* LQRACNotificationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCBB0B301D9E0F2400B4ABAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B311D9E0F4F00B4ABAE /* LQRACModel.h */,
+				FCBB0B321D9E0F4F00B4ABAE /* LQRACModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCBB0B341D9E131B00B4ABAE /* MVVM_RAC */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B351D9E132400B4ABAE /* Model */,
+				FCBB0B371D9E135000B4ABAE /* VIewModel */,
+				FCBB0B361D9E133E00B4ABAE /* Controller_View */,
+			);
+			path = MVVM_RAC;
+			sourceTree = "<group>";
+		};
+		FCBB0B351D9E132400B4ABAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B381D9E137800B4ABAE /* LQGoodsModel.h */,
+				FCBB0B391D9E137800B4ABAE /* LQGoodsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCBB0B361D9E133E00B4ABAE /* Controller_View */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B3E1D9E13D700B4ABAE /* LQGoodsViewController.h */,
+				FCBB0B3F1D9E13D700B4ABAE /* LQGoodsViewController.m */,
+			);
+			path = Controller_View;
+			sourceTree = "<group>";
+		};
+		FCBB0B371D9E135000B4ABAE /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCBB0B3B1D9E13B300B4ABAE /* LQGoodsViewModel.h */,
+				FCBB0B3C1D9E13B300B4ABAE /* LQGoodsViewModel.m */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		FCBEF3971D9BA76F005BD7D0 /* 计算label的高度 */ = {
+			isa = PBXGroup;
+			children = (
+				FCBEF3981D9BA78C005BD7D0 /* LQGetLableHeightViewController.h */,
+				FCBEF3991D9BA78C005BD7D0 /* LQGetLableHeightViewController.m */,
+			);
+			path = "计算label的高度";
 			sourceTree = "<group>";
 		};
 		FCDF73C21D6C36AE007B838B /* SearchingModule */ = {
@@ -704,6 +942,7 @@
 		FCE362BD1D66F7D400FFFC13 /* SingleInstance */ = {
 			isa = PBXGroup;
 			children = (
+				FC4E0A4B1D938DDD00E9FE2B /* 存储数据 */,
 				FCE362BE1D66F80B00FFFC13 /* UserCenter.h */,
 				FCE362BF1D66F80B00FFFC13 /* UserCenter.m */,
 			);
@@ -781,13 +1020,16 @@
 				TargetAttributes = {
 					FC51A8EE1D659C8F0004FEAE = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C9VG28535S;
 					};
 					FC51A9071D659C8F0004FEAE = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C9VG28535S;
 						TestTargetID = FC51A8EE1D659C8F0004FEAE;
 					};
 					FC51A9121D659C8F0004FEAE = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C9VG28535S;
 						TestTargetID = FC51A8EE1D659C8F0004FEAE;
 					};
 				};
@@ -892,20 +1134,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */,
+				FCBB0B2E1D9E0CE500B4ABAE /* LQRACNotificationViewController.m in Sources */,
+				FC4E0A541D938F2C00E9FE2B /* NSObject+StareValeu.m in Sources */,
+				FC4E0A511D938DF700E9FE2B /* FastCoder.m in Sources */,
 				FC5BA1261D768B4000284C2E /* LQCountViewController.m in Sources */,
 				FCDF73D01D6C36DE007B838B /* LQSexyWomanListViewController.m in Sources */,
+				FCBB0B3A1D9E137800B4ABAE /* LQGoodsModel.m in Sources */,
 				FC79E5971D7EB77A00FE9F66 /* NSObject+model.m in Sources */,
 				FC5BA1231D768B4000284C2E /* LQImageData.m in Sources */,
 				FCE362AB1D66EB3500FFFC13 /* UILabel+LQAddition.m in Sources */,
+				FCBB0B3D1D9E13B300B4ABAE /* LQGoodsViewModel.m in Sources */,
+				FCD1BDE91D99024500B49103 /* LQInitLlizeViewModel.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
 				FC7541511D816E3500AC12F5 /* LQChangeDogModel.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
 				FC7541471D8157C200AC12F5 /* LQDogModel.m in Sources */,
 				FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */,
 				FC79E5941D7EB4E600FE9F66 /* LQPerson+nameProperty.m in Sources */,
+				FCD1BDEC1D9920F500B49103 /* LQCanJumpPeople.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
+				FC91CDFB1D912D600059581B /* LQKVC_KVOViewController.m in Sources */,
+				FC4E0A501D938DF700E9FE2B /* LQStoreValue.m in Sources */,
 				FC78DBF61D78175A008C1EF6 /* LQKVOModel.m in Sources */,
 				FCDF73D81D6C3E8D007B838B /* LQFullscreenImageViewController.m in Sources */,
+				FC66EB9D1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m in Sources */,
+				FCBB0B331D9E0F4F00B4ABAE /* LQRACModel.m in Sources */,
 				FC75414A1D8158F800AC12F5 /* LQAnimalModel.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
 				FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */,
@@ -913,14 +1166,19 @@
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
 				FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */,
 				FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */,
+				FCBEF39A1D9BA78C005BD7D0 /* LQGetLableHeightViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
 				FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */,
 				FC79E58E1D7EACF700FE9F66 /* UIImage+LogImageName.m in Sources */,
-				FCAE48F71D79597000A308C5 /* ALQlgorithmViewController.m in Sources */,
+				FCAE48F71D79597000A308C5 /* LQlgorithmViewController.m in Sources */,
 				FC5BA1211D768B4000284C2E /* LQMultithreading_NSOperationViewController.m in Sources */,
+				FCBB0B2B1D9E04D400B4ABAE /* LQRACMainViewController.m in Sources */,
+				FCBB0B401D9E13D700B4ABAE /* LQGoodsViewController.m in Sources */,
 				FCE362A81D66E9E600FFFC13 /* UIButton+LQAddition.m in Sources */,
+				FC59C16C1D9A36CA00762D78 /* LQCGContextReftVIew.m in Sources */,
 				FC79E5911D7EB0BA00FE9F66 /* LQPerson.m in Sources */,
 				FC5BA1221D768B4000284C2E /* LQMultithreading_NSThreadViewController.m in Sources */,
+				FC91CDFE1D912D830059581B /* LQPeopleModel.m in Sources */,
 				FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */,
 				FC5BA1201D768B4000284C2E /* LQMultithreading_GCDViewController.m in Sources */,
 				FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */,
@@ -929,6 +1187,7 @@
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */,
 				FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */,
+				FC59C1691D9A367300762D78 /* LQCGContextRefViewController.m in Sources */,
 				FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */,
 				FC51A8F41D659C8F0004FEAE /* main.m in Sources */,
 				FC7541441D81553D00AC12F5 /* LQCatModel.m in Sources */,
@@ -999,9 +1258,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yao Zhang (K536BE6SZS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yao Zhang (K536BE6SZS)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C9VG28535S;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1022,6 +1283,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "055a168f-284a-4990-a3d4-6e49d5b30b39";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1045,9 +1307,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yao Zhang (K536BE6SZS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yao Zhang (K536BE6SZS)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C9VG28535S;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1061,6 +1325,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "055a168f-284a-4990-a3d4-6e49d5b30b39";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1073,6 +1338,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_OTHER_FLAGS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yao Zhang (K536BE6SZS)";
+				DEVELOPMENT_TEAM = C9VG28535S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LQBaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1165,6 +1432,8 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oarcleen.LQBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6e58947-f03b-4a02-8b0c-daab2aeb9eca";
+				PROVISIONING_PROFILE_SPECIFIER = OraCleenDeveloperWildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1175,6 +1444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_OTHER_FLAGS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yao Zhang (K536BE6SZS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yao Zhang (K536BE6SZS)";
+				DEVELOPMENT_TEAM = C9VG28535S;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LQBaseProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1267,6 +1539,8 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Oarcleen.LQBaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d6e58947-f03b-4a02-8b0c-daab2aeb9eca";
+				PROVISIONING_PROFILE_SPECIFIER = OraCleenDeveloperWildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

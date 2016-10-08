@@ -15,11 +15,14 @@
 
 #import "LQRunTimeViewController.h"
 #import "LQKVOViewController.h"
-#import "ALQlgorithmViewController.h"
+#import "LQlgorithmViewController.h"
 #import "LQObjectViewController.h"
 
-
-
+#import "LQKVC_KVOViewController.h"
+#import "LQCGContextRefViewController.h"
+#import "LQGetLableHeightViewController.h"
+#import "LQRACMainViewController.h"
+#import "LQGoodsViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -34,6 +37,10 @@
     [self initNavigation];
     [self initUI];
     [self update];
+    
+    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
+    
+    
 }
 
 #pragma mark - tableView delegate
@@ -84,9 +91,21 @@
             vc = [[LQKVOViewController alloc]init];
             break;
         case 7:
-            vc = [[ALQlgorithmViewController alloc]init];
+            vc = [[LQlgorithmViewController alloc]init];
+            break;
         case 8:
             vc = [[LQObjectViewController alloc]init];
+        case 9:
+            vc = [[LQKVC_KVOViewController alloc]init];
+        case 10:
+            vc = [[LQCGContextRefViewController alloc]init];
+        case 11:
+            vc = [[LQGetLableHeightViewController alloc]init];
+        case 12:
+            vc = [[LQRACMainViewController alloc]init];
+        case 13:
+            
+            vc = [[LQGoodsViewController alloc]init];
         default:
             break;
     }
@@ -96,7 +115,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"RAC",@"MVVM"];
     [self.functionTableView reloadData];
 }
 
