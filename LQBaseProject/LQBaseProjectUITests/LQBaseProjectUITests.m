@@ -33,8 +33,32 @@
 }
 
 - (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElementQuery *tablesQuery = app.tables;
+    [tablesQuery.staticTexts[@"MVVM"] tap];
+    
+    XCUIElement *element = [[[[[[[[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element;
+    XCUIElement *textField = [element childrenMatchingType:XCUIElementTypeTextField].element;
+    [textField tap];
+    [textField typeText:@"123"];
+    
+    [textField typeText:@"  "];
+    
+    [[app.windows elementAtIndex:0] pressForDuration:5];
 
+    
+}
+- (void)testMVVM_RAC{
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElementQuery *tablesQuery = app.tables;
+    [tablesQuery.staticTexts[@"runtime"] tap];
+    
+    XCUIElement *button = app.navigationBars.buttons[@"功能"];
+    [button tap];
+    [tablesQuery.staticTexts[@"KVO"] tap];
+    [button tap];
+    
+}
 @end
