@@ -57,6 +57,7 @@
 		FCBB0B3D1D9E13B300B4ABAE /* LQGoodsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B3C1D9E13B300B4ABAE /* LQGoodsViewModel.m */; };
 		FCBB0B401D9E13D700B4ABAE /* LQGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBB0B3F1D9E13D700B4ABAE /* LQGoodsViewController.m */; };
 		FCBEF39A1D9BA78C005BD7D0 /* LQGetLableHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBEF3991D9BA78C005BD7D0 /* LQGetLableHeightViewController.m */; };
+		FCD06B351DA8E45200578D99 /* UITextField+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD06B341DA8E45200578D99 /* UITextField+LQAddition.m */; };
 		FCD1BDE91D99024500B49103 /* LQInitLlizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1BDE81D99024500B49103 /* LQInitLlizeViewModel.m */; };
 		FCD1BDEC1D9920F500B49103 /* LQCanJumpPeople.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD1BDEB1D9920F500B49103 /* LQCanJumpPeople.m */; };
 		FCDF73CF1D6C36DE007B838B /* LQSexyWomanListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDF73C61D6C36DE007B838B /* LQSexyWomanListModel.m */; };
@@ -201,6 +202,8 @@
 		FCBB0B3F1D9E13D700B4ABAE /* LQGoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGoodsViewController.m; sourceTree = "<group>"; };
 		FCBEF3981D9BA78C005BD7D0 /* LQGetLableHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQGetLableHeightViewController.h; sourceTree = "<group>"; };
 		FCBEF3991D9BA78C005BD7D0 /* LQGetLableHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQGetLableHeightViewController.m; sourceTree = "<group>"; };
+		FCD06B331DA8E45200578D99 /* UITextField+LQAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+LQAddition.h"; sourceTree = "<group>"; };
+		FCD06B341DA8E45200578D99 /* UITextField+LQAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LQAddition.m"; sourceTree = "<group>"; };
 		FCD1BDE71D99024500B49103 /* LQInitLlizeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQInitLlizeViewModel.h; sourceTree = "<group>"; };
 		FCD1BDE81D99024500B49103 /* LQInitLlizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQInitLlizeViewModel.m; sourceTree = "<group>"; };
 		FCD1BDEA1D9920F500B49103 /* LQCanJumpPeople.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCanJumpPeople.h; sourceTree = "<group>"; };
@@ -918,6 +921,8 @@
 				FCE362AA1D66EB3500FFFC13 /* UILabel+LQAddition.m */,
 				FCE362AD1D66EDBC00FFFC13 /* NSDate+LQAddition.h */,
 				FCE362AE1D66EDBC00FFFC13 /* NSDate+LQAddition.m */,
+				FCD06B331DA8E45200578D99 /* UITextField+LQAddition.h */,
+				FCD06B341DA8E45200578D99 /* UITextField+LQAddition.m */,
 			);
 			path = LQCategory;
 			sourceTree = "<group>";
@@ -1193,6 +1198,7 @@
 				FC7541441D81553D00AC12F5 /* LQCatModel.m in Sources */,
 				FC5BA1241D768B4000284C2E /* LQFunctionViewController.m in Sources */,
 				FC75414D1D815FBC00AC12F5 /* LQSheepModel.m in Sources */,
+				FCD06B351DA8E45200578D99 /* UITextField+LQAddition.m in Sources */,
 				FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
