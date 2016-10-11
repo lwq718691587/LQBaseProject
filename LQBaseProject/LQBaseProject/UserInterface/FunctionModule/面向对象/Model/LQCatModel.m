@@ -16,7 +16,7 @@
 
 -(NSString *)getShoutSound{
     NSString * str = [super getShoutSound];
-    return @"喵";
+    return str;
 }
 
 @end

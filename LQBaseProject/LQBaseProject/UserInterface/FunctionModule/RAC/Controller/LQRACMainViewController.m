@@ -61,7 +61,7 @@
     }];
     [label1 addGestureRecognizer:tap];
     self.label1 = label1;
-    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"RACtest" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+//    UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"RACtest" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
 //    [alert show];
     
     [[self rac_signalForSelector:@selector(alertView:clickedButtonAtIndex:) fromProtocol:@protocol(UIAlertViewDelegate)]subscribeNext:^(RACTuple * tuple) {

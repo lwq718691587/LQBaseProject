@@ -12,5 +12,8 @@ target 'LQBaseProject' do
   pod 'UMengSocialCOM', '~> 5.2.1'
   pod 'SVProgressHUD', '~> 2.0.3'
   pod 'ReactiveCocoa', '~> 2.5'
+  pod 'FMDB'
+  ## pod 'IQKeyboardManager' 
+  
 end
 
