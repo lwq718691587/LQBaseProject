@@ -21,10 +21,7 @@
 #import "LQKVC_KVOViewController.h"
 #import "LQCGContextRefViewController.h"
 #import "LQGetLableHeightViewController.h"
-#import "LQRACMainViewController.h"
-#import "LQGoodsViewController.h"
-#import "LQCopyViewController.h"
-#import "LQBuilderViewController.h"
+
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -107,17 +104,6 @@
         case 11:
             vc = [[LQGetLableHeightViewController alloc]init];
             break;
-        case 12:
-            vc = [[LQRACMainViewController alloc]init];
-            break;
-        case 13:
-            vc = [[LQGoodsViewController alloc]init];
-            break;
-        case 14:
-            vc = [[LQCopyViewController alloc]init];
-            break;
-        case 15:
-            vc = [[LQBuilderViewController alloc]init];
         default:
             break;
     }
