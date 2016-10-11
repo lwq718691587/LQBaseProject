@@ -24,6 +24,7 @@
 #import "LQRACMainViewController.h"
 #import "LQGoodsViewController.h"
 #import "LQCopyViewController.h"
+#import "LQBuilderViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -115,6 +116,8 @@
         case 14:
             vc = [[LQCopyViewController alloc]init];
             break;
+        case 15:
+            vc = [[LQBuilderViewController alloc]init];
         default:
             break;
     }
@@ -124,7 +127,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"RAC",@"MVVM",@"原型模式与Copy"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"RAC",@"MVVM",@"原型模式与Copy",@"建造者（生成器）模式"];
     [self.functionTableView reloadData];
 }
 

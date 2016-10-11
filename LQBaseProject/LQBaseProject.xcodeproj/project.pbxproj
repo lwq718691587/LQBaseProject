@@ -11,6 +11,10 @@
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
 		FC3ECBA61DAB9206000CCF8F /* LQCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECBA51DAB9206000CCF8F /* LQCopyViewController.m */; };
 		FC3ECBAA1DAB9228000CCF8F /* LQClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECBA91DAB9228000CCF8F /* LQClassModel.m */; };
+		FC24E6EF1DABB4C80093A8BB /* LQHeroBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC24E6EE1DABB4C80093A8BB /* LQHeroBuilder.m */; };
+		FC24E6F21DABB6F80093A8BB /* LQDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = FC24E6F11DABB6F80093A8BB /* LQDirector.m */; };
+		FC24E6F71DABB76B0093A8BB /* LQabstractActorBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC24E6F61DABB76B0093A8BB /* LQabstractActorBuilder.m */; };
+		FC24E6FA1DABBC7B0093A8BB /* LQAnimalPeopleBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC24E6F91DABBC7B0093A8BB /* LQAnimalPeopleBuilder.m */; };
 		FC4E0A501D938DF700E9FE2B /* LQStoreValue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */; };
 		FC4E0A511D938DF700E9FE2B /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */; };
 		FC4E0A541D938F2C00E9FE2B /* NSObject+StareValeu.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A531D938F2C00E9FE2B /* NSObject+StareValeu.m */; };
@@ -36,6 +40,8 @@
 		FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11D1D768B4000284C2E /* LQFullViewController.m */; };
 		FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */; };
 		FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */; };
+		FC65B9C61DABAFEE00DFAEA1 /* LQBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC65B9C51DABAFEE00DFAEA1 /* LQBuilderViewController.m */; };
+		FC65B9C91DABB01E00DFAEA1 /* LQProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC65B9C81DABB01E00DFAEA1 /* LQProductModel.m */; };
 		FC66EB9D1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC66EB9C1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m */; };
 		FC7541411D81534C00AC12F5 /* LQObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541401D81534C00AC12F5 /* LQObjectViewController.m */; };
 		FC7541441D81553D00AC12F5 /* LQCatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7541431D81553D00AC12F5 /* LQCatModel.m */; };
@@ -106,6 +112,14 @@
 		FC3ECBA51DAB9206000CCF8F /* LQCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCopyViewController.m; sourceTree = "<group>"; };
 		FC3ECBA81DAB9228000CCF8F /* LQClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQClassModel.h; sourceTree = "<group>"; };
 		FC3ECBA91DAB9228000CCF8F /* LQClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQClassModel.m; sourceTree = "<group>"; };
+		FC24E6ED1DABB4C80093A8BB /* LQHeroBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHeroBuilder.h; sourceTree = "<group>"; };
+		FC24E6EE1DABB4C80093A8BB /* LQHeroBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHeroBuilder.m; sourceTree = "<group>"; };
+		FC24E6F01DABB6F80093A8BB /* LQDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQDirector.h; sourceTree = "<group>"; };
+		FC24E6F11DABB6F80093A8BB /* LQDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQDirector.m; sourceTree = "<group>"; };
+		FC24E6F51DABB76B0093A8BB /* LQabstractActorBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQabstractActorBuilder.h; sourceTree = "<group>"; };
+		FC24E6F61DABB76B0093A8BB /* LQabstractActorBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQabstractActorBuilder.m; sourceTree = "<group>"; };
+		FC24E6F81DABBC7B0093A8BB /* LQAnimalPeopleBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQAnimalPeopleBuilder.h; sourceTree = "<group>"; };
+		FC24E6F91DABBC7B0093A8BB /* LQAnimalPeopleBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQAnimalPeopleBuilder.m; sourceTree = "<group>"; };
 		FC4E0A4C1D938DF700E9FE2B /* LQStoreValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQStoreValue.h; sourceTree = "<group>"; };
 		FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQStoreValue.m; sourceTree = "<group>"; };
 		FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
@@ -162,6 +176,10 @@
 		FC5BA11F1D768B4000284C2E /* LQScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQScreenViewController.m; sourceTree = "<group>"; };
 		FC5BA12C1D768BAC00284C2E /* LQRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeViewController.h; sourceTree = "<group>"; };
 		FC5BA12D1D768BAC00284C2E /* LQRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeViewController.m; sourceTree = "<group>"; };
+		FC65B9C41DABAFEE00DFAEA1 /* LQBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBuilderViewController.h; sourceTree = "<group>"; };
+		FC65B9C51DABAFEE00DFAEA1 /* LQBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBuilderViewController.m; sourceTree = "<group>"; };
+		FC65B9C71DABB01E00DFAEA1 /* LQProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQProductModel.h; sourceTree = "<group>"; };
+		FC65B9C81DABB01E00DFAEA1 /* LQProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQProductModel.m; sourceTree = "<group>"; };
 		FC66EB9B1D9CB8F1007BDE3A /* LQFactoryMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFactoryMethodViewController.h; sourceTree = "<group>"; };
 		FC66EB9C1D9CB8F1007BDE3A /* LQFactoryMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFactoryMethodViewController.m; sourceTree = "<group>"; };
 		FC75413F1D81534C00AC12F5 /* LQObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQObjectViewController.h; sourceTree = "<group>"; };
@@ -491,6 +509,7 @@
 			children = (
 				FC5BA1121D768B4000284C2E /* Main */,
 				FC3ECBA21DAB9165000CCF8F /* 原型模式 */,
+				FC65B9C11DABAFA900DFAEA1 /* 建造者（生成器）模式 */,
 				FCBB0B341D9E131B00B4ABAE /* MVVM_RAC */,
 				FCBB0B271D9E047300B4ABAE /* RAC */,
 				FC66EB981D9CB8B4007BDE3A /* 工厂方法 */,
@@ -609,6 +628,41 @@
 				FC79E5961D7EB77A00FE9F66 /* NSObject+model.m */,
 				FCD1BDE71D99024500B49103 /* LQInitLlizeViewModel.h */,
 				FCD1BDE81D99024500B49103 /* LQInitLlizeViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC65B9C11DABAFA900DFAEA1 /* 建造者（生成器）模式 */ = {
+			isa = PBXGroup;
+			children = (
+				FC65B9C31DABAFC800DFAEA1 /* Model */,
+				FC65B9C21DABAFB300DFAEA1 /* Controller */,
+			);
+			path = "建造者（生成器）模式";
+			sourceTree = "<group>";
+		};
+		FC65B9C21DABAFB300DFAEA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC65B9C41DABAFEE00DFAEA1 /* LQBuilderViewController.h */,
+				FC65B9C51DABAFEE00DFAEA1 /* LQBuilderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC65B9C31DABAFC800DFAEA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC65B9C71DABB01E00DFAEA1 /* LQProductModel.h */,
+				FC65B9C81DABB01E00DFAEA1 /* LQProductModel.m */,
+				FC24E6F51DABB76B0093A8BB /* LQabstractActorBuilder.h */,
+				FC24E6F61DABB76B0093A8BB /* LQabstractActorBuilder.m */,
+				FC24E6ED1DABB4C80093A8BB /* LQHeroBuilder.h */,
+				FC24E6EE1DABB4C80093A8BB /* LQHeroBuilder.m */,
+				FC24E6F81DABBC7B0093A8BB /* LQAnimalPeopleBuilder.h */,
+				FC24E6F91DABBC7B0093A8BB /* LQAnimalPeopleBuilder.m */,
+				FC24E6F01DABB6F80093A8BB /* LQDirector.h */,
+				FC24E6F11DABB6F80093A8BB /* LQDirector.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1193,6 +1247,8 @@
 				FC7541471D8157C200AC12F5 /* LQDogModel.m in Sources */,
 				FCDF73D21D6C36DE007B838B /* LQImageListCollectionViewCell.m in Sources */,
 				FC79E5941D7EB4E600FE9F66 /* LQPerson+nameProperty.m in Sources */,
+				FC24E6F71DABB76B0093A8BB /* LQabstractActorBuilder.m in Sources */,
+				FC24E6F21DABB6F80093A8BB /* LQDirector.m in Sources */,
 				FCD1BDEC1D9920F500B49103 /* LQCanJumpPeople.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
 				FC91CDFB1D912D600059581B /* LQKVC_KVOViewController.m in Sources */,
@@ -1203,6 +1259,7 @@
 				FCBB0B331D9E0F4F00B4ABAE /* LQRACModel.m in Sources */,
 				FC75414A1D8158F800AC12F5 /* LQAnimalModel.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
+				FC24E6EF1DABB4C80093A8BB /* LQHeroBuilder.m in Sources */,
 				FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
@@ -1211,6 +1268,8 @@
 				FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */,
 				FCBEF39A1D9BA78C005BD7D0 /* LQGetLableHeightViewController.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
+				FC65B9C61DABAFEE00DFAEA1 /* LQBuilderViewController.m in Sources */,
+				FC24E6FA1DABBC7B0093A8BB /* LQAnimalPeopleBuilder.m in Sources */,
 				FC5BA1271D768B4000284C2E /* LQFullViewController.m in Sources */,
 				FC79E58E1D7EACF700FE9F66 /* UIImage+LogImageName.m in Sources */,
 				FCAE48F71D79597000A308C5 /* LQlgorithmViewController.m in Sources */,
@@ -1224,6 +1283,7 @@
 				FC91CDFE1D912D830059581B /* LQPeopleModel.m in Sources */,
 				FCDF73D11D6C36DE007B838B /* LQCustomCollectionViewLayout.m in Sources */,
 				FC5BA1201D768B4000284C2E /* LQMultithreading_GCDViewController.m in Sources */,
+				FC65B9C91DABB01E00DFAEA1 /* LQProductModel.m in Sources */,
 				FC5BA1281D768B4000284C2E /* LQScreenViewController.m in Sources */,
 				FC7541411D81534C00AC12F5 /* LQObjectViewController.m in Sources */,
 				FC51A9321D659CA10004FEAE /* BaseTabBarViewController.m in Sources */,
