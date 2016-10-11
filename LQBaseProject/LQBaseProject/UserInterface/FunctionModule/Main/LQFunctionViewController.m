@@ -23,6 +23,7 @@
 #import "LQGetLableHeightViewController.h"
 #import "LQRACMainViewController.h"
 #import "LQGoodsViewController.h"
+#import "LQCopyViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -111,6 +112,9 @@
         case 13:
             vc = [[LQGoodsViewController alloc]init];
             break;
+        case 14:
+            vc = [[LQCopyViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -120,7 +124,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"RAC",@"MVVM"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"RAC",@"MVVM",@"原型模式与Copy"];
     [self.functionTableView reloadData];
 }
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */; };
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
+		FC3ECBA61DAB9206000CCF8F /* LQCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECBA51DAB9206000CCF8F /* LQCopyViewController.m */; };
+		FC3ECBAA1DAB9228000CCF8F /* LQClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3ECBA91DAB9228000CCF8F /* LQClassModel.m */; };
 		FC4E0A501D938DF700E9FE2B /* LQStoreValue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */; };
 		FC4E0A511D938DF700E9FE2B /* FastCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */; };
 		FC4E0A541D938F2C00E9FE2B /* NSObject+StareValeu.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A531D938F2C00E9FE2B /* NSObject+StareValeu.m */; };
@@ -100,6 +102,10 @@
 		99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FC2343B21D66D91000ADB748 /* LQNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNetworkingRequest.h; sourceTree = "<group>"; };
 		FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNetworkingRequest.m; sourceTree = "<group>"; };
+		FC3ECBA41DAB9206000CCF8F /* LQCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCopyViewController.h; sourceTree = "<group>"; };
+		FC3ECBA51DAB9206000CCF8F /* LQCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCopyViewController.m; sourceTree = "<group>"; };
+		FC3ECBA81DAB9228000CCF8F /* LQClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQClassModel.h; sourceTree = "<group>"; };
+		FC3ECBA91DAB9228000CCF8F /* LQClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQClassModel.m; sourceTree = "<group>"; };
 		FC4E0A4C1D938DF700E9FE2B /* LQStoreValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQStoreValue.h; sourceTree = "<group>"; };
 		FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQStoreValue.m; sourceTree = "<group>"; };
 		FC4E0A4E1D938DF700E9FE2B /* FastCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastCoder.m; sourceTree = "<group>"; };
@@ -307,6 +313,33 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		FC3ECBA21DAB9165000CCF8F /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECBA71DAB9217000CCF8F /* Model */,
+				FC3ECBA31DAB91EA000CCF8F /* Controller */,
+			);
+			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		FC3ECBA31DAB91EA000CCF8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECBA41DAB9206000CCF8F /* LQCopyViewController.h */,
+				FC3ECBA51DAB9206000CCF8F /* LQCopyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC3ECBA71DAB9217000CCF8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC3ECBA81DAB9228000CCF8F /* LQClassModel.h */,
+				FC3ECBA91DAB9228000CCF8F /* LQClassModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FC4E0A4B1D938DDD00E9FE2B /* 存储数据 */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5BA1121D768B4000284C2E /* Main */,
+				FC3ECBA21DAB9165000CCF8F /* 原型模式 */,
 				FCBB0B341D9E131B00B4ABAE /* MVVM_RAC */,
 				FCBB0B271D9E047300B4ABAE /* RAC */,
 				FC66EB981D9CB8B4007BDE3A /* 工厂方法 */,
@@ -1153,6 +1187,7 @@
 				FCBB0B3D1D9E13B300B4ABAE /* LQGoodsViewModel.m in Sources */,
 				FCD1BDE91D99024500B49103 /* LQInitLlizeViewModel.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
+				FC3ECBAA1DAB9228000CCF8F /* LQClassModel.m in Sources */,
 				FC7541511D816E3500AC12F5 /* LQChangeDogModel.m in Sources */,
 				FCE362C01D66F80B00FFFC13 /* UserCenter.m in Sources */,
 				FC7541471D8157C200AC12F5 /* LQDogModel.m in Sources */,
@@ -1171,6 +1206,7 @@
 				FC5BA12E1D768BAC00284C2E /* LQRunTimeViewController.m in Sources */,
 				FC51A9311D659CA10004FEAE /* BaseNavigationViewController.m in Sources */,
 				FC51A9331D659CA10004FEAE /* BaseView.m in Sources */,
+				FC3ECBA61DAB9206000CCF8F /* LQCopyViewController.m in Sources */,
 				FCDF73EA1D6C44A8007B838B /* LQSearchingViewController.m in Sources */,
 				FC78DBFA1D7817B3008C1EF6 /* LQKVOViewController.m in Sources */,
 				FCBEF39A1D9BA78C005BD7D0 /* LQGetLableHeightViewController.m in Sources */,
