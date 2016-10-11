@@ -22,21 +22,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.iCarouselView];
+    [self initUI];
     [self update];
-    
-    NSString * str = @"fasd";
-    [str storeValueWithKey:@"sdf"];
     
     // Do any additional setup after loading the view.
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-}
--(void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    self.navigationController.navigationBarHidden = NO;
+-(void)initUI{
+    self.view.clipsToBounds = YES;
+    [self.view addSubview:self.iCarouselView];
 }
 
 #pragma mark - iCarouselDelegate
@@ -67,6 +60,7 @@
             return value;
     }
 }
+
 -(NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
     return self.dataArr.count;

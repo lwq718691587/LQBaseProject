@@ -26,21 +26,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.pageNumber = 1;
-    self.type = @"cosplay";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除缓存" style:UIBarButtonItemStylePlain target:self action:@selector(clearImageCache)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"设置类型" style:UIBarButtonItemStylePlain target:self action:@selector(selectType)];
-    [self.view addSubview:self.imageListCollectionView];
+    
+    [self initData];
+    [self initNavigation];
+    [self initUI];
     [self update];
-
-    // Do any additional setup after loading the view.
+    
 }
 
+-(void)initData{
+    self.pageNumber = 1;
+    self.type = @"cosplay";
+}
+-(void)initNavigation{
+    self.title = @"cosplay";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除缓存" style:UIBarButtonItemStylePlain target:self action:@selector(clearImageCache)];
+}
+-(void)initUI{
+    [self.view addSubview:self.imageListCollectionView];
+    
+    UIButton * settingTypeBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, ScreenHeight-NavigationBarHeight-TabBarHeight, ScreenWidth, TabBarHeight)];
+    [settingTypeBtn addTarget:self action:@selector(selectType) forControlEvents:UIControlEventTouchDown];
+    [settingTypeBtn setTitle:@"设置类型" forState:UIControlStateNormal];
+    [settingTypeBtn setTitleColor:[UIColor flatBlueColor] forState:UIControlStateNormal];
+    [settingTypeBtn setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:settingTypeBtn];
 
+}
 
 #pragma mark - UICollectionView DataSource and Delegate
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return self.dataArr.count;

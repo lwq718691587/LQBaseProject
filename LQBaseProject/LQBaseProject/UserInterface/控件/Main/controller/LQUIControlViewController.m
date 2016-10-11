@@ -47,9 +47,7 @@
 }
 
 //cell的点击事件
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController * vc ;
     switch (indexPath.row) {
         case 0:
@@ -67,7 +65,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"RAC",@"MVVM",@"原型模式与Copy",@"建造者（生成器）模式"];
+    self.functionDataArr = @[@"瀑布流",@"iCarousel"];
     [self.functionTableView reloadData];
 }
 

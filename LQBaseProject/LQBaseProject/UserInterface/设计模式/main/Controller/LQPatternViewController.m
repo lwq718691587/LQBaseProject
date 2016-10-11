@@ -7,11 +7,15 @@
 //
 
 #import "LQPatternViewController.h"
-#import "LQRACMainViewController.h"
-#import "LQGoodsViewController.h"
+
+#import "LQObjectViewController.h"
+#import "LQFactoryMethodViewController.h"
 #import "LQCopyViewController.h"
 #import "LQBuilderViewController.h"
-
+#import "LQKVOViewController.h"
+#import "LQRACMainViewController.h"
+#import "LQGoodsViewController.h"
+#import "LQBridgePatternViewController.h"
 @interface LQPatternViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) UITableView *functionTableView;
 @property (strong, nonatomic) NSArray *functionDataArr;
@@ -56,16 +60,29 @@
     UIViewController * vc ;
     switch (indexPath.row) {
         case 0:
-            vc = [[LQRACMainViewController alloc]init];
+            vc = [[LQObjectViewController alloc]init];
             break;
         case 1:
-            vc = [[LQGoodsViewController alloc]init];
+            vc = [[LQFactoryMethodViewController alloc]init];
             break;
         case 2:
             vc = [[LQCopyViewController alloc]init];
             break;
         case 3:
             vc = [[LQBuilderViewController alloc]init];
+            break;
+        case 4:
+            vc = [[LQKVOViewController alloc]init];
+            break;
+        case 5:
+            vc = [[LQRACMainViewController alloc]init];
+            break;
+        case 6:
+            vc = [[LQGoodsViewController alloc]init];
+            break;
+        case 7:
+            vc = [[LQBridgePatternViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -75,7 +92,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"RAC",@"MVVM",@"原型模式与Copy",@"建造者（生成器）模式"];
+    self.functionDataArr = @[@"面向对象",@"工厂方法",@"原型模式与Copy",@"建造者（生成器）模式",@"观察者模式",@"RAC",@"MVVM",@"桥接模式"];
     [self.functionTableView reloadData];
 }
 

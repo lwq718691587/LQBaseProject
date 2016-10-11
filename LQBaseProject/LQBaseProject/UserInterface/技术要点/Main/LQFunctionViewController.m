@@ -7,17 +7,14 @@
 //
 
 #import "LQFunctionViewController.h"
+
 #import "LQMultithreading_NSThreadViewController.h"
 #import "LQMultithreading_NSOperationViewController.h"
 #import "LQMultithreading_GCDViewController.h"
 #import "LQCountViewController.h"
 #import "LQScreenViewController.h"
-
 #import "LQRunTimeViewController.h"
-#import "LQKVOViewController.h"
 #import "LQlgorithmViewController.h"
-#import "LQObjectViewController.h"
-
 #import "LQKVC_KVOViewController.h"
 #import "LQCGContextRefViewController.h"
 #import "LQGetLableHeightViewController.h"
@@ -87,21 +84,15 @@
             vc = [[LQRunTimeViewController alloc]init];
             break;
         case 6:
-            vc = [[LQKVOViewController alloc]init];
-            break;
-        case 7:
             vc = [[LQlgorithmViewController alloc]init];
             break;
-        case 8:
-            vc = [[LQObjectViewController alloc]init];
-            break;
-        case 9:
+        case 7:
             vc = [[LQKVC_KVOViewController alloc]init];
             break;    
-        case 10:
+        case 8:
             vc = [[LQCGContextRefViewController alloc]init];
             break;
-        case 11:
+        case 9:
             vc = [[LQGetLableHeightViewController alloc]init];
             break;
         default:
@@ -113,7 +104,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"KVO",@"简单的算法",@"面向对象",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"RAC",@"MVVM",@"原型模式与Copy",@"建造者（生成器）模式"];
+    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度"];
     [self.functionTableView reloadData];
 }
 

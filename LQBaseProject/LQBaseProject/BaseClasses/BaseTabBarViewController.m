@@ -9,11 +9,10 @@
 #import "BaseTabBarViewController.h"
 #import "BaseNavigationViewController.h"
 #import "LQMacro.h"
-#import "LQSexyWomanListViewController.h"
-#import "LQSearchingViewController.h"
-#import "LQScreenViewController.h"
-#import "LQFunctionViewController.h"
 
+#import "LQFunctionViewController.h"
+#import "LQPatternViewController.h"
+#import "LQUIControlViewController.h"
 @interface BaseTabBarViewController ()
 @property(nonatomic,strong)NSMutableArray * btnArr;
 @property(nonatomic,strong)UIImageView * bearbarImageView;
@@ -36,16 +35,19 @@
 -(void)addViewController
 {
     
-    LQSearchingViewController * vc1 = [[LQSearchingViewController alloc]init];
+    LQPatternViewController * vc1 = [[LQPatternViewController alloc]init];
+    vc1.title = @"设计模式学习";
     BaseNavigationViewController * nvc1 = [[BaseNavigationViewController alloc]initWithRootViewController:vc1];
+    nvc1.title = @"";
+ 
     
-    LQSexyWomanListViewController * vc2 = [[LQSexyWomanListViewController alloc]init];
-    vc2.title = @"美女呦";
+    LQUIControlViewController * vc2 = [[LQUIControlViewController alloc]init];
+    vc2.title = @"控件学习";
     BaseNavigationViewController * nvc2 = [[BaseNavigationViewController alloc]initWithRootViewController:vc2];
     nvc2.title = @"";
     
     LQFunctionViewController * vc3 = [[LQFunctionViewController alloc]init];
-    vc3.title = @"功能";
+    vc3.title = @"技术要点学习";
     BaseNavigationViewController * nvc3 = [[BaseNavigationViewController alloc]initWithRootViewController:vc3];
     nvc3.title = @"";
     self.viewControllers = @[nvc1,nvc2,nvc3];
