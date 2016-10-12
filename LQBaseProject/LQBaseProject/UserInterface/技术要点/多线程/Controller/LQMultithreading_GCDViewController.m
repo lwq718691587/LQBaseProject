@@ -40,6 +40,7 @@
         iv.backgroundColor = [UIColor redColor];
         [iv setContentMode:UIViewContentModeScaleAspectFill];
         iv.clipsToBounds = YES;
+        iv.tag = i;
         [self.view addSubview:iv];
         [self.imageViewsArr addObject:iv];
     }
@@ -49,11 +50,60 @@
     button.centerX = ScreenWidth/2;
     [button setTitle:@"加载图片" forState:UIControlStateNormal];
     //添加方法
-    [button addTarget:self action:@selector(loadImageWithMultiGCD) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(loadimage) forControlEvents:UIControlEventTouchUpInside];
+//    [button addTarget:self action:@selector(loadImageWithMultiGCD) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
     self.lock = [[NSLock alloc]init];
 }
+
+-(void)loadimage{
+    
+    // 无论是串行队列 还是 并行队列 只有异步操作任务 GCD才会开启子线程 同步操作任务 不会开启子线程
+    // 同步操作 串行队列中的任务：不会新建线程，按顺序执行任务(毫无用处)
+    // 同步操作 并行队列中的任务：不会新建线程，按顺序执行任务(几乎没用)
+    // 异步操作 串行队列中的任务，会新建线程，按顺序执行任务(非常有用)
+    // 异步操作 并行队列中的任务：会新建多个线程，但是无法确定任务的执行顺序(有用，但是很容易出错)
+    
+    dispatch_queue_t queueBingXing  = dispatch_queue_create("BingXing", DISPATCH_QUEUE_CONCURRENT);//并行队列
+    dispatch_queue_t queueXiTongBingXing = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);//全局队列 类似并行队列 一般用这个
+    dispatch_queue_t queueChuanXing = dispatch_queue_create("ChuanXing", DISPATCH_QUEUE_SERIAL);//串行队列
+    //每一个应用程序只有一个主线程即只有一个主队列 为什么需要再主线程上执行任务呢？因为在ios开发中，所有UI的更新任务都必须在主线程上执行。
+    //    主队列中的操作都是在主线程中执行的，不存在异步的概念
+    //    主队列中添加的同步操作永远不会被执行(会死锁)
+    dispatch_queue_t queueMain      = dispatch_get_main_queue();
+
+    for (UIImageView * iv in self.imageViewsArr) {
+        dispatch_async(queueBingXing, ^{
+            NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://image.tianjimedia.com/uploadImages/2013/246/QCT323YPH3QB.jpg"]];
+            NSLog(@"%@",[NSThread currentThread]);
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                iv.image = [UIImage imageWithData:data];
+                NSLog(@"是否主线程：%d",[NSThread isMainThread]);
+            });
+            
+//            dispatch_sync(dispatch_get_main_queue(), ^{
+//                iv.image = [UIImage imageWithData:data];
+//                NSLog(@"是否主线程：%d",[NSThread isMainThread]);
+//            });
+        });
+    }
+    
+
+    
+    //同步任务 不能再主线程中执行
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//        NSLog(@"同步执行logo语句");
+//    });
+    
+    
+    
+
+}
+
+
+
 /**
  *  多线程下载图片
  */
@@ -76,10 +126,6 @@
     
     dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     for (int i = 0; i <count; i++) {
-        //同步执行队列任务
-//        dispatch_sync(globalQueue, ^{
-//            [self loadImageView:i];
-//        });
         //异步执行队列任务
         dispatch_async(globalQueue, ^{
             [self loadImageView:i];
@@ -87,6 +133,9 @@
         
      
     }
+    
+    
+    
     
 }
 
@@ -126,7 +175,7 @@
 //    //完成后枷锁
 //    [self.lock unlock];
     
-    //第二种
+    //第二种 保证线程A进入相应代码之后B无法进入，只有等待A完成相关操作之后B才能进入即可。下面分别使用NSLock和@synchronized对代码进行修改。
     @synchronized (self) {
         if (self.imageNamesArr.count > 0) {
             name = [self.imageNamesArr lastObject];
