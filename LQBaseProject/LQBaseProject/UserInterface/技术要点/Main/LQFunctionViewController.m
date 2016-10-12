@@ -8,6 +8,7 @@
 
 #import "LQFunctionViewController.h"
 
+#import "LQDveloperUtilityViewController.h"
 #import "LQMultithreading_NSThreadViewController.h"
 #import "LQMultithreading_NSOperationViewController.h"
 #import "LQMultithreading_GCDViewController.h"
@@ -18,7 +19,7 @@
 #import "LQKVC_KVOViewController.h"
 #import "LQCGContextRefViewController.h"
 #import "LQGetLableHeightViewController.h"
-
+#import "LQHttpViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -34,7 +35,7 @@
     [self initUI];
     [self update];
     
-//    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
+    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
     
     
 }
@@ -66,34 +67,40 @@
     UIViewController * vc ;
     switch (indexPath.row) {
         case 0:
-            vc = [[LQMultithreading_NSThreadViewController alloc]init];
+            vc = [[LQDveloperUtilityViewController alloc]init];
             break;
         case 1:
-            vc = [[LQMultithreading_NSOperationViewController alloc]init];
+            vc = [[LQMultithreading_NSThreadViewController alloc]init];
             break;
         case 2:
-            vc = [[LQMultithreading_GCDViewController alloc]init];
+            vc = [[LQMultithreading_NSOperationViewController alloc]init];
             break;
         case 3:
-            vc = [[LQScreenViewController alloc]init];
+            vc = [[LQMultithreading_GCDViewController alloc]init];
             break;
         case 4:
-            vc = [[LQCountViewController alloc]init];
+            vc = [[LQScreenViewController alloc]init];
             break;
         case 5:
-            vc = [[LQRunTimeViewController alloc]init];
+            vc = [[LQCountViewController alloc]init];
             break;
         case 6:
-            vc = [[LQlgorithmViewController alloc]init];
+            vc = [[LQRunTimeViewController alloc]init];
             break;
         case 7:
+            vc = [[LQlgorithmViewController alloc]init];
+            break;
+        case 8:
             vc = [[LQKVC_KVOViewController alloc]init];
             break;    
-        case 8:
+        case 9:
             vc = [[LQCGContextRefViewController alloc]init];
             break;
-        case 9:
+        case 10:
             vc = [[LQGetLableHeightViewController alloc]init];
+            break;
+        case 11:
+            vc = [[LQHttpViewController alloc]init];
             break;
         default:
             break;
@@ -104,7 +111,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度"];
+    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求"];
     [self.functionTableView reloadData];
 }
 

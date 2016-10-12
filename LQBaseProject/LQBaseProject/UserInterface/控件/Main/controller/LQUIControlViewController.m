@@ -9,6 +9,8 @@
 #import "LQUIControlViewController.h"
 #import "LQSexyWomanListViewController.h"
 #import "LQSearchingViewController.h"
+#import "LQCustomTabbarViewController.h"
+
 @interface LQUIControlViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) UITableView *functionTableView;
 @property (strong, nonatomic) NSArray *functionDataArr;
@@ -56,6 +58,9 @@
         case 1:
             vc = [[LQSearchingViewController alloc]init];
             break;
+        case 2:
+            vc = [[LQCustomTabbarViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -65,7 +70,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"瀑布流",@"iCarousel"];
+    self.functionDataArr = @[@"瀑布流+图片从点击出放大",@"iCarousel",@"完全自定义tabbar"];
     [self.functionTableView reloadData];
 }
 

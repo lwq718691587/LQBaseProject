@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>pp鸭 - 压缩图片工具</string>
+		<key>downloadUrl</key>
+		<string>http://ppduck.com</string>
+	</dict>
+    <dict>
+        <key>title</key>
+        <string>Paw - 借口调试工具</string>
+        <key>downloadUrl</key>
+        <string>http://soft.macx.cn/6609.htm</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>PaintCode - 制作复杂layer的工具</string>
+        <key>downloadUrl</key>
+        <string>http://soft.macx.cn/5431.htm</string>
+    </dict>
+    <dict>
+        <key>title</key>
+        <string>QuartzCode - 快速搭建动画的工具</string>
+        <key>downloadUrl</key>
+        <string>http://www.pc6.com/mac/140157.html</string>
+    </dict>
+</array>
+</plist>

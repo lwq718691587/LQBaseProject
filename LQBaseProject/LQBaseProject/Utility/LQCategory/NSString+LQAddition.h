@@ -56,6 +56,24 @@
  */
 -(NSString *)getNOSpaceStr;
 
+/**
+ *  Create a MD5 string from self
+ *
+ *  @return Returns the MD5 NSString from self
+ */
+- (NSString *)MD5;
+/**
+ *  @brief  JSON字符串转成NSDictionary
+ *
+ *  @return NSDictionary
+ */
+-(NSDictionary *) dictionaryValue;
 
+/**
+ *  检查是够是邮箱
+ *
+ *  @return Returns YES if it's an email, NO if not
+ */
+- (BOOL)isEmail;
 
 @end

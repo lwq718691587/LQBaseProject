@@ -7,6 +7,8 @@
 //
 
 #import "NSString+LQAddition.h"
+#import <CommonCrypto/CommonDigest.h>
+#define CC_MD5_DIGEST_LENGTH    16          /* digest length in bytes */
 
 @implementation NSString (LQAddition)
 
@@ -84,5 +86,45 @@
     return phoneNumber;
 }
 
+
+/**
+ *  @brief  JSON字符串转成NSDictionary
+ *
+ *  @return NSDictionary
+ */
+-(NSDictionary *) dictionaryValue{
+    NSError *errorJson;
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errorJson];
+    if (errorJson != nil) {
+#ifdef DEBUG
+        NSLog(@"fail to get dictioanry from JSON: %@, error: %@", self, errorJson);
+#endif
+    }
+    return jsonDict;
+}
+
+
+- (BOOL)isEmail
+{
+    NSString *emailRegEx = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$";
+    
+    NSPredicate *regExPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegEx];
+    return [regExPredicate evaluateWithObject:[self lowercaseString]];
+}
+
+- (NSString *)MD5
+{
+    if(self == nil || [self length] == 0)
+        return nil;
+    
+    unsigned char digest[CC_MD5_DIGEST_LENGTH], i;
+    CC_MD5([self UTF8String], (int)[self lengthOfBytesUsingEncoding:NSUTF8StringEncoding], digest);
+    NSMutableString *ms = [NSMutableString string];
+    for(i=0;i<CC_MD5_DIGEST_LENGTH;i++)
+    {
+        [ms appendFormat: @"%02x", (int)(digest[i])];
+    }
+    return [ms copy];
+}
 
 @end

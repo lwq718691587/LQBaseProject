@@ -36,18 +36,18 @@
 {
     
     LQPatternViewController * vc1 = [[LQPatternViewController alloc]init];
-    vc1.title = @"设计模式学习";
+    vc1.title = @"设计模式";
     BaseNavigationViewController * nvc1 = [[BaseNavigationViewController alloc]initWithRootViewController:vc1];
     nvc1.title = @"";
  
     
     LQUIControlViewController * vc2 = [[LQUIControlViewController alloc]init];
-    vc2.title = @"控件学习";
+    vc2.title = @"控件";
     BaseNavigationViewController * nvc2 = [[BaseNavigationViewController alloc]initWithRootViewController:vc2];
     nvc2.title = @"";
     
     LQFunctionViewController * vc3 = [[LQFunctionViewController alloc]init];
-    vc3.title = @"技术要点学习";
+    vc3.title = @"技术要点";
     BaseNavigationViewController * nvc3 = [[BaseNavigationViewController alloc]initWithRootViewController:vc3];
     nvc3.title = @"";
     self.viewControllers = @[nvc1,nvc2,nvc3];

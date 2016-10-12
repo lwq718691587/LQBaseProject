@@ -29,7 +29,7 @@
     [self initNavigation];
     [self initUI];
     [self update];
-
+//http://blog.csdn.net/lovelion/article/details/17517213  非常好的设计模式资料
     //    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
 }
 

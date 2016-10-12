@@ -71,7 +71,7 @@
 //            [self loadImageView:i];
 //        });
 //    }
-    //并发
+    //并行队列
     NSInteger count = 15;//self.imageViewsArr.count;
     
     dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
