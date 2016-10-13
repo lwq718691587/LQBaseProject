@@ -21,4 +21,8 @@
                      success:(void(^)(id data))success
                      failure:(void(^)(NSError * error))failure;
 
+
++(void)downloadWithUrlStr:(NSString *)urlStr
+                  success:(void(^)(id data))success
+                  failure:(void(^)(NSError * error))failure;
 @end

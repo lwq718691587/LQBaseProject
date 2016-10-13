@@ -8,6 +8,10 @@
 
 #import "LQNetworking.h"
 
+
+@interface LQNetworking ()<NSURLSessionDownloadDelegate>
+
+@end
 @implementation LQNetworking
 
 
@@ -53,6 +57,26 @@
                      success:(void(^)(id data))success
                      failure:(void(^)(NSError * error))failure{
     [self baseRequestwith:urlStr parameters:parameters success:success failure:failure];
+}
+
++(void)downloadWithUrlStr:(NSString *)urlStr
+                  success:(void(^)(id data))success
+                  failure:(void(^)(NSError * error))failure{
+
+    NSURLSession * session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    
+    NSURL *url = [NSURL URLWithString:urlStr];
+
+    
+    
+    NSURLSessionDownloadTask * task = [session downloadTaskWithURL:url];
+    
+    
+    [task resume];
+}
+
+-(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
+    
 }
 
 @end
