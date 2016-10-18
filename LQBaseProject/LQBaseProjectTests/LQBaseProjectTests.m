@@ -31,6 +31,7 @@
 */
 #import <XCTest/XCTest.h>
 #import "NSString+LQAddition.h"
+#import "LQSqlite.h"
 @interface LQBaseProjectTests : XCTestCase
 
 @end
@@ -49,10 +50,10 @@
 
 - (void)testExample {
     
-    XCTAssertTrue([@"17600802935" isTelephoneNumber]);
-    XCTAssertTrue([@"17600802934" isTelephoneNumber]);
-    XCTAssertTrue([@"17600802932" isTelephoneNumber]);
-    XCTAssertTrue([@"17600802934" isTelephoneNumber]);
+
+    
+    
+ 
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
 }

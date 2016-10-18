@@ -56,7 +56,7 @@
 -(int)funMult_2:(int)n{
     int sum = 1;
     if (n > 2) {
-        sum = n * (n-1) * [self funMult_2:n-2];
+        sum = n * [self funMult_2:n-1];
     }
     return sum;
 }

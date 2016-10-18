@@ -16,6 +16,8 @@
 #import "LQRACMainViewController.h"
 #import "LQGoodsViewController.h"
 #import "LQBridgePatternViewController.h"
+#import "LQChainofResponsibilityViewController.h"
+#import "LQCommandViewController.h"
 @interface LQPatternViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) UITableView *functionTableView;
 @property (strong, nonatomic) NSArray *functionDataArr;
@@ -83,6 +85,10 @@
         case 7:
             vc = [[LQBridgePatternViewController alloc]init];
             break;
+        case 8:
+            vc = [[LQChainofResponsibilityViewController alloc]init];
+        case 9:
+            vc = [[LQCommandViewController alloc]init];
         default:
             break;
     }
@@ -92,7 +98,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"面向对象",@"工厂方法",@"原型模式与Copy",@"建造者（生成器）模式",@"观察者模式",@"RAC",@"MVVM",@"桥接模式"];
+    self.functionDataArr = @[@"面向对象",@"工厂方法",@"原型模式与Copy",@"建造者（生成器）模式",@"观察者模式",@"RAC",@"MVVM",@"桥接模式",@"责任链模式",@"命令模式"];
     [self.functionTableView reloadData];
 }
 

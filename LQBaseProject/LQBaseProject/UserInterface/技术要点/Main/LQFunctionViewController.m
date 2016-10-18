@@ -20,6 +20,7 @@
 #import "LQCGContextRefViewController.h"
 #import "LQGetLableHeightViewController.h"
 #import "LQHttpViewController.h"
+#import "LQSqliteViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -102,6 +103,9 @@
         case 11:
             vc = [[LQHttpViewController alloc]init];
             break;
+        case 12:
+            vc = [[LQSqliteViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -111,7 +115,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求"];
+    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库"];
     [self.functionTableView reloadData];
 }
 

@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */; };
+		FC1627F71DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1627F61DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m */; };
+		FC1627FA1DB4A721009A0ABB /* LQHandlerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1627F91DB4A721009A0ABB /* LQHandlerModel.m */; };
+		FC1628001DB4A84D009A0ABB /* LQHandler_AModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1627FF1DB4A84D009A0ABB /* LQHandler_AModel.m */; };
+		FC1628031DB4A98F009A0ABB /* LQHandler_BModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628021DB4A98F009A0ABB /* LQHandler_BModel.m */; };
+		FC1628061DB4A9C5009A0ABB /* LQHandler_CModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628051DB4A9C5009A0ABB /* LQHandler_CModel.m */; };
+		FC16280C1DB4B472009A0ABB /* LQCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC16280B1DB4B472009A0ABB /* LQCommandViewController.m */; };
+		FC1628121DB4B69A009A0ABB /* LQInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628111DB4B69A009A0ABB /* LQInvoker.m */; };
+		FC16281B1DB4B7BA009A0ABB /* LQAbstractCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628181DB4B7BA009A0ABB /* LQAbstractCommand.m */; };
+		FC16281C1DB4B7BA009A0ABB /* LQCommand_A.m in Sources */ = {isa = PBXBuildFile; fileRef = FC16281A1DB4B7BA009A0ABB /* LQCommand_A.m */; };
+		FC1628251DB4BCE5009A0ABB /* LQCommandAReciver.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628241DB4BCE5009A0ABB /* LQCommandAReciver.m */; };
+		FC1628281DB4C039009A0ABB /* LQCommand_B.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628271DB4C039009A0ABB /* LQCommand_B.m */; };
+		FC16282B1DB4C349009A0ABB /* LQCommandQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC16282A1DB4C349009A0ABB /* LQCommandQueue.m */; };
+		FC16282E1DB4C571009A0ABB /* LQInvokerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC16282D1DB4C571009A0ABB /* LQInvokerQueue.m */; };
+		FC1628311DB4C6CF009A0ABB /* LQCommandBReciver.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1628301DB4C6CF009A0ABB /* LQCommandBReciver.m */; };
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
 		FC2D67D11DAE2BD400152186 /* SVProgressHUD+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D67D01DAE2BD400152186 /* SVProgressHUD+LQAddition.m */; };
 		FC4E0A501D938DF700E9FE2B /* LQStoreValue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4E0A4D1D938DF700E9FE2B /* LQStoreValue.m */; };
@@ -239,6 +253,11 @@
 		FC759E111DAC84E900538219 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E0F1DAC84E900538219 /* UserEntity.m */; };
 		FC759E141DAC853700538219 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E131DAC853700538219 /* UIImage+Addition.m */; };
 		FC759E171DAC855400538219 /* NSFileManager+ Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E151DAC855400538219 /* NSFileManager+ Addition.m */; };
+		FC9123AF1DB073100087C7F8 /* LQSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9123AE1DB073100087C7F8 /* LQSqlite.m */; };
+		FC9123B11DB073610087C7F8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9123B01DB073610087C7F8 /* libsqlite3.tbd */; };
+		FC9123B41DB085260087C7F8 /* LQSqliteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9123B31DB085260087C7F8 /* LQSqliteViewController.m */; };
+		FC9123B81DB08BF80087C7F8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC9123B61DB08BF80087C7F8 /* Model.xcdatamodeld */; };
+		FC9123BA1DB08F1D0087C7F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9123B91DB08F1D0087C7F8 /* CoreData.framework */; };
 		FCA53CCF1DA91FA600536B8D /* LQBuytests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA53CCE1DA91FA600536B8D /* LQBuytests.m */; };
 		FCABCD731DAD0A39007BED63 /* LQKVC_KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCABCD6F1DAD0A39007BED63 /* LQKVC_KVOViewController.m */; };
 		FCABCD741DAD0A39007BED63 /* LQPeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCABCD721DAD0A39007BED63 /* LQPeopleModel.m */; };
@@ -324,6 +343,34 @@
 		076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LQBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6770FB7C6140271D6EBA97 /* Pods-LQBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		FC1627F51DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQChainofResponsibilityViewController.h; sourceTree = "<group>"; };
+		FC1627F61DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQChainofResponsibilityViewController.m; sourceTree = "<group>"; };
+		FC1627F81DB4A721009A0ABB /* LQHandlerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHandlerModel.h; sourceTree = "<group>"; };
+		FC1627F91DB4A721009A0ABB /* LQHandlerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHandlerModel.m; sourceTree = "<group>"; };
+		FC1627FE1DB4A84D009A0ABB /* LQHandler_AModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHandler_AModel.h; sourceTree = "<group>"; };
+		FC1627FF1DB4A84D009A0ABB /* LQHandler_AModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHandler_AModel.m; sourceTree = "<group>"; };
+		FC1628011DB4A98F009A0ABB /* LQHandler_BModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHandler_BModel.h; sourceTree = "<group>"; };
+		FC1628021DB4A98F009A0ABB /* LQHandler_BModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHandler_BModel.m; sourceTree = "<group>"; };
+		FC1628041DB4A9C5009A0ABB /* LQHandler_CModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHandler_CModel.h; sourceTree = "<group>"; };
+		FC1628051DB4A9C5009A0ABB /* LQHandler_CModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQHandler_CModel.m; sourceTree = "<group>"; };
+		FC16280A1DB4B472009A0ABB /* LQCommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommandViewController.h; sourceTree = "<group>"; };
+		FC16280B1DB4B472009A0ABB /* LQCommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommandViewController.m; sourceTree = "<group>"; };
+		FC1628101DB4B69A009A0ABB /* LQInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQInvoker.h; sourceTree = "<group>"; };
+		FC1628111DB4B69A009A0ABB /* LQInvoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQInvoker.m; sourceTree = "<group>"; };
+		FC1628171DB4B7BA009A0ABB /* LQAbstractCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQAbstractCommand.h; sourceTree = "<group>"; };
+		FC1628181DB4B7BA009A0ABB /* LQAbstractCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQAbstractCommand.m; sourceTree = "<group>"; };
+		FC1628191DB4B7BA009A0ABB /* LQCommand_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommand_A.h; sourceTree = "<group>"; };
+		FC16281A1DB4B7BA009A0ABB /* LQCommand_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommand_A.m; sourceTree = "<group>"; };
+		FC1628231DB4BCE5009A0ABB /* LQCommandAReciver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommandAReciver.h; sourceTree = "<group>"; };
+		FC1628241DB4BCE5009A0ABB /* LQCommandAReciver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommandAReciver.m; sourceTree = "<group>"; };
+		FC1628261DB4C039009A0ABB /* LQCommand_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommand_B.h; sourceTree = "<group>"; };
+		FC1628271DB4C039009A0ABB /* LQCommand_B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommand_B.m; sourceTree = "<group>"; };
+		FC1628291DB4C349009A0ABB /* LQCommandQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommandQueue.h; sourceTree = "<group>"; };
+		FC16282A1DB4C349009A0ABB /* LQCommandQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommandQueue.m; sourceTree = "<group>"; };
+		FC16282C1DB4C571009A0ABB /* LQInvokerQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQInvokerQueue.h; sourceTree = "<group>"; };
+		FC16282D1DB4C571009A0ABB /* LQInvokerQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQInvokerQueue.m; sourceTree = "<group>"; };
+		FC16282F1DB4C6CF009A0ABB /* LQCommandBReciver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCommandBReciver.h; sourceTree = "<group>"; };
+		FC1628301DB4C6CF009A0ABB /* LQCommandBReciver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCommandBReciver.m; sourceTree = "<group>"; };
 		FC2343B21D66D91000ADB748 /* LQNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNetworkingRequest.h; sourceTree = "<group>"; };
 		FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNetworkingRequest.m; sourceTree = "<group>"; };
 		FC2D67CF1DAE2BD400152186 /* SVProgressHUD+LQAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+LQAddition.h"; sourceTree = "<group>"; };
@@ -790,6 +837,13 @@
 		FC759E131DAC853700538219 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
 		FC759E151DAC855400538219 /* NSFileManager+ Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ Addition.m"; sourceTree = "<group>"; };
 		FC759E161DAC855400538219 /* NSFileManager+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Addition.h"; sourceTree = "<group>"; };
+		FC9123AD1DB073100087C7F8 /* LQSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSqlite.h; sourceTree = "<group>"; };
+		FC9123AE1DB073100087C7F8 /* LQSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSqlite.m; sourceTree = "<group>"; };
+		FC9123B01DB073610087C7F8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FC9123B21DB085260087C7F8 /* LQSqliteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSqliteViewController.h; sourceTree = "<group>"; };
+		FC9123B31DB085260087C7F8 /* LQSqliteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSqliteViewController.m; sourceTree = "<group>"; };
+		FC9123B71DB08BF80087C7F8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FC9123B91DB08F1D0087C7F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FCA53CCE1DA91FA600536B8D /* LQBuytests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBuytests.m; sourceTree = "<group>"; };
 		FCABCD6E1DAD0A39007BED63 /* LQKVC_KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKVC_KVOViewController.h; sourceTree = "<group>"; };
 		FCABCD6F1DAD0A39007BED63 /* LQKVC_KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVC_KVOViewController.m; sourceTree = "<group>"; };
@@ -923,6 +977,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9123BA1DB08F1D0087C7F8 /* CoreData.framework in Frameworks */,
+				FC9123B11DB073610087C7F8 /* libsqlite3.tbd in Frameworks */,
 				AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -947,6 +1003,8 @@
 		E578BE0F3C4D849A7326BF1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC9123B91DB08F1D0087C7F8 /* CoreData.framework */,
+				FC9123B01DB073610087C7F8 /* libsqlite3.tbd */,
 				076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */,
 			);
 			name = Frameworks;
@@ -959,6 +1017,88 @@
 				2D6770FB7C6140271D6EBA97 /* Pods-LQBaseProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC1627F21DB4A63A009A0ABB /* 责任链模式 */ = {
+			isa = PBXGroup;
+			children = (
+				FC1627F31DB4A6A8009A0ABB /* Controller */,
+				FC1627F41DB4A6A8009A0ABB /* Model */,
+			);
+			path = "责任链模式";
+			sourceTree = "<group>";
+		};
+		FC1627F31DB4A6A8009A0ABB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC1627F51DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.h */,
+				FC1627F61DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC1627F41DB4A6A8009A0ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC1627F81DB4A721009A0ABB /* LQHandlerModel.h */,
+				FC1627F91DB4A721009A0ABB /* LQHandlerModel.m */,
+				FC1627FE1DB4A84D009A0ABB /* LQHandler_AModel.h */,
+				FC1627FF1DB4A84D009A0ABB /* LQHandler_AModel.m */,
+				FC1628011DB4A98F009A0ABB /* LQHandler_BModel.h */,
+				FC1628021DB4A98F009A0ABB /* LQHandler_BModel.m */,
+				FC1628041DB4A9C5009A0ABB /* LQHandler_CModel.h */,
+				FC1628051DB4A9C5009A0ABB /* LQHandler_CModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC1628071DB4B425009A0ABB /* 命令模式 */ = {
+			isa = PBXGroup;
+			children = (
+				FC1628081DB4B459009A0ABB /* Controller */,
+				FC1628091DB4B459009A0ABB /* Model */,
+			);
+			path = "命令模式";
+			sourceTree = "<group>";
+		};
+		FC1628081DB4B459009A0ABB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC16280A1DB4B472009A0ABB /* LQCommandViewController.h */,
+				FC16280B1DB4B472009A0ABB /* LQCommandViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC1628091DB4B459009A0ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC1628161DB4B7A4009A0ABB /* 命令 */,
+				FC1628101DB4B69A009A0ABB /* LQInvoker.h */,
+				FC1628111DB4B69A009A0ABB /* LQInvoker.m */,
+				FC16282C1DB4C571009A0ABB /* LQInvokerQueue.h */,
+				FC16282D1DB4C571009A0ABB /* LQInvokerQueue.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC1628161DB4B7A4009A0ABB /* 命令 */ = {
+			isa = PBXGroup;
+			children = (
+				FC1628171DB4B7BA009A0ABB /* LQAbstractCommand.h */,
+				FC1628181DB4B7BA009A0ABB /* LQAbstractCommand.m */,
+				FC1628191DB4B7BA009A0ABB /* LQCommand_A.h */,
+				FC16281A1DB4B7BA009A0ABB /* LQCommand_A.m */,
+				FC1628231DB4BCE5009A0ABB /* LQCommandAReciver.h */,
+				FC1628241DB4BCE5009A0ABB /* LQCommandAReciver.m */,
+				FC1628261DB4C039009A0ABB /* LQCommand_B.h */,
+				FC1628271DB4C039009A0ABB /* LQCommand_B.m */,
+				FC16282F1DB4C6CF009A0ABB /* LQCommandBReciver.h */,
+				FC1628301DB4C6CF009A0ABB /* LQCommandBReciver.m */,
+				FC1628291DB4C349009A0ABB /* LQCommandQueue.h */,
+				FC16282A1DB4C349009A0ABB /* LQCommandQueue.m */,
+			);
+			path = "命令";
 			sourceTree = "<group>";
 		};
 		FC2343B01D66D8F800ADB748 /* Utility */ = {
@@ -1029,6 +1169,7 @@
 				FC51A9351D659CDE0004FEAE /* Macro */,
 				FCE3629D1D66E19300FFFC13 /* UserInterface */,
 				FCE362BD1D66F7D400FFFC13 /* SingleInstance */,
+				FC9123B51DB08BD20087C7F8 /* Coredata */,
 				FC2343B01D66D8F800ADB748 /* Utility */,
 				FC51A9251D659CA10004FEAE /* BaseClasses */,
 				FC51A8F21D659C8F0004FEAE /* Supporting Files */,
@@ -2185,6 +2326,41 @@
 			path = Fmdb;
 			sourceTree = "<group>";
 		};
+		FC9123AA1DB072BA0087C7F8 /* sqlite的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				FC9123AC1DB072D30087C7F8 /* Model */,
+				FC9123AB1DB072C40087C7F8 /* Controller */,
+			);
+			path = "sqlite的使用";
+			sourceTree = "<group>";
+		};
+		FC9123AB1DB072C40087C7F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC9123B21DB085260087C7F8 /* LQSqliteViewController.h */,
+				FC9123B31DB085260087C7F8 /* LQSqliteViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC9123AC1DB072D30087C7F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC9123AD1DB073100087C7F8 /* LQSqlite.h */,
+				FC9123AE1DB073100087C7F8 /* LQSqlite.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC9123B51DB08BD20087C7F8 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				FC9123B61DB08BF80087C7F8 /* Model.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
 		FCABCD6C1DAD0A39007BED63 /* KVC&KVO */ = {
 			isa = PBXGroup;
 			children = (
@@ -2329,6 +2505,7 @@
 		FCE71F7E1DACF6460046C1AA /* 技术要点 */ = {
 			isa = PBXGroup;
 			children = (
+				FC9123AA1DB072BA0087C7F8 /* sqlite的使用 */,
 				FC637E261DAE057100ED4FAC /* 网络 */,
 				FCE71FB31DACF6460046C1AA /* 计算label的高度 */,
 				FCE71FAF1DACF6460046C1AA /* 简单的算法 */,
@@ -2513,6 +2690,8 @@
 		FCE71FB61DACF6460046C1AA /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				FC1628071DB4B425009A0ABB /* 命令模式 */,
+				FC1627F21DB4A63A009A0ABB /* 责任链模式 */,
 				FC72EDBF1DAD132D007C7C41 /* 桥接模式 */,
 				FCE71FE31DACF6470046C1AA /* 建造者（生成器）模式 */,
 				FCE71FD71DACF6470046C1AA /* 原型模式 */,
@@ -3069,6 +3248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC667E3C1DAD17CF00410135 /* LQAbstractPenModel.m in Sources */,
+				FC9123B41DB085260087C7F8 /* LQSqliteViewController.m in Sources */,
 				FCE362AF1D66EDBC00FFFC13 /* NSDate+LQAddition.m in Sources */,
 				FC5651691DAC8C060011779B /* UITableView+iOS7Style.m in Sources */,
 				FCE7202B1DACF6470046C1AA /* NSObject+model.m in Sources */,
@@ -3126,6 +3306,7 @@
 				FC56511F1DAC8C060011779B /* UIApplication+ApplicationSize.m in Sources */,
 				FCE720541DACF6470046C1AA /* LQCustomCollectionViewLayout.m in Sources */,
 				FC5650D11DAC8C060011779B /* NSData+Base64.m in Sources */,
+				FC16282E1DB4C571009A0ABB /* LQInvokerQueue.m in Sources */,
 				FCE720521DACF6470046C1AA /* LQSexyWomanListViewController.m in Sources */,
 				FCE720391DACF6470046C1AA /* LQGoodsViewController.m in Sources */,
 				FCE7203B1DACF6470046C1AA /* LQGoodsViewModel.m in Sources */,
@@ -3143,6 +3324,8 @@
 				FC5650FA1DAC8C060011779B /* NSMutableString+Ruby.m in Sources */,
 				FC56514C1DAC8C060011779B /* UIImageView+FaceAwareFill.m in Sources */,
 				FC5650C91DAC8C060011779B /* NSManagedObjectContext+ObjectClear.m in Sources */,
+				FC9123B81DB08BF80087C7F8 /* Model.xcdatamodeld in Sources */,
+				FC1628281DB4C039009A0ABB /* LQCommand_B.m in Sources */,
 				FC759E101DAC84E900538219 /* PeakSqlite.m in Sources */,
 				FC5650CC1DAC8C060011779B /* CLLocationManager+Blocks.m in Sources */,
 				FCE720311DACF6470046C1AA /* LQFullViewController.m in Sources */,
@@ -3172,6 +3355,7 @@
 				FC56516B1DAC8C060011779B /* UITextField+Blocks.m in Sources */,
 				FC5651021DAC8C060011779B /* NSString+MIME.m in Sources */,
 				FCE720531DACF6470046C1AA /* LQSexyWomanListModel.m in Sources */,
+				FC16281C1DB4B7BA009A0ABB /* LQCommand_A.m in Sources */,
 				FC5651611DAC8C060011779B /* UIResponder+UIAdapt.m in Sources */,
 				FCE362B51D66F17500FFFC13 /* KSKRoundCornerCell.m in Sources */,
 				FCE720491DACF6470046C1AA /* LQKVOModel.m in Sources */,
@@ -3179,6 +3363,7 @@
 				FC5650C61DAC8C060011779B /* NSManagedObjectContext+Extensions.m in Sources */,
 				FC5650C41DAC8C060011779B /* NSManagedObject+DictionaryExport.m in Sources */,
 				FC5651511DAC8C060011779B /* UILabel+AutoSize.m in Sources */,
+				FC1628031DB4A98F009A0ABB /* LQHandler_BModel.m in Sources */,
 				FCE7203A1DACF6470046C1AA /* LQGoodsModel.m in Sources */,
 				FC5651131DAC8C060011779B /* NSUserDefaults+iCloudSync.m in Sources */,
 				FC5651661DAC8C060011779B /* UISearchBar+Blocks.m in Sources */,
@@ -3194,13 +3379,17 @@
 				FC56517E1DAC8C060011779B /* UIView+Shake.m in Sources */,
 				FC5651491DAC8C060011779B /* UIImage+Vector.m in Sources */,
 				FC56511E1DAC8C060011779B /* UIAlertView+Block.m in Sources */,
+				FC16282B1DB4C349009A0ABB /* LQCommandQueue.m in Sources */,
 				FC56510C1DAC8C060011779B /* NSString+XML.m in Sources */,
 				FCE720231DACF6470046C1AA /* LQCGContextRefViewController.m in Sources */,
+				FC1628311DB4C6CF009A0ABB /* LQCommandBReciver.m in Sources */,
 				FC56510E1DAC8C060011779B /* NSTimer+Blocks.m in Sources */,
+				FC1628251DB4BCE5009A0ABB /* LQCommandAReciver.m in Sources */,
 				FC56516A1DAC8C060011779B /* UITableViewCell+NIB.m in Sources */,
 				FC51A9341D659CA10004FEAE /* BaseViewController.m in Sources */,
 				FC5650F61DAC8C060011779B /* NSObject+Property.m in Sources */,
 				FCE720241DACF6470046C1AA /* LQCGContextReftVIew.m in Sources */,
+				FC1628121DB4B69A009A0ABB /* LQInvoker.m in Sources */,
 				FC5650E81DAC8C060011779B /* NSFileManager+Paths.m in Sources */,
 				FC5651671DAC8C060011779B /* UISplitViewController+QuickAccess.m in Sources */,
 				FC5651201DAC8C060011779B /* UIApplication+KeyboardFrame.m in Sources */,
@@ -3242,10 +3431,12 @@
 				FC5650F21DAC8C060011779B /* NSObject+Blocks.m in Sources */,
 				FCE720661DACF6CC0046C1AA /* LQAnimalModel.m in Sources */,
 				FC5650CF1DAC8C060011779B /* NSBundle+AppIcon.m in Sources */,
+				FC1628061DB4A9C5009A0ABB /* LQHandler_CModel.m in Sources */,
 				FC5651351DAC8C060011779B /* UIDevice+Hardware.m in Sources */,
 				FC56512F1DAC8C060011779B /* UIColor+HEX.m in Sources */,
 				FC5651251DAC8C060011779B /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				FC5651031DAC8C060011779B /* NSString+Pinyin.m in Sources */,
+				FC1627FA1DB4A721009A0ABB /* LQHandlerModel.m in Sources */,
 				FC5650EE1DAC8C060011779B /* NSObject+AddProperty.m in Sources */,
 				FC5651881DAC8C060011779B /* UIViewController+RecursiveDescription.m in Sources */,
 				FC5650CD1DAC8C060011779B /* NSArray+Block.m in Sources */,
@@ -3286,13 +3477,17 @@
 				FCE720691DACF6CC0046C1AA /* LQDogModel.m in Sources */,
 				FC5650D21DAC8C060011779B /* NSData+Encrypt.m in Sources */,
 				FC5651011DAC8C060011779B /* NSString+Matcher.m in Sources */,
+				FC1627F71DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m in Sources */,
 				FC56518D1DAC8C060011779B /* UIWebView+Alert.m in Sources */,
 				FC5651581DAC8C060011779B /* UINavigationController+JZExtension.m in Sources */,
 				FC56517D1DAC8C060011779B /* UIView+Screenshot.m in Sources */,
+				FC16281B1DB4B7BA009A0ABB /* LQAbstractCommand.m in Sources */,
+				FC1628001DB4A84D009A0ABB /* LQHandler_AModel.m in Sources */,
 				FC5650F01DAC8C060011779B /* NSObject+AssociatedObject.m in Sources */,
 				FC5650FB1DAC8C060011779B /* NSString+Base64.m in Sources */,
 				FC5650D01DAC8C060011779B /* NSData+APNSToken.m in Sources */,
 				FC5651621DAC8C060011779B /* UIScreen+Frame.m in Sources */,
+				FC16280C1DB4B472009A0ABB /* LQCommandViewController.m in Sources */,
 				FCE720441DACF6470046C1AA /* LQAnimalPeopleBuilder.m in Sources */,
 				FC5651221DAC8C060011779B /* UIApplication+Permissions.m in Sources */,
 				FC56517F1DAC8C060011779B /* UIView+Toast.m in Sources */,
@@ -3304,6 +3499,7 @@
 				FC5651811DAC8C060011779B /* UIView+Visuals.m in Sources */,
 				FC5651921DAC8C060011779B /* UIWebView+MetaParser.m in Sources */,
 				FC637E2C1DAE05AF00ED4FAC /* LQHttpViewController.m in Sources */,
+				FC9123AF1DB073100087C7F8 /* LQSqlite.m in Sources */,
 				FCE720341DACF6470046C1AA /* LQlgorithmViewController.m in Sources */,
 				FC51A9301D659CA10004FEAE /* BaseModel.m in Sources */,
 				FC5651701DAC8C060011779B /* UITextView+PlaceHolder.m in Sources */,
@@ -3826,6 +4022,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC9123B61DB08BF80087C7F8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC9123B71DB08BF80087C7F8 /* Model.xcdatamodel */,
+			);
+			currentVersion = FC9123B71DB08BF80087C7F8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC51A8E71D659C8F0004FEAE /* Project object */;
 }

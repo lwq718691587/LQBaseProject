@@ -73,8 +73,8 @@
     
     //每个NSOperation可以设置依赖线程。假设操作A依赖于操作B，线程操作队列在启动线程时就会首先执行B操作，然后执行A。对于前面优先加载最后一张图的需求，只要设置前面的线程操作的依赖线程为最后一个操作即可
     //创建操作队列
-    NSOperationQueue *operationQueue=[[NSOperationQueue alloc]init];
-    operationQueue.maxConcurrentOperationCount=5;//设置最大并发线程数
+    NSOperationQueue * operationQueue = [[NSOperationQueue alloc]init];
+    operationQueue.maxConcurrentOperationCount = 5;//设置最大并发线程数
     
     NSBlockOperation *lastBlockOperation=[NSBlockOperation blockOperationWithBlock:^{
         [self loadImage:[NSNumber numberWithInt:((int)self.imageViewsArr.count-1)]];
