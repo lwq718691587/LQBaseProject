@@ -13,6 +13,7 @@ target 'LQBaseProject' do
   pod 'SVProgressHUD', '~> 2.0.3'
   pod 'ReactiveCocoa', '~> 2.5'
   pod 'FMDB'
+  pod 'YYKit', '~> 0.9.11'
   ## pod 'IQKeyboardManager' 
   
 end

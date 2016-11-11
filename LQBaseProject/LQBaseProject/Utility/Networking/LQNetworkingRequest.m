@@ -79,7 +79,7 @@ parameters:(id)parameters
         //设置缓存策略
         if (needCache) {
             if (LQAppDelegate.networkStatus > 0) {
-                [manager.requestSerializer setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
+                [manager.requestSerializer setCachePolicy:NSURLRequestUseProtocolCachePolicy];
             }else{
                 [manager.requestSerializer setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
             }

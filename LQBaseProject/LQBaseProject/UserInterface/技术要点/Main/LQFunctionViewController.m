@@ -21,6 +21,13 @@
 #import "LQGetLableHeightViewController.h"
 #import "LQHttpViewController.h"
 #import "LQSqliteViewController.h"
+#import "LQSDLearnViewController.h"
+#import "LQBlockViewController.h"
+#import "LQResponderViewController.h"
+#import "LQGestureRecongnizerViewController.h"
+#import "LQTextImageViewController.h"
+#import "LQLandscapeTableViewController.h"
+#import "LQAutoreleasepoolViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -36,7 +43,7 @@
     [self initUI];
     [self update];
     
-//    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
+    [self tableView:self.functionTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.functionDataArr.count-1 inSection:0]];
     
     
 }
@@ -106,6 +113,27 @@
         case 12:
             vc = [[LQSqliteViewController alloc]init];
             break;
+        case 13:
+            vc = [[LQSDLearnViewController alloc]init];
+            break;
+        case 14:
+            vc = [[LQBlockViewController alloc]init];
+            break;
+        case 15:
+            vc = [[LQResponderViewController alloc]init];
+            break;
+        case 16:
+            vc = [[LQGestureRecongnizerViewController alloc]init];
+            break;
+        case 17:
+            vc = [[LQTextImageViewController alloc]init];
+            break;
+        case 18:
+            vc = [[LQLandscapeTableViewController alloc]init];
+            break;
+        case 19:
+            vc = [[LQAutoreleasepoolViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -115,7 +143,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库"];
+    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池"];
     [self.functionTableView reloadData];
 }
 

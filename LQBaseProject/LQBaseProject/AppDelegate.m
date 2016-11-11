@@ -10,6 +10,7 @@
 #import "LQNetworkingRequest.h"
 #import "BaseTabBarViewController.h"
 #import "UmengUtility.h"
+#import <YYKit.h>
 @interface AppDelegate ()
 
 @end

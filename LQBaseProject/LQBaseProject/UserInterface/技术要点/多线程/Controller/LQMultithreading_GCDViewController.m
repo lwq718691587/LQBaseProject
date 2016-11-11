@@ -15,6 +15,8 @@
 //
 @property (strong, atomic) NSMutableArray *imageNamesArr;
 @property (strong, nonatomic) NSLock *lock;
+@property (nonatomic) dispatch_semaphore_t semaphore;
+
 @end
 
 @implementation LQMultithreading_GCDViewController
@@ -22,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
+    
+    
+
     // Do any additional setup after loading the view.
 }
 -(void)initUI{
@@ -50,11 +55,12 @@
     button.centerX = ScreenWidth/2;
     [button setTitle:@"加载图片" forState:UIControlStateNormal];
     //添加方法
-    [button addTarget:self action:@selector(loadimage) forControlEvents:UIControlEventTouchUpInside];
-//    [button addTarget:self action:@selector(loadImageWithMultiGCD) forControlEvents:UIControlEventTouchUpInside];
+//    [button addTarget:self action:@selector(loadimage) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(loadImageWithMultiGCD) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
     self.lock = [[NSLock alloc]init];
+    self.semaphore = dispatch_semaphore_create(1);
 }
 
 -(void)loadimage{
@@ -67,7 +73,9 @@
     
     dispatch_queue_t queueBingXing  = dispatch_queue_create("BingXing", DISPATCH_QUEUE_CONCURRENT);//并行队列
     dispatch_queue_t queueXiTongBingXing = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);//全局队列 类似并行队列 一般用这个
-    dispatch_queue_t queueChuanXing = dispatch_queue_create("ChuanXing", DISPATCH_QUEUE_SERIAL);//串行队列
+    //DISPATCH_QUEUE_SERIAL 串行
+    //DISPATCH_QUEUE_CONCURRENT 并行
+    dispatch_queue_t queueChuanXing = dispatch_queue_create("ChuanXing", DISPATCH_QUEUE_SERIAL);//串行队列//
     //每一个应用程序只有一个主线程即只有一个主队列 为什么需要再主线程上执行任务呢？因为在ios开发中，所有UI的更新任务都必须在主线程上执行。
     //    主队列中的操作都是在主线程中执行的，不存在异步的概念
     //    主队列中添加的同步操作永远不会被执行(会死锁)
@@ -134,7 +142,9 @@
      
     }
     
-    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+    });
     
     
 }
@@ -176,22 +186,37 @@
 //    [self.lock unlock];
     
     //第二种 保证线程A进入相应代码之后B无法进入，只有等待A完成相关操作之后B才能进入即可。下面分别使用NSLock和@synchronized对代码进行修改。
-    @synchronized (self) {
-        if (self.imageNamesArr.count > 0) {
-            name = [self.imageNamesArr lastObject];
-            //拖慢一个线程的执行时间
-            for (int i = 0; i < 5 ; i++) {
-                NSLog(@"%@",[NSString stringWithFormat:@"%d",i]);
-            }
-            [self.imageNamesArr removeObject:name];
+//    @synchronized (self) {
+//        if (self.imageNamesArr.count > 0) {
+//            name = [self.imageNamesArr lastObject];
+//            //拖慢一个线程的执行时间
+//            for (int i = 0; i < 5 ; i++) {
+//                NSLog(@"%@",[NSString stringWithFormat:@"%d",i]);
+//            }
+//            [self.imageNamesArr removeObject:name];
+//        }
+//    }
+    
+    //第三种条件信号量。
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    if (self.imageNamesArr.count > 0) {
+        name = [self.imageNamesArr lastObject];
+        //拖慢一个线程的执行时间
+        for (int i = 0; i < 5 ; i++) {
+            NSLog(@"%@",[NSString stringWithFormat:@"%d",i]);
         }
+        [self.imageNamesArr removeObject:name];
     }
+    dispatch_semaphore_signal(self.semaphore);
+    
     
     
     if (name) {
         NSURL * url = [NSURL URLWithString:name];
         data = [NSData dataWithContentsOfURL:url];
     }
+    
+    
     return data;
 }
 

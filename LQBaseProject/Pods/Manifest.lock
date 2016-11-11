@@ -36,6 +36,9 @@ PODS:
   - SVProgressHUD (2.0.3)
   - UMengAnalytics-NO-IDFA (4.1.1)
   - UMengSocialCOM (5.2.1)
+  - YYKit (0.9.12):
+    - YYKit/no-arc (= 0.9.12)
+  - YYKit/no-arc (0.9.12)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -49,6 +52,7 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.0.3)
   - UMengAnalytics-NO-IDFA
   - UMengSocialCOM (~> 5.2.1)
+  - YYKit (~> 0.9.11)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -62,5 +66,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UMengAnalytics-NO-IDFA: 1064992c1b7aaa22823179c0b33a664813fd7a85
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
+  YYKit: 4c0dfcb4bb3205dfbb172e64ca57a50b1675d545
 
 COCOAPODS: 0.39.0

@@ -7,9 +7,9 @@
 //
 
 #import "LQlgorithmViewController.h"
-
+#import "LQListNode.h"
 @interface LQlgorithmViewController ()
-
+@property (strong, nonatomic) LQListNode *linkedList;
 @end
 
 @implementation LQlgorithmViewController
@@ -20,14 +20,36 @@
 //    NSLog(@"%d",[self funSumOne:100]);
 //    NSLog(@"%d",[self funSumTwo:100]);
 //    NSLog(@"%d",[self funMult:4]);
-//   
-//    
-//    NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
+//     
+    NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
 //    NSLog(@"%@",[self insertion_sort:numberArr]);
-    
+    NSLog(@"%@",[self bubbling_sort:numberArr]);
 
 
     NSLog(@"%d",[self funMult_2:4]);
+    
+    
+//    // 初始化链表
+//    self.linkedList = [[LQListNode alloc] init];
+//    
+//    // 添加节点
+//    [self.linkedList addItem:@"A"];
+//    [self.linkedList addItem:@"B"];
+//    [self.linkedList addItem:@"C"];
+//    [self.linkedList addItem:@"D"];
+//    
+//    // 打印节点数目
+//    
+//    
+//    // 遍历节点
+//    LQNode *point = self.linkedList.headNode;
+//    do {
+//        
+//        NSLog(@"item -> %@", point.item);
+//        point = point.nextNode;
+//        
+//    } while (point);
+
     
     // Do any additional setup after loading the view.
 }
@@ -63,12 +85,40 @@
 
 //插入排序算法
 -(NSMutableArray *)insertion_sort:(NSMutableArray*)numberArr{
-    for (int j = 1; j < numberArr.count ; j++) {
+    
+//  NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
+    for (int j = 1; j < numberArr.count; j++) {
         int key = [numberArr[j] intValue];
         int i = j - 1;
-        while (i >= 0 && key < [numberArr[i] intValue] ) {
-            [numberArr exchangeObjectAtIndex:i withObjectAtIndex:i+1];
-            i--;
+        while (i >= 0 && key < [numberArr[i] intValue]) {
+            numberArr[i+1] = numberArr[i];
+            i-- ;
+      
+        }
+        numberArr[i+1] = [NSNumber numberWithInt:key];
+        NSLog(@"%@",[numberArr componentsJoinedByString:@","]);
+    }
+
+    
+    
+    return numberArr;
+}
+
+//冒泡排序
+-(NSMutableArray *)bubbling_sort:(NSMutableArray *)numberArr{
+    
+    for (int i = 0; i < numberArr.count ; i++ ) {
+    
+        for (int j = 1; j < numberArr.count - i; j++ ) {
+            
+            if ([numberArr[j] intValue] < [numberArr[j-1] intValue]) {
+                
+//                NSNumber *t = numberArr[j];
+//                numberArr[j] = numberArr[j-1];
+//                numberArr[j-1] = t;
+                [numberArr exchangeObjectAtIndex:j withObjectAtIndex:j-1];
+            }
+            
         }
     }
     return numberArr;
