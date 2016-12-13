@@ -348,6 +348,16 @@
 		FCEB99C61DB6127B00E9D77A /* LQNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB99C51DB6127B00E9D77A /* LQNameLabel.m */; };
 		FCEB99C91DB6129900E9D77A /* LQNameListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB99C81DB6129900E9D77A /* LQNameListTableView.m */; };
 		FCEB99D11DB61CAB00E9D77A /* LQSDLearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB99D01DB61CAB00E9D77A /* LQSDLearnViewController.m */; };
+		FCF4F6A01DF7AC380063236B /* LQCGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F69F1DF7AC380063236B /* LQCGViewController.m */; };
+		FCF4F6A31DF7AC9F0063236B /* LQCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F6A21DF7AC9F0063236B /* LQCustomView.m */; };
+		FCF4F6A61DF7B69C0063236B /* LQCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F6A51DF7B69C0063236B /* LQCustomLayer.m */; };
+		FCF4F6A91DF7BD1F0063236B /* LQCustomImageVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F6A81DF7BD1E0063236B /* LQCustomImageVIew.m */; };
+		FCF4F6AB1DF7BFCA0063236B /* 111111.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF4F6AA1DF7BFCA0063236B /* 111111.png */; };
+		FCF4F6AF1DF7F0AF0063236B /* 33333.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF4F6AE1DF7F0AF0063236B /* 33333.png */; };
+		FCF4F6B11DF7F4A60063236B /* 22222.png in Resources */ = {isa = PBXBuildFile; fileRef = FCF4F6B01DF7F4A60063236B /* 22222.png */; };
+		FCFAA01C1DF6A799002B76F3 /* LQLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFAA01A1DF6A799002B76F3 /* LQLayoutViewController.m */; };
+		FCFAA01D1DF6A799002B76F3 /* LQLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCFAA01B1DF6A799002B76F3 /* LQLayoutViewController.xib */; };
+		FCFAA01F1DF6A9E9002B76F3 /* rili.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFAA01E1DF6A9E9002B76F3 /* rili.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1051,6 +1061,21 @@
 		FCEB99CA1DB612EC00E9D77A /* LQMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMediator.h; sourceTree = "<group>"; };
 		FCEB99CF1DB61CAB00E9D77A /* LQSDLearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSDLearnViewController.h; sourceTree = "<group>"; };
 		FCEB99D01DB61CAB00E9D77A /* LQSDLearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSDLearnViewController.m; sourceTree = "<group>"; };
+		FCF4F69E1DF7AC380063236B /* LQCGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCGViewController.h; sourceTree = "<group>"; };
+		FCF4F69F1DF7AC380063236B /* LQCGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCGViewController.m; sourceTree = "<group>"; };
+		FCF4F6A11DF7AC9F0063236B /* LQCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomView.h; sourceTree = "<group>"; };
+		FCF4F6A21DF7AC9F0063236B /* LQCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCustomView.m; sourceTree = "<group>"; };
+		FCF4F6A41DF7B69C0063236B /* LQCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomLayer.h; sourceTree = "<group>"; };
+		FCF4F6A51DF7B69C0063236B /* LQCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCustomLayer.m; sourceTree = "<group>"; };
+		FCF4F6A71DF7BD1E0063236B /* LQCustomImageVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomImageVIew.h; sourceTree = "<group>"; };
+		FCF4F6A81DF7BD1E0063236B /* LQCustomImageVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCustomImageVIew.m; sourceTree = "<group>"; };
+		FCF4F6AA1DF7BFCA0063236B /* 111111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111111.png; sourceTree = "<group>"; };
+		FCF4F6AE1DF7F0AF0063236B /* 33333.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33333.png; sourceTree = "<group>"; };
+		FCF4F6B01DF7F4A60063236B /* 22222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22222.png; sourceTree = "<group>"; };
+		FCFAA0191DF6A799002B76F3 /* LQLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQLayoutViewController.h; sourceTree = "<group>"; };
+		FCFAA01A1DF6A799002B76F3 /* LQLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQLayoutViewController.m; sourceTree = "<group>"; };
+		FCFAA01B1DF6A799002B76F3 /* LQLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQLayoutViewController.xib; sourceTree = "<group>"; };
+		FCFAA01E1DF6A9E9002B76F3 /* rili.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rili.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2720,6 +2745,7 @@
 		FCE71F7E1DACF6460046C1AA /* 技术要点 */ = {
 			isa = PBXGroup;
 			children = (
+				FCF4F69B1DF7AC120063236B /* 绘图 */,
 				FC46FC8E1DD1C6F9007D1CC4 /* 自动释放池 */,
 				FC1975731DCC79FA0080C216 /* tableview嵌套横向滑动 */,
 				FC930D551DC9D64D00311515 /* 图文混排 */,
@@ -3155,6 +3181,7 @@
 		FCE7200A1DACF6470046C1AA /* 控件 */ = {
 			isa = PBXGroup;
 			children = (
+				FCFAA0151DF6A6E0002B76F3 /* XIb */,
 				FC597CC91DADE33400DFBDDA /* 自定义tabbar */,
 				FCE7200B1DACF6470046C1AA /* iCarousel */,
 				FCE720171DACF6470046C1AA /* 瀑布流 */,
@@ -3340,6 +3367,51 @@
 			path = "SDWebimage学习";
 			sourceTree = "<group>";
 		};
+		FCF4F69B1DF7AC120063236B /* 绘图 */ = {
+			isa = PBXGroup;
+			children = (
+				FCF4F69C1DF7AC270063236B /* Controller */,
+				FCF4F69D1DF7AC270063236B /* View */,
+			);
+			path = "绘图";
+			sourceTree = "<group>";
+		};
+		FCF4F69C1DF7AC270063236B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCF4F69E1DF7AC380063236B /* LQCGViewController.h */,
+				FCF4F69F1DF7AC380063236B /* LQCGViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCF4F69D1DF7AC270063236B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCF4F6A11DF7AC9F0063236B /* LQCustomView.h */,
+				FCF4F6A21DF7AC9F0063236B /* LQCustomView.m */,
+				FCF4F6A41DF7B69C0063236B /* LQCustomLayer.h */,
+				FCF4F6A51DF7B69C0063236B /* LQCustomLayer.m */,
+				FCF4F6A71DF7BD1E0063236B /* LQCustomImageVIew.h */,
+				FCF4F6A81DF7BD1E0063236B /* LQCustomImageVIew.m */,
+				FCF4F6AE1DF7F0AF0063236B /* 33333.png */,
+				FCF4F6B01DF7F4A60063236B /* 22222.png */,
+				FCF4F6AA1DF7BFCA0063236B /* 111111.png */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCFAA0151DF6A6E0002B76F3 /* XIb */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA01E1DF6A9E9002B76F3 /* rili.png */,
+				FCFAA0191DF6A799002B76F3 /* LQLayoutViewController.h */,
+				FCFAA01A1DF6A799002B76F3 /* LQLayoutViewController.m */,
+				FCFAA01B1DF6A799002B76F3 /* LQLayoutViewController.xib */,
+			);
+			path = XIb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3449,11 +3521,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFAA01F1DF6A9E9002B76F3 /* rili.png in Resources */,
+				FCFAA01D1DF6A799002B76F3 /* LQLayoutViewController.xib in Resources */,
+				FCF4F6AB1DF7BFCA0063236B /* 111111.png in Resources */,
 				FC4558E61DC8893D0014B39A /* LQResponderViewController.xib in Resources */,
+				FCF4F6AF1DF7F0AF0063236B /* 33333.png in Resources */,
 				FC930D511DC9CA2400311515 /* LQGestureRecongnizerViewController.xib in Resources */,
 				FC597CB81DADD70100DFBDDA /* LQDveloperUtilityTableViewCell.xib in Resources */,
 				FC930D5A1DC9DA7200311515 /* wsxedc.png in Resources */,
 				FC51A9021D659C8F0004FEAE /* LaunchScreen.storyboard in Resources */,
+				FCF4F6B11DF7F4A60063236B /* 22222.png in Resources */,
 				FC597CBD1DADDB0F00DFBDDA /* LQDeveloperUtilityPlist.plist in Resources */,
 				FCEB99BC1DB60DF500E9D77A /* LQMediatorViewController.xib in Resources */,
 				FC51A8FF1D659C8F0004FEAE /* Assets.xcassets in Resources */,
@@ -3550,6 +3627,7 @@
 				FC4E0A541D938F2C00E9FE2B /* NSObject+StareValeu.m in Sources */,
 				FC5650E71DAC8C060011779B /* NSFileHandle+readLine.m in Sources */,
 				FC1975771DCC7AD70080C216 /* LQLandscapeTableViewController.m in Sources */,
+				FCFAA01C1DF6A799002B76F3 /* LQLayoutViewController.m in Sources */,
 				FC5650F81DAC8C060011779B /* NSRunLoop+PerformBlock.m in Sources */,
 				FC5650EB1DAC8C060011779B /* NSNotificationCenter+MainThread.m in Sources */,
 				FC49C97A1DB9B38A003F19FD /* LQListNode.m in Sources */,
@@ -3612,6 +3690,7 @@
 				FC667E401DAD180600410135 /* LQRedPenColorModel.m in Sources */,
 				FCABCD731DAD0A39007BED63 /* LQKVC_KVOViewController.m in Sources */,
 				FC5650E21DAC8C060011779B /* NSDictionary+Merge.m in Sources */,
+				FCF4F6A91DF7BD1F0063236B /* LQCustomImageVIew.m in Sources */,
 				FC5650FA1DAC8C060011779B /* NSMutableString+Ruby.m in Sources */,
 				FC56514C1DAC8C060011779B /* UIImageView+FaceAwareFill.m in Sources */,
 				FC5650C91DAC8C060011779B /* NSManagedObjectContext+ObjectClear.m in Sources */,
@@ -3794,6 +3873,8 @@
 				FCE720441DACF6470046C1AA /* LQAnimalPeopleBuilder.m in Sources */,
 				FC5651221DAC8C060011779B /* UIApplication+Permissions.m in Sources */,
 				FC56517F1DAC8C060011779B /* UIView+Toast.m in Sources */,
+				FCF4F6A31DF7AC9F0063236B /* LQCustomView.m in Sources */,
+				FCF4F6A01DF7AC380063236B /* LQCGViewController.m in Sources */,
 				FC5651121DAC8C060011779B /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				FC5650D41DAC8C060011779B /* NSData+Hash.m in Sources */,
 				FC5651501DAC8C060011779B /* UILabel+AutomaticWriting.m in Sources */,
@@ -3846,6 +3927,7 @@
 				FC5651901DAC8C060011779B /* UIWebView+JS.m in Sources */,
 				FC56513A1DAC8C060011779B /* UIImage+Alpha.m in Sources */,
 				FCD06B351DA8E45200578D99 /* UITextField+LQAddition.m in Sources */,
+				FCF4F6A61DF7B69C0063236B /* LQCustomLayer.m in Sources */,
 				FCE720301DACF6470046C1AA /* LQImageData.m in Sources */,
 				FC5651461DAC8C060011779B /* UIImage+RemoteSize.m in Sources */,
 				FCE362A11D66E58E00FFFC13 /* UIView+LwqCGRect.m in Sources */,

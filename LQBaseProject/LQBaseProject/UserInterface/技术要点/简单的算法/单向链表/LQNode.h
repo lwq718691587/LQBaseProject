@@ -11,7 +11,7 @@
 @interface LQNode : BaseModel
 //节点挂在的对象
 @property (strong, nonatomic) id item;
-//只想下一个节点
+//指向下一个节点
 @property (strong, nonatomic) LQNode *nextNode;
 
 

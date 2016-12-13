@@ -93,7 +93,6 @@
         while (i >= 0 && key < [numberArr[i] intValue]) {
             numberArr[i+1] = numberArr[i];
             i-- ;
-      
         }
         numberArr[i+1] = [NSNumber numberWithInt:key];
         NSLog(@"%@",[numberArr componentsJoinedByString:@","]);

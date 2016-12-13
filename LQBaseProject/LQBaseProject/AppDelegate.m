@@ -31,6 +31,7 @@
     [self checkNetworkStatus];
 //    [UmengUtility collocateUmengStatistics];
 
+
     
     // Override point for customization after application launch.
     return YES;

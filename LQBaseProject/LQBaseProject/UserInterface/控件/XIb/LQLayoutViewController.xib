@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQLayoutViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QMV-hX-RxJ">
+                    <rect key="frame" x="154.66666666666669" y="77.000000000000014" width="104.66666666666669" height="105.33333333333336"/>
+                    <color key="backgroundColor" red="1" green="0.1385517799" blue="0.1144003992" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QMV-hX-RxJ" secondAttribute="height" multiplier="1:1" id="hav-fg-F0H"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="safasd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K8-iB-PkE">
+                    <rect key="frame" x="41.333333333333343" y="203.33333333333334" width="331.33333333333337" height="32"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6K8-iB-PkE" secondAttribute="height" multiplier="300:29" id="QHO-Az-VzD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbb-1U-NBx">
+                    <rect key="frame" x="55" y="353" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxR-we-pNG">
+                    <rect key="frame" x="184" y="353" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMt-us-5vC">
+                    <rect key="frame" x="319" y="353" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QMV-hX-RxJ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="95:375" id="0e3-JO-6Qt"/>
+                <constraint firstItem="6K8-iB-PkE" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="300:667" id="9Ho-u7-CqA"/>
+                <constraint firstItem="QMV-hX-RxJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9hj-Je-fiQ"/>
+                <constraint firstItem="6K8-iB-PkE" firstAttribute="centerX" secondItem="QMV-hX-RxJ" secondAttribute="centerX" id="j1m-nn-EJ4"/>
+                <constraint firstItem="6K8-iB-PkE" firstAttribute="top" secondItem="QMV-hX-RxJ" secondAttribute="bottom" constant="21" id="pYx-Wr-ONP"/>
+                <constraint firstItem="QMV-hX-RxJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="zKH-S9-vAP"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="31"/>
+        </view>
+    </objects>
+</document>

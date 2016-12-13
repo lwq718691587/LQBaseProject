@@ -131,6 +131,7 @@ static NSString *const identify = @"collectionViewCell";
         self.imageListCollectionView.clipsToBounds  = YES;
         self.imageListCollectionView.backgroundColor = [UIColor whiteColor];
         self.imageListCollectionView.showsVerticalScrollIndicator = NO;
+        
         MJRefreshNormalHeader* header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             self.pageNumber = 1;
             [self update];
