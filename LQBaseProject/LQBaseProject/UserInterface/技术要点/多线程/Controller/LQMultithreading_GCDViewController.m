@@ -72,7 +72,14 @@
     // 异步操作 并行队列中的任务：会新建多个线程，但是无法确定任务的执行顺序(有用，但是很容易出错)
     
     dispatch_queue_t queueBingXing  = dispatch_queue_create("BingXing", DISPATCH_QUEUE_CONCURRENT);//并行队列
+    
     dispatch_queue_t queueXiTongBingXing = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);//全局队列 类似并行队列 一般用这个
+    
+
+    
+    //变更 线程的优先级
+//    dispatch_set_target_queue(queueBingXing, queueXiTongBingXing);
+    
     //DISPATCH_QUEUE_SERIAL 串行
     //DISPATCH_QUEUE_CONCURRENT 并行
     dispatch_queue_t queueChuanXing = dispatch_queue_create("ChuanXing", DISPATCH_QUEUE_SERIAL);//串行队列//

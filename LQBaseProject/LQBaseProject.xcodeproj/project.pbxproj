@@ -279,6 +279,10 @@
 		FC98AAF61DBE0AD000009B19 /* LQBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC98AAF41DBE0AD000009B19 /* LQBlockViewController.m */; };
 		FC98AAF91DBE0B2100009B19 /* LQBlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC98AAF81DBE0B2100009B19 /* LQBlockView.m */; };
 		FC98AAFC1DBE147900009B19 /* LQSecondBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC98AAFB1DBE147900009B19 /* LQSecondBlockViewController.m */; };
+		FC9BDEA61E0A51FD00C8394D /* LQKeychainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9BDEA51E0A51FD00C8394D /* LQKeychainTool.m */; };
+		FC9BDEA91E0A521C00C8394D /* LQPasswordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9BDEA81E0A521C00C8394D /* LQPasswordTool.m */; };
+		FC9BDEB11E0A5A0300C8394D /* LQKeychainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9BDEAF1E0A5A0300C8394D /* LQKeychainViewController.m */; };
+		FC9BDEB21E0A5A0300C8394D /* LQKeychainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9BDEB01E0A5A0300C8394D /* LQKeychainViewController.xib */; };
 		FCA53CCF1DA91FA600536B8D /* LQBuytests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA53CCE1DA91FA600536B8D /* LQBuytests.m */; };
 		FCABCD731DAD0A39007BED63 /* LQKVC_KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCABCD6F1DAD0A39007BED63 /* LQKVC_KVOViewController.m */; };
 		FCABCD741DAD0A39007BED63 /* LQPeopleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCABCD721DAD0A39007BED63 /* LQPeopleModel.m */; };
@@ -921,6 +925,13 @@
 		FC98AAF81DBE0B2100009B19 /* LQBlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBlockView.m; sourceTree = "<group>"; };
 		FC98AAFA1DBE147900009B19 /* LQSecondBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSecondBlockViewController.h; sourceTree = "<group>"; };
 		FC98AAFB1DBE147900009B19 /* LQSecondBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSecondBlockViewController.m; sourceTree = "<group>"; };
+		FC9BDEA41E0A51FD00C8394D /* LQKeychainTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKeychainTool.h; sourceTree = "<group>"; };
+		FC9BDEA51E0A51FD00C8394D /* LQKeychainTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKeychainTool.m; sourceTree = "<group>"; };
+		FC9BDEA71E0A521C00C8394D /* LQPasswordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQPasswordTool.h; sourceTree = "<group>"; };
+		FC9BDEA81E0A521C00C8394D /* LQPasswordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQPasswordTool.m; sourceTree = "<group>"; };
+		FC9BDEAE1E0A5A0300C8394D /* LQKeychainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKeychainViewController.h; sourceTree = "<group>"; };
+		FC9BDEAF1E0A5A0300C8394D /* LQKeychainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKeychainViewController.m; sourceTree = "<group>"; };
+		FC9BDEB01E0A5A0300C8394D /* LQKeychainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQKeychainViewController.xib; sourceTree = "<group>"; };
 		FCA53CCE1DA91FA600536B8D /* LQBuytests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBuytests.m; sourceTree = "<group>"; };
 		FCABCD6E1DAD0A39007BED63 /* LQKVC_KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKVC_KVOViewController.h; sourceTree = "<group>"; };
 		FCABCD6F1DAD0A39007BED63 /* LQKVC_KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKVC_KVOViewController.m; sourceTree = "<group>"; };
@@ -1227,6 +1238,7 @@
 		FC2343B01D66D8F800ADB748 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FC9BDEA31E0A51C500C8394D /* KeyChain */,
 				FC759E0B1DAC84E900538219 /* Fmdb */,
 				FCDF73F71D6C484A007B838B /* Umeng */,
 				FCDF73D41D6C3E7F007B838B /* LQControl */,
@@ -2601,6 +2613,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FC9BDEA31E0A51C500C8394D /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				FC9BDEA41E0A51FD00C8394D /* LQKeychainTool.h */,
+				FC9BDEA51E0A51FD00C8394D /* LQKeychainTool.m */,
+				FC9BDEA71E0A521C00C8394D /* LQPasswordTool.h */,
+				FC9BDEA81E0A521C00C8394D /* LQPasswordTool.m */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		FC9BDEAA1E0A59B300C8394D /* 密码存到钥匙圈 */ = {
+			isa = PBXGroup;
+			children = (
+				FC9BDEAE1E0A5A0300C8394D /* LQKeychainViewController.h */,
+				FC9BDEAF1E0A5A0300C8394D /* LQKeychainViewController.m */,
+				FC9BDEB01E0A5A0300C8394D /* LQKeychainViewController.xib */,
+			);
+			path = "密码存到钥匙圈";
+			sourceTree = "<group>";
+		};
 		FCABCD6C1DAD0A39007BED63 /* KVC&KVO */ = {
 			isa = PBXGroup;
 			children = (
@@ -2745,6 +2778,7 @@
 		FCE71F7E1DACF6460046C1AA /* 技术要点 */ = {
 			isa = PBXGroup;
 			children = (
+				FC9BDEAA1E0A59B300C8394D /* 密码存到钥匙圈 */,
 				FCF4F69B1DF7AC120063236B /* 绘图 */,
 				FC46FC8E1DD1C6F9007D1CC4 /* 自动释放池 */,
 				FC1975731DCC79FA0080C216 /* tableview嵌套横向滑动 */,
@@ -3524,6 +3558,7 @@
 				FCFAA01F1DF6A9E9002B76F3 /* rili.png in Resources */,
 				FCFAA01D1DF6A799002B76F3 /* LQLayoutViewController.xib in Resources */,
 				FCF4F6AB1DF7BFCA0063236B /* 111111.png in Resources */,
+				FC9BDEB21E0A5A0300C8394D /* LQKeychainViewController.xib in Resources */,
 				FC4558E61DC8893D0014B39A /* LQResponderViewController.xib in Resources */,
 				FCF4F6AF1DF7F0AF0063236B /* 33333.png in Resources */,
 				FC930D511DC9CA2400311515 /* LQGestureRecongnizerViewController.xib in Resources */,
@@ -3841,6 +3876,7 @@
 				FC5650F51DAC8C060011779B /* NSObject+MKBlockTimer.m in Sources */,
 				FC5651431DAC8C060011779B /* UIImage+Merge.m in Sources */,
 				FC5650D51DAC8C060011779B /* NSData+SDDataCache.m in Sources */,
+				FC9BDEA91E0A521C00C8394D /* LQPasswordTool.m in Sources */,
 				FCE720461DACF6470046C1AA /* LQHeroBuilder.m in Sources */,
 				FC56518A1DAC8C060011779B /* UIViewController+StoreKit.m in Sources */,
 				FC759E111DAC84E900538219 /* UserEntity.m in Sources */,
@@ -3852,6 +3888,7 @@
 				FC5650E91DAC8C060011779B /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
 				FC5651291DAC8C060011779B /* UIButton+Block.m in Sources */,
 				FCE720401DACF6470046C1AA /* LQClassModel.m in Sources */,
+				FC9BDEA61E0A51FD00C8394D /* LQKeychainTool.m in Sources */,
 				FC597CBB1DADD75900DFBDDA /* LQDeveloperUtilityModel.m in Sources */,
 				FC5651551DAC8C060011779B /* UINavigationBar+CustomHeight.m in Sources */,
 				FC56515A1DAC8C060011779B /* UINavigationController+StackManager.m in Sources */,
@@ -3897,6 +3934,7 @@
 				FC56518C1DAC8C060011779B /* UIViewController+Visible.m in Sources */,
 				FC5650E51DAC8C060011779B /* NSDictionary+XML.m in Sources */,
 				FC5651751DAC8C060011779B /* UIView+Debug.m in Sources */,
+				FC9BDEB11E0A5A0300C8394D /* LQKeychainViewController.m in Sources */,
 				FC5651641DAC8C060011779B /* UIScrollView+APParallaxHeader.m in Sources */,
 				FC56511B1DAC8C060011779B /* CAMediaTimingFunction+AdditionalEquations.m in Sources */,
 				FC56514F1DAC8C060011779B /* UIImageView+Reflect.m in Sources */,

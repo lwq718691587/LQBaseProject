@@ -29,6 +29,7 @@
 #import "LQLandscapeTableViewController.h"
 #import "LQAutoreleasepoolViewController.h"
 #import "LQCGViewController.h"
+#import "LQKeychainViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -138,6 +139,9 @@
         case 20:
             vc = [[LQCGViewController alloc] init];
             break;
+        case 21:
+            vc = [[LQKeychainViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -147,7 +151,7 @@
 
 #pragma mark - 更新数据
 -(void)update{
-    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池",@"绘图"];
+    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池",@"绘图",@"保存信息到钥匙串"];
     [self.functionTableView reloadData];
 }
 
