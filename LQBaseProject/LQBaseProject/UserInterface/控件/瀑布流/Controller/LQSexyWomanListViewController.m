@@ -34,15 +34,15 @@
     
 }
 
--(void)initData{
+- (void)initData{
     self.pageNumber = 1;
     self.type = @"cosplay";
 }
--(void)initNavigation{
+- (void)initNavigation{
     self.title = @"cosplay";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"清除缓存" style:UIBarButtonItemStylePlain target:self action:@selector(clearImageCache)];
 }
--(void)initUI{
+- (void)initUI{
     [self.view addSubview:self.imageListCollectionView];
     
     UIButton * settingTypeBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, ScreenHeight-NavigationBarHeight-TabBarHeight, ScreenWidth, TabBarHeight)];
@@ -75,13 +75,13 @@
 
 #pragma mark - 点击事件
 
--(void)clearImageCache{
+- (void)clearImageCache{
     [SVProgressHUD show];
     [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
         [SVProgressHUD dismiss];
     }];
 }
--(void)selectType{
+- (void)selectType{
     UIActionSheet * actionSheet = [[UIActionSheet alloc]initWithTitle:@"类别" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"诱惑",@"小清新",@"西洋美人",@"网络美女",@"宅男女神",@"古典美女",@"嫩萝莉",@"气质",@"写真",@"长腿",@"cosplay", nil];
     [actionSheet showInView:self.view];
     
@@ -99,7 +99,7 @@
 }
 
 #pragma mark - 获取数据
--(void)update{
+- (void)update{
     [LQSexyWomanListModel getSexyWomanListArrWithPageNumber:self.pageNumber andType:self.type Success:^(NSMutableArray *dataArr) {
         if (self.pageNumber > 1) {
             [self.dataArr addObjectsFromArray:dataArr];
@@ -118,7 +118,7 @@
 
 #pragma mark - setter&getter
 static NSString *const identify = @"collectionViewCell";
--(UICollectionView *)imageListCollectionView{
+- (UICollectionView *)imageListCollectionView{
     if (!_imageListCollectionView) {
         LQCustomCollectionViewLayout* flowLayout = [[LQCustomCollectionViewLayout alloc]init];
       

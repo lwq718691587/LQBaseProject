@@ -108,7 +108,7 @@ CGFloat RadiansToDegrees(CGFloat radians) {return radians * 180/M_PI;};
 }
 
 
--(UIImage *)imageAtRect:(CGRect)rect
+- (UIImage *)imageAtRect:(CGRect)rect
 {
     CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], rect);
     UIImage* subImage = [UIImage imageWithCGImage: imageRef];

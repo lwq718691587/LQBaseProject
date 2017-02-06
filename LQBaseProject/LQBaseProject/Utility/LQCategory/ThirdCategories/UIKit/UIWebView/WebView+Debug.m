@@ -42,9 +42,9 @@ void enableRemoteWebInspector() {
 
 @interface ScriptDebuggerDelegate : NSObject
 
--(id)functionNameForFrame:(WebScriptCallFrame*)frame;
--(id)callerForFrame:(WebScriptCallFrame*)frame;
--(id)exceptionForFrame:(WebScriptCallFrame*)frame;
+- (id)functionNameForFrame:(WebScriptCallFrame*)frame;
+- (id)callerForFrame:(WebScriptCallFrame*)frame;
+- (id)exceptionForFrame:(WebScriptCallFrame*)frame;
 
 @end
 
@@ -60,17 +60,17 @@ void enableRemoteWebInspector() {
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 #pragma clang diagnostic ignored "-Wundeclared-selector"
 
--(id)functionNameForFrame:(WebScriptCallFrame*)frame {
+- (id)functionNameForFrame:(WebScriptCallFrame*)frame {
     SEL functionNameSelector = @selector(functionName);
     return [(id)frame performSelector:functionNameSelector];
 }
 
--(id)callerForFrame:(WebScriptCallFrame*)frame {
+- (id)callerForFrame:(WebScriptCallFrame*)frame {
     SEL callerSelector = @selector(caller);
     return [(id)frame performSelector:callerSelector];
 }
 
--(id)exceptionForFrame:(WebScriptCallFrame*)frame {
+- (id)exceptionForFrame:(WebScriptCallFrame*)frame {
     SEL exceptionSelector = @selector(exception);
     return [(id)frame performSelector:exceptionSelector];    
 }
@@ -163,7 +163,7 @@ void enableRemoteWebInspector() {
 
 @interface UIWebView ()
 
--(id)setScriptDebugDelegate:(id)delegate;
+- (id)setScriptDebugDelegate:(id)delegate;
 
 @end
 

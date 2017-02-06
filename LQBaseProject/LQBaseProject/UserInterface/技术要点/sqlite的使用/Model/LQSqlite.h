@@ -11,18 +11,18 @@
 @interface LQSqlite : NSObject
 
 
--(void)createDataBase;
+- (void)createDataBase;
 
--(void)removeDataBase;
+- (void)removeDataBase;
 
--(void)saveDatawithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName;
+- (void)saveDatawithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName;
 
--(void)searchDatawithStudentNum:(NSString *)studentNum;
+- (void)searchDatawithStudentNum:(NSString *)studentNum;
 
--(void)searchAllinfo;
+- (void)searchAllinfo;
 
--(void)deleteDataWithID:(NSString *)ID;
+- (void)deleteDataWithID:(NSString *)ID;
 
--(void)updateDataWithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName searchID:(NSString *)ID;
+- (void)updateDataWithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName searchID:(NSString *)ID;
 
 @end

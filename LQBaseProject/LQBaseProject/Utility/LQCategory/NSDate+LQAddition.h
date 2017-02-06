@@ -25,7 +25,7 @@
  *
  *  @return 天数间隔
  */
--(NSInteger)daysIntervalSinceDate:(NSDate *)date;
+- (NSInteger)daysIntervalSinceDate:(NSDate *)date;
 /**
  *  计算两个时间戳之间的天数间隔
  *

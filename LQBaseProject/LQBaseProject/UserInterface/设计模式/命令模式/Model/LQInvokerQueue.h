@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) LQCommandQueue *commandQueue;
 
--(void)call;
+- (void)call;
 
 @end

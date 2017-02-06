@@ -10,6 +10,6 @@
 
 @interface LQAbstractCommand : BaseModel
 
--(void)execute;
+- (void)execute;
 
 @end

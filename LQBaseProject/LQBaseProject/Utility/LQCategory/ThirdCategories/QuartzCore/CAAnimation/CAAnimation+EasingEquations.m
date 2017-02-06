@@ -198,7 +198,7 @@ static EasingFunction easeInElastic = ^CGFloat(CGFloat t, CGFloat b, CGFloat c, 
     }
     
     t -= 1;
-    return -(amplitude*pow(2,10*t) * sin( (t*d-s)*(2*M_PI)/period )) + b;
+    return - (amplitude*pow(2,10*t) * sin( (t*d-s)*(2*M_PI)/period )) + b;
 };
 
 static EasingFunction easeOutElastic = ^CGFloat(CGFloat t, CGFloat b, CGFloat c, CGFloat d) {

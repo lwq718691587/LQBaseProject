@@ -27,7 +27,7 @@
 
     // Do any additional setup after loading the view.
 }
--(void)leftBarButtonItemFun{
+- (void)leftBarButtonItemFun{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
@@ -35,11 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(BOOL)prefersStatusBarHidden{
+- (BOOL)prefersStatusBarHidden{
     return NO;
 }
 
--(BOOL)shouldAutorotate{
+- (BOOL)shouldAutorotate{
     return NO;
 }
 //支持的方向

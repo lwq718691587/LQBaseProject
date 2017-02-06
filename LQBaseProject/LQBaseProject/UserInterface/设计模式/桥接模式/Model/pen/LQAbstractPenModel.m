@@ -11,7 +11,7 @@
 @implementation LQAbstractPenModel
 
 
--(void)usePenDrawLine{
+- (void)usePenDrawLine{
 
 }
 @end

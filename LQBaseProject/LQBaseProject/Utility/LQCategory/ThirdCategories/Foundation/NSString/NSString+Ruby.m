@@ -311,11 +311,11 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return [self rangeOfString:include].location != NSNotFound;
 }
 
--(NSInteger)index:(NSString*)pattern{
+- (NSInteger)index:(NSString*)pattern{
   return [self index:pattern offset:0];
 }
 
--(NSInteger)index:(NSString*)pattern offset:(NSInteger )offset{
+- (NSInteger)index:(NSString*)pattern offset:(NSInteger )offset{
   NSError *error = nil;
   NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:pattern
                                                                     options:0
@@ -359,7 +359,7 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return [NSString stringWithFormat:@"\"%@\"",result];
 }
 
--(BOOL)isASCII{
+- (BOOL)isASCII{
   unichar *characters = calloc(self.length, sizeof(unichar));
   [self getCharacters:characters];
   for(NSInteger i = 0; i<self.length; i++) {
@@ -372,15 +372,15 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return YES;
 }
 
--(BOOL)isEmpty{
+- (BOOL)isEmpty{
   return self.length == 0;
 }
 
--(NSInteger)lastIndex:(NSString*)pattern{
+- (NSInteger)lastIndex:(NSString*)pattern{
   return [self lastIndex:pattern offset:0];
 }
 
--(NSInteger)lastIndex:(NSString*)pattern offset:(NSInteger )offset{
+- (NSInteger)lastIndex:(NSString*)pattern offset:(NSInteger )offset{
   offset = labs(offset); //lets allow for negative and positive inputs
   NSError *error = nil;
   NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:pattern
@@ -393,11 +393,11 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return NSNotFound;
 }
 
--(NSString*)leftJustify:(NSInteger )amount{
+- (NSString*)leftJustify:(NSInteger )amount{
   return [self leftJustify:amount with:@" "];
 }
 
--(NSString*)leftJustify:(NSInteger )amount with:(NSString*)padString{
+- (NSString*)leftJustify:(NSInteger )amount with:(NSString*)padString{
   if (amount <= self.length)
     return self;
   NSString *pad = @"";
@@ -411,7 +411,7 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return result;
 }
 
--(NSString*)leftStrip{
+- (NSString*)leftStrip{
   NSInteger i;
   for(i=0;i<self.length;i++){
     if(![[NSCharacterSet whitespaceAndNewlineCharacterSet] characterIsMember:[self characterAtIndex:i]])
@@ -483,7 +483,7 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return (NSInteger )[self characterAtIndex:0];
 }
 
--(NSArray*)partition:(NSString*)pattern{
+- (NSArray*)partition:(NSString*)pattern{
   NSError *error = nil;
   NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:pattern
                                                                     options:0
@@ -498,7 +498,7 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   NSString *first = [self substringWithRange:NSMakeRange(0, result.range.location)];
   NSString *middle = [self substringWithRange:result.range];
   NSString *last = [self substringWithRange:NSMakeRange(result.range.location+result.range.length,
-                                                        self.length-(result.range.location+result.range.length))];
+                                                        self.length- (result.range.location+result.range.length))];
   return @[first,middle,last];
 }
 
@@ -519,11 +519,11 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return reversedStr;
 }
 
--(NSInteger)rightIndex:(NSString*)pattern{
+- (NSInteger)rightIndex:(NSString*)pattern{
   return [self index:pattern offset:0];
 }
 
--(NSInteger)rightIndex:(NSString*)pattern offset:(NSInteger )offset{
+- (NSInteger)rightIndex:(NSString*)pattern offset:(NSInteger )offset{
   NSError *error = nil;
   NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:pattern
                                                                     options:0
@@ -538,18 +538,18 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   return NSNotFound;
 }
 
--(NSString*)rightJustify:(NSInteger )amount{
+- (NSString*)rightJustify:(NSInteger )amount{
   return [self rightJustify:amount with:@" "];
 }
 
--(NSString*)rightJustify:(NSInteger )amount with:(NSString*)padString{
+- (NSString*)rightJustify:(NSInteger )amount with:(NSString*)padString{
   if(amount <= self.length)
     return self;
   NSString *pad = [@"" stringByPaddingToLength:amount-self.length withString:padString startingAtIndex:0];
   return [pad:self,nil];
 }
 
--(NSArray*)rightPartition:(NSString*)pattern{
+- (NSArray*)rightPartition:(NSString*)pattern{
   NSError *error = nil;
   NSRegularExpression *regex = [[NSRegularExpression alloc] initWithPattern:pattern
                                                                     options:0
@@ -564,11 +564,11 @@ NSString* _stringRepresentationOf(id<Concatenatable> object){
   NSString *first = [self substringWithRange:NSMakeRange(0, result.range.location)];
   NSString *middle = [self substringWithRange:result.range];
   NSString *last = [self substringWithRange:NSMakeRange(result.range.location+result.range.length,
-                                                        self.length-(result.range.location+result.range.length))];
+                                                        self.length- (result.range.location+result.range.length))];
   return @[first,middle,last];
 }
 
--(NSString*)rightStrip{
+- (NSString*)rightStrip{
   NSInteger i;
   for(i=self.length-1;i>0;i--){
     if(![[NSCharacterSet whitespaceAndNewlineCharacterSet] characterIsMember:[self characterAtIndex:i]])

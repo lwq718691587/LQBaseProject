@@ -11,5 +11,5 @@
 @interface UIResponder (UIAdapt)
 CGRect CGAdaptRectMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
 CGPoint CGAdaptPointMake(CGFloat x, CGFloat y);
--(CGFloat)factorAdapt;
+- (CGFloat)factorAdapt;
 @end

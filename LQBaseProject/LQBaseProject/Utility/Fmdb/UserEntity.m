@@ -10,7 +10,7 @@
 
 @implementation UserEntity
 
--(id) initWithFMDB:(FMDatabase *)database{
+- (id) initWithFMDB:(FMDatabase *)database{
     self = [super initWithFMDB:database];
     if(self){
         //给表名赋值
@@ -25,7 +25,7 @@
 }
 
 //设置默认数据
--(void) setDefault{
+- (void) setDefault{
     //清除数据
     self.ID = NSNotFound;
     self.userName = nil;
@@ -34,7 +34,7 @@
 }
 
 //获取所有字段存到数据库的值
--(NSArray *) parameters{
+- (NSArray *) parameters{
     return @[[PeakSqlite nilFilter:self.userName],
              [PeakSqlite nilFilter:self.userPassword],
              [PeakSqlite dateToValue: self.timestamp],
@@ -43,7 +43,7 @@
 }
 
 //插入数据
--(NSInteger)insert{
+- (NSInteger)insert{
     NSString *sql = @"INSERT INTO userList(%@) VALUES (%@)";
     NSString *insertFields = @"userName, userPassword, timestamp, done";
     NSString *insertValues = @"?,?,?,?";
@@ -59,7 +59,7 @@
 }
 
 //更新数据
--(BOOL)update{
+- (BOOL)update{
     NSString *sql = @"UPDATE userList SET userName = ?,userPassword = ?, timestamp = ?, done = ? WHERE id = ?";
     [self.database open];
     
@@ -72,7 +72,7 @@
 }
 
 //转换字典到当前实例
--(void)parseFromDictionary: (NSDictionary *) data{
+- (void)parseFromDictionary: (NSDictionary *) data{
     self.data = data;
     self.ID = [[data objectForKey:@"id"] intValue];
     
@@ -83,7 +83,7 @@
 }
 
 //获取一条数据
--(BOOL) findOneWithCondition:(NSString *)cond parameters:(NSArray *)params orderBy:(NSString *)orderBy{
+- (BOOL) findOneWithCondition:(NSString *)cond parameters:(NSArray *)params orderBy:(NSString *)orderBy{
     BOOL result = [super findOneWithCondition:cond parameters:params orderBy:orderBy];
     //将数据填充到属性
     if(result){

@@ -37,5 +37,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (MKBlockTimer)
--(void) logTimeTakenToRunBlock:(void (^)(void)) block withPrefix:(NSString*) prefixString;
+- (void) logTimeTakenToRunBlock:(void (^)(void)) block withPrefix:(NSString*) prefixString;
 @end

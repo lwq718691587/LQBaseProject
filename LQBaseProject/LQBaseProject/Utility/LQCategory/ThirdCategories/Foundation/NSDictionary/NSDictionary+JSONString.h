@@ -14,5 +14,5 @@
  *
  *  @return  JSON字符串
  */
--(NSString *)JSONString;
+- (NSString *)JSONString;
 @end

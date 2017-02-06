@@ -20,7 +20,7 @@
     return self;
 }
 
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     
     UIBezierPath * radiusPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 128, 128) cornerRadius:64];
     

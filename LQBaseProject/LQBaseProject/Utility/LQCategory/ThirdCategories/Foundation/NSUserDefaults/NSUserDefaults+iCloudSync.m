@@ -12,7 +12,7 @@
 @implementation NSUserDefaults (iCloudSync)
 
 
--(void)setValue:(id)value forKey:(NSString *)key iCloudSync:(BOOL)sync
+- (void)setValue:(id)value forKey:(NSString *)key iCloudSync:(BOOL)sync
 {
     if (sync)
         [[NSUbiquitousKeyValueStore defaultStore] setValue:value forKey:key];
@@ -20,7 +20,7 @@
     [self setValue:value forKey:key];
 }
 
--(id)valueForKey:(NSString *)key iCloudSync:(BOOL)sync
+- (id)valueForKey:(NSString *)key iCloudSync:(BOOL)sync
 {
     if (sync)
     {
@@ -44,7 +44,7 @@
 
 
 
--(void)setObject:(id)value forKey:(NSString *)defaultName iCloudSync:(BOOL)sync
+- (void)setObject:(id)value forKey:(NSString *)defaultName iCloudSync:(BOOL)sync
 {
     if (sync)
         [[NSUbiquitousKeyValueStore defaultStore] setObject:value forKey:defaultName];
@@ -52,7 +52,7 @@
     [self setObject:value forKey:defaultName];
 }
 
--(id)objectForKey:(NSString *)key iCloudSync:(BOOL)sync
+- (id)objectForKey:(NSString *)key iCloudSync:(BOOL)sync
 {
     if (sync)
     {

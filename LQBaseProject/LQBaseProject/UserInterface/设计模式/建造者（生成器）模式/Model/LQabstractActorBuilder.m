@@ -13,12 +13,12 @@
 
 
 
--(void)bulideType{}
--(void)bulideSex{}
--(void)bulideFace{}
--(void)bulideCostume{}
+- (void)bulideType{}
+- (void)bulideSex{}
+- (void)bulideFace{}
+- (void)bulideCostume{}
 
--(LQProductModel*)createActor{
+- (LQProductModel*)createActor{
     return nil;
 }
 
@@ -31,14 +31,14 @@
     return builder.createActor;
 }
 
--(LQProductModel *)productConstruct{
+- (LQProductModel *)productConstruct{
     [self bulideFace];
     [self bulideType];
     [self bulideCostume];
     [self bulideSex];
     return self.createActor;
 }
--(BOOL)isHaveCostume{
+- (BOOL)isHaveCostume{
     return YES;
 }
 

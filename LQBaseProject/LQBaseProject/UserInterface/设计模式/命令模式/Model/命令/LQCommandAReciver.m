@@ -10,7 +10,7 @@
 
 @implementation LQCommandAReciver
 
--(void)action{
+- (void)action{
     NSLog(@"执行A命令");
 }
 

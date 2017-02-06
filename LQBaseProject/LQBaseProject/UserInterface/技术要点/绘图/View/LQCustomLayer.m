@@ -11,7 +11,7 @@
 @implementation LQCustomLayer
 
 
--(void)drawInContext:(CGContextRef)ctx{
+- (void)drawInContext:(CGContextRef)ctx{
     
     UIGraphicsPushContext(ctx);
     UIBezierPath* starPath = [UIBezierPath bezierPath];

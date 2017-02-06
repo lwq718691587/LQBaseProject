@@ -27,7 +27,7 @@
     
     // Do any additional setup after loading the view.
 }
--(void)initUI{
+- (void)initUI{
     self.view.clipsToBounds = YES;
     [self.view addSubview:self.iCarouselView];
 }
@@ -61,12 +61,12 @@
     }
 }
 
--(NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel
+- (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
     return self.dataArr.count;
 }
 
--(UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
 {
     UIImageView * iv = (UIImageView *)view;
     
@@ -89,7 +89,7 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
--(void)update{
+- (void)update{
     [LQSexyWomanListModel getSexyWomanListArrSuccess:^(NSMutableArray *dataArr) {
         self.dataArr = dataArr;
        [self.iCarouselView reloadData];
@@ -100,7 +100,7 @@
 
 #pragma mark - getter setter
 
--(iCarousel *)iCarouselView{
+- (iCarousel *)iCarouselView{
     if (!_iCarouselView) {
         _iCarouselView = [[iCarousel alloc]initWithFrame:CGRectMake(0, 0 , ScreenWidth, ScreenHeight - 64)];
         _iCarouselView.scrollSpeed = 0.7;

@@ -39,7 +39,7 @@
     // Do any additional setup after loading the view.
 }
 
--(void)btnFun:(UIButton *)btn{
+- (void)btnFun:(UIButton *)btn{
     
     if (btn.tag == 0) {
         LQCatModel * cat1 = [[LQCatModel alloc]initWithName:@"花花"];

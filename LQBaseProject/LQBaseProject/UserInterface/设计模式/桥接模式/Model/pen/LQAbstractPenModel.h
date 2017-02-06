@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) LQAbstractPenColorModel *pencolor;
 
--(void)usePenDrawLine:(NSString*)thing;
+- (void)usePenDrawLine:(NSString*)thing;
 
 @end

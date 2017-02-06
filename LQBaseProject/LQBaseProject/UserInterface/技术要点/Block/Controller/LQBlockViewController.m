@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.bv = [[LQBlockView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 90)];
     [self.view addSubview:self.bv];
 //    self.value = @"123";
@@ -68,7 +69,7 @@
     
     // Do any additional setup after loading the view.
 }
--(void)btnfun{
+- (void)btnfun{
     self.secondVc = [[LQSecondBlockViewController alloc]init];
     __weak typeof(self) safeSelf = self;
     [self.navigationController pushViewController:self.secondVc animated:YES];

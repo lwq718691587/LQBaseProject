@@ -13,7 +13,7 @@
 
 
 
--(NSString *)getShoutSound{
+- (NSString *)getShoutSound{
     return @"咩";
 }
 

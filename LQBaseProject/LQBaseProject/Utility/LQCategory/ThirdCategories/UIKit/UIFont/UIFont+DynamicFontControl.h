@@ -31,9 +31,9 @@
 
 
 
--(UIFont *)adjustFontForTextStyle:(NSString *)style;
+- (UIFont *)adjustFontForTextStyle:(NSString *)style;
 
--(UIFont *)adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale;
+- (UIFont *)adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale;
 
 
 

@@ -208,12 +208,12 @@ typedef uint32_t dword;
     }
 }
 
--(void)connection:(NSURLConnection*)connection didFailWithError:(NSError *)error {
+- (void)connection:(NSURLConnection*)connection didFailWithError:(NSError *)error {
     if( self.sizeRequestCompletion )
         self.sizeRequestCompletion(self, CGSizeZero);
 }
 
--(NSCachedURLResponse*)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse {
+- (NSCachedURLResponse*)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse {
     return cachedResponse;
 }
 

@@ -30,11 +30,11 @@
 
 #pragma mark - tableView delegate
 //设置row的个数
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.functionDataArr.count;
 }
 //设置cell的内容
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *PickViewCell=@"PickViewCell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:PickViewCell];
     if (cell==nil) {
@@ -44,12 +44,12 @@
     return cell;
 }
 //设置cell的高度
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
 }
 
 //cell的点击事件
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController * vc ;
     switch (indexPath.row) {
         case 0:
@@ -72,7 +72,7 @@
 }
 
 #pragma mark - 更新数据
--(void)update{
+- (void)update{
     self.functionDataArr = @[@"瀑布流+图片从点击出放大",@"iCarousel",@"完全自定义tabbar",@"Auto Layout学习"];
     [self.functionTableView reloadData];
 }
@@ -81,7 +81,7 @@
 
 
 #pragma mark - 创建UI
--(void)initUI{
+- (void)initUI{
     self.functionTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.functionTableView.delegate = self;
     self.functionTableView.dataSource =self;

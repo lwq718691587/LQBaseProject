@@ -40,17 +40,17 @@
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.kvoModel removeObserver:self forKeyPath:@"price"];
 }
--(void)btnFun:(UIButton *)btn{
+- (void)btnFun:(UIButton *)btn{
     btn.selected = !btn.selected;
     self.kvoModel.price = 12;
     
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"price"]) {
         self.myLabel.text = [NSString stringWithFormat:@"%f",self.kvoModel.price];
     }

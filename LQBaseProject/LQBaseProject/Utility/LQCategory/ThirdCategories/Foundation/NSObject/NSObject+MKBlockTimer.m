@@ -37,7 +37,7 @@
 
 @implementation NSObject (MKBlockTimer)
 
--(void) logTimeTakenToRunBlock:(void (^)(void)) block withPrefix:(NSString*) prefixString {
+- (void) logTimeTakenToRunBlock:(void (^)(void)) block withPrefix:(NSString*) prefixString {
 	
 	double a = CFAbsoluteTimeGetCurrent();
 	block();

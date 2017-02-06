@@ -10,7 +10,7 @@
 
 @implementation LQAbstractCommand
 
--(void)execute{
+- (void)execute{
 
 }
 

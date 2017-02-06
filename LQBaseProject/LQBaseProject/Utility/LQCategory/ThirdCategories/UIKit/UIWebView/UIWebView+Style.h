@@ -32,9 +32,9 @@
 /**
  *  @brief  网页透明
  */
--(void) makeTransparent;
+- (void) makeTransparent;
 /**
  *  @brief  网页透明移除+阴影
  */
--(void) makeTransparentAndRemoveShadow;
+- (void) makeTransparentAndRemoveShadow;
 @end

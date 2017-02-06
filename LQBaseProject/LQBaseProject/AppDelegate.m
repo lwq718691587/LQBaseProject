@@ -39,7 +39,7 @@
 
 #pragma mark - customFun
 //检测网络状态
--(void)checkNetworkStatus
+- (void)checkNetworkStatus
 {
     self.networkStatus = AFNetworkReachabilityStatusUnknown;
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
@@ -65,7 +65,7 @@
 }
 
 
--(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     
     BOOL result = [UMSocialSnsService handleOpenURL:url];
     if (result == FALSE) {

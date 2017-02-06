@@ -10,7 +10,7 @@
 
 @interface NSObject (StareValeu)
 
--(void)storeValueWithKey:(NSString *)key;
+- (void)storeValueWithKey:(NSString *)key;
 
 +(id)valueByKey:(NSString *)key;
 

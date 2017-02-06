@@ -15,6 +15,6 @@
  *
  *  @param spacing 行间距
  */
--(void)LQLabelAutoHeightWith:(NSInteger)spacing;
+- (void)LQLabelAutoHeightWith:(NSInteger)spacing;
 
 @end

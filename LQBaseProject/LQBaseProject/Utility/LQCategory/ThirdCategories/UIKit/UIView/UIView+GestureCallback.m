@@ -26,7 +26,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark add tap gestures
 
--(NSString*)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback
+- (NSString*)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback
 {
     NSString *rand;
     do {
@@ -37,7 +37,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(NSString*)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback  numberOfTapsRequired:(NSUInteger)numberOfTapsRequired  numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
+- (NSString*)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback  numberOfTapsRequired:(NSUInteger)numberOfTapsRequired  numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
 {
     NSString *rand;
     do {
@@ -48,12 +48,12 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(void)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback  tapGestureId:(NSString*)tapGestureId
+- (void)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback  tapGestureId:(NSString*)tapGestureId
 {
     [self addTapGestureRecognizer:tapCallback tapGestureId:tapGestureId numberOfTapsRequired:1 numberOfTouchesRequired:1];
 }
 
--(void)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback  tapGestureId:(NSString*)tapGestureId  numberOfTapsRequired:(NSUInteger)numberOfTapsRequired  numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
+- (void)addTapGestureRecognizer:(void(^)(UITapGestureRecognizer* recognizer, NSString* gestureId))tapCallback  tapGestureId:(NSString*)tapGestureId  numberOfTapsRequired:(NSUInteger)numberOfTapsRequired  numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
 {
     UIGestureRecognizer *r = [self.gestures objectForKey:tapGestureId];
     if (r != nil) {
@@ -76,7 +76,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark remove tap gestures
 
--(void)removeTapGesture:(NSString*)tapGestureId
+- (void)removeTapGesture:(NSString*)tapGestureId
 {
     GestureCallbackValues *v = [self.gestures objectForKey:tapGestureId];
     if (v != nil) {
@@ -86,7 +86,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     }
 }
 
--(void)removeAllTapGestures
+- (void)removeAllTapGestures
 {
     NSArray *arr = self.gestures.allValues;
     for (GestureCallbackValues *v in arr) {
@@ -98,7 +98,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark tap handler
 
--(void)tapHandler:(UITapGestureRecognizer*)recognizer
+- (void)tapHandler:(UITapGestureRecognizer*)recognizer
 {
     GestureCallbackValues *v = [self.gestureKeysHash objectForKey:[NSString stringWithFormat:@"%lu", (unsigned long)recognizer.hash]];
     
@@ -119,7 +119,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark add pinch gestures
 
--(NSString*)addPinchGestureRecognizer:(void(^)(UIPinchGestureRecognizer* recognizer, NSString* gestureId))pinchCallback
+- (NSString*)addPinchGestureRecognizer:(void(^)(UIPinchGestureRecognizer* recognizer, NSString* gestureId))pinchCallback
 {
     NSString *rand;
     do {
@@ -130,7 +130,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(void)addPinchGestureRecognizer:(void(^)(UIPinchGestureRecognizer* recognizer, NSString* gestureId))pinchCallback  pinchGestureId:(NSString*)pinchGestureId
+- (void)addPinchGestureRecognizer:(void(^)(UIPinchGestureRecognizer* recognizer, NSString* gestureId))pinchCallback  pinchGestureId:(NSString*)pinchGestureId
 {
     UIGestureRecognizer *r = [self.gestures objectForKey:pinchGestureId];
     if (r != nil) {
@@ -152,7 +152,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark remove pinch gestures
 
--(void)removePinchGesture:(NSString*)pinchGestureId
+- (void)removePinchGesture:(NSString*)pinchGestureId
 {
     GestureCallbackValues *v = [self.gestures objectForKey:pinchGestureId];
     if (v != nil) {
@@ -162,7 +162,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     }
 }
 
--(void)removeAllPinchGestures
+- (void)removeAllPinchGestures
 {
     NSArray *arr = self.gestures.allValues;
     for (GestureCallbackValues *v in arr) {
@@ -174,7 +174,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark pinch handler
 
--(void)pinchHandler:(UIPinchGestureRecognizer*)recognizer
+- (void)pinchHandler:(UIPinchGestureRecognizer*)recognizer
 {
     GestureCallbackValues *v = [self.gestureKeysHash objectForKey:[NSString stringWithFormat:@"%lu", (unsigned long)recognizer.hash]];
     
@@ -195,11 +195,11 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark add pan gestures
 
--(NSString*)addPanGestureRecognizer:(void(^)(UIPanGestureRecognizer* recognizer, NSString* gestureId))panCallback
+- (NSString*)addPanGestureRecognizer:(void(^)(UIPanGestureRecognizer* recognizer, NSString* gestureId))panCallback
 {
     return [self addPanGestureRecognizer:panCallback minimumNumberOfTouches:1 maximumNumberOfTouches:NSUIntegerMax];
 }
--(NSString*)addPanGestureRecognizer:(void(^)(UIPanGestureRecognizer* recognizer, NSString* gestureId))panCallback  minimumNumberOfTouches:(NSUInteger)minimumNumberOfTouches  maximumNumberOfTouches:(NSUInteger)maximumNumberOfTouches
+- (NSString*)addPanGestureRecognizer:(void(^)(UIPanGestureRecognizer* recognizer, NSString* gestureId))panCallback  minimumNumberOfTouches:(NSUInteger)minimumNumberOfTouches  maximumNumberOfTouches:(NSUInteger)maximumNumberOfTouches
 {
     NSString *rand;
     do {
@@ -210,7 +210,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(void)addPanGestureRecognizer:(void(^)(UIPanGestureRecognizer* recognizer, NSString* gestureId))panCallback  panGestureId:(NSString*)panGestureId  minimumNumberOfTouches:(NSUInteger)minimumNumberOfTouches  maximumNumberOfTouches:(NSUInteger)maximumNumberOfTouches
+- (void)addPanGestureRecognizer:(void(^)(UIPanGestureRecognizer* recognizer, NSString* gestureId))panCallback  panGestureId:(NSString*)panGestureId  minimumNumberOfTouches:(NSUInteger)minimumNumberOfTouches  maximumNumberOfTouches:(NSUInteger)maximumNumberOfTouches
 {
     UIGestureRecognizer *r = [self.gestures objectForKey:panGestureId];
     if (r != nil) {
@@ -234,7 +234,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark remove pan gestures
 
--(void)removePanGesture:(NSString*)panGestureId
+- (void)removePanGesture:(NSString*)panGestureId
 {
     GestureCallbackValues *v = [self.gestures objectForKey:panGestureId];
     if (v != nil) {
@@ -244,7 +244,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     }
 }
 
--(void)removeAllPanGestures
+- (void)removeAllPanGestures
 {
     NSArray *arr = self.gestures.allValues;
     for (GestureCallbackValues *v in arr) {
@@ -256,7 +256,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark pan handler
 
--(void)panHandler:(UIPanGestureRecognizer*)recognizer
+- (void)panHandler:(UIPanGestureRecognizer*)recognizer
 {
     GestureCallbackValues *v = [self.gestureKeysHash objectForKey:[NSString stringWithFormat:@"%lu", (unsigned long)recognizer.hash]];
     
@@ -273,12 +273,12 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark - ##### SWIPE
 
--(NSString*)addSwipeGestureRecognizer:(void(^)(UISwipeGestureRecognizer* recognizer, NSString* gestureId))swipeCallback  direction:(UISwipeGestureRecognizerDirection)direction
+- (NSString*)addSwipeGestureRecognizer:(void(^)(UISwipeGestureRecognizer* recognizer, NSString* gestureId))swipeCallback  direction:(UISwipeGestureRecognizerDirection)direction
 {
     return [self addSwipeGestureRecognizer:swipeCallback direction:direction numberOfTouchesRequired:1];
 }
 
--(NSString*)addSwipeGestureRecognizer:(void(^)(UISwipeGestureRecognizer* recognizer, NSString* gestureId))swipeCallback  direction:(UISwipeGestureRecognizerDirection)direction  numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
+- (NSString*)addSwipeGestureRecognizer:(void(^)(UISwipeGestureRecognizer* recognizer, NSString* gestureId))swipeCallback  direction:(UISwipeGestureRecognizerDirection)direction  numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
 {
     NSString *rand;
     do {
@@ -289,7 +289,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(void)addSwipeGestureRecognizer:(void(^)(UISwipeGestureRecognizer* recognizer, NSString* gestureId))swipeCallback  swipeGestureId:(NSString*)swipeGestureId    direction:(UISwipeGestureRecognizerDirection)direction   numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
+- (void)addSwipeGestureRecognizer:(void(^)(UISwipeGestureRecognizer* recognizer, NSString* gestureId))swipeCallback  swipeGestureId:(NSString*)swipeGestureId    direction:(UISwipeGestureRecognizerDirection)direction   numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
 {
     UIGestureRecognizer *r = [self.gestures objectForKey:swipeGestureId];
     if (r != nil) {
@@ -313,7 +313,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark remove swipe gestures
 
--(void)removeSwipeGesture:(NSString*)swipeGestureId
+- (void)removeSwipeGesture:(NSString*)swipeGestureId
 {
     GestureCallbackValues *v = [self.gestures objectForKey:swipeGestureId];
     if (v != nil) {
@@ -323,7 +323,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     }
 }
 
--(void)removeAllSwipeGestures
+- (void)removeAllSwipeGestures
 {
     NSArray *arr = self.gestures.allValues;
     for (GestureCallbackValues *v in arr) {
@@ -335,7 +335,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark swipe handler
 
--(void)swipeHandler:(UISwipeGestureRecognizer*)recognizer
+- (void)swipeHandler:(UISwipeGestureRecognizer*)recognizer
 {
     GestureCallbackValues *v = [self.gestureKeysHash objectForKey:[NSString stringWithFormat:@"%lu", (unsigned long)recognizer.hash]];
     
@@ -355,7 +355,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark add rotation gestures
 
--(NSString*)addRotationGestureRecognizer:(void(^)(UIRotationGestureRecognizer* recognizer, NSString* gestureId))rotationCallback
+- (NSString*)addRotationGestureRecognizer:(void(^)(UIRotationGestureRecognizer* recognizer, NSString* gestureId))rotationCallback
 {
     NSString *rand;
     do {
@@ -366,7 +366,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(void)addRotationGestureRecognizer:(void(^)(UIRotationGestureRecognizer* recognizer, NSString* gestureId))rotationCallback  rotationGestureId:(NSString*)rotationGestureId
+- (void)addRotationGestureRecognizer:(void(^)(UIRotationGestureRecognizer* recognizer, NSString* gestureId))rotationCallback  rotationGestureId:(NSString*)rotationGestureId
 {
     UIGestureRecognizer *r = [self.gestures objectForKey:rotationGestureId];
     if (r != nil) {
@@ -388,7 +388,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark remove rotation gestures
 
--(void)removeRotationGesture:(NSString*)rotationGestureId
+- (void)removeRotationGesture:(NSString*)rotationGestureId
 {
     GestureCallbackValues *v = [self.gestures objectForKey:rotationGestureId];
     if (v != nil) {
@@ -398,7 +398,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     }
 }
 
--(void)removeAllRotationGestures
+- (void)removeAllRotationGestures
 {
     NSArray *arr = self.gestures.allValues;
     for (GestureCallbackValues *v in arr) {
@@ -410,7 +410,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark rotation handler
 
--(void)rotationHandler:(UIRotationGestureRecognizer*)recognizer
+- (void)rotationHandler:(UIRotationGestureRecognizer*)recognizer
 {
     GestureCallbackValues *v = [self.gestureKeysHash objectForKey:[NSString stringWithFormat:@"%lu", (unsigned long)recognizer.hash]];
     
@@ -429,12 +429,12 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark add longPress gestures
 
--(NSString*)addLongPressGestureRecognizer:(void(^)(UILongPressGestureRecognizer* recognizer, NSString* gestureId))longPressCallback
+- (NSString*)addLongPressGestureRecognizer:(void(^)(UILongPressGestureRecognizer* recognizer, NSString* gestureId))longPressCallback
 {
     return [self addLongPressGestureRecognizer:longPressCallback numberOfTapsRequired:0 numberOfTouchesRequired:1 minimumPressDuration:0.5 allowableMovement:10];
 }
 
--(NSString*)addLongPressGestureRecognizer:(void(^)(UILongPressGestureRecognizer* recognizer, NSString* gestureId))longPressCallback
+- (NSString*)addLongPressGestureRecognizer:(void(^)(UILongPressGestureRecognizer* recognizer, NSString* gestureId))longPressCallback
                      numberOfTapsRequired:(NSUInteger)numberOfTapsRequired
                   numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
                      minimumPressDuration:(CFTimeInterval)minimumPressDuration
@@ -449,7 +449,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     return rand;
 }
 
--(void)addLongPressGestureRecognizer:(void(^)(UILongPressGestureRecognizer* recognizer, NSString* gestureId))longPressCallback
+- (void)addLongPressGestureRecognizer:(void(^)(UILongPressGestureRecognizer* recognizer, NSString* gestureId))longPressCallback
                   longPressGestureId:(NSString*)longPressGestureId
                 numberOfTapsRequired:(NSUInteger)numberOfTapsRequired
              numberOfTouchesRequired:(NSUInteger)numberOfTouchesRequired
@@ -480,7 +480,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark remove longPress gestures
 
--(void)removeLongPressGesture:(NSString*)longPressGestureId
+- (void)removeLongPressGesture:(NSString*)longPressGestureId
 {
     GestureCallbackValues *v = [self.gestures objectForKey:longPressGestureId];
     if (v != nil) {
@@ -490,7 +490,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     }
 }
 
--(void)removeAllLongPressGestures
+- (void)removeAllLongPressGestures
 {
     NSArray *arr = self.gestures.allValues;
     for (GestureCallbackValues *v in arr) {
@@ -502,7 +502,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark longPress handler
 
--(void)longPressHandler:(UILongPressGestureRecognizer*)recognizer
+- (void)longPressHandler:(UILongPressGestureRecognizer*)recognizer
 {
     GestureCallbackValues *v = [self.gestureKeysHash objectForKey:[NSString stringWithFormat:@"%lu", (unsigned long)recognizer.hash]];
     
@@ -528,7 +528,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
  ---------------------------------*/
 
 
--(NSString *) randomStringWithLength: (int) len {
+- (NSString *) randomStringWithLength: (int) len {
     const NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     
     NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
@@ -543,7 +543,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
 
 #pragma mark - getter/setters
 
--(NSMutableDictionary *)gestures {
+- (NSMutableDictionary *)gestures {
     NSMutableDictionary *dict = objc_getAssociatedObject(self, &UIView_GestureCallback_gesturesKey);
     
     if (dict == nil) {
@@ -553,12 +553,12 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     
     return dict;
 }
--(void) setGestures:(NSMutableDictionary *)value
+- (void) setGestures:(NSMutableDictionary *)value
 {
     objc_setAssociatedObject(self, &UIView_GestureCallback_gesturesKey, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(NSMutableDictionary *)gestureKeysHash {
+- (NSMutableDictionary *)gestureKeysHash {
     NSMutableDictionary *dict = objc_getAssociatedObject(self, &UIView_GestureCallback_gestureKeysHashKey);
     
     if (dict == nil) {
@@ -568,7 +568,7 @@ const NSString *UIView_GestureCallback_gestureKeysHashKey = @"UIView_GestureCall
     
     return dict;
 }
--(void) setGestureKeysHash:(NSMutableDictionary *)value
+- (void) setGestureKeysHash:(NSMutableDictionary *)value
 {
     objc_setAssociatedObject(self, &UIView_GestureCallback_gestureKeysHashKey, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

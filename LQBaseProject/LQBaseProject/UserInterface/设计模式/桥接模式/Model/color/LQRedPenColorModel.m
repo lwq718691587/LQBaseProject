@@ -10,7 +10,7 @@
 
 @implementation LQRedPenColorModel
 
--(NSString *)color{
+- (NSString *)color{
     return @"红色";
 }
 

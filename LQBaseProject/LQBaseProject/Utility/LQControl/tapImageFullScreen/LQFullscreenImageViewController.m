@@ -36,7 +36,7 @@ static const double kAnimationDuration = 0.3;
 
 #pragma mark - View Life Cycle
 
--(void)viewDidLoad{
+- (void)viewDidLoad{
     self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.view.backgroundColor = [UIColor blackColor];
@@ -117,7 +117,7 @@ static const double kAnimationDuration = 0.3;
     return self.containerView;
 }
 
--(BOOL)shouldAutorotate{
+- (BOOL)shouldAutorotate{
     return NO;
 }
 //支持的方向

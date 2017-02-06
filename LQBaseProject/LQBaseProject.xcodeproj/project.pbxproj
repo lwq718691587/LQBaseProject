@@ -260,6 +260,8 @@
 		FC667E401DAD180600410135 /* LQRedPenColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC667E3F1DAD180600410135 /* LQRedPenColorModel.m */; };
 		FC667E431DAD1A1600410135 /* LQBIgPenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC667E421DAD1A1600410135 /* LQBIgPenModel.m */; };
 		FC667E461DAD1A9600410135 /* LQBlackPenColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC667E451DAD1A9600410135 /* LQBlackPenColorModel.m */; };
+		FC6BE7CA1E277AE00022AD5F /* LQVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6BE7C91E277AE00022AD5F /* LQVariableViewController.m */; };
+		FC6BE7D01E277E3B0022AD5F /* LQVariableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6BE7CF1E277E3B0022AD5F /* LQVariableView.m */; };
 		FC72EDC51DAD13A2007C7C41 /* LQBridgePatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC72EDC41DAD13A2007C7C41 /* LQBridgePatternViewController.m */; };
 		FC759E101DAC84E900538219 /* PeakSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E0D1DAC84E900538219 /* PeakSqlite.m */; };
 		FC759E111DAC84E900538219 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E0F1DAC84E900538219 /* UserEntity.m */; };
@@ -892,6 +894,11 @@
 		FC667E421DAD1A1600410135 /* LQBIgPenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBIgPenModel.m; sourceTree = "<group>"; };
 		FC667E441DAD1A9600410135 /* LQBlackPenColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBlackPenColorModel.h; sourceTree = "<group>"; };
 		FC667E451DAD1A9600410135 /* LQBlackPenColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBlackPenColorModel.m; sourceTree = "<group>"; };
+		FC6BE7C81E277AE00022AD5F /* LQVariableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQVariableViewController.h; sourceTree = "<group>"; };
+		FC6BE7C91E277AE00022AD5F /* LQVariableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQVariableViewController.m; sourceTree = "<group>"; };
+		FC6BE7CE1E277E3B0022AD5F /* LQVariableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQVariableView.h; sourceTree = "<group>"; };
+		FC6BE7CF1E277E3B0022AD5F /* LQVariableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQVariableView.m; sourceTree = "<group>"; };
+		FC6BE7D11E2788C20022AD5F /* LQVar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQVar.h; sourceTree = "<group>"; };
 		FC72EDC31DAD13A2007C7C41 /* LQBridgePatternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBridgePatternViewController.h; sourceTree = "<group>"; };
 		FC72EDC41DAD13A2007C7C41 /* LQBridgePatternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBridgePatternViewController.m; sourceTree = "<group>"; };
 		FC759E0C1DAC84E900538219 /* PeakSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeakSqlite.h; sourceTree = "<group>"; };
@@ -2435,6 +2442,18 @@
 			path = pen;
 			sourceTree = "<group>";
 		};
+		FC6BE7C71E277A9C0022AD5F /* 变量 */ = {
+			isa = PBXGroup;
+			children = (
+				FC6BE7D11E2788C20022AD5F /* LQVar.h */,
+				FC6BE7CE1E277E3B0022AD5F /* LQVariableView.h */,
+				FC6BE7CF1E277E3B0022AD5F /* LQVariableView.m */,
+				FC6BE7C81E277AE00022AD5F /* LQVariableViewController.h */,
+				FC6BE7C91E277AE00022AD5F /* LQVariableViewController.m */,
+			);
+			path = "变量";
+			sourceTree = "<group>";
+		};
 		FC72EDBF1DAD132D007C7C41 /* 桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2778,6 +2797,7 @@
 		FCE71F7E1DACF6460046C1AA /* 技术要点 */ = {
 			isa = PBXGroup;
 			children = (
+				FC6BE7C71E277A9C0022AD5F /* 变量 */,
 				FC9BDEAA1E0A59B300C8394D /* 密码存到钥匙圈 */,
 				FCF4F69B1DF7AC120063236B /* 绘图 */,
 				FC46FC8E1DD1C6F9007D1CC4 /* 自动释放池 */,
@@ -3744,6 +3764,7 @@
 				FC759E141DAC853700538219 /* UIImage+Addition.m in Sources */,
 				FCE720411DACF6470046C1AA /* LQFactoryMethodViewController.m in Sources */,
 				FCE362A51D66E87500FFFC13 /* NSString+LQAddition.m in Sources */,
+				FC6BE7CA1E277AE00022AD5F /* LQVariableViewController.m in Sources */,
 				FC5651391DAC8C060011779B /* UIFont-TTF.m in Sources */,
 				FC56515F1DAC8C060011779B /* UIResponder+Chain.m in Sources */,
 				FC56512D1DAC8C060011779B /* UIButton+TouchAreaInsets.m in Sources */,
@@ -3910,6 +3931,7 @@
 				FCE720441DACF6470046C1AA /* LQAnimalPeopleBuilder.m in Sources */,
 				FC5651221DAC8C060011779B /* UIApplication+Permissions.m in Sources */,
 				FC56517F1DAC8C060011779B /* UIView+Toast.m in Sources */,
+				FC6BE7D01E277E3B0022AD5F /* LQVariableView.m in Sources */,
 				FCF4F6A31DF7AC9F0063236B /* LQCustomView.m in Sources */,
 				FCF4F6A01DF7AC380063236B /* LQCGViewController.m in Sources */,
 				FC5651121DAC8C060011779B /* NSURLRequest+ParamsFromDictionary.m in Sources */,

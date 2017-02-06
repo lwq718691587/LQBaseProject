@@ -34,7 +34,7 @@ int eat (id self,SEL sel,NSString *str){
     return  [super resolveInstanceMethod:sel];
 }
 
--(id)forwardingTargetForSelector:(SEL)aSelector{
+- (id)forwardingTargetForSelector:(SEL)aSelector{
     if (aSelector == @selector(peopleJump)) {
         LQCanJumpPeople * jumpPeople = [LQCanJumpPeople new];
         return jumpPeople;

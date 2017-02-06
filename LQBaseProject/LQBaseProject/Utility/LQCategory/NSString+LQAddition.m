@@ -14,7 +14,7 @@
 
 
 
--(NSMutableAttributedString *)getSpaceStr:(CGFloat)spacing{
+- (NSMutableAttributedString *)getSpaceStr:(CGFloat)spacing{
     NSString * str = self;
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:str];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -24,12 +24,12 @@
     return attributedString;
 }
 
--(NSString *)getTimeStrOfTimeStamp{
+- (NSString *)getTimeStrOfTimeStamp{
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[self intValue]];
     return  [date formattedDateWithFormat:@"YYYY-MM-dd HH:MM"];
 }
 
--(NSData *)hexData
+- (NSData *)hexData
 {
     Byte bytes[self.length / 2];
     for (int i=0,j=0; i < self.length; i++,j++) {
@@ -62,7 +62,7 @@
     return [self rangeOfString:string].location != NSNotFound;
 }
 
--(BOOL)isTelephoneNumber
+- (BOOL)isTelephoneNumber
 {
     NSString * str = self;
     if ([self containsString:@" "]) {
@@ -72,13 +72,13 @@
     return [predicate evaluateWithObject:str];
 }
 
--(BOOL)isVaildPasswordWithMoreThan6LessThan18NumbersOrLetters
+- (BOOL)isVaildPasswordWithMoreThan6LessThan18NumbersOrLetters
 {
     NSPredicate *perdicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",@"^[A-Za-z0-9]{6,18}$"];
     return [perdicate evaluateWithObject:self];
 }
 
--(NSString *)getNOSpaceStr{
+- (NSString *)getNOSpaceStr{
     NSString * phoneNumber = self;
     if ([self containsString:@" "]) {
         phoneNumber = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -92,7 +92,7 @@
  *
  *  @return NSDictionary
  */
--(NSDictionary *) dictionaryValue{
+- (NSDictionary *) dictionaryValue{
     NSError *errorJson;
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:[self dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&errorJson];
     if (errorJson != nil) {

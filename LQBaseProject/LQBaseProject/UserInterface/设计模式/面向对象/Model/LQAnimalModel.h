@@ -16,9 +16,9 @@
 
 
 - (instancetype)initWithName:(NSString*)name;
--(void)shout;
+- (void)shout;
 
--(NSString *)getShoutSound;
+- (NSString *)getShoutSound;
 
 
 @end

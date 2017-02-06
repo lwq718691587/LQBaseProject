@@ -10,6 +10,6 @@
 
 @interface LQCanJumpPeople : NSObject
 
--(void)peopleJump;
+- (void)peopleJump;
 
 @end

@@ -22,7 +22,7 @@ static const void *UIControlActionBlockArray = &UIControlActionBlockArray;
 
 
 @implementation UIControl (ActionBlocks)
--(void)handleControlEvents:(UIControlEvents)controlEvents withBlock:(UIControlActionBlock)actionBlock {
+- (void)handleControlEvents:(UIControlEvents)controlEvents withBlock:(UIControlActionBlock)actionBlock {
     NSMutableArray *actionBlocksArray = [self actionBlocksArray];
     
     UIControlActionBlockWrapper *blockActionWrapper = [[UIControlActionBlockWrapper alloc] init];

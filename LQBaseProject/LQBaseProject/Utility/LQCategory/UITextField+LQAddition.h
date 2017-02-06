@@ -12,7 +12,7 @@
 
 
 /** 手机号码分段 且不超过13位 */
--(BOOL)phoneSubsectionAndTestsShouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
+- (BOOL)phoneSubsectionAndTestsShouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 /**
  *  限制textfield输入字符的长度，
  *

@@ -24,7 +24,7 @@
         NSUInteger lastIndex = components.count - 1;
         extension = [components objectAtIndex:lastIndex];
         
-        name = [name substringToIndex:(name.length-(extension.length+1))];
+        name = [name substringToIndex:(name.length- (extension.length+1))];
     }
     
     // 如果为Retina屏幕且存在对应图片，则返回Retina图片，否则查找普通图片

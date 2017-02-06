@@ -61,7 +61,7 @@
 /**
  *  @brief  网页透明
  */
--(void) makeTransparent
+- (void) makeTransparent
 {
     self.backgroundColor = [UIColor clearColor];
     self.opaque = NO;
@@ -69,7 +69,7 @@
 /**
  *  @brief  网页透明移除阴影
  */
--(void) makeTransparentAndRemoveShadow
+- (void) makeTransparentAndRemoveShadow
 {
     [self makeTransparent];
     [self setShadowViewHidden:YES];

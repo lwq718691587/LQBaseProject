@@ -16,7 +16,7 @@
     return [[NSDate date] daysIntervalSinceDate:date];
 }
 
--(NSInteger)daysIntervalSinceDate:(NSDate *)date
+- (NSInteger)daysIntervalSinceDate:(NSDate *)date
 {
     NSInteger secondsOfSelf = (NSUInteger)[self timeIntervalSince1970];
     NSInteger secondOfDawn_self  = secondsOfSelf - secondsOfSelf % (3600 * 24);//self 00:00:00的时间戳

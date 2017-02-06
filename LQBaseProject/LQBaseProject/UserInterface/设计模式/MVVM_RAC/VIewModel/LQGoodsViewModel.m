@@ -27,7 +27,7 @@
     return self;
 }
 
--(void)getData{
+- (void)getData{
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.model = [[LQGoodsModel alloc]initWithDic:@{@"goodsPrice_base"        :@"5",
@@ -41,7 +41,7 @@
     });
 }
 
--(void)bindModel{
+- (void)bindModel{
     RAC(self,goodsTotalPrice) = [RACObserve(self,buyNumber)map:^id(NSString * value) {
         return [NSString stringWithFormat:@"总价 ：  %ld元",[value integerValue] * [self.model.goodsPrice_base intValue]];
     }];

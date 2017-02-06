@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) LQHandlerModel *successor;
 
--(void)handleRequest:(NSString *)request;
+- (void)handleRequest:(NSString *)request;
 
 @end

@@ -11,8 +11,8 @@
 
 @interface LQCommandQueue : BaseModel
 
--(void)addCommand:(LQAbstractCommand *)command;
+- (void)addCommand:(LQAbstractCommand *)command;
 
--(void)execute;
+- (void)execute;
 
 @end

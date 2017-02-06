@@ -34,11 +34,11 @@
     // Do any additional setup after loading the view.
 }
 
--(void)myblock:(int(^)(NSString * s))complete{
+- (void)myblock:(int(^)(NSString * s))complete{
     
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 //    int lagerNum = 1024 * 1024 * 2 ;
 //    for(int i = 0 ; i < lagerNum; i++)
@@ -74,7 +74,7 @@
     
 }
 
--(void)dothing{
+- (void)dothing{
     for(int i = 0 ; i < 1024 * 100; i++)
     {
         if ([self.therad isCancelled]) {
@@ -88,18 +88,18 @@
     
 }
 
--(void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.therad cancel];
 
 }
 
--(void)viewDidDisappear:(BOOL)animated{
+- (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
 
 }
 
--(void)dealloc{
+- (void)dealloc{
    NSLog(@"%s",__func__);
 }
 

@@ -10,7 +10,7 @@
 
 @implementation LQDogModel
 
--(NSString *)getShoutSound{
+- (NSString *)getShoutSound{
     return @"旺";
 }
 @end

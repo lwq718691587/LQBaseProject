@@ -14,7 +14,7 @@
 
 
 
--(NSString *)getShoutSound{
+- (NSString *)getShoutSound{
     NSString * str = [super getShoutSound];
     return str;
 }

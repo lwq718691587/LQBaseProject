@@ -21,12 +21,12 @@
     return self;
 }
 
--(void)shout{
+- (void)shout{
     NSString * str = [NSString stringWithFormat:@"我的名字是%@: %@ * %ld",self.name,[self getShoutSound],self.number];
     NSLog(@"%@",str);
 }
 
--(NSString *)getShoutSound{
+- (NSString *)getShoutSound{
     return @"";
 }
 

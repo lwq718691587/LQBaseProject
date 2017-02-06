@@ -32,7 +32,7 @@
     // Do any additional setup after loading the view.
 }
 
--(void)block:(void(^)(NSString * str))success{
+- (void)block:(void(^)(NSString * str))success{
     NSString * str = @"one";
     success(str);
 }

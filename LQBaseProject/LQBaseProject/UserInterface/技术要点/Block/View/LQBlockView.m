@@ -18,13 +18,13 @@
     }
     return self;
 }
--(void)createView{
+- (void)createView{
     UIButton * redbtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
     [redbtn setBackgroundColor:[UIColor redColor]];
     [self addSubview:redbtn];
     [redbtn addTarget:self action:@selector(redbtnFun) forControlEvents:UIControlEventTouchDown];
 }
--(void)redbtnFun{
+- (void)redbtnFun{
     if (self.redBtnBlock2) {
         self.redBtnBlock2();
     }

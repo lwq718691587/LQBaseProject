@@ -34,7 +34,7 @@
     // Do any additional setup after loading the view.
 }
 
--(void)fullScreenBtnFun{
+- (void)fullScreenBtnFun{
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     LQFullViewController * vc = [[LQFullViewController alloc]init];
     vc.mp = self.mp;
@@ -44,7 +44,7 @@
 }
 
 #pragma mark 转屏方法 不允许转屏
--(BOOL)shouldAutorotate{
+- (BOOL)shouldAutorotate{
     return YES;
 }
 //支持的方向

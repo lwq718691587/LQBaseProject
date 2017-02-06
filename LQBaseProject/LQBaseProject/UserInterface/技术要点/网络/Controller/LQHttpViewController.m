@@ -59,26 +59,26 @@
     // Do any additional setup after loading the view.
 }
 
--(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
     
     NSLog(@"####%lld / %lld / %lld",bytesWritten,totalBytesWritten,totalBytesExpectedToWrite);
 }
 
--(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location{
+- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location{
     NSString * fullPath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)lastObject]stringByAppendingPathComponent:downloadTask.response.suggestedFilename];
     [[NSFileManager defaultManager] moveItemAtURL:location toURL:[NSURL fileURLWithPath:fullPath] error:nil];
     NSLog(@"%@",fullPath);
 }
 
 
--(void)initUI{
+- (void)initUI{
     UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
     btn.backgroundColor = [UIColor flatRedColor];
     [btn addTarget:self action:@selector(btnFun) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:btn];
     
 }
--(void)btnFun{
+- (void)btnFun{
     NSLog(@"121");
 }
 @end

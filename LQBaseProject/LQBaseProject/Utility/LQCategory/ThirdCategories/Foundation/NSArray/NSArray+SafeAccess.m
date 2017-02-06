@@ -9,7 +9,7 @@
 #import "NSArray+SafeAccess.h"
 
 @implementation NSArray (SafeAccess)
--(id)objectWithIndex:(NSUInteger)index{
+- (id)objectWithIndex:(NSUInteger)index{
     if (index <self.count) {
         return self[index];
     }else{
@@ -301,54 +301,54 @@
 
 #pragma --mark NSMutableArray setter
 @implementation NSMutableArray (SafeAccess)
--(void)addObj:(id)i{
+- (void)addObj:(id)i{
     if (i!=nil) {
         [self addObject:i];
     }
 }
--(void)addString:(NSString*)i
+- (void)addString:(NSString*)i
 {
     if (i!=nil) {
         [self addObject:i];
     }
 }
--(void)addBool:(BOOL)i
+- (void)addBool:(BOOL)i
 {
     [self addObject:@(i)];
 }
--(void)addInt:(int)i
+- (void)addInt:(int)i
 {
     [self addObject:@(i)];
 }
--(void)addInteger:(NSInteger)i
+- (void)addInteger:(NSInteger)i
 {
     [self addObject:@(i)];
 }
--(void)addUnsignedInteger:(NSUInteger)i
+- (void)addUnsignedInteger:(NSUInteger)i
 {
     [self addObject:@(i)];
 }
--(void)addCGFloat:(CGFloat)f
+- (void)addCGFloat:(CGFloat)f
 {
    [self addObject:@(f)];
 }
--(void)addChar:(char)c
+- (void)addChar:(char)c
 {
     [self addObject:@(c)];
 }
--(void)addFloat:(float)i
+- (void)addFloat:(float)i
 {
     [self addObject:@(i)];
 }
--(void)addPoint:(CGPoint)o
+- (void)addPoint:(CGPoint)o
 {
     [self addObject:NSStringFromCGPoint(o)];
 }
--(void)addSize:(CGSize)o
+- (void)addSize:(CGSize)o
 {
    [self addObject:NSStringFromCGSize(o)];
 }
--(void)addRect:(CGRect)o
+- (void)addRect:(CGRect)o
 {
     [self addObject:NSStringFromCGRect(o)];
 }

@@ -10,7 +10,7 @@
 
 @implementation LQBIgPenModel
 
--(void)usePenDrawLine:(NSString*)thing;{
+- (void)usePenDrawLine:(NSString*)thing;{
     NSLog(@"用 大 号笔画%@的%@",self.pencolor.color,thing);
 }
 

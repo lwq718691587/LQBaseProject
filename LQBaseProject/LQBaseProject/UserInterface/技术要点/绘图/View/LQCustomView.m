@@ -35,7 +35,7 @@
     return self;
 }
 
--(void)animationStart{
+- (void)animationStart{
 //    [self setNeedsDisplay];
 }
 - (void)drawRect:(CGRect)rect {

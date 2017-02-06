@@ -11,7 +11,7 @@
 @implementation NSObject (StareValeu)
 
 
--(void)storeValueWithKey:(NSString *)key{
+- (void)storeValueWithKey:(NSString *)key{
     [[LQStoreValue sharedInstace] storeValue:self withKey:key];
 }
 

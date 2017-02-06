@@ -16,7 +16,7 @@
  *
  *  @return 打印视图层级字符串
  */
--(NSString*)recursiveView
+- (NSString*)recursiveView
 {
     NSString *description = [NSString stringWithFormat:@"%s [Line %d] \r\r %@",
                           __PRETTY_FUNCTION__, __LINE__,
@@ -28,7 +28,7 @@
  *
  *  @return 打印约束字符串
  */
--(NSString*)constraintsDescription{
+- (NSString*)constraintsDescription{
     NSString *description = [NSString stringWithFormat:@"%s [Line %d] \r\r %@ \r\r",
                              __PRETTY_FUNCTION__, __LINE__,
                              [[self constraints] description]];
@@ -39,7 +39,7 @@
  *
  *  @return 打印整个autolayout树的字符串
  */
--(NSString*)autolayoutTraceDescription{
+- (NSString*)autolayoutTraceDescription{
     NSString *description = [NSString stringWithFormat:@"%s [Line %d] \r\r %@",
                              __PRETTY_FUNCTION__, __LINE__,
                              [self performSelector:@selector(_autolayoutTrace)]];

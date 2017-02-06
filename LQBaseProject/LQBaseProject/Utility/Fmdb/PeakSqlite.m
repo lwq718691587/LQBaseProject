@@ -11,7 +11,7 @@
 @implementation PeakSqlite
 
 //初始化
--(id) initWithFMDB:(FMDatabase *)database{
+- (id) initWithFMDB:(FMDatabase *)database{
   self = [super init];
   if(self){
     self.primaryId = NSNotFound;
@@ -22,7 +22,7 @@
 }
 
 //计算根据Sql计算分页信息
--(PeakPagination) paginationWithSql: (NSString *) sql parameters:(NSArray *)params pageIndex: (NSInteger) aIndex pageSize: (NSInteger) aSize
+- (PeakPagination) paginationWithSql: (NSString *) sql parameters:(NSArray *)params pageIndex: (NSInteger) aIndex pageSize: (NSInteger) aSize
 {
   PeakPagination pag;
   pag.pageSize = aSize;
@@ -40,7 +40,7 @@
 }
 
 //根据条件对当前表进行分页计算
--(PeakPagination) paginationWithCondition: (NSString *) cond parameters: (NSArray *) params pageIndex: (NSInteger) aIndex pageSize: (NSInteger) aSize{
+- (PeakPagination) paginationWithCondition: (NSString *) cond parameters: (NSArray *) params pageIndex: (NSInteger) aIndex pageSize: (NSInteger) aSize{
   NSString *sql = [NSString stringWithFormat:
                    @"SELECT COUNT(%@) FROM %@ WHERE 1 = 1 %@",
                    self.primaryField,
@@ -50,20 +50,20 @@
 }
 
 
--(void)parseFromDictionary: (NSDictionary *) data{
+- (void)parseFromDictionary: (NSDictionary *) data{
 
 }
 #pragma mark 增删改
 
 //根据主键删除
--(BOOL) deleteWithPrimary:(NSInteger)primaryId
+- (BOOL) deleteWithPrimary:(NSInteger)primaryId
 {
   NSString *condition = [NSString stringWithFormat: @" AND %@ = %ld", self.primaryField, primaryId];
   return [self deleteWithCondition:condition parameters:nil];
 }
 
 //根据条件删除某个表的数据
--(BOOL) deleteWithCondition:(NSString *)cond parameters:(NSArray *)params
+- (BOOL) deleteWithCondition:(NSString *)cond parameters:(NSArray *)params
 {
   NSString *sql = [NSString stringWithFormat: @"DELETE FROM %@ WHERE 1 = 1%@",
                    self.tableName,
@@ -75,7 +75,7 @@
 }
 
 //插入或者更新数据，根据ID来判断
--(BOOL) save{
+- (BOOL) save{
   //插入
   if (self.primaryId == NSNotFound) {
     return [self insert] != NSNotFound;
@@ -86,19 +86,19 @@
 }
 
 //插入当前实例，并返回最后插入的ID
--(BOOL) update{
+- (BOOL) update{
   NSLog(@"子类必需实现此方法");
   return NO;
 }
 
 //更新数据
--(NSInteger) insert{
+- (NSInteger) insert{
   NSLog(@"子类必需实现此方法");
   return NSNotFound;
 }
 
 //插入数据，并返回最后插入的ID
--(NSInteger) insertWithSql:(NSString *)sql parameters:(NSArray *)params
+- (NSInteger) insertWithSql:(NSString *)sql parameters:(NSArray *)params
 {
   NSInteger lastId = -1;
   [self.database open];
@@ -111,7 +111,7 @@
 
 #pragma makr 获取数据
 //获取第一行第一列的数据
--(id) scalarWithSql:(NSString *)sql parameters:(NSArray *)params
+- (id) scalarWithSql:(NSString *)sql parameters:(NSArray *)params
 {
   id result = nil;
   [self.database open];
@@ -128,13 +128,13 @@
 }
 
 //根据Sql来计算总记录数
--(NSInteger)countWithSql:(NSString *)sql parameters:(NSArray *)params
+- (NSInteger)countWithSql:(NSString *)sql parameters:(NSArray *)params
 {
   return [[self scalarWithSql:sql parameters:params] intValue];
 }
 
 //根据条件计算当前表
--(NSInteger) countWithCondition:(NSString *)cond parameters:(NSArray *)params
+- (NSInteger) countWithCondition:(NSString *)cond parameters:(NSArray *)params
 {
   NSString *sql = [NSString stringWithFormat:
                    @"SELECT COUNT(%@) total FROM %@ WHERE 1 = 1 %@",
@@ -145,7 +145,7 @@
 }
 
 //根据条件统计当前表的某一个字段
--(CGFloat) sumWithCondition: (NSString *) cond field: (NSString *) field parameters:(NSArray *)params{
+- (CGFloat) sumWithCondition: (NSString *) cond field: (NSString *) field parameters:(NSArray *)params{
   NSString *sql = [NSString stringWithFormat:
                    @"SELECT sum(%@) total FROM %@ WHERE 1 = 1 %@",
                    field,
@@ -155,13 +155,13 @@
 }
 
 //根据sql统计，要求sql的第一列必需是sum(field)
--(CGFloat) sumWithSql: (NSString *) sql parameters:(NSArray *)params{
+- (CGFloat) sumWithSql: (NSString *) sql parameters:(NSArray *)params{
   id result = [self scalarWithSql:sql parameters:params];
   return  [PeakSqlite isDBNull: result] ? 0 : [result floatValue];
 }
 
 //获取一条记录
--(BOOL) findOneWithCondition:(NSString *)cond parameters:(NSArray *)params orderBy:(NSString *)orderBy
+- (BOOL) findOneWithCondition:(NSString *)cond parameters:(NSArray *)params orderBy:(NSString *)orderBy
 {
   NSString *fields = [self.fields componentsJoinedByString:@","];
   NSString *sql = [NSString stringWithFormat:
@@ -183,19 +183,19 @@
 }
 
 //根据主键，获取一条记录
--(BOOL)findOneWithPrimaryId:(NSInteger) primaryId{
+- (BOOL)findOneWithPrimaryId:(NSInteger) primaryId{
   NSString *cond = [NSString stringWithFormat: @" AND %@ = %ld", self.primaryField, (long)primaryId];
   return [self findOneWithCondition:cond parameters:nil orderBy:nil];
 }
 
 //子类重载实现数据填充
--(BOOL) findOneWithFMResultSet:(FMResultSet *)rs{
+- (BOOL) findOneWithFMResultSet:(FMResultSet *)rs{
   NSLog(@"子类必需实现此方法");
   return NO;
 }
 
 //根据Sql搜索，并返回结果集
--(NSArray *) findWithSql:(NSString *)sql parameters:(NSArray *)params{
+- (NSArray *) findWithSql:(NSString *)sql parameters:(NSArray *)params{
   NSMutableArray *result = [[NSMutableArray alloc] init];
   [self.database open];
     
@@ -209,7 +209,7 @@
 }
 
 //根据sql查询数据，并可以设置起止范围
--(NSArray *) findWithSql: (NSString *) sql parameters:(NSArray *)params startIndex: (NSInteger) start endIndex: (NSInteger) end{
+- (NSArray *) findWithSql: (NSString *) sql parameters:(NSArray *)params startIndex: (NSInteger) start endIndex: (NSInteger) end{
   sql = [sql stringByAppendingFormat:@" LIMIT %ld, %ld", (long)start, (long)end];
     
     
@@ -219,14 +219,14 @@
 }
 
 //根据条件查询当前表
--(NSArray *) findWithCondition: (NSString *) cond parameters:(NSArray *)params orderBy:(NSString *)orderBy
+- (NSArray *) findWithCondition: (NSString *) cond parameters:(NSArray *)params orderBy:(NSString *)orderBy
 {
   //获取所有记录
   return [self findWithCondition:cond parameters:params orderBy:orderBy startIndex:0 endIndex:NSIntegerMax];
 }
 
 //根据条件查询，可以进行分页
--(NSArray *) findWithCondition: (NSString *) cond parameters:(NSArray *)params orderBy:(NSString *)orderBy startIndex: (NSInteger) start endIndex: (NSInteger) end{
+- (NSArray *) findWithCondition: (NSString *) cond parameters:(NSArray *)params orderBy:(NSString *)orderBy startIndex: (NSInteger) start endIndex: (NSInteger) end{
   NSString *fields = [self.fields componentsJoinedByString: @","];
   NSString *sql = [NSString stringWithFormat:
                    @"SELECT %@ FROM %@ WHERE 1 = 1  %@ %@",
@@ -239,12 +239,12 @@
 }
 
 //获取当前表的所有数据
--(NSArray *) findAllWithOrderBy: (NSString *) orderBy{
+- (NSArray *) findAllWithOrderBy: (NSString *) orderBy{
   return [self findAllWithOrderBy:orderBy startIndex:0 endIndex:NSIntegerMax];
 }
 
 //查询所有数据，并可以分页
--(NSArray *) findAllWithOrderBy: (NSString *) orderBy startIndex: (NSInteger) start endIndex: (NSInteger) end{
+- (NSArray *) findAllWithOrderBy: (NSString *) orderBy startIndex: (NSInteger) start endIndex: (NSInteger) end{
   return [self findWithCondition:nil parameters:nil orderBy:orderBy startIndex:start endIndex:end];
 }
 

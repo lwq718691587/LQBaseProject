@@ -25,20 +25,21 @@
     
     // Do any additional setup after loading the view.
 }
--(void)viewWillAppear:(BOOL)animated{
+
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [MobClick beginLogPageView:NSStringFromClass([self class])];
 }
--(void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated{
     [MobClick endLogPageView:NSStringFromClass([self class])];
 }
 
--(void)initData{}
--(void)update{}
--(void)initUI{}
--(void)initNavigation{}
+- (void)initData{}
+- (void)update{}
+- (void)initUI{}
+- (void)initNavigation{}
 
--(BOOL)shouldAutorotate{
+- (BOOL)shouldAutorotate{
     return NO;
 }
 //支持的方向

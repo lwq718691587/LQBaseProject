@@ -29,7 +29,7 @@
 
     // Do any additional setup after loading the view.
 }
--(void)initUI{
+- (void)initUI{
     self.imageViewsArr = [NSMutableArray arrayWithCapacity:3];
     
     self.imageNamesArr = [NSMutableArray array];
@@ -63,7 +63,7 @@
     self.semaphore = dispatch_semaphore_create(1);
 }
 
--(void)loadimage{
+- (void)loadimage{
     
     // 无论是串行队列 还是 并行队列 只有异步操作任务 GCD才会开启子线程 同步操作任务 不会开启子线程
     // 同步操作 串行队列中的任务：不会新建线程，按顺序执行任务(毫无用处)
@@ -122,7 +122,7 @@
 /**
  *  多线程下载图片
  */
--(void)loadImageWithMultiGCD{
+- (void)loadImageWithMultiGCD{
     
     /*创建一个串行队列
      第一个参数：队列名称
@@ -157,7 +157,7 @@
 }
 
 #pragma mark 加载图片
--(void)loadImageView:(int)index{
+- (void)loadImageView:(int)index{
     
     NSData * date = [self requestData:index];
     //回到主线程 *同步*更新UI
@@ -167,14 +167,14 @@
 }
 
 #pragma mark 将图片显示到界面
--(void)updateImageWithData:(NSData *)data andIndex:(int)index{
+- (void)updateImageWithData:(NSData *)data andIndex:(int)index{
     UIImage *image=[UIImage imageWithData:data];
     UIImageView *imageView= self.imageViewsArr[index];
     imageView.image=image;
 }
 
 #pragma mark 请求图片数据
--(NSData *)requestData:(NSInteger)index{
+- (NSData *)requestData:(NSInteger)index{
     NSString * name;
     NSData *data;
     
@@ -222,6 +222,7 @@
         NSURL * url = [NSURL URLWithString:name];
         data = [NSData dataWithContentsOfURL:url];
     }
+    
     
     
     return data;

@@ -22,7 +22,7 @@
 //    NSLog(@"%d",[self funMult:4]);
 //     
     NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
-//    NSLog(@"%@",[self insertion_sort:numberArr]);
+    NSLog(@"%@",[self insertion_sort:numberArr]);
     NSLog(@"%@",[self bubbling_sort:numberArr]);
 
 
@@ -55,11 +55,11 @@
 }
 
 //从1加到n
--(int)funSumOne:(int)n{
+- (int)funSumOne:(int)n{
     return (1 + n) * (n / 2);
 }
 //从1加到n
--(int)funSumTwo:(int)n{
+- (int)funSumTwo:(int)n{
     int sum = 0;
     for (int i = 0; i <= n; i++) {
         sum = sum + i;
@@ -67,7 +67,7 @@
     return sum;
 }
 //阶乘sum = 5*4*3*2*1
--(int)funMult:(int)n{
+- (int)funMult:(int)n{
     int sum = 1 ;
     for (int i = n ; i > 0; i--) {
         sum = sum * i;
@@ -75,7 +75,7 @@
     return sum;
 }
 
--(int)funMult_2:(int)n{
+- (int)funMult_2:(int)n{
     int sum = 1;
     if (n > 2) {
         sum = n * [self funMult_2:n-1];
@@ -84,27 +84,37 @@
 }
 
 //插入排序算法
--(NSMutableArray *)insertion_sort:(NSMutableArray*)numberArr{
+- (NSMutableArray *)insertion_sort:(NSMutableArray*)numberArr{
     
 //  NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
-    for (int j = 1; j < numberArr.count; j++) {
+//    for (int j = 1; j < numberArr.count; j++) {
+//        int key = [numberArr[j] intValue];
+//        int i = j - 1;
+//        while (i >= 0 && key < [numberArr[i] intValue]) {
+//            numberArr[i+1] = numberArr[i];
+//            i-- ;
+//        }
+//        numberArr[i+1] = [NSNumber numberWithInt:key];
+//    }
+//    NSLog(@"%@",[numberArr componentsJoinedByString:@","]);
+//    return numberArr;
+    
+    
+    for (int j = 1 ; j<numberArr.count ; j++) {
         int key = [numberArr[j] intValue];
         int i = j - 1;
         while (i >= 0 && key < [numberArr[i] intValue]) {
             numberArr[i+1] = numberArr[i];
-            i-- ;
+            i--;
         }
-        numberArr[i+1] = [NSNumber numberWithInt:key];
-        NSLog(@"%@",[numberArr componentsJoinedByString:@","]);
+        numberArr[i + 1] = [NSNumber numberWithInt:key];
     }
-
-    
-    
+    NSLog(@"%@",[numberArr componentsJoinedByString:@","]);
     return numberArr;
 }
 
 //冒泡排序
--(NSMutableArray *)bubbling_sort:(NSMutableArray *)numberArr{
+- (NSMutableArray *)bubbling_sort:(NSMutableArray *)numberArr{
     
     for (int i = 0; i < numberArr.count ; i++ ) {
     
@@ -120,6 +130,17 @@
             
         }
     }
+    
+    
+    for (int i = 0; i < numberArr.count; i++) {
+        for (int j = 1 ; j < numberArr.count - i; j++) {
+            if ([numberArr[j] intValue] < [numberArr[j-1] intValue]) {
+                [numberArr exchangeObjectAtIndex:j withObjectAtIndex:j-1];
+            }
+        }
+    }
+    
+    
     return numberArr;
 }
 

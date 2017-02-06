@@ -15,7 +15,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)cornerRadius: (CGFloat)radius strokeSize: (CGFloat)size color: (UIColor *)color
+- (void)cornerRadius: (CGFloat)radius strokeSize: (CGFloat)size color: (UIColor *)color
 {
     self.layer.cornerRadius = radius;
     self.layer.borderColor = color.CGColor;
@@ -23,7 +23,7 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
--(void)setRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius {
+- (void)setRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius {
     CGRect rect = self.bounds;
     
     // Create the path
@@ -42,7 +42,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)shadowWithColor: (UIColor *)color 
+- (void)shadowWithColor: (UIColor *)color 
                 offset: (CGSize)offset 
                opacity: (CGFloat)opacity 
                 radius: (CGFloat)radius
@@ -56,7 +56,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)removeFromSuperviewWithFadeDuration: (NSTimeInterval)duration
+- (void)removeFromSuperviewWithFadeDuration: (NSTimeInterval)duration
 {
     [UIView beginAnimations: nil context: NULL];
 	[UIView setAnimationBeginsFromCurrentState: YES];
@@ -69,7 +69,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)addSubview: (UIView *)subview withTransition: (UIViewAnimationTransition)transition duration: (NSTimeInterval)duration
+- (void)addSubview: (UIView *)subview withTransition: (UIViewAnimationTransition)transition duration: (NSTimeInterval)duration
 {
 	[UIView beginAnimations: nil context: NULL];
 	[UIView setAnimationDuration: duration];
@@ -80,7 +80,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)removeFromSuperviewWithTransition: (UIViewAnimationTransition)transition duration: (NSTimeInterval)duration
+- (void)removeFromSuperviewWithTransition: (UIViewAnimationTransition)transition duration: (NSTimeInterval)duration
 {
 	[UIView beginAnimations: nil context: NULL];
 	[UIView setAnimationDuration: duration];
@@ -91,7 +91,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)rotateByAngle: (CGFloat)angle 
+- (void)rotateByAngle: (CGFloat)angle 
             duration: (NSTimeInterval)duration 
          autoreverse: (BOOL)autoreverse
          repeatCount: (CGFloat)repeatCount
@@ -110,7 +110,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
--(void)moveToPoint: (CGPoint)newPoint 
+- (void)moveToPoint: (CGPoint)newPoint 
           duration: (NSTimeInterval)duration 
        autoreverse: (BOOL)autoreverse
        repeatCount: (CGFloat)repeatCount

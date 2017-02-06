@@ -17,19 +17,19 @@
  *
  *  @return 调整好行间距的字符串
  */
--(NSMutableAttributedString *)getSpaceStr:(CGFloat)spacing;
+- (NSMutableAttributedString *)getSpaceStr:(CGFloat)spacing;
 /**
  *  时间戳字符串 转 时间字符串
  *
  *  @return 时间字符串
  */
--(NSString *)getTimeStrOfTimeStamp;
+- (NSString *)getTimeStrOfTimeStamp;
 /**
  *  字符串转二进制
  *
  *  @return 
  */
--(NSData *)hexData;
+- (NSData *)hexData;
 /**
  *  是否包含某个字符串
  *
@@ -37,24 +37,24 @@
  *
  *  @return
  */
--(BOOL)containsString:(NSString *)string;
+- (BOOL)containsString:(NSString *)string;
 /**
  *  验证是否是手机号
  *
  *  @return 
  */
--(BOOL)isTelephoneNumber;
+- (BOOL)isTelephoneNumber;
 /**
  *  验证 是否 是6 - 18 位 字母 或 数字
  *
  *  @return 
  */
--(BOOL)isVaildPasswordWithMoreThan6LessThan18NumbersOrLetters;
+- (BOOL)isVaildPasswordWithMoreThan6LessThan18NumbersOrLetters;
 
 /**
  *  去掉字符串中的空格
  */
--(NSString *)getNOSpaceStr;
+- (NSString *)getNOSpaceStr;
 
 /**
  *  Create a MD5 string from self
@@ -67,7 +67,7 @@
  *
  *  @return NSDictionary
  */
--(NSDictionary *) dictionaryValue;
+- (NSDictionary *) dictionaryValue;
 
 /**
  *  检查是够是邮箱

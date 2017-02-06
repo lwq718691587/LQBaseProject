@@ -11,7 +11,7 @@
 #import "NSData+Base64.h"
 
 @implementation NSString (Encrypt)
--(NSString*)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
+- (NSString*)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv {
     NSData *encrypted = [[self dataUsingEncoding:NSUTF8StringEncoding] encryptedWithAESUsingKey:key andIV:iv];
     NSString *encryptedString = [encrypted base64EncodedString];
     

@@ -11,7 +11,7 @@
 @implementation LQSmallPenModel
 
 
--(void)usePenDrawLine:(NSString*)thing;{
+- (void)usePenDrawLine:(NSString*)thing;{
     NSLog(@"用 小 号笔画%@的%@",self.pencolor.color,thing);
 }
 

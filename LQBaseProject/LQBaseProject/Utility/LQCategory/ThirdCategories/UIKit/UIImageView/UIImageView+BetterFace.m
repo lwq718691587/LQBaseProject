@@ -65,7 +65,7 @@ char detectorKey;
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(CIDetector *)detector{
+- (CIDetector *)detector{
     return objc_getAssociatedObject(self, &detectorKey);
 }
 
@@ -106,7 +106,7 @@ char detectorKey;
     });
 }
 
--(void)markAfterFaceDetect:(NSArray *)features size:(CGSize)size{
+- (void)markAfterFaceDetect:(NSArray *)features size:(CGSize)size{
     CGRect fixedRect = CGRectMake(MAXFLOAT, MAXFLOAT, 0, 0);
     CGFloat rightBorder = 0, bottomBorder = 0;
     for (CIFaceFeature *f in features){

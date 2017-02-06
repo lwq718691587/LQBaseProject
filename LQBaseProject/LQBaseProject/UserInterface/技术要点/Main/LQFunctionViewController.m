@@ -30,6 +30,7 @@
 #import "LQAutoreleasepoolViewController.h"
 #import "LQCGViewController.h"
 #import "LQKeychainViewController.h"
+#import "LQVariableViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -52,11 +53,11 @@
 
 #pragma mark - tableView delegate
 //设置row的个数
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.functionDataArr.count;
 }
 //设置cell的内容
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *PickViewCell=@"PickViewCell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:PickViewCell];
     if (cell==nil) {
@@ -66,12 +67,12 @@
     return cell;
 }
 //设置cell的高度
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
 }
 
 //cell的点击事件
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     UIViewController * vc ;
@@ -142,6 +143,9 @@
         case 21:
             vc = [[LQKeychainViewController alloc]init];
             break;
+        case 22:
+            vc = [[LQVariableViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -150,8 +154,8 @@
 }
 
 #pragma mark - 更新数据
--(void)update{
-    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池",@"绘图",@"保存信息到钥匙串"];
+- (void)update{
+    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池",@"绘图",@"保存信息到钥匙串",@"修饰变量"];
     [self.functionTableView reloadData];
 }
 
@@ -159,7 +163,7 @@
 
 
 #pragma mark - 创建UI
--(void)initUI{
+- (void)initUI{
     self.functionTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.functionTableView.delegate = self;
     self.functionTableView.dataSource =self;

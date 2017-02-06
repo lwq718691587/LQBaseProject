@@ -10,7 +10,7 @@
 
 @implementation LQCommand_A
 
--(void)execute{
+- (void)execute{
     [self.reciver action];
 }
 

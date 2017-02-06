@@ -24,7 +24,7 @@
     [self createView];
     // Do any additional setup after loading the view.
 }
--(void)createView{
+- (void)createView{
     self.textField1 = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth - 100, SFhy(30))];
     self.textField1.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.textField1];
@@ -94,12 +94,12 @@
     
 }
 
--(void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
 - (void)didReceiveMemoryWarning {

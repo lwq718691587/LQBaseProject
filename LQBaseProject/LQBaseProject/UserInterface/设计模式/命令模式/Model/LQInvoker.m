@@ -10,7 +10,7 @@
 
 @implementation LQInvoker
 
--(void)call{
+- (void)call{
     [self.command execute];
 }
 

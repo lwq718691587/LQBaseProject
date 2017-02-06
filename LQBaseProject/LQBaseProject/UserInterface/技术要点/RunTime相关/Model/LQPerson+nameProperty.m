@@ -15,11 +15,11 @@ static const char *key = "name";
 @implementation LQPerson (nameProperty)
 
 
--(NSString *)name{
+- (NSString *)name{
     return objc_getAssociatedObject(self, key);
 }
 
--(void)setName:(NSString *)name{
+- (void)setName:(NSString *)name{
     objc_setAssociatedObject(self, key, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 

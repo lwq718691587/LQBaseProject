@@ -46,7 +46,7 @@ void BlockSegue(void) {
 }
 
 
--(void)jmg_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)jmg_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if (segue.identifier == nil) {
         return;
     }
@@ -60,11 +60,11 @@ void BlockSegue(void) {
     segueBlock(sender, segue.destinationViewController, segue);
 }
 
--(NSMutableDictionary *)jmg_dictionaryBlock {
+- (NSMutableDictionary *)jmg_dictionaryBlock {
     return objc_getAssociatedObject(self, UIViewControllerDictionaryBlockKey);
 }
 
--(NSMutableDictionary *)jmg_createDictionaryBlock {
+- (NSMutableDictionary *)jmg_createDictionaryBlock {
     if (!self.jmg_dictionaryBlock) {
         objc_setAssociatedObject(self, UIViewControllerDictionaryBlockKey, [NSMutableDictionary dictionary], OBJC_ASSOCIATION_RETAIN);
     }
@@ -73,7 +73,7 @@ void BlockSegue(void) {
 }
 
 #pragma mark - Public interface
--(void)configureSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block {
+- (void)configureSegue:(NSString *)identifier withBlock:(UIViewControllerSegueBlock)block {
     if (!identifier) {
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"Segue identifier can not be nil" userInfo:nil];
     }
@@ -86,7 +86,7 @@ void BlockSegue(void) {
     [dBlocks setObject:block forKey:identifier];
 }
 
--(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender withBlock:(UIViewControllerSegueBlock)block {
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender withBlock:(UIViewControllerSegueBlock)block {
     if (!identifier) {
         @throw [NSException exceptionWithName:NSInvalidArgumentException reason:@"Segue identifier can not be nil" userInfo:nil];
     }

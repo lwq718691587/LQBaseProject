@@ -10,7 +10,7 @@
 
 @implementation LQHandlerModel
 
--(void)handleRequest{
+- (void)handleRequest{
     
 }
 

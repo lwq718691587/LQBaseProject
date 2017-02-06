@@ -22,14 +22,14 @@
     }
     return self;
 }
--(void)createView{
+- (void)createView{
     self.sexyWomenImageView = [[UIImageView alloc]initWithFrame:self.bounds];
     self.sexyWomenImageView.clipsToBounds = YES;
     [self.sexyWomenImageView setContentMode:UIViewContentModeScaleAspectFill];
     [self addSubview:self.sexyWomenImageView];
     
 }
--(void)setModel:(LQSexyWomanListModel *)model{
+- (void)setModel:(LQSexyWomanListModel *)model{
     _model = model;
     self.sexyWomenImageView.frame = self.bounds;
     

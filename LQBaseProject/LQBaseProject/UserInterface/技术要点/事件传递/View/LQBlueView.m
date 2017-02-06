@@ -14,7 +14,7 @@
 
 
 
--(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
     
     CGRect rect = CGRectMake(0, 0, self.width, self.height);
     NSLog(@"%@",NSStringFromCGRect(rect));

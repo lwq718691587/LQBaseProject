@@ -30,7 +30,7 @@
     // Do any additional setup after loading the view.
 }
 
--(void)initUI{
+- (void)initUI{
     self.imageViewsArr = [NSMutableArray arrayWithCapacity:3];
     self.threadArr = [NSMutableArray arrayWithCapacity:3];
     CGFloat imageWidth = (ScreenWidth - SFwx(20))/3;
@@ -62,7 +62,7 @@
     [self.view addSubview:buttonStop];
 }
 //开启现成加载图片 //NSThread 子线程 NSThread是轻量级的多线程开发，使用起来也并不复杂，但是使用NSThread需要自己管理线程生命周期
--(void)loadImageWithMultiThread{
+- (void)loadImageWithMultiThread{
     for (int i =0 ; i < self.imageViewsArr.count; i++) {
         //系统提供的快速创建线程 在后台执行一个操作，本质就是重新创建一个线程执行当前方法。
         //        [self performSelectorInBackground:@selector(loadImage:) withObject:[NSNumber numberWithInt:i]];
@@ -76,7 +76,7 @@
     }
 }
 #pragma mark 停止加载图片
--(void)stopLoadImage{
+- (void)stopLoadImage{
     for (int i=0; i<self.imageViewsArr.count; i++) {
         NSThread *thread= self.threadArr[i];
         //判断线程是否完成，如果没有完成则设置为取消状态
@@ -89,7 +89,7 @@
 }
 
 #pragma mark 加载图片
--(void)loadImage:(NSNumber *)index{
+- (void)loadImage:(NSNumber *)index{
     int i = [index intValue];
     NSThread *currentThread=[NSThread currentThread];
     //请求数据
@@ -112,7 +112,7 @@
 }
 
 #pragma mark 将图片显示到界面
--(void)updateImage:(LQImageData *)lqData{
+- (void)updateImage:(LQImageData *)lqData{
     
     UIImageView * iv = self.imageViewsArr[lqData.index];
     iv.image = [UIImage imageWithData:lqData.imageData];
@@ -121,7 +121,7 @@
 
 
 #pragma mark 请求图片数据
--(NSData *)requestData:(int)index{
+- (NSData *)requestData:(int)index{
     @autoreleasepool {
         NSURL *url;
         switch (index) {

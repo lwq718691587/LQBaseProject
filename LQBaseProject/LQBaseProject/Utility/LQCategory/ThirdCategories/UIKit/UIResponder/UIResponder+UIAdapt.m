@@ -25,7 +25,7 @@ CGPoint CGAdaptPointMake(CGFloat x, CGFloat y){
     return CGPointMake(x*scale, y*scale);
 }
 
--(CGFloat)factorAdapt{
+- (CGFloat)factorAdapt{
     //IScreenMode *currentMode = [[UIScreen mainScreen]currentMode];
     CGRect sreenBounds = [UIScreen mainScreen].bounds;
     CGFloat scale  = sreenBounds.size.width/XIB_WIDTH;

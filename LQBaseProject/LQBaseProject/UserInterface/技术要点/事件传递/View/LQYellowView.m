@@ -19,7 +19,7 @@
 */
 
 
--(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
     
     
     CGRect rect = CGRectMake(146/2, 12/2, 46, 30/2);

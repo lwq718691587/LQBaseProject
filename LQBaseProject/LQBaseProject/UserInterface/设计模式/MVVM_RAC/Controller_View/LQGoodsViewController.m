@@ -47,7 +47,7 @@
     
 }
 
--(void)createUI{
+- (void)createUI{
     for (int i = 0; i < 4; i++) {
         UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, 35 * i, ScreenWidth, 30)];
         label.backgroundColor = [UIColor redColor];

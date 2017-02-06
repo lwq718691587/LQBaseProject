@@ -32,7 +32,7 @@
 }
 
 
--(void)runBlockOnAllSubviews:(SubviewBlock)block
+- (void)runBlockOnAllSubviews:(SubviewBlock)block
 {
     block(self);
     for (UIView* view in [self subviews])
@@ -41,7 +41,7 @@
     }
 }
 
--(void)runBlockOnAllSuperviews:(SuperviewBlock)block
+- (void)runBlockOnAllSuperviews:(SuperviewBlock)block
 {
     block(self);
     if (self.superview)
@@ -50,7 +50,7 @@
     }
 }
 
--(void)enableAllControlsInViewHierarchy
+- (void)enableAllControlsInViewHierarchy
 {
     [self runBlockOnAllSubviews:^(UIView *view) {
         
@@ -65,7 +65,7 @@
     }];
 }
 
--(void)disableAllControlsInViewHierarchy
+- (void)disableAllControlsInViewHierarchy
 {
     [self runBlockOnAllSubviews:^(UIView *view) {
         

@@ -11,7 +11,7 @@
 #import <objc/runtime.h>
 
 @implementation NSObject (Property)
--(NSDictionary *)propertyDictionary
+- (NSDictionary *)propertyDictionary
 {
     //创建可变字典
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];

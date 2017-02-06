@@ -31,13 +31,13 @@
     return self;
 }
 
--(void)removeDataBase{
+- (void)removeDataBase{
     NSFileManager * fileManager = [NSFileManager defaultManager];
     [fileManager removeItemAtPath:self.dataBasePath error:nil];
     
 }
 
--(void)createDataBase{
+- (void)createDataBase{
 
 
     NSFileManager * fileManager = [NSFileManager defaultManager];
@@ -62,7 +62,7 @@
     
 }
 
--(void)saveDatawithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName{
+- (void)saveDatawithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName{
     sqlite3_stmt *statement;
     const char *dbpath = [self.dataBasePath UTF8String];
     
@@ -82,7 +82,7 @@
     }
 }
 
--(void)searchAllinfo{
+- (void)searchAllinfo{
     const char *dbpath = [self.dataBasePath UTF8String];
     
     sqlite3_stmt *statement;
@@ -106,7 +106,7 @@
 
 }
 
--(void)searchDatawithStudentNum:(NSString *)studentNum{
+- (void)searchDatawithStudentNum:(NSString *)studentNum{
     const char *dbpath = [self.dataBasePath UTF8String];
     
     sqlite3_stmt *statement;
@@ -131,7 +131,7 @@
     }
 }
 
--(void)deleteDataWithID:(NSString *)ID{
+- (void)deleteDataWithID:(NSString *)ID{
     const char *dbpath = [self.dataBasePath UTF8String];
     
     sqlite3_stmt *statement;
@@ -154,7 +154,7 @@
 
 }
 
--(void)updateDataWithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName searchID:(NSString *)ID{
+- (void)updateDataWithStudentNum:(NSString *)studentNum withClassName:(NSString *)ClassName withStudentName:(NSString *)studentName searchID:(NSString *)ID{
     const char *dbpath = [self.dataBasePath UTF8String];
     
     sqlite3_stmt *statement;

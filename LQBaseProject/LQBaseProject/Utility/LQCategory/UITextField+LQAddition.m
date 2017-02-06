@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 @implementation UITextField (LQAddition)
 
--(BOOL)phoneSubsectionAndTestsShouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+- (BOOL)phoneSubsectionAndTestsShouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     NSUInteger proposedNewLength = self.text.length - range.length + string.length;
     if (string.length>0) {
         NSMutableString *str=[NSMutableString stringWithString:self.text];

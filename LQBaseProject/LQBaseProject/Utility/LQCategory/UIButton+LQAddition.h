@@ -14,8 +14,8 @@
  *
  *  @param spacing 
  */
--(void)makeLeftImageRightTitle:(CGFloat)spacing;
--(void)makeLeftTitleRightImage:(CGFloat)spacing;
--(void)makeTopImageBottomTitle:(CGFloat)spacing;
--(void)makeTopTitleBottomImage:(CGFloat)spacing;
+- (void)makeLeftImageRightTitle:(CGFloat)spacing;
+- (void)makeLeftTitleRightImage:(CGFloat)spacing;
+- (void)makeTopImageBottomTitle:(CGFloat)spacing;
+- (void)makeTopTitleBottomImage:(CGFloat)spacing;
 @end

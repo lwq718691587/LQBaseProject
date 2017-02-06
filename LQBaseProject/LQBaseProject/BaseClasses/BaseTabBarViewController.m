@@ -32,7 +32,7 @@
 }
 
 //装载视图 -
--(void)addViewController
+- (void)addViewController
 {
     
     LQPatternViewController * vc1 = [[LQPatternViewController alloc]init];
@@ -54,7 +54,7 @@
     
 }
 
--(void)systemTabbar{
+- (void)systemTabbar{
     
     NSArray * itemImageArr = @[@"leftPage",@"homePage",@"rightPage"];
     
@@ -67,7 +67,7 @@
 }
 
 //自定义tab -
--(void)customTab1
+- (void)customTab1
 {
     self.tabBar.backgroundImage = [[UIImage alloc]init];
     self.tabBar.shadowImage = [[UIImage alloc]init];
@@ -98,7 +98,7 @@
     [self.btnArr[1] setSelected:YES];
 }
 
--(void)toudown:(UIButton *)btn
+- (void)toudown:(UIButton *)btn
 {
     for (UIButton * tabBtn in self.btnArr) {
         tabBtn.selected = NO;
@@ -109,15 +109,15 @@
 
 #pragma mark 转屏方法重写
 
--(BOOL)shouldAutorotate{
+- (BOOL)shouldAutorotate{
     return self.selectedViewController.shouldAutorotate;
 }
 
--(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return [self.selectedViewController supportedInterfaceOrientations];
 }
 
--(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return [self.selectedViewController preferredInterfaceOrientationForPresentation];
 }
 

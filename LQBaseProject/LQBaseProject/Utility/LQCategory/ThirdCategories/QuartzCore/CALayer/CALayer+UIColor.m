@@ -18,10 +18,10 @@
     return [UIColor colorWithCGColor:self.borderColor];
 }
 
--(void)setContentsUIImage:(UIImage*)bgImage{
+- (void)setContentsUIImage:(UIImage*)bgImage{
     self.contents=(__bridge id)(bgImage.CGImage);
 }
--(UIImage*)contentsUIImage{
+- (UIImage*)contentsUIImage{
     return self.contents;
 }
 @end

@@ -11,6 +11,6 @@
 @protocol LQchange <NSObject>
 
 
--(void)changThing;
+- (void)changThing;
 
 @end

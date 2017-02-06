@@ -26,7 +26,7 @@
 }
 
 
--(void)setModel:(LQDeveloperUtilityModel *)model{
+- (void)setModel:(LQDeveloperUtilityModel *)model{
     _model = model;
     self.cusTitleLable.text = model.title;
     self.cusDownloadUrl.text = model.url;

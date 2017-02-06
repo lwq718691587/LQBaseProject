@@ -35,12 +35,60 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x7b80;&#x5355;&#x7684;&#x7b97;&#x6cd5;/Controller/LQlgorithmViewController.m"
-            timestampString = "498973492.679193"
+            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/Block/Controller/LQSecondBlockViewController.m"
+            timestampString = "505880841.570516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x53d8;&#x91cf;/NSObject+Description.m"
+            timestampString = "506332925.25905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "-description"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x53d8;&#x91cf;/LQVariableView.m"
+            timestampString = "506332992.823447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-description"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x53d8;&#x91cf;/LQVariableViewController.m"
+            timestampString = "506333007.763369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>

@@ -28,11 +28,11 @@
 
 }
 
--(UIFont *)adjustFontForTextStyle:(NSString *)style{
+- (UIFont *)adjustFontForTextStyle:(NSString *)style{
     return [self adjustFontForTextStyle:style scale:1.0f];
 }
 
--(UIFont *)adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale{
+- (UIFont *)adjustFontForTextStyle:(NSString *)style scale:(CGFloat)scale{
     
     UIFontDescriptor * fontDescriptor = nil;
     

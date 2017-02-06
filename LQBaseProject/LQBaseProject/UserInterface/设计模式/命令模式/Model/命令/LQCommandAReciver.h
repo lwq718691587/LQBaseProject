@@ -10,6 +10,6 @@
 
 @interface LQCommandAReciver : BaseModel
 
--(void)action;
+- (void)action;
 
 @end

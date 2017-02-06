@@ -29,7 +29,7 @@
     [self.myView addGestureRecognizer:rotation];
 }
 
--(void)panFun:(UIPanGestureRecognizer *)recognizer{
+- (void)panFun:(UIPanGestureRecognizer *)recognizer{
     
      CGPoint center = recognizer.view.center;
      CGPoint translation = [recognizer translationInView:self.view];
@@ -37,13 +37,13 @@
      [recognizer setTranslation:CGPointZero inView:self.view];
     
 }
--(void)pinFun:(UIPinchGestureRecognizer *)pin{
+- (void)pinFun:(UIPinchGestureRecognizer *)pin{
     CGFloat scale = pin.scale;
     pin.view.transform = CGAffineTransformScale(pin.view.transform, scale, scale);
     pin.scale = 1;
 }
 
--(void)rotationFun:(UIRotationGestureRecognizer*)rotation{
+- (void)rotationFun:(UIRotationGestureRecognizer*)rotation{
     rotation.view.transform = CGAffineTransformRotate(rotation.view.transform, rotation.rotation);
     rotation.rotation = 0.0;
 }

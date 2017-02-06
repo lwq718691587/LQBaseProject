@@ -11,7 +11,7 @@
 #import "LQMacro.h"
 @implementation UILabel (LQAddition)
 
--(void)LQLabelAutoHeightWith:(NSInteger)spacing{
+- (void)LQLabelAutoHeightWith:(NSInteger)spacing{
     self.numberOfLines = 0;
     self.attributedText = [self.text getSpaceStr:spacing];
     CGFloat width = self.frame.size.width;

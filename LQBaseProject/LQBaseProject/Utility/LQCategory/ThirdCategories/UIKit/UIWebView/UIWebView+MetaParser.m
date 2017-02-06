@@ -14,7 +14,7 @@
  *
  *  @return meta信息
  */
--(NSArray *)getMetaData
+- (NSArray *)getMetaData
 {
     NSString *string = [self stringByEvaluatingJavaScriptFromString:@""
                         "var json = '[';                                    "

@@ -21,7 +21,7 @@
 }
 
 //创建tableView
--(void)createTableView
+- (void)createTableView
 {
     self.myTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0 , self.view.bounds.size.width, self.view.bounds.size.height - 64) style:UITableViewStylePlain];
     self.myTableView.delegate = self;
@@ -33,11 +33,11 @@
 }
 
 //设置row的个数
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 10;
 }
 //设置cell的内容
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *PickViewCell=@"PickViewCell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:PickViewCell];
     if (cell==nil) {
@@ -47,11 +47,11 @@
     return cell;
 }
 //设置cell的高度
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
 }
 
--(UIView *)createFooterView{
+- (UIView *)createFooterView{
     
     UIView * v = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 300)];
     

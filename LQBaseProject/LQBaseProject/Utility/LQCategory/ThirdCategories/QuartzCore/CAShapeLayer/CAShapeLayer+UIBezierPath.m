@@ -27,7 +27,7 @@
 
 @implementation CAShapeLayer (UIBezierPath)
 
--(void)dt_updateWithBezierPath:(UIBezierPath *)path
+- (void)dt_updateWithBezierPath:(UIBezierPath *)path
 {
     self.path = [path CGPath];
     self.lineWidth = path.lineWidth;
@@ -52,7 +52,7 @@
     self.lineDashPhase = phase;
 }
 
--(UIBezierPath *)dt_bezierPath
+- (UIBezierPath *)dt_bezierPath
 {
     UIBezierPath * path = [UIBezierPath bezierPathWithCGPath:self.path];
     path.lineWidth = self.lineWidth;

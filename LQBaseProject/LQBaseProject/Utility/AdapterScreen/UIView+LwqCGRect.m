@@ -242,7 +242,7 @@
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 
--(void)keyboardWillShow:(NSNotification*)notification{
+- (void)keyboardWillShow:(NSNotification*)notification{
     
     CGFloat time = [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     NSDictionary *userInfo = [notification userInfo];
@@ -253,7 +253,7 @@
         self.view.frame = CGRectMake(0 ,-height+64, self.view.frame.size.width, self.view.frame.size.height);
     }];
 }
--(void)keyboardWillHide:(NSNotification*)notification{
+- (void)keyboardWillHide:(NSNotification*)notification{
     
     CGFloat time = [[notification.userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
     [UIView animateWithDuration:time  animations:^{

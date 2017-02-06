@@ -191,11 +191,11 @@ static void * const keypath = (void*)&keypath;
     [self setDismissedCallback:dismissed];
 }
 
--(UIView*)topView {
+- (UIView*)topView {
     
     return  [self topViewController].view;
 }
-//-(UIView*)topView {
+//- (UIView*)topView {
 //    UIViewController *recentView = self;
 //
 //    while (recentView.parentViewController != nil) {

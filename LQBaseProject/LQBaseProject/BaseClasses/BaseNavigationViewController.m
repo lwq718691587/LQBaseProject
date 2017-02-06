@@ -36,15 +36,15 @@
 }
 
 #pragma mark 转屏方法重写
--(BOOL)shouldAutorotate{
+- (BOOL)shouldAutorotate{
     return self.topViewController.shouldAutorotate;
 }
 
--(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return [self.topViewController supportedInterfaceOrientations];
 }
 
--(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return [self.topViewController preferredInterfaceOrientationForPresentation];
 }
 

@@ -116,7 +116,7 @@
     CGContextSetBlendMode(context, kCGBlendModeCopy);
     
     // Draw the pixel we are interested in onto the bitmap context
-    CGContextTranslateCTM(context, -pointX, pointY-(CGFloat)height);
+    CGContextTranslateCTM(context, -pointX, pointY- (CGFloat)height);
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, (CGFloat)width, (CGFloat)height), cgImage);
     CGContextRelease(context);
     

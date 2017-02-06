@@ -26,10 +26,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
+    
+    NSOperation *a = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"a");
+    }];
+    
+    NSOperation *b = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"b");
+    }];
+    
+    NSOperation *c = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"c");
+    }];
+    
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+    
+    [c addDependency:a];
+    [c addDependency:b];
+    
+    [queue addOperation:a];
+    [queue addOperation:b];
+    [queue addOperation:c];
+    
     // Do any additional setup after loading the view.
 }
 
--(void)initUI{
+- (void)initUI{
     self.imageViewsArr = [NSMutableArray arrayWithCapacity:3];
 
     CGFloat imageWidth = (ScreenWidth - SFwx(20))/3;
@@ -52,7 +75,7 @@
 }
 
 //开启子线程
--(void)loadImageWithMultiOperation{
+- (void)loadImageWithMultiOperation{
 //    NSOperationQueue *operationQueue=[[NSOperationQueue alloc]init];
 //    operationQueue.maxConcurrentOperationCount=5;//设置最大并发线程数
 //    for (int i =0 ; i < self.imageViewsArr.count; i++) {
@@ -99,7 +122,7 @@
     
 }
 #pragma mark 加载图片
--(void)loadImage:(NSNumber *)index{
+- (void)loadImage:(NSNumber *)index{
     int i = [index intValue];
     NSData * data = [self requestData:i];
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
@@ -109,7 +132,7 @@
 }
 
 #pragma mark 将图片显示到界面
--(void)updateImageWithData:(NSData *)data andIndex:(int )index{
+- (void)updateImageWithData:(NSData *)data andIndex:(int )index{
     UIImage *image=[UIImage imageWithData:data];
     UIImageView *imageView= self.imageViewsArr[index];
     imageView.image=image;
@@ -117,7 +140,7 @@
 
 
 #pragma mark 请求图片数据
--(NSData *)requestData:(int)index{
+- (NSData *)requestData:(int)index{
     @autoreleasepool {
         NSURL *url;
         switch (index) {

@@ -37,11 +37,11 @@
 
 #pragma mark - tableView delegate
 //设置row的个数
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.functionDataArr.count;
 }
 //设置cell的内容
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *PickViewCell=@"PickViewCell";
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:PickViewCell];
     if (cell==nil) {
@@ -51,12 +51,12 @@
     return cell;
 }
 //设置cell的高度
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 44;
 }
 
 //cell的点击事件
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     UIViewController * vc ;
@@ -97,7 +97,7 @@
 }
 
 #pragma mark - 更新数据
--(void)update{
+- (void)update{
     self.functionDataArr = @[@"面向对象",@"工厂方法",@"原型模式与Copy",@"建造者（生成器）模式",@"观察者模式",@"RAC",@"MVVM",@"桥接模式",@"责任链模式",@"命令模式"];
     [self.functionTableView reloadData];
 }
@@ -106,7 +106,7 @@
 
 
 #pragma mark - 创建UI
--(void)initUI{
+- (void)initUI{
     self.functionTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.functionTableView.delegate = self;
     self.functionTableView.dataSource =self;

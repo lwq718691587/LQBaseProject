@@ -23,11 +23,11 @@
     return self;
 }
 
--(void)addCommand:(LQAbstractCommand *)command{
+- (void)addCommand:(LQAbstractCommand *)command{
     [self.commandQueue addObject:command];
 }
 
--(void)execute{
+- (void)execute{
     for (LQAbstractCommand * command in self.commandQueue) {
         [command execute];
     }

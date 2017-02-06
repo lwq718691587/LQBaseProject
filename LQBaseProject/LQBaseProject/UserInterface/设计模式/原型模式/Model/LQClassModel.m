@@ -10,7 +10,7 @@
 
 @implementation LQClassModel
 
--(id)copyWithZone:(NSZone *)zone{
+- (id)copyWithZone:(NSZone *)zone{
     LQClassModel * newModel = [[LQClassModel allocWithZone:zone]init];
     newModel.classAdress = [_classAdress copy];
     newModel.className = [_className copy];
@@ -19,7 +19,7 @@
 }
 
 
--(id)mutableCopyWithZone:(NSZone *)zone{
+- (id)mutableCopyWithZone:(NSZone *)zone{
     LQClassModel * newModel = [[LQClassModel allocWithZone:zone]init];
     newModel.classAdress = [_classAdress mutableCopy];
     newModel.className = [_className mutableCopy];

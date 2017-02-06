@@ -10,7 +10,7 @@
 
 @implementation LQHandler_CModel
 
--(void)handleRequest:(NSString *)request{
+- (void)handleRequest:(NSString *)request{
     if ([request intValue] < 1500 && [request intValue] >= 500) {
         NSLog(@"C 处理这个数据 %@",request);
     }else{

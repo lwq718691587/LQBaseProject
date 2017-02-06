@@ -31,7 +31,7 @@ static NSUInteger CellWidth = 100;
 @implementation LQCustomCollectionViewLayout
 
 
--(CGSize)collectionViewContentSize{
+- (CGSize)collectionViewContentSize{
     
     NSMutableArray * heightArr = [NSMutableArray arrayWithCapacity:MaxNumCols];
     for (int i = 0; i < MaxNumCols; i++) {
@@ -49,7 +49,7 @@ static NSUInteger CellWidth = 100;
     return contentSize;
 }
 
--(NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
+- (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect{
     
     NSMutableArray *myAttributes = [NSMutableArray arrayWithCapacity:self.layoutInformation.count];
     for(NSString *key in self.layoutInformation.allKeys){

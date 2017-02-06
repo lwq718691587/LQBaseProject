@@ -10,7 +10,7 @@
 
 @implementation LQBlackPenColorModel
 
--(NSString *)color{
+- (NSString *)color{
     return @"黑色";
 }
 

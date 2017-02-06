@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSArray (SafeAccess)
--(id)objectWithIndex:(NSUInteger)index;
+- (id)objectWithIndex:(NSUInteger)index;
 
 - (NSString*)stringWithIndex:(NSUInteger)index;
 
@@ -58,27 +58,27 @@
 
 @interface NSMutableArray(SafeAccess)
 
--(void)addObj:(id)i;
+- (void)addObj:(id)i;
 
--(void)addString:(NSString*)i;
+- (void)addString:(NSString*)i;
 
--(void)addBool:(BOOL)i;
+- (void)addBool:(BOOL)i;
 
--(void)addInt:(int)i;
+- (void)addInt:(int)i;
 
--(void)addInteger:(NSInteger)i;
+- (void)addInteger:(NSInteger)i;
 
--(void)addUnsignedInteger:(NSUInteger)i;
+- (void)addUnsignedInteger:(NSUInteger)i;
 
--(void)addCGFloat:(CGFloat)f;
+- (void)addCGFloat:(CGFloat)f;
 
--(void)addChar:(char)c;
+- (void)addChar:(char)c;
 
--(void)addFloat:(float)i;
+- (void)addFloat:(float)i;
 
--(void)addPoint:(CGPoint)o;
+- (void)addPoint:(CGPoint)o;
 
--(void)addSize:(CGSize)o;
+- (void)addSize:(CGSize)o;
 
--(void)addRect:(CGRect)o;
+- (void)addRect:(CGRect)o;
 @end

@@ -17,7 +17,7 @@
 @implementation LQListNode
 
 
--(void)addItem:(id )item{
+- (void)addItem:(id )item{
     if (self.headNode == nil) {
         self.headNode = [LQNode nodeWithItem:item];
     }else{

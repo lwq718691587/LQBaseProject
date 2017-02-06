@@ -10,7 +10,7 @@
 
 @implementation LQCanJumpPeople
 
--(void)peopleJump{
+- (void)peopleJump{
     NSLog(@"jump");
 }
 

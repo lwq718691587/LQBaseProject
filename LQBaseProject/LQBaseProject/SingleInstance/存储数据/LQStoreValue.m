@@ -8,6 +8,7 @@
 
 #import "LQStoreValue.h"
 #import "FastCoder.h"
+
 static LQStoreValue * storeValue = nil;
 
 @implementation LQStoreValue
@@ -20,7 +21,7 @@ static LQStoreValue * storeValue = nil;
     return storeValue;
 }
 
--(void)storeValue:(id)value withKey:(NSString *)key{
+- (void)storeValue:(id)value withKey:(NSString *)key{
     NSParameterAssert(value);
     NSParameterAssert(key);
     NSData * data = [FastCoder dataWithRootObject:value];
@@ -28,7 +29,7 @@ static LQStoreValue * storeValue = nil;
         [[NSUserDefaults standardUserDefaults] setObject:data forKey:key];
     }
 }
--(id)valueWithKey:(NSString*)key{
+- (id)valueWithKey:(NSString*)key{
     NSParameterAssert(key);
     NSData * data = [[NSUserDefaults standardUserDefaults] valueForKey:key];
     return [FastCoder objectWithData:data];

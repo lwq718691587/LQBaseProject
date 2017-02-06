@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) LQNode *headNode;
 
--(void)addItem:(id )item;
+- (void)addItem:(id )item;
 
 @end

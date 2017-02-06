@@ -10,7 +10,7 @@
 
 @implementation LQChangeDogModel
 
--(void)changThing{
+- (void)changThing{
     
 }
 

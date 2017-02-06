@@ -21,24 +21,24 @@
     return self;
 }
 
--(void)bulideSex{
+- (void)bulideSex{
     self.actor.sex = @"男";
 }
--(void)bulideFace{
+- (void)bulideFace{
     self.actor.face = @"人的脸";
 }
--(void)bulideType{
+- (void)bulideType{
     self.actor.type = @"人类";
 }
--(void)bulideCostume{
+- (void)bulideCostume{
     self.actor.costume = @"人类的服装";
 }
 
--(LQProductModel*)createActor{
+- (LQProductModel*)createActor{
     return self.actor;
 }
 
--(BOOL)isHaveCostume{
+- (BOOL)isHaveCostume{
     return YES;
 }
 @end

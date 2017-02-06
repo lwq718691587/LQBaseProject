@@ -22,8 +22,8 @@ typedef void (^SuperviewBlock) (UIView* superview);
 - (UIView*)findViewRecursively:(BOOL(^)(UIView* subview, BOOL* stop))recurse;
 
 
--(void)runBlockOnAllSubviews:(SubviewBlock)block;
--(void)runBlockOnAllSuperviews:(SuperviewBlock)block;
--(void)enableAllControlsInViewHierarchy;
--(void)disableAllControlsInViewHierarchy;
+- (void)runBlockOnAllSubviews:(SubviewBlock)block;
+- (void)runBlockOnAllSuperviews:(SuperviewBlock)block;
+- (void)enableAllControlsInViewHierarchy;
+- (void)disableAllControlsInViewHierarchy;
 @end

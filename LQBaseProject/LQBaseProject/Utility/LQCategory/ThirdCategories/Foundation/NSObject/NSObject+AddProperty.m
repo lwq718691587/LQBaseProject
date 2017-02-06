@@ -20,14 +20,14 @@ static const void *IntegerProperty = &IntegerProperty;
 /**
  *  @brief  catgory runtime实现get set方法增加一个字符串属性
  */
--(void)setStringProperty:(NSString *)stringProperty{
+- (void)setStringProperty:(NSString *)stringProperty{
     //use that a static const as the key
     objc_setAssociatedObject(self, StringProperty, stringProperty, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     //use that property's selector as the key:
     //objc_setAssociatedObject(self, @selector(stringProperty), stringProperty, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 //get
--(NSString *)stringProperty{
+- (NSString *)stringProperty{
     return objc_getAssociatedObject(self, StringProperty);
 }
 
@@ -35,12 +35,12 @@ static const void *IntegerProperty = &IntegerProperty;
 /**
  *  @brief  catgory runtime实现get set方法增加一个NSInteger属性
  */
--(void)setIntegerProperty:(NSInteger)integerProperty{
+- (void)setIntegerProperty:(NSInteger)integerProperty{
     NSNumber *number = [[NSNumber alloc]initWithInteger:integerProperty];
     objc_setAssociatedObject(self, IntegerProperty, number, OBJC_ASSOCIATION_ASSIGN);
 }
 //get
--(NSInteger)integerProperty{
+- (NSInteger)integerProperty{
     return [objc_getAssociatedObject(self, IntegerProperty) integerValue];
 }
 

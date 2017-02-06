@@ -14,8 +14,8 @@
 
 +(LQStoreValue*)sharedInstace;
 
--(void)storeValue:(id)value withKey:(NSString *)key;
+- (void)storeValue:(id)value withKey:(NSString *)key;
 
--(id)valueWithKey:(NSString*)key;
+- (id)valueWithKey:(NSString*)key;
 
 @end

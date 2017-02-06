@@ -10,7 +10,7 @@
 
 @interface NSObject (Property)
 
--(NSDictionary *)propertyDictionary;
+- (NSDictionary *)propertyDictionary;
 - (NSDictionary*)dictionaryValue;
 
 - (NSArray*)allPropertyKeys;

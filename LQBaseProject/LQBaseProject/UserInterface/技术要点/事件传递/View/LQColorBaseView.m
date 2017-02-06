@@ -13,19 +13,19 @@
 @implementation LQColorBaseView
 
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     NSLog(@"%@---touchesBegan",[self class]);
 }
 
 
-//-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
 //    
 //    
 //    NSLog(@"%@+++%@",[self class],NSStringFromCGPoint(point));
 //    
 //    return [super hitTest:point withEvent:event];
 //}
-//-(BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
 //    
 //    NSString * value = [super pointInside:point withEvent:event] ?@"YES":@"NO";
 //    NSLog(@"value ---- %@",value);
