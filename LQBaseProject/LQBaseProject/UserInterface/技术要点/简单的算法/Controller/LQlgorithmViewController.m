@@ -24,7 +24,7 @@
     NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
     NSLog(@"%@",[self insertion_sort:numberArr]);
     NSLog(@"%@",[self bubbling_sort:numberArr]);
-
+    NSLog(@"%@",[self selectSortWithArray:numberArr]);
 
     NSLog(@"%d",[self funMult_2:4]);
     
@@ -86,55 +86,61 @@
 //插入排序算法
 - (NSMutableArray *)insertion_sort:(NSMutableArray*)numberArr{
     
-//  NSMutableArray * numberArr = [NSMutableArray arrayWithArray:@[@4,@8,@1,@6,@7,@2,@5,@3,@9]];
-//    for (int j = 1; j < numberArr.count; j++) {
+
+//    for (int j = 1 ; j<numberArr.count ; j++) {
 //        int key = [numberArr[j] intValue];
 //        int i = j - 1;
 //        while (i >= 0 && key < [numberArr[i] intValue]) {
 //            numberArr[i+1] = numberArr[i];
-//            i-- ;
+//            i--;
 //        }
-//        numberArr[i+1] = [NSNumber numberWithInt:key];
+//        numberArr[i + 1] = [NSNumber numberWithInt:key];
 //    }
 //    NSLog(@"%@",[numberArr componentsJoinedByString:@","]);
 //    return numberArr;
     
     
-    for (int j = 1 ; j<numberArr.count ; j++) {
-        int key = [numberArr[j] intValue];
-        int i = j - 1;
-        while (i >= 0 && key < [numberArr[i] intValue]) {
-            numberArr[i+1] = numberArr[i];
-            i--;
+//    for (int i = 1 ; i<numberArr.count ;i++) {
+//        NSNumber * key = numberArr[i];
+//        int j = i - 1;
+//        while (j >= 0 && key < numberArr[j]) {
+//            numberArr[j+1] = numberArr[j];
+//            j--;
+//        }
+//        numberArr[j+1] = key;
+//    }
+//    return numberArr;
+    
+    
+    for (int i = 1; i < numberArr.count; i++) {
+        NSNumber *key = numberArr[i];
+        int j = i - 1;
+        while (j >= 0 && numberArr[j] > key) {
+            numberArr[j+1] = numberArr[j];
+            j--;
         }
-        numberArr[i + 1] = [NSNumber numberWithInt:key];
+        numberArr[j + 1] = key;
     }
-    NSLog(@"%@",[numberArr componentsJoinedByString:@","]);
     return numberArr;
+    
+    
 }
 
 //冒泡排序
 - (NSMutableArray *)bubbling_sort:(NSMutableArray *)numberArr{
     
-    for (int i = 0; i < numberArr.count ; i++ ) {
-    
-        for (int j = 1; j < numberArr.count - i; j++ ) {
-            
-            if ([numberArr[j] intValue] < [numberArr[j-1] intValue]) {
-                
-//                NSNumber *t = numberArr[j];
-//                numberArr[j] = numberArr[j-1];
-//                numberArr[j-1] = t;
-                [numberArr exchangeObjectAtIndex:j withObjectAtIndex:j-1];
-            }
-            
-        }
-    }
+//    for (int i = 0; i < numberArr.count; i++) {
+//        for (int j = 1 ; j < numberArr.count - i; j++) {
+//            if ([numberArr[j] intValue] < [numberArr[j-1] intValue]) {
+//                [numberArr exchangeObjectAtIndex:j withObjectAtIndex:j-1];
+//            }
+//        }
+//    }
     
     
-    for (int i = 0; i < numberArr.count; i++) {
-        for (int j = 1 ; j < numberArr.count - i; j++) {
-            if ([numberArr[j] intValue] < [numberArr[j-1] intValue]) {
+    for (int i = 0; i < numberArr.count; i ++) {
+        for (int j = 1; j < numberArr.count - i; j++) {
+            if (numberArr[j] < numberArr[j-1]) {
                 [numberArr exchangeObjectAtIndex:j withObjectAtIndex:j-1];
             }
         }
@@ -143,5 +149,65 @@
     
     return numberArr;
 }
+
+//选择排序
+-(NSMutableArray *)selectSortWithArray:(NSMutableArray *)numberArr{
+    
+    
+//    for (int i = 0;  i < numberArr.count -1 ; i++) {
+//        int m = i;
+//        for (int j = m + 1 ; j < numberArr.count - 1; j++) {
+//            if (numberArr[j] < numberArr[m]) {
+//                m = j;
+//            }
+//        }
+//        if (m != i) {
+//            [numberArr exchangeObjectAtIndex:m withObjectAtIndex:i];
+//        }
+//    }
+//    return numberArr;
+    
+    
+    for (int i = 0; i < numberArr.count; i++) {
+        int m = i;
+        for (int j = m +1 ; j < numberArr.count; j++) {
+            if (numberArr[m] > numberArr[j] ) {
+                m = j;
+            }
+        }
+        if (m != i) {
+            [numberArr exchangeObjectAtIndex:m withObjectAtIndex:i];
+        }
+    }
+    
+    return numberArr;
+}
+
+-(int )quickSortWithArray:(NSMutableArray *)numberArr{
+    
+    NSNumber *key = numberArr[0];
+    
+    int low = 0;
+    int high = (int)numberArr.count - 1;
+    
+    while (low < high) {
+        
+        while (low < high && numberArr[high] >= key ) {
+            --high;
+        }
+        
+        numberArr[low] = numberArr[high];
+        
+        while (low < high && numberArr[low] <= key) {
+            ++low;
+        }
+        numberArr[high] = numberArr[low];
+    }
+    numberArr[low] = key;
+    
+    return low;
+}
+
+
 
 @end

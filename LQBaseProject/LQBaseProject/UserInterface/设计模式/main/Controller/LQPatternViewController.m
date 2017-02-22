@@ -63,6 +63,7 @@
     switch (indexPath.row) {
         case 0:
             vc = [[LQObjectViewController alloc]init];
+            NSLog(@"%@",vc.view);
             break;
         case 1:
             vc = [[LQFactoryMethodViewController alloc]init];

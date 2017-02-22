@@ -11,14 +11,16 @@
 @implementation LQBlueView
 
 
-
-
-
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    
-    CGRect rect = CGRectMake(0, 0, self.width, self.height);
-    NSLog(@"%@",NSStringFromCGRect(rect));
-    return CGRectContainsPoint(rect, point);
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    NSLog(@"Blue - %@",[[super hitTest:point withEvent:event] class]);
+    return [super hitTest:point withEvent:event];
 }
+
+
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//    
+//    NSLog(@"%@",[super pointInside:point withEvent:event]?@"Blue-YES":@"Blue-NO");
+//    return  [super pointInside:point withEvent:event];
+//}
 
 @end

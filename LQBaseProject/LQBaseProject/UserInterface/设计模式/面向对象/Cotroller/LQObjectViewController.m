@@ -19,6 +19,7 @@
 
 @implementation LQObjectViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //面向对象  封装 继承 多肽

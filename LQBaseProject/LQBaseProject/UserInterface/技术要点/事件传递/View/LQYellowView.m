@@ -10,24 +10,17 @@
 
 @implementation LQYellowView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
     
-    
-    CGRect rect = CGRectMake(146/2, 12/2, 46, 30/2);
-    if (CGRectContainsPoint(rect, point)) {
-        return self.subviews.lastObject.subviews.lastObject;
-    }else{
-        return [super hitTest:point withEvent:event];
-    }
+    NSLog(@"Yellow - %@",[[super hitTest:point withEvent:event] class]);
+    return [super hitTest:point withEvent:event];
 }
+
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//    
+//    NSLog(@"%@",[super pointInside:point withEvent:event]?@"Yellow-YES":@"Yellow-NO");
+//    return  [super pointInside:point withEvent:event];
+//}
 
 @end

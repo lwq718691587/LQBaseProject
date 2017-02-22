@@ -10,12 +10,15 @@
 
 @implementation LQGreenView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    NSLog(@"Green - %@",[[super hitTest:point withEvent:event] class]);
+    return [super hitTest:point withEvent:event];
 }
-*/
+
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//    
+//    NSLog(@"%@",[super pointInside:point withEvent:event]?@"Green-YES":@"Green-NO");
+//    return  [super pointInside:point withEvent:event];
+//}
 
 @end

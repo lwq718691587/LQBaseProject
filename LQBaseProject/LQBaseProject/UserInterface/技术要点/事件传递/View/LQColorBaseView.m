@@ -17,19 +17,17 @@
     NSLog(@"%@---touchesBegan",[self class]);
 }
 
-
 //- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
 //    
-//    
-//    NSLog(@"%@+++%@",[self class],NSStringFromCGPoint(point));
-//    
+//    NSLog(@"%@ - %@",[self class],[[super hitTest:point withEvent:event] class]);
 //    return [super hitTest:point withEvent:event];
 //}
+
+
 //- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-//    
-//    NSString * value = [super pointInside:point withEvent:event] ?@"YES":@"NO";
-//    NSLog(@"value ---- %@",value);
-//    return [super pointInside:point withEvent:event];
+////    NSLog(@"%@",[super pointInside:point withEvent:event] ? [NSString stringWithFormat:@"%@-YES",[self class]] :[NSString stringWithFormat:@"%@-NO",[self class]]);
+//    return  [super pointInside:point withEvent:event];
 //}
+
 
 @end

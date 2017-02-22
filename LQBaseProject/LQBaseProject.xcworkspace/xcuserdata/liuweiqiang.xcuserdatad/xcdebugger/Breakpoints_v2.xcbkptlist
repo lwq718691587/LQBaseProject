@@ -67,13 +67,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x53d8;&#x91cf;/LQVariableView.m"
-            timestampString = "506332992.823447"
+            filePath = "LQBaseProject/UserInterface/&#x63a7;&#x4ef6;/&#x7011;&#x5e03;&#x6d41;/Model/LQSexyWomanListModel.m"
+            timestampString = "508127202.242961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-description"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "+getSexyWomanListArrSuccess:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__59+[LQSexyWomanListModel getSexyWomanListArrSuccess:failure:]_block_invoke"
+                  moduleName = "LQBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liuweiqiang/LQBaseProject/LQBaseProject/LQBaseProject/UserInterface/%E6%8E%A7%E4%BB%B6/%E7%80%91%E5%B8%83%E6%B5%81/Model/LQSexyWomanListModel.m"
+                  timestampString = "509450473.393511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__59+[LQSexyWomanListModel getSexyWomanListArrSuccess:failure:]_block_invoke"
+                  moduleName = "LQBaseProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liuweiqiang/LQBaseProject/LQBaseProject/LQBaseProject/UserInterface/%E6%8E%A7%E4%BB%B6/%E7%80%91%E5%B8%83%E6%B5%81/Model/LQSexyWomanListModel.m"
+                  timestampString = "509450473.394919"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "190">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LQBaseProject/UserInterface/&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;/&#x9762;&#x5411;&#x5bf9;&#x8c61;/Cotroller/LQObjectViewController.m"
+            timestampString = "509264836.460653"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -83,13 +131,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x53d8;&#x91cf;/LQVariableViewController.m"
-            timestampString = "506333007.763369"
+            filePath = "LQBaseProject/UserInterface/&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;/main/Controller/LQPatternViewController.m"
+            timestampString = "509265161.432078"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LQBaseProject/UserInterface/&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;/main/Controller/LQPatternViewController.m"
+            timestampString = "509265495.378848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

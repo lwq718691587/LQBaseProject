@@ -11,20 +11,17 @@
 @implementation LQRedView
 
 
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        self.layer.cornerRadius = self.height/2;
-    }
-    return self;
+
+
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    NSLog(@"red - %@",[[super hitTest:point withEvent:event] class]);
+    return [super hitTest:point withEvent:event];
 }
 
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
-    
-    UIBezierPath * radiusPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, 128, 128) cornerRadius:64];
-    
-    return [radiusPath containsPoint:point];
-}
+//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+//    NSLog(@"%@",[super pointInside:point withEvent:event]?@"Red-YES":@"Red-NO");
+//    return  [super pointInside:point withEvent:event];
+//}
 
 @end
