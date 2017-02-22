@@ -10,6 +10,7 @@
 
 @interface LQMemoryViewController ()
 @property (copy, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *strongName;
 @end
 
 @implementation LQMemoryViewController
@@ -27,6 +28,16 @@
     NSLog(@"%p",bob);
     NSLog(@"%p",self.name);
     NSLog(@"--%@",self.name);
+    
+    
+    
+    NSMutableString *bob2 = [NSMutableString stringWithFormat:@"123"];
+    NSLog(@"%p",bob2);
+    self.strongName = bob2;
+    NSLog(@"%p",bob2);
+    [bob2 setString:@"rrr"];
+    NSLog(@"--%@",self.strongName);
+    
     
     
     NSArray * arr = @[@"1",@"2"];
@@ -73,15 +84,7 @@
     //    NSLog(@"--%@",self.name);
     
     
-    //    NSMutableString *bob2 = [NSMutableString stringWithFormat:@"123"];
-    //    NSLog(@"%p",bob2);
-    //    NSMutableString  * str = bob2;
-    //    NSLog(@"%p",str);
-    //    NSLog(@"--%@",str);
-    //    [bob2 setString:@"rrr"];
-    //
-    //    bob2 = [NSMutableString stringWithFormat:@"3456"];
-    //    NSLog(@"--%@",str);
+    
     // Do any additional setup after loading the view.
 }
 
