@@ -263,6 +263,10 @@
 		FC667E461DAD1A9600410135 /* LQBlackPenColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC667E451DAD1A9600410135 /* LQBlackPenColorModel.m */; };
 		FC6BE7CA1E277AE00022AD5F /* LQVariableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6BE7C91E277AE00022AD5F /* LQVariableViewController.m */; };
 		FC6BE7D01E277E3B0022AD5F /* LQVariableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6BE7CF1E277E3B0022AD5F /* LQVariableView.m */; };
+		FC6FD6141E5ECA15004C24F5 /* LQCoreImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6FD6131E5ECA15004C24F5 /* LQCoreImageViewController.m */; };
+		FC6FD6161E5ECAD2004C24F5 /* 122.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC6FD6151E5ECAD2004C24F5 /* 122.jpg */; };
+		FC6FD6181E5ECAD7004C24F5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6FD6171E5ECAD7004C24F5 /* icon.png */; };
+		FC6FD61C1E5ED3E3004C24F5 /* LQJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6FD61B1E5ED3E3004C24F5 /* LQJSViewController.m */; };
 		FC72EDC51DAD13A2007C7C41 /* LQBridgePatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC72EDC41DAD13A2007C7C41 /* LQBridgePatternViewController.m */; };
 		FC759E101DAC84E900538219 /* PeakSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E0D1DAC84E900538219 /* PeakSqlite.m */; };
 		FC759E111DAC84E900538219 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC759E0F1DAC84E900538219 /* UserEntity.m */; };
@@ -904,6 +908,12 @@
 		FC6BE7CE1E277E3B0022AD5F /* LQVariableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQVariableView.h; sourceTree = "<group>"; };
 		FC6BE7CF1E277E3B0022AD5F /* LQVariableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQVariableView.m; sourceTree = "<group>"; };
 		FC6BE7D11E2788C20022AD5F /* LQVar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQVar.h; sourceTree = "<group>"; };
+		FC6FD6121E5ECA15004C24F5 /* LQCoreImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCoreImageViewController.h; sourceTree = "<group>"; };
+		FC6FD6131E5ECA15004C24F5 /* LQCoreImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCoreImageViewController.m; sourceTree = "<group>"; };
+		FC6FD6151E5ECAD2004C24F5 /* 122.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 122.jpg; sourceTree = "<group>"; };
+		FC6FD6171E5ECAD7004C24F5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FC6FD61A1E5ED3E3004C24F5 /* LQJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQJSViewController.h; sourceTree = "<group>"; };
+		FC6FD61B1E5ED3E3004C24F5 /* LQJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQJSViewController.m; sourceTree = "<group>"; };
 		FC72EDC31DAD13A2007C7C41 /* LQBridgePatternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQBridgePatternViewController.h; sourceTree = "<group>"; };
 		FC72EDC41DAD13A2007C7C41 /* LQBridgePatternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQBridgePatternViewController.m; sourceTree = "<group>"; };
 		FC759E0C1DAC84E900538219 /* PeakSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeakSqlite.h; sourceTree = "<group>"; };
@@ -2472,6 +2482,26 @@
 			path = "变量";
 			sourceTree = "<group>";
 		};
+		FC6FD6111E5EC9FF004C24F5 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				FC6FD6151E5ECAD2004C24F5 /* 122.jpg */,
+				FC6FD6171E5ECAD7004C24F5 /* icon.png */,
+				FC6FD6121E5ECA15004C24F5 /* LQCoreImageViewController.h */,
+				FC6FD6131E5ECA15004C24F5 /* LQCoreImageViewController.m */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		FC6FD6191E5ED3DB004C24F5 /* 原生与Webview交互 */ = {
+			isa = PBXGroup;
+			children = (
+				FC6FD61A1E5ED3E3004C24F5 /* LQJSViewController.h */,
+				FC6FD61B1E5ED3E3004C24F5 /* LQJSViewController.m */,
+			);
+			path = "原生与Webview交互";
+			sourceTree = "<group>";
+		};
 		FC72EDBF1DAD132D007C7C41 /* 桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2825,6 +2855,8 @@
 		FCE71F7E1DACF6460046C1AA /* 技术要点 */ = {
 			isa = PBXGroup;
 			children = (
+				FC6FD6191E5ED3DB004C24F5 /* 原生与Webview交互 */,
+				FC6FD6111E5EC9FF004C24F5 /* CoreImage */,
 				FC3DB8081E5D978600038144 /* 内存相关 */,
 				FCB230DC1E5AE31900802F8E /* UIView的拖拽 */,
 				FC6BE7C71E277A9C0022AD5F /* 变量 */,
@@ -3606,6 +3638,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6FD6161E5ECAD2004C24F5 /* 122.jpg in Resources */,
 				FCFAA01F1DF6A9E9002B76F3 /* rili.png in Resources */,
 				FCFAA01D1DF6A799002B76F3 /* LQLayoutViewController.xib in Resources */,
 				FCF4F6AB1DF7BFCA0063236B /* 111111.png in Resources */,
@@ -3613,6 +3646,7 @@
 				FC9BDEB21E0A5A0300C8394D /* LQKeychainViewController.xib in Resources */,
 				FCF4F6AF1DF7F0AF0063236B /* 33333.png in Resources */,
 				FC930D511DC9CA2400311515 /* LQGestureRecongnizerViewController.xib in Resources */,
+				FC6FD6181E5ECAD7004C24F5 /* icon.png in Resources */,
 				FC597CB81DADD70100DFBDDA /* LQDveloperUtilityTableViewCell.xib in Resources */,
 				FC930D5A1DC9DA7200311515 /* wsxedc.png in Resources */,
 				FC51A9021D659C8F0004FEAE /* LaunchScreen.storyboard in Resources */,
@@ -3938,6 +3972,7 @@
 				FC5650EA1DAC8C060011779B /* NSIndexPath+Offset.m in Sources */,
 				FC5651801DAC8C060011779B /* UIView+ViewController.m in Sources */,
 				FC597CB71DADD70100DFBDDA /* LQDveloperUtilityTableViewCell.m in Sources */,
+				FC6FD61C1E5ED3E3004C24F5 /* LQJSViewController.m in Sources */,
 				FC5651911DAC8C060011779B /* UIWebView+Load.m in Sources */,
 				FC5651001DAC8C060011779B /* NSString+Hash.m in Sources */,
 				FC5650E91DAC8C060011779B /* NSHTTPCookieStorage+FreezeDry.m in Sources */,
@@ -3988,6 +4023,7 @@
 				FCDF73FA1D6C4862007B838B /* UmengUtility.m in Sources */,
 				FC667E431DAD1A1600410135 /* LQBIgPenModel.m in Sources */,
 				FC56518C1DAC8C060011779B /* UIViewController+Visible.m in Sources */,
+				FC6FD6141E5ECA15004C24F5 /* LQCoreImageViewController.m in Sources */,
 				FC5650E51DAC8C060011779B /* NSDictionary+XML.m in Sources */,
 				FC5651751DAC8C060011779B /* UIView+Debug.m in Sources */,
 				FC9BDEB11E0A5A0300C8394D /* LQKeychainViewController.m in Sources */,

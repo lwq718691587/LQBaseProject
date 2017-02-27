@@ -33,6 +33,8 @@
 #import "LQVariableViewController.h"
 #import "LQDrawViewController.h"
 #import "LQMemoryViewController.h"
+#import "LQCoreImageViewController.h"
+#import "LQJSViewController.h"
 @interface LQFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *functionTableView;
@@ -154,6 +156,12 @@
         case 24:
             vc = [[LQMemoryViewController alloc]init];
             break;
+        case 25:
+            vc = [[LQCoreImageViewController alloc]init];
+            break;
+        case 26:
+            vc = [[LQJSViewController alloc]init];
+            break;
         default:
             break;
     }
@@ -163,7 +171,7 @@
 
 #pragma mark - 更新数据
 - (void)update{
-    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池",@"绘图",@"保存信息到钥匙串",@"修饰变量",@"view的拖拽",@"内存相关"];
+    self.functionDataArr = @[@"开发工具",@"多线程-NSThread",@"多线程-NSOperation",@"多线程-GCD",@"屏幕旋转",@"block内的self",@"runtime",@"简单的算法",@"KVC&KVO",@"CGContextRef",@"计算label的高度",@"网络请求",@"sqlite数据库",@"SDWebImage学习",@"block",@"事件传递",@"手势",@"富文本",@"tableviews上横向滑动",@"自动释放池",@"绘图",@"保存信息到钥匙串",@"修饰变量",@"view的拖拽",@"内存相关",@"CoreImage",@"原生与JS交互"];
     [self.functionTableView reloadData];
 }
 
