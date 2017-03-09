@@ -12,10 +12,9 @@
 
 typedef int(^success)(NSString *states);
 
-
 @interface LQSecondBlockViewController ()
 
-@property (nonatomic) success networkingSuccess;
+@property (nonatomic,copy) success networkingSuccess;
 @property (nonatomic) void(^failerBlock)();
 @property (strong, nonatomic) UITextField * tf ;
 @end
@@ -26,7 +25,10 @@ typedef int(^success)(NSString *states);
 - (void)viewDidLoad {
     [super viewDidLoad];
  
-
+    self.tfBlock = ^(UITextField *textField){
+        
+    };
+    
     NSArray * const a = [NSArray array];
     
     
@@ -47,6 +49,13 @@ typedef int(^success)(NSString *states);
         
     };
     block(1);
+    
+    int(^myBlock)(int i )= ^(int i){
+        return i+ 1;
+    };
+    int j = myBlock(1);
+    NSLog(@"%d",j);
+    
     UITextField * tf = [[UITextField alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 30)];
     [self.view addSubview:tf];
     tf.backgroundColor = [UIColor redColor];
@@ -57,6 +66,8 @@ typedef int(^success)(NSString *states);
 - (void)lwqNetWorkingsuccess:(void(^)(NSString * states)) success{
     
 }
+
+
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];

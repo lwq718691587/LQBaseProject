@@ -35,22 +35,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/Block/Controller/LQSecondBlockViewController.m"
-            timestampString = "505880841.570516"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/&#x53d8;&#x91cf;/NSObject+Description.m"
             timestampString = "506332925.25905"
             startingColumnNumber = "9223372036854775807"
@@ -84,7 +68,7 @@
                   moduleName = "LQBaseProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liuweiqiang/LQBaseProject/LQBaseProject/LQBaseProject/UserInterface/%E6%8E%A7%E4%BB%B6/%E7%80%91%E5%B8%83%E6%B5%81/Model/LQSexyWomanListModel.m"
-                  timestampString = "509532662.71745"
+                  timestampString = "510736620.028766"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -99,7 +83,7 @@
                   moduleName = "LQBaseProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liuweiqiang/LQBaseProject/LQBaseProject/LQBaseProject/UserInterface/%E6%8E%A7%E4%BB%B6/%E7%80%91%E5%B8%83%E6%B5%81/Model/LQSexyWomanListModel.m"
-                  timestampString = "509532662.718658"
+                  timestampString = "510736620.031699"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -186,6 +170,22 @@
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LQBaseProject/UserInterface/&#x6280;&#x672f;&#x8981;&#x70b9;/Block/Controller/LQSecondBlockViewController.m"
+            timestampString = "510736618.163479"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -10,6 +10,6 @@
 
 @interface LQSecondBlockViewController : BaseViewController
 
-@property (nonatomic) void(^tfBlock)(UITextField *tf);
+@property (copy, nonatomic) void (^tfBlock)(UITextField *textField);
 
 @end
