@@ -361,6 +361,9 @@
 		FCEB99C61DB6127B00E9D77A /* LQNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB99C51DB6127B00E9D77A /* LQNameLabel.m */; };
 		FCEB99C91DB6129900E9D77A /* LQNameListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB99C81DB6129900E9D77A /* LQNameListTableView.m */; };
 		FCEB99D11DB61CAB00E9D77A /* LQSDLearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB99D01DB61CAB00E9D77A /* LQSDLearnViewController.m */; };
+		FCEFEAA31E724C8500575199 /* LQCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFEAA21E724C8500575199 /* LQCoreTextViewController.m */; };
+		FCEFEAA61E724CF800575199 /* LQFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFEAA51E724CF800575199 /* LQFunction.m */; };
+		FCEFEAA91E7256D200575199 /* LQCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFEAA81E7256D200575199 /* LQCoreTextView.m */; };
 		FCF4F6A01DF7AC380063236B /* LQCGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F69F1DF7AC380063236B /* LQCGViewController.m */; };
 		FCF4F6A31DF7AC9F0063236B /* LQCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F6A21DF7AC9F0063236B /* LQCustomView.m */; };
 		FCF4F6A61DF7B69C0063236B /* LQCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF4F6A51DF7B69C0063236B /* LQCustomLayer.m */; };
@@ -1098,6 +1101,12 @@
 		FCEB99CA1DB612EC00E9D77A /* LQMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMediator.h; sourceTree = "<group>"; };
 		FCEB99CF1DB61CAB00E9D77A /* LQSDLearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSDLearnViewController.h; sourceTree = "<group>"; };
 		FCEB99D01DB61CAB00E9D77A /* LQSDLearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSDLearnViewController.m; sourceTree = "<group>"; };
+		FCEFEAA11E724C8500575199 /* LQCoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCoreTextViewController.h; sourceTree = "<group>"; };
+		FCEFEAA21E724C8500575199 /* LQCoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCoreTextViewController.m; sourceTree = "<group>"; };
+		FCEFEAA41E724CF800575199 /* LQFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFunction.h; sourceTree = "<group>"; };
+		FCEFEAA51E724CF800575199 /* LQFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFunction.m; sourceTree = "<group>"; };
+		FCEFEAA71E7256D200575199 /* LQCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCoreTextView.h; sourceTree = "<group>"; };
+		FCEFEAA81E7256D200575199 /* LQCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCoreTextView.m; sourceTree = "<group>"; };
 		FCF4F69E1DF7AC380063236B /* LQCGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCGViewController.h; sourceTree = "<group>"; };
 		FCF4F69F1DF7AC380063236B /* LQCGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCGViewController.m; sourceTree = "<group>"; };
 		FCF4F6A11DF7AC9F0063236B /* LQCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCustomView.h; sourceTree = "<group>"; };
@@ -2855,6 +2864,7 @@
 		FCE71F7E1DACF6460046C1AA /* 技术要点 */ = {
 			isa = PBXGroup;
 			children = (
+				FCEFEAA01E724C6700575199 /* CoreText */,
 				FC6FD6191E5ED3DB004C24F5 /* 原生与Webview交互 */,
 				FC6FD6111E5EC9FF004C24F5 /* CoreImage */,
 				FC3DB8081E5D978600038144 /* 内存相关 */,
@@ -2925,6 +2935,8 @@
 			children = (
 				FCE71F881DACF6460046C1AA /* LQFunctionViewController.h */,
 				FCE71F891DACF6460046C1AA /* LQFunctionViewController.m */,
+				FCEFEAA41E724CF800575199 /* LQFunction.h */,
+				FCEFEAA51E724CF800575199 /* LQFunction.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -3484,6 +3496,17 @@
 			path = "SDWebimage学习";
 			sourceTree = "<group>";
 		};
+		FCEFEAA01E724C6700575199 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				FCEFEAA11E724C8500575199 /* LQCoreTextViewController.h */,
+				FCEFEAA21E724C8500575199 /* LQCoreTextViewController.m */,
+				FCEFEAA71E7256D200575199 /* LQCoreTextView.h */,
+				FCEFEAA81E7256D200575199 /* LQCoreTextView.m */,
+			);
+			path = CoreText;
+			sourceTree = "<group>";
+		};
 		FCF4F69B1DF7AC120063236B /* 绘图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3848,6 +3871,7 @@
 				FC4558F51DC889FD0014B39A /* LQYellowView.m in Sources */,
 				FC56515E1DAC8C060011779B /* UIPopoverController+iPhone.m in Sources */,
 				FCE720481DACF6470046C1AA /* LQKVOViewController.m in Sources */,
+				FCEFEAA61E724CF800575199 /* LQFunction.m in Sources */,
 				FC56516B1DAC8C060011779B /* UITextField+Blocks.m in Sources */,
 				FC5651021DAC8C060011779B /* NSString+MIME.m in Sources */,
 				FCE720531DACF6470046C1AA /* LQSexyWomanListModel.m in Sources */,
@@ -3859,6 +3883,7 @@
 				FC5650C61DAC8C060011779B /* NSManagedObjectContext+Extensions.m in Sources */,
 				FC5650C41DAC8C060011779B /* NSManagedObject+DictionaryExport.m in Sources */,
 				FC5651511DAC8C060011779B /* UILabel+AutoSize.m in Sources */,
+				FCEFEAA31E724C8500575199 /* LQCoreTextViewController.m in Sources */,
 				FC1628031DB4A98F009A0ABB /* LQHandler_BModel.m in Sources */,
 				FCE7203A1DACF6470046C1AA /* LQGoodsModel.m in Sources */,
 				FC5651131DAC8C060011779B /* NSUserDefaults+iCloudSync.m in Sources */,
@@ -3930,6 +3955,7 @@
 				FCE7202E1DACF6470046C1AA /* LQMultithreading_NSOperationViewController.m in Sources */,
 				FCE720251DACF6470046C1AA /* LQFunctionViewController.m in Sources */,
 				FC5651711DAC8C060011779B /* UITextView+Select.m in Sources */,
+				FCEFEAA91E7256D200575199 /* LQCoreTextView.m in Sources */,
 				FC51A8F71D659C8F0004FEAE /* AppDelegate.m in Sources */,
 				FCE7202D1DACF6470046C1AA /* LQMultithreading_GCDViewController.m in Sources */,
 				FC5650F21DAC8C060011779B /* NSObject+Blocks.m in Sources */,
