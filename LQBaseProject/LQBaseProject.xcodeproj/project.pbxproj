@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */; };
+		D55C5FB36663BC61CAD4578D /* libPods-LQBaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2390EF0F80087605576931E0 /* libPods-LQBaseProject.a */; };
 		FC1627F71DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1627F61DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m */; };
 		FC1627FA1DB4A721009A0ABB /* LQHandlerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1627F91DB4A721009A0ABB /* LQHandlerModel.m */; };
 		FC1628001DB4A84D009A0ABB /* LQHandler_AModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1627FF1DB4A84D009A0ABB /* LQHandler_AModel.m */; };
@@ -25,6 +25,10 @@
 		FC1975771DCC7AD70080C216 /* LQLandscapeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1975761DCC7AD70080C216 /* LQLandscapeTableViewController.m */; };
 		FC1D63281DB61F5F005C06A2 /* LQTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1D63271DB61F5F005C06A2 /* LQTestModel.m */; };
 		FC2343B41D66D91000ADB748 /* LQNetworkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */; };
+		FC297A5B1EA8B0A000E2D19D /* LQCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC297A591EA8B0A000E2D19D /* LQCellViewController.m */; };
+		FC297A5C1EA8B0A000E2D19D /* LQCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC297A5A1EA8B0A000E2D19D /* LQCellViewController.xib */; };
+		FC297A601EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC297A5E1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.m */; };
+		FC297A611EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC297A5F1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.xib */; };
 		FC2D67D11DAE2BD400152186 /* SVProgressHUD+LQAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2D67D01DAE2BD400152186 /* SVProgressHUD+LQAddition.m */; };
 		FC3DB80B1E5D981F00038144 /* LQMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3DB80A1E5D981F00038144 /* LQMemoryViewController.m */; };
 		FC4558E51DC8893D0014B39A /* LQResponderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4558E31DC8893D0014B39A /* LQResponderViewController.m */; };
@@ -394,9 +398,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LQBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D6770FB7C6140271D6EBA97 /* Pods-LQBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.release.xcconfig"; sourceTree = "<group>"; };
-		99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2390EF0F80087605576931E0 /* libPods-LQBaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LQBaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3CDE1AAC713CCB4EDE9FA34 /* Pods-LQBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		FC1627F51DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQChainofResponsibilityViewController.h; sourceTree = "<group>"; };
 		FC1627F61DB4A6D1009A0ABB /* LQChainofResponsibilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQChainofResponsibilityViewController.m; sourceTree = "<group>"; };
 		FC1627F81DB4A721009A0ABB /* LQHandlerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQHandlerModel.h; sourceTree = "<group>"; };
@@ -431,6 +434,12 @@
 		FC1D63271DB61F5F005C06A2 /* LQTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTestModel.m; sourceTree = "<group>"; };
 		FC2343B21D66D91000ADB748 /* LQNetworkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQNetworkingRequest.h; sourceTree = "<group>"; };
 		FC2343B31D66D91000ADB748 /* LQNetworkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQNetworkingRequest.m; sourceTree = "<group>"; };
+		FC297A581EA8B0A000E2D19D /* LQCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQCellViewController.h; sourceTree = "<group>"; };
+		FC297A591EA8B0A000E2D19D /* LQCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQCellViewController.m; sourceTree = "<group>"; };
+		FC297A5A1EA8B0A000E2D19D /* LQCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQCellViewController.xib; sourceTree = "<group>"; };
+		FC297A5D1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQAutoHeightTableViewCell.h; sourceTree = "<group>"; };
+		FC297A5E1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQAutoHeightTableViewCell.m; sourceTree = "<group>"; };
+		FC297A5F1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQAutoHeightTableViewCell.xib; sourceTree = "<group>"; };
 		FC2D67CF1DAE2BD400152186 /* SVProgressHUD+LQAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+LQAddition.h"; sourceTree = "<group>"; };
 		FC2D67D01DAE2BD400152186 /* SVProgressHUD+LQAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+LQAddition.m"; sourceTree = "<group>"; };
 		FC3DB8091E5D981F00038144 /* LQMemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMemoryViewController.h; sourceTree = "<group>"; };
@@ -1087,6 +1096,7 @@
 		FCE720611DACF6CC0046C1AA /* LQSheepModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSheepModel.m; sourceTree = "<group>"; };
 		FCE720631DACF6CC0046C1AA /* LQObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQObjectViewController.h; sourceTree = "<group>"; };
 		FCE720641DACF6CC0046C1AA /* LQObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQObjectViewController.m; sourceTree = "<group>"; };
+		FCE9AE5779250DF84A5C16E5 /* Pods-LQBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LQBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FCEB99B81DB60DF500E9D77A /* LQMediatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQMediatorViewController.h; sourceTree = "<group>"; };
 		FCEB99B91DB60DF500E9D77A /* LQMediatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQMediatorViewController.m; sourceTree = "<group>"; };
 		FCEB99BA1DB60DF500E9D77A /* LQMediatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LQMediatorViewController.xib; sourceTree = "<group>"; };
@@ -1131,7 +1141,7 @@
 			files = (
 				FC9123BA1DB08F1D0087C7F8 /* CoreData.framework in Frameworks */,
 				FC9123B11DB073610087C7F8 /* libsqlite3.tbd in Frameworks */,
-				AC11D335A77D4F015DBA17E3 /* libPods-LQBaseProject.a in Frameworks */,
+				D55C5FB36663BC61CAD4578D /* libPods-LQBaseProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1152,23 +1162,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1B09B9C76532744814CE2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCE9AE5779250DF84A5C16E5 /* Pods-LQBaseProject.debug.xcconfig */,
+				B3CDE1AAC713CCB4EDE9FA34 /* Pods-LQBaseProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E578BE0F3C4D849A7326BF1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FC9123B91DB08F1D0087C7F8 /* CoreData.framework */,
 				FC9123B01DB073610087C7F8 /* libsqlite3.tbd */,
-				076D1BC3E18AD589441F084E /* libPods-LQBaseProject.a */,
+				2390EF0F80087605576931E0 /* libPods-LQBaseProject.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3F22B0B35F843F7BF98CF84 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */,
-				2D6770FB7C6140271D6EBA97 /* Pods-LQBaseProject.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		FC1627F21DB4A63A009A0ABB /* 责任链模式 */ = {
@@ -1294,6 +1304,19 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		FC297A571EA8B08A00E2D19D /* XIBcell行高自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				FC297A581EA8B0A000E2D19D /* LQCellViewController.h */,
+				FC297A591EA8B0A000E2D19D /* LQCellViewController.m */,
+				FC297A5A1EA8B0A000E2D19D /* LQCellViewController.xib */,
+				FC297A5D1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.h */,
+				FC297A5E1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.m */,
+				FC297A5F1EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.xib */,
+			);
+			path = "XIBcell行高自适应";
+			sourceTree = "<group>";
+		};
 		FC3DB8081E5D978600038144 /* 内存相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1344,8 +1367,8 @@
 				FC51A90B1D659C8F0004FEAE /* LQBaseProjectTests */,
 				FC51A9161D659C8F0004FEAE /* LQBaseProjectUITests */,
 				FC51A8F01D659C8F0004FEAE /* Products */,
-				F3F22B0B35F843F7BF98CF84 /* Pods */,
 				E578BE0F3C4D849A7326BF1C /* Frameworks */,
+				4B1B09B9C76532744814CE2F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3310,6 +3333,7 @@
 		FCE7200A1DACF6470046C1AA /* 控件 */ = {
 			isa = PBXGroup;
 			children = (
+				FC297A571EA8B08A00E2D19D /* XIBcell行高自适应 */,
 				FCFAA0151DF6A6E0002B76F3 /* XIb */,
 				FC597CC91DADE33400DFBDDA /* 自定义tabbar */,
 				FCE7200B1DACF6470046C1AA /* iCarousel */,
@@ -3559,12 +3583,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC51A91C1D659C8F0004FEAE /* Build configuration list for PBXNativeTarget "LQBaseProject" */;
 			buildPhases = (
-				1DEA6A5CA9AE9CA1AE394C67 /* Check Pods Manifest.lock */,
+				57F3039BBA10F20F882DC0ED /* [CP] Check Pods Manifest.lock */,
 				FC51A8EB1D659C8F0004FEAE /* Sources */,
 				FC51A8EC1D659C8F0004FEAE /* Frameworks */,
 				FC51A8ED1D659C8F0004FEAE /* Resources */,
-				2B5CBFE42F0B966F5B33768C /* Embed Pods Frameworks */,
-				7C7984179C2A880591073940 /* Copy Pods Resources */,
+				DE16B0E9D6BA69208008383C /* [CP] Embed Pods Frameworks */,
+				82E49DFBB021BB6E379C4E8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3670,8 +3694,10 @@
 				FCF4F6AF1DF7F0AF0063236B /* 33333.png in Resources */,
 				FC930D511DC9CA2400311515 /* LQGestureRecongnizerViewController.xib in Resources */,
 				FC6FD6181E5ECAD7004C24F5 /* icon.png in Resources */,
+				FC297A5C1EA8B0A000E2D19D /* LQCellViewController.xib in Resources */,
 				FC597CB81DADD70100DFBDDA /* LQDveloperUtilityTableViewCell.xib in Resources */,
 				FC930D5A1DC9DA7200311515 /* wsxedc.png in Resources */,
+				FC297A611EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.xib in Resources */,
 				FC51A9021D659C8F0004FEAE /* LaunchScreen.storyboard in Resources */,
 				FCF4F6B11DF7F4A60063236B /* 22222.png in Resources */,
 				FC597CBD1DADDB0F00DFBDDA /* LQDeveloperUtilityPlist.plist in Resources */,
@@ -3697,49 +3723,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1DEA6A5CA9AE9CA1AE394C67 /* Check Pods Manifest.lock */ = {
+		57F3039BBA10F20F882DC0ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2B5CBFE42F0B966F5B33768C /* Embed Pods Frameworks */ = {
+		82E49DFBB021BB6E379C4E8C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C7984179C2A880591073940 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE16B0E9D6BA69208008383C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LQBaseProject/Pods-LQBaseProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3842,6 +3868,7 @@
 				FC1628281DB4C039009A0ABB /* LQCommand_B.m in Sources */,
 				FC759E101DAC84E900538219 /* PeakSqlite.m in Sources */,
 				FC5650CC1DAC8C060011779B /* CLLocationManager+Blocks.m in Sources */,
+				FC297A601EA8B0CE00E2D19D /* LQAutoHeightTableViewCell.m in Sources */,
 				FCE720311DACF6470046C1AA /* LQFullViewController.m in Sources */,
 				FCE720271DACF6470046C1AA /* LQCanJumpPeople.m in Sources */,
 				FCE7202F1DACF6470046C1AA /* LQMultithreading_NSThreadViewController.m in Sources */,
@@ -4008,6 +4035,7 @@
 				FC597CBB1DADD75900DFBDDA /* LQDeveloperUtilityModel.m in Sources */,
 				FC5651551DAC8C060011779B /* UINavigationBar+CustomHeight.m in Sources */,
 				FC56515A1DAC8C060011779B /* UINavigationController+StackManager.m in Sources */,
+				FC297A5B1EA8B0A000E2D19D /* LQCellViewController.m in Sources */,
 				FC56514D1DAC8C060011779B /* UIImageView+GeometryConversion.m in Sources */,
 				FCE720691DACF6CC0046C1AA /* LQDogModel.m in Sources */,
 				FC5650D21DAC8C060011779B /* NSData+Encrypt.m in Sources */,
@@ -4239,7 +4267,7 @@
 		};
 		FC51A91D1D659C8F0004FEAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99518C0F04B59A9CC10FCBB9 /* Pods-LQBaseProject.debug.xcconfig */;
+			baseConfigurationReference = FCE9AE5779250DF84A5C16E5 /* Pods-LQBaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_OTHER_FLAGS = "";
@@ -4345,7 +4373,7 @@
 		};
 		FC51A91E1D659C8F0004FEAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D6770FB7C6140271D6EBA97 /* Pods-LQBaseProject.release.xcconfig */;
+			baseConfigurationReference = B3CDE1AAC713CCB4EDE9FA34 /* Pods-LQBaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_OTHER_FLAGS = "";

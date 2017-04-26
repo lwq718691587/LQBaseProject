@@ -11,6 +11,7 @@
 #import "LQSearchingViewController.h"
 #import "LQCustomTabbarViewController.h"
 #import "LQLayoutViewController.h"
+#import "LQCellViewController.h"
 @interface LQUIControlViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (strong, nonatomic) UITableView *functionTableView;
 @property (strong, nonatomic) NSArray *functionDataArr;
@@ -64,6 +65,8 @@
         case 3:
             vc = [[LQLayoutViewController alloc]init];
             break;
+        case 4:
+            vc = [[LQCellViewController alloc]init];
         default:
             break;
     }
@@ -73,7 +76,7 @@
 
 #pragma mark - 更新数据
 - (void)update{
-    self.functionDataArr = @[@"瀑布流+图片从点击出放大",@"iCarousel",@"完全自定义tabbar",@"Auto Layout学习"];
+    self.functionDataArr = @[@"瀑布流+图片从点击出放大",@"iCarousel",@"完全自定义tabbar",@"Auto Layout学习",@"cell自适应高度"];
     [self.functionTableView reloadData];
 }
 

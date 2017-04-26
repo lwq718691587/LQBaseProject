@@ -15,6 +15,6 @@ target 'LQBaseProject' do
   pod 'FMDB'
   pod 'YYKit', '~> 0.9.11'
   ## pod 'IQKeyboardManager' 
-  
+  pod 'JKBaseKit'
 end
 
